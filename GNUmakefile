@@ -7,7 +7,7 @@ include ../latex/make.bookvars
 #ONCEFLAGS := -justonce
 THISBOOK_DEPS += poppitz.tex
 
-FIGURES := ../../figures/$(THISBOOK)
+FIGURES := ../figures/phy450-relativisticEandM
 
 SOURCE_DIRS += $(FIGURES)
 SOURCE_DIRS += solutions
@@ -19,7 +19,7 @@ GENERATED_SOURCES += poppitz.tex
 
 include ../latex/make.rules
 
-backmatter.tex : ../classicthesis_mine/backmatter.tex
+backmatter.tex : ../latex/classicthesis_mine/backmatter.tex
 	cp $< $@
 
 poppitz.tex : mkpref
