@@ -1,6 +1,5 @@
 THISDIR := phy450-relativisticEandM
 THISBOOK := phy450
-BASEVER := 848e80c
 
 include ../latex/make.bookvars
 
