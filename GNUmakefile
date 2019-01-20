@@ -4,8 +4,7 @@ THISBOOK_DEPS += poppitz.tex
 
 export BOOKSUBVER := 1
 export BOOKMAJVER := 0
-# This isn't a good way to version.  It depends on the local git reflog history count.
-export REVCOUNTSTART := 1
+export REVISIONNUMBER := 8
 
 #.revinfo/gitCommitDateAsMyTime.tex:\newcommand{\myTime}{April 2018}\newcommand{\myVersion}{version V0.117\xspace}
 VER := $(shell grep Version .revinfo/gitCommitDateAsMyTime.tex | sed 's/.*{//;s/.xspace.*//;')
