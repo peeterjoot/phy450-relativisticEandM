@@ -47,15 +47,15 @@ CLEAN_TARGETS += *.sp
 #CLEAN_TARGETS += FrontBackmatter/*.sp
 
 #SPELLCHECK := $(patsubst %.tex,%.sp,$(wildcard *.tex))
-DO_SPELL_CHECK := $(shell cat spellcheckem.txt)
-SPELLCHECK := $(patsubst %.tex,%.sp,$(DO_SPELL_CHECK))
+#DO_SPELL_CHECK := $(shell cat spellcheckem.txt)
+#SPELLCHECK := $(patsubst %.tex,%.sp,$(DO_SPELL_CHECK))
 
 include ../latex/make.rules
 
-$(THISBOOK).pdf :: $(shell cat spellcheckem.txt)
+#$(THISBOOK).pdf :: $(shell cat spellcheckem.txt)
 
-.PHONY: spellcheck
-spellcheck: $(SPELLCHECK)
+#.PHONY: spellcheck
+#spellcheck: $(SPELLCHECK)
 
 %.sp : %.tex
 	spellcheck $^
