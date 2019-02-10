@@ -75,9 +75,9 @@ mmacells.sty: mmacells/mmacells.sty
 #mathematica.tex : ../mathematica/METADATA
 #matlab.tex : ../matlab/METADATA
 
-dropbox:
-	cp $(THISBOOK).pdf ~/Dropbox/$(THISDIR)/$(THISBOOK).$(VER).pdf
-	git log --decorate > ~/Dropbox/$(THISDIR)/Changelog.txt
+#dropbox:
+#	cp $(THISBOOK).pdf ~/Dropbox/$(THISDIR)/$(THISBOOK).$(VER).pdf
+#	git log --decorate > ~/Dropbox/$(THISDIR)/Changelog.txt
 
 dist:
 	cp $(THISBOOK).pdf $(THISBOOK).$(VER).pdf
@@ -90,11 +90,11 @@ tag:
 	spellcheck $^
 	touch $@
 
-.PHONY: copy
-copy : $(HOME)/Dropbox/$(THISDIR)/$(THISBOOK).pdf
-
-$(HOME)/Dropbox/$(THISDIR)/$(THISBOOK).pdf : $(THISBOOK).pdf
-	cp $^ $@
+#.PHONY: copy
+#copy : $(HOME)/Dropbox/$(THISDIR)/$(THISBOOK).pdf
+#
+#$(HOME)/Dropbox/$(THISDIR)/$(THISBOOK).pdf : $(THISBOOK).pdf
+#	cp $^ $@
 
 backmatter.tex : ../latex/classicthesis_mine/backmatter.tex
 	cp $< $@
