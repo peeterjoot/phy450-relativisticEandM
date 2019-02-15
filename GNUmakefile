@@ -2,13 +2,7 @@ THISDIR := phy450-relativisticEandM
 THISBOOK := phy450
 THISBOOK_DEPS += poppitz.tex
 
-export BOOKSUBVER := 1
-export BOOKMAJVER := 0
-export REVISIONNUMBER := 8
-
-#.revinfo/gitCommitDateAsMyTime.tex:\newcommand{\myTime}{April 2018}\newcommand{\myVersion}{version V0.117\xspace}
-VER := $(shell grep Version .revinfo/gitCommitDateAsMyTime.tex | sed 's/.*{//;s/.xspace.*//;')
-
+include make.revision
 include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
@@ -21,20 +15,10 @@ SOURCE_DIRS += problems
 FIGURES := ../figures/$(THISDIR)
 SOURCE_DIRS += $(FIGURES)
 
-# also toggle redacted classicthesis-config.tex
-# FIXME: changing this flag should be a dependency of matlab.tex
-#REDACTED := -redacted
-
 #GENERATED_SOURCES += matlab.tex
 #GENERATED_SOURCES += julia.tex
 GENERATED_SOURCES += mathematica.tex
 GENERATED_SOURCES += poppitz.tex
-
-SOURCES += noetherCurrentScalarField.tex
-SOURCES += scalarFieldCreationOpCommutator.tex
-SOURCES += scalarFieldHamiltonian.tex
-SOURCES += qftProblemSet1.tex
-#SOURCES += qftProblemSet2.tex
 
 EPS_FILES := $(wildcard $(FIGURES)/*.eps)
 PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
@@ -75,26 +59,9 @@ mmacells.sty: mmacells/mmacells.sty
 #mathematica.tex : ../mathematica/METADATA
 #matlab.tex : ../matlab/METADATA
 
-#dropbox:
-#	cp $(THISBOOK).pdf ~/Dropbox/$(THISDIR)/$(THISBOOK).$(VER).pdf
-#	git log --decorate > ~/Dropbox/$(THISDIR)/Changelog.txt
-
-dist:
-	cp $(THISBOOK).pdf $(THISBOOK).$(VER).pdf
-
-# a for annotate (releases).
-tag:
-	git tag -a $(THISBOOK).$(VER).pdf
-
 %.sp : %.tex
 	spellcheck $^
 	touch $@
-
-#.PHONY: copy
-#copy : $(HOME)/Dropbox/$(THISDIR)/$(THISBOOK).pdf
-#
-#$(HOME)/Dropbox/$(THISDIR)/$(THISBOOK).pdf : $(THISBOOK).pdf
-#	cp $^ $@
 
 backmatter.tex : ../latex/classicthesis_mine/backmatter.tex
 	cp $< $@
