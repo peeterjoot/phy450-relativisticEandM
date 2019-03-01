@@ -85,18 +85,18 @@ ds^2 = - (c^2 d\tau^2 + dx^2)
 \end{equation}
 %
 Now we have a structure that is familiar, and we can rotate as we normally do.  Prof does not want to go through the details of this ``trickery'' in class, but says to see the notes.  The end result is that we can transform as follows
-
+%
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:70}
 x' &= x \cosh \psi + ct \sinh \psi \\
 ct' &= x \sinh \psi + ct \cosh \psi
 \end{align}
-
+%
 which is analogous to a spatial rotation
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:70b}
 x' &= x \cos \alpha + y \sin \alpha \\
 y' &= -x \sin \alpha + y \cos \alpha
 \end{align}
-
+%
 
 There are some differences in sign as well, but the important feature to recall is that \(\cosh^2 x - \sinh^2 x = (1/4)( e^{2x} + e^{-2x} + 2 - e^{2x} - e^{-2x} + 2 ) = 1\).  We call these hyperbolic rotations, something that is simply a mathematical transformation.  Now we want to relate this to something physical.
 %
@@ -111,7 +111,7 @@ PICTURE (pg 32): \(O'\) frame translating along \(x\) axis with speed \(v_x\).  
 \end{equation}
 %
 However, using \eqnref{eqn:relativisticElectrodynamicsL4:70} we have for the (spatial) origin
-
+%
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:90}
 x' &= ct \sinh \psi \\
 ct' &= ct \cosh \psi,
@@ -122,12 +122,12 @@ so that
 \end{equation}
 %
 Using
-
+%
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:110}
 \cosh \psi &= \inv{\sqrt{1 - \tanh^2 \psi}} \\
 \sinh \psi &= \frac{\tanh \psi}{\sqrt{1 - \tanh^2 \psi}}
 \end{align}
-
+%
 Performing all the gory substitutions one gets
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:120}
 x' &=
@@ -141,11 +141,11 @@ ct' &=
 +
 \inv{\sqrt{1 - v_x^2/c^2}} c t
 \end{align}
-
+%
 PICTURE: Let us go to the more conventional case, where \(O\) is at rest and \(O'\) is moving with velocity \(v_x\).
 
 We achieve this by simply changing the sign of \(v_x\) in \eqnref{eqn:relativisticElectrodynamicsL4:120} above.  This gives us
-
+%
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:120b}
 x' &=
 \inv{\sqrt{1 - v_x^2/c^2}} x
@@ -158,7 +158,7 @@ ct' &=
 +
 \inv{\sqrt{1 - v_x^2/c^2}} c t
 \end{align}
-
+%
 We want some shorthand to make this easier to write and introduce
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL4:130}
@@ -166,19 +166,19 @@ We want some shorthand to make this easier to write and introduce
 \end{equation}
 %
 so that \eqnref{eqn:relativisticElectrodynamicsL4:120b} becomes
-
+%
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:140}
 x' &=  \gamma \left( x - \frac{v_x}{c} ct \right) \\
 ct' &=  \gamma \left( ct - \frac{v_x}{c} x \right)
 \end{align}
-
+%
 We started the class by saying these would generalize the Galilean transformations.  Observe that if we take \(c \rightarrow \infty\), we have \(\gamma \rightarrow 1\) and
-
+%
 \begin{align}\label{eqn:relativisticElectrodynamicsL4:150}
 x' &= x - v_x t + O((v_x/c)^2) \\
 t' &= t  + O(v_x/c)
 \end{align}
-
+%
 This is how to remember the signs.  We want things to match up with the non-relativistic limit.
 %
 \paragraph{Q: How do lines of constant \(x'\) and \(ct'\) look like on the \(x,ct\) spacetime diagram?}
@@ -188,7 +188,7 @@ Our starting point (again) is
 x' &=  \gamma \left( x - \frac{v_x}{c} ct \right) \\
 ct' &=  \gamma \left( ct - \frac{v_x}{c} x \right).
 \end{align}
-
+%
 What are the points with \(x' = 0\).  Those are the points where \(x = (v_x/c) c t\).  This is the \(ct' axis\).  That is the straight worldline
 
 PICTURE: worldline of \(O'\) origin.
