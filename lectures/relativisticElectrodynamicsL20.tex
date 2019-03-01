@@ -8,9 +8,9 @@
 \label{chap:relativisticElectrodynamicsL20}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relativisticElectrodynamicsL20.pdf}
 %\date{Mar 15, 2011}
-
+%
 \paragraph{Reading}
-
+%
 Covering chapter 8 material from the text \citep{landau1980classical}, and
 \popcite{RelEMpp147-165.pdf}{lecture notes RelEMpp147-165.pdf}.
 % EM fields of a moving source (147-148+HW5); a particle at rest (148); a constant velocity particle (149-152); behavior of EM fields ``at infinity'' for a general-worldline source and radiation (152-153) [Tuesday, Mar. 15]; radiated power (154); fields in the ``wave zone'' and discussions of approximations made (155-159); EM fields due to electric dipole radiation (160-163); Poynting vector, angular distribution, and power of dipole radiation (164-165) [Wednesday, Mar. 16...]
@@ -108,9 +108,9 @@ This is a physical requirement size of the wavelength of the emitter (if the wav
 %\frac{\omega_0}{c} &= \frac{2 \pi}{c T} \sim \inv{\lambda}
 
 \section{Putting the pieces together.  Potentials at a distance}
-
+%
 \paragraph{Moral:} We will utilize two expansions (we need two small parameters)
-
+%
 \begin{enumerate}
 \item \(\Abs{\Bx} \gg l\)
 \item \(\lambda \gg l\)
@@ -177,16 +177,15 @@ A^\alpha(\Bx, t)
 There is two tricks used here.  One was writing the unit vector \(\Be_\alpha = \spacegrad x^\alpha\).  The other was use of the continuity equation \(\PDi{t}{\rho} + \spacegrad \cdot \Bj = 0\).  This first trick was mentioned as one of the few tricks of physics that will often be repeated since there are not many good ones.
 
 With the first term vanishing on the boundary (since \(j^i\) is localized), and pulling the time derivatives out of the integral, we can summarize the dipole potentials as
-
 \boxedEquation{eqn:relativisticElectrodynamicsL20:250}{
 \begin{aligned}
 A^0(\Bx, t) &= \frac{Q\left(t - \frac{\Abs{\Bx} }{c}\right)}{\Abs{\Bx} } + \frac{\Bx \cdot \Bd\left(t - \frac{\Abs{\Bx} }{c}\right)}{\Abs{\Bx}^3} + \frac{\Bx \cdot \dot{\Bd}\left(t - \frac{\Abs{\Bx} }{c}\right)}{c \Abs{\Bx}^2} \\
 \BA(\Bx, t) &= \inv{c \Abs{\Bx} } \dot{\Bd}\left(t - \frac{\Abs{\Bx} }{c}\right).
 \end{aligned}
 }
-
+%
 \makeexample{Electric dipole radiation}{example:relativisticElectrodynamicsL20:1}{
-
+%
 PICTURE: two closely separated oppositely charges, wiggling along the line connecting them (on the z-axis).  \(-q\) at rest, while \(+q\) oscillates.
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:270}

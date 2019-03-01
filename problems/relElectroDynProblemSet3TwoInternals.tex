@@ -3,15 +3,15 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 
-
+%
 \makeproblem{Transformation properties of \( \BE, \BB \) again}{pr:relElectroDynProblemSet3:2}{
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet3:2a}
-
+%
 Use the form of \(F^{i j}\) from page 82 in the class notes, the transformation law for \(\Norm{ F^{i j} }\) given further down that same page, and the explicit form of the \(SO(1,3)\) matrix \(\hat{O}\) (say, corresponding to motion in the positive \(x_1\) direction with speed \(v\)) to derive the transformation law of the fields \(\BE\) and \(\BB\).  Use the transformation law to find the electromagnetic field of a charged particle moving with constant speed \(v\) in the positive \(x_1\) direction and check that the result agrees with the one that you obtained in Homework 2.
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet3:2b}
-
+%
 A particle is moving with velocity \(\Bv\) in perpendicular \(\BE\) and \(\BB\) fields, all given in some particular ``stationary'' frame of reference.
 
 \begin{enumerate}
@@ -21,10 +21,10 @@ A particle is moving with velocity \(\Bv\) in perpendicular \(\BE\) and \(\BB\) 
 \end{enumerate}
 
 } % makeproblem
-
+%
 \makeanswer{pr:relElectroDynProblemSet3:2}{
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:2a}
-
+%
 Given a transformation of coordinates
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1220}
@@ -173,7 +173,7 @@ B_y &\rightarrow \gamma ( B_y - (\Bbeta \cross \BE)_y ) \\
 B_z &\rightarrow \gamma ( B_z - (\Bbeta \cross \BE)_z ).
 \end{aligned}
 \end{equation}
-
+%
 For a vector \(\BA\), write \(\BA_\parallel = (\BA \cdot \vcap)\vcap\), \(\BA_\perp = \BA - \BA_\parallel\), allowing a compact description of the field transformation
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1380}
@@ -232,11 +232,11 @@ More explicitly with \(\BE = \frac{q}{r^3}(x, y, z)\) this is
 \end{equation}
 
 Comparing to Problem 3 in Problem set 2, I see that this matches the result obtained by separately transforming the gradient, the time partial, and the scalar potential.  Actually, if I am being honest, I see that I made a sign error in all the coordinates of \(\BE'\) when I initially did (this ungraded problem) in problem set 2.  That sign error should have been obvious by considering the \(v=0\) case which would have mysteriously resulted in inversion of all the coordinates of the observed electric field.
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:2b}
-
+%
 \paragraph{Part 1 and 2:} Existence of the transformation.
-
+%
 In the single particle Lorentz trajectory problem we wish to solve
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1500}
@@ -301,9 +301,9 @@ Observe that in the specific case where \(\BE \cdot \BB = 0\), as in this proble
 These and \(\BE \cdot \BB = 0\) are the invariants for this system.   If we have \(\BE^2 > \BB^2\) in one frame, we must also have \({\BE'}^2 > {\BB'}^2\) in another frame, still maintaining perpendicular fields.  In particular if \(\BB' = 0\) we maintain real eigenvalues.  Similarly if \(\BB^2 > \BE^2\) in some frame, we must always have imaginary eigenvalues, and this is also true in the \(\BE' = 0\) case.
 
 While the problem can be posed as a pure diagonalization problem (and even solved numerically this way for the general constant fields case), we can also work symbolically, thinking of the trajectories problem as simply seeking a transformation of frames that reduce the scope of the problem to one that is more tractable.  That does not have to be the linear transformation that diagonalizes the system.  Instead we are free to transform to a frame where one of the two fields \(\BE'\) or \(\BB'\) is zero, provided the invariants discussed are maintained.
-
+%
 \paragraph{Part 3:} Finding the boost velocity that wipes out one of the fields.
-
+%
 Let us now consider a Lorentz boost \(\hat{O}\), and seek to solve for the boost velocity that wipes out one of the fields, given the invariants that must be maintained for the system
 
 To make things concrete, suppose that our perpendicular fields are given by \(\BE = E \Be_2\) and \(\BB = B \Be_3\).
@@ -353,7 +353,7 @@ and
 &= B (-\alpha_1 \alpha_3, -\alpha_2 \alpha_3, \alpha_1^2 + \alpha_2^2)  \\
 \end{aligned}
 \end{equation}
-
+%
 Now, observe that \((\Bbeta \cross \BB)_\parallel \sim ((\Bv_0 \cross \BB) \cdot \Bv_0) \Bv_0\), but this is just zero.  So we have \((\Bbeta \cross \BB)_\parallel = \Bbeta \cross \BB\).  So our cross products terms are just
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3TwoInternals:2000}
@@ -390,9 +390,9 @@ B \alpha_3 (\alpha_1, \alpha_2, \alpha_3)
 - \gamma \frac{v_0^2}{c^2} E (-\alpha_3, 0, \alpha_1)
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Zero Electric field case}
-
+%
 Let us tackle the two cases separately.  First when \(\Abs{\BB} > \Abs{\BE}\), we can transform to a frame where \(\BE'=0\).  In coordinates from \eqnref{eqn:relElectroDynProblemSet3:1380b} this supplies us three sets of equations.  These are
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1660}
@@ -428,15 +428,13 @@ Our velocity was \(\Bv_0 = v_0 (\alpha_1, \alpha_2, \alpha_3)\) solving the prob
 \end{equation}
 
 It appears we may also pick the equality case, so one velocity (not unique) that should transform away the electric field is
-
 \boxedEquation{eqn:relElectroDynProblemSet3:1860}{
 \Bv_0 = c \sqrt{\Abs{\frac{E}{B}}} \Be_1 = \pm c \sqrt{\Abs{\frac{E}{B}}} \frac{\BE \cross \BB}{\Abs{\BE} \Abs{\BB}}.
 }
-
 This particular boost direction is perpendicular to both fields.  Observe that this highlights the invariance condition \(\Abs{\frac{E}{B}} < 1\) since we see this is required for a physically realizable velocity.  Boosting in this direction will reduce our problem to one that has only the magnetic field component.
-
+%
 \paragraph{Zero Magnetic field case}
-
+%
 Now, let us consider the case where we transform the magnetic field away, the case when our characteristic polynomial has strictly real eigenvalues \(\lambda = \pm \sqrt{\BE^2 - \BB^2}\).  In this case, if we write out our equations for the transformed magnetic field and require these to separately equal zero, we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1740}
@@ -470,15 +468,14 @@ In addition to the initial constraint that \(\Abs{\frac{B}{E}} < 1\), we have as
 \end{equation}
 
 Like before we can pick the equality \(\alpha_1^2 = 1\), yielding a boost direction of
-
 \boxedEquation{eqn:relElectroDynProblemSet3:1880}{
 \Bv_0 = c \sqrt{\Abs{\frac{B}{E}}} \Be_1 = \pm c \sqrt{\Abs{\frac{B}{E}}} \frac{\BE \cross \BB}{\Abs{\BE} \Abs{\BB}}.
 }
 
 Again, we see that the invariance condition \(\Abs{\BB} < \Abs{\BE}\) is required for a physically realizable velocity if that velocity is entirely perpendicular to the fields.
-
+%
 \paragraph{Notes on grading of my solution}
-
+%
 I lost two marks on this problem.  One for \eqnref{eqn:relElectroDynProblemSet3:1460} where he wanted primes on the variables
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1460b}

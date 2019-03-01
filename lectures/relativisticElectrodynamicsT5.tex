@@ -8,9 +8,9 @@
 \label{chap:relativisticElectrodynamicsT5}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relativisticElectrodynamicsT5.pdf}
 %\date{Mar 10, 2011}
-
+%
 \makeproblem{Angular momentum of EM fields}{pr:relativisticElectrodynamicsT5:0}{
-
+%
 (This was a worked problem covered in tutorial 5).
 
 Long solenoid of radius \(R\), n turns per unit length, current \(I\).  Coaxial with with solenoid are two long cylindrical shells of length \(l\) and \((\text{radius},\text{charge})\) of \((a, Q)\), and \((b, -Q)\) respectively, where \(a < b\).
@@ -19,43 +19,43 @@ When current is gradually reduced what happens?
 
 To determined this, compute the
 \makesubproblem{}{pr:relativisticElectrodynamicsT5:1:a}
-
+%
 initial Magnetic field,
-
+%
 \makesubproblem{}{pr:relativisticElectrodynamicsT5:1:b}
-
+%
 initial Electric field,
-
+%
 \makesubproblem{}{pr:relativisticElectrodynamicsT5:1:c}
-
+%
 Poynting vector before the current changes,
-
+%
 \makesubproblem{}{pr:relativisticElectrodynamicsT5:1:d}
-
+%
 momentum density of the EM fields,
-
+%
 \makesubproblem{}{pr:relativisticElectrodynamicsT5:1:e}
-
+%
 induced electric field after the current is changed, and
-
+%
 \makesubproblem{}{pr:relativisticElectrodynamicsT5:1:f}
-
+%
 the torque and angular momentum induced by the fields.
 
 } % makeproblem
-
+%
 \makeanswer{pr:relativisticElectrodynamicsT5:0}{
-
+%
 \makeSubAnswer{Initial Magnetic field}{pr:relativisticElectrodynamicsT5:1:a}
-
+%
 For the initial static conditions where we have only a (constant) magnetic field, the Maxwell-Ampere equation takes the form
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT5:10}
 \spacegrad \cross \BB = \frac{4 \pi}{c} \Bj
 \end{equation}
-
+%
 \paragraph{On the name of this equation}.  In notes from one of the lectures I had this called Maxwell-Faraday equation, despite the fact that this is not the one that Maxwell made his displacement current addition.  Did the Professor call it that, or was this my addition?  In \citep{wiki:Faraday} Faraday's law is also called the Maxwell-Faraday equation.  \citep{fleisch2007ssg} calls this the Ampere-Maxwell equation, which makes more sense.
-
+%
 Put into integral form by integrating over an open surface we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT5:30}
@@ -105,9 +105,9 @@ Our magnetic field is constant while \(I\) is constant, and in vector form this 
 \begin{equation}\label{eqn:relativisticElectrodynamicsT5:110}
 \BB = \frac{4 \pi n I}{c} \zcap
 \end{equation}
-
+%
 \makeSubAnswer{Initial Electric field}{pr:relativisticElectrodynamicsT5:1:b}
-
+%
 How about the electric fields?
 
 For \(r < a\), and \(r > b\) we have \(\BE = 0\) since there is no charge enclosed by any Gaussian surface that we choose.
@@ -123,9 +123,9 @@ so we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsT5:150}
 \BE = \frac{2 Q }{r l} \rcap.
 \end{equation}
-
+%
 \makeSubAnswer{Poynting vector before the current changes}{pr:relativisticElectrodynamicsT5:1:c}
-
+%
 Our Poynting vector, the energy flux per unit time, is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT5:151}
@@ -144,7 +144,7 @@ This is non-zero only in the region both between the solenoid and the enclosing 
 \end{equation}
 
 (since \(\rcap \cross \phicap = \zcap\), so \(\zcap \cross \rcap = \phicap\) after cyclic permutation)
-
+%
 \paragraph{A motivational aside:  Momentum density}
 \index{momentum density}
 
@@ -180,7 +180,7 @@ This justifies calling the quantity
 \end{equation}
 
 the momentum density.
-
+%
 \makeSubAnswer{Momentum density of the EM fields}{pr:relativisticElectrodynamicsT5:1:d}
 So we label our scaled Poynting vector the momentum density for the field
 \begin{equation}\label{eqn:relativisticElectrodynamicsT5:270}
@@ -200,7 +200,7 @@ This gives us
 \BL_{\text{EM}} = -\frac{2 Q n I}{c^2 l} \zcap = \text{constant}.
 \end{equation}
 Note that this is the angular momentum density in the region between the solenoid and the inner cylinder, between \(z = 0\) and \(z = l\).  Outside of this region, the angular momentum density is zero.
-
+%
 \makeSubAnswer{Induced electric field after the current is changed}{pr:relativisticElectrodynamicsT5:1:e}
 When we turn off (or change) \(I\), some of the magnetic field \(\BB\) will be converted into electric field \(\BE\) according to Faraday's law
 %
@@ -294,9 +294,9 @@ Summarizing we have
 \end{array}
 \right.
 \end{equation}
-
+%
 \makeSubAnswer{Torque and angular momentum induced by the fields}{pr:relativisticElectrodynamicsT5:1:f}
-
+%
 Our torque \(\BN = \Br \cross \BF = d\BL/dt\) on the outer cylinder (radius \(b\)) that is induced by changing the current is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT5:511}

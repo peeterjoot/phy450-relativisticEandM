@@ -8,9 +8,9 @@
 \label{chap:relativisticElectrodynamicsL15}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relativisticElectrodynamicsL15.pdf}
 %\date{Mar 1, 2011}
-
+%
 \paragraph{Reading}
-
+%
 Covering chapter 6 material from the text \citep{landau1980classical}, and
 \popcite{RelEMpp114-127.pdf}{lecture notes RelEMpp114-127.pdf}.
 %: reminder on wave equations (115); reminder on Fourier series and integral (115-117); Fourier expansion of the EM potential in Coulomb gauge and equation of motion for the spatial Fourier components (118-119); the general solution of Maxwell's equations in vacuum (120-121) [Tuesday, Mar. 1]
@@ -19,7 +19,7 @@ Covering chapter 6 material from the text \citep{landau1980classical}, and
 \index{wave equation}
 
 Maxwell's equations in vacuum lead to Coulomb gauge and the Lorentz gauge.
-
+%
 \paragraph{Coulomb gauge}
 \index{Coulomb gauge}
 %
@@ -30,7 +30,7 @@ A^0 &= 0 \\
 \left( \inv{c^2} \PDSq{t}{} - \Delta \right) \BA &= 0
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Lorentz gauge}
 \index{Lorentz gauge}
 %
@@ -94,7 +94,7 @@ It is often convenient to impose periodic boundary conditions
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:170}
 \BA(\Bx + \Be_i L) = \BA(\Bx), i = 1,2,3
 \end{equation}
-
+%
 \paragraph{In one dimension}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:190}
@@ -134,9 +134,9 @@ The inverse transform is obtained by integration over some length \(L\) interval
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:310}
 \tilde{f}_{k_n} = \inv{L} \int_{-L/2}^{L/2} dx e^{-i k_n x} f(x)
 \end{equation}
-
+%
 \paragraph{Verify:}
-
+%
 We should be able to recover the Fourier coefficient by utilizing the above
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:880}
@@ -187,9 +187,9 @@ f(x) &= \int_{-\infty}^\infty \frac{dk}{2\pi} \tilde{f}(k) e^{i k x} \\
 \tilde{f}(k) &= \int_{-\infty}^\infty dx f(x) e^{-i k x}
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Verify:}
-
+%
 A loose verification of the inversion relationship (the most important bit) is possible by substitution
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:900}
@@ -209,7 +209,7 @@ Now we employ the old physics ploy where we identify
 \end{equation}
 
 With that we see that we recover the function \(f(x)\) above as desired.
-
+%
 \paragraph{In three dimensions}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:470}
@@ -220,7 +220,7 @@ With that we see that we recover the function \(f(x)\) above as desired.
 \tilde{\BA}(\Bx, t) &= \int d^3 \Bx \BA(\Bx, t) e^{-i \Bk \cdot \Bx}
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Application to the wave equation}
 \index{wave equation}
 %
@@ -366,9 +366,9 @@ e^{i (\Bk \cdot \Bx + \omega_k t)} \Bbeta^\conj(-\Bk)
 +e^{i (\Bk \cdot \Bx - \omega_k t)} \Bbeta(\Bk)
 \right)
 \end{equation}
-
+%
 \paragraph{Claim:}
-
+%
 This is now manifestly real.  To see this, consider the first term with \(\Bk = -\Bk'\), noting that \(\int_{-\infty}^\infty dk = \int_{\infty}^\infty -dk' = \int_{-\infty}^\infty dk' \) with \(dk = -dk'\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:860}
@@ -376,9 +376,9 @@ This is now manifestly real.  To see this, consider the first term with \(\Bk = 
 \end{equation}
 
 Dropping primes this is the conjugate of the second term.
-
+%
 \paragraph{Claim:}
-
+%
 We have \(\Bk \cdot \Bbeta(\Bk)  = 0\).
 
 Since we have \(\Bk \cdot \tilde{\BA}(\Bk, t) = 0\), \eqnref{eqn:relativisticElectrodynamicsL15:650} implies that we have \(\Bk \cdot \Ba_{\pm}(\Bk) = 0\).  With each of these vector integration constants being perpendicular to \(\Bk\) at that point in momentum space, so must be the linear combination of these constants \(\Bbeta(\Bk)\).

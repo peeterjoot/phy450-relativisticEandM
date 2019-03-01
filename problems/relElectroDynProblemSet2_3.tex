@@ -3,27 +3,27 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 \makeproblem{Transformation of fields.}{pr:relElectroDynProblemSet2:3}{
-
+%
 In class, we introduced the 4-vector potential \(A^i\) and its transformation law under Lorentz transformations.  While we have not yet discussed how \(\BE\) and \(\BB\) transform, knowing how \(A^i\) transforms is enough to solve some concrete problems.  Suppose in one (unprimed) frame there is a charge at rest, which creates an electrostatic field: \(A^0 = \phi = \frac{q}{r}, \BA = 0\).
 
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet2:3a}
-
+%
 Find the values of \(\BE\) and \(\BB\) in this frame.
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet2:3b}
-
+%
 Consider now the same field in a (primed) frame moving in the \(x\)-direction with velocity \(v\).  Using the transformation law of the vector potential, find \({A^i}'\) in the primed frame.
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet2:3c}
-
+%
 Use the relations between electric and magnetic field strengths and vector potential (valid in every frame) to find the electric and magnetic fields in the primed frame (i.e. find the electromagnetic field of a moving charge).  Sketch the lines of constant electric and magnetic field and comment on the result.
 
 } % makeproblem
-
+%
 \makeanswer{pr:relElectroDynProblemSet2:3}{
 \makeSubAnswer{}{pr:relElectroDynProblemSet2:3a}
-
+%
 In the unprimed frame we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1210}
@@ -41,9 +41,9 @@ and
 \BB = \spacegrad \cross \BA = 0
 \end{aligned}
 \end{equation}
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet2:3b}
-
+%
 The coordinates in the moving frame, assuming the frames are overlapping at \(t=0\), are related to the unprimed coordinates by
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:930}
@@ -199,9 +199,9 @@ Now for the magnetic field.  We want
 \end{equation}
 
 FIXME: sketch and comment.
-
+%
 \paragraph{Notes on grading of my solution}
-
+%
 I lost two marks for not reducing my solution for the trajectory in \eqnref{eqn:relElectroDynProblemSet2:910} to \(x(t), y(t)\) or \(x(y)\) form.  That is difficult in the form that I solved this for arbitrary initial conditions (this is easy for \(u^i = (1, 0, 0, 0)\) when \(\BB = 0\)).  I will be curious to see the Professor's approach later.
 
 FIXME: I had expanded out the trajectory in the way that appears to have been desired on paper for the special case above.  Re-do this and include it here (at least as a check of my final result since I switched the orientation of the fields when I typed it up).  Also include a similar special case expansion for the case where the invariant \(E^2 - B^2\) is negative.

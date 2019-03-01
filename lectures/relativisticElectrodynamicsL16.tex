@@ -9,9 +9,9 @@
 \label{chap:relativisticElectrodynamicsL16}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relativisticElectrodynamicsL16.pdf}
 %\date{Mar 2, 2011}
-
+%
 \paragraph{Reading}
-
+%
 Covering chapter 6 material from the text \citep{landau1980classical}, and
 \popcite{RelEMpp114-127.pdf}{lecture notes RelEMpp114-127.pdf}.
 %: properties of monochromatic plane EM waves (122-124); energy and energy flux of the EM field and energy conservation from the equations of motion (125-127)  [Wednesday, Mar. 2]
@@ -106,7 +106,7 @@ so
 \Bbeta = (0, \beta_y, \beta_z)
 \end{equation}
 \paragraph{Claim:} The Coulomb gauge \(0 = \spacegrad \cdot \BA = (\Bbeta \cdot \Bp)\sin(\omega t - \Bp \cdot \Bx)\) implies that there are two linearly independent choices of \(\Bbeta\) and \(\Bp\).
-
+%
 FIXME: missing exactly how this is?
 
 PICTURE:
@@ -119,14 +119,12 @@ PICTURE:
 &= -\PD{ct}{\BA}  \\
 &= -\frac{\Bbeta}{c} \PD{t}{} \cos(\omega t - \Bp \cdot \Bx) \\
 &= \inv{c} \Bbeta \omega
-\sin(\omega t - \Bp \cdot \Bx)
+\sin(\omega t - \Bp \cdot \Bx).
 \end{aligned}
 \end{equation}
-
-(recall: \(\omega(\Bp) = c\Abs{\Bp}\))
-
+Recall: \(\omega(\Bp) = c\Abs{\Bp}\), so
 \boxedEquation{eqn:relativisticElectrodynamicsL16:250}{
-\BE = \Bbeta \Abs{\Bp} \sin(\omega t - \Bp \cdot \Bx)
+\BE = \Bbeta \Abs{\Bp} \sin(\omega t - \Bp \cdot \Bx).
 }
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:900}
@@ -135,12 +133,11 @@ PICTURE:
 &= \spacegrad \cross \BA \\
 &= \spacegrad \cross ( \Bbeta \cos(\omega t - \Bp \cdot \Bx) \\
 &= (\spacegrad \cos(\omega t - \Bp \cdot \Bx)) \cross \Bbeta \\
-&= \sin(\omega t - \Bp \cdot \Bx) \Bp \cross \Bbeta
+&= \sin(\omega t - \Bp \cdot \Bx) \Bp \cross \Bbeta.
 \end{aligned}
 \end{equation}
-
 \boxedEquation{eqn:relativisticElectrodynamicsL16:270}{
-\BB = (\Bp \cross \Bbeta) \sin(\omega t - \Bp \cdot \Bx)
+\BB = (\Bp \cross \Bbeta) \sin(\omega t - \Bp \cdot \Bx).
 }
 
 Observe also that \(\BE\) and \(\BB\) are not independent.  We have
@@ -148,11 +145,11 @@ Observe also that \(\BE\) and \(\BB\) are not independent.  We have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:271}
 \hat{\Bp} \cross \BE = (\hat{\Bp} \cross \Bbeta) \Abs{\Bp} \sin(\omega t - \Bp \cdot \Bx) = \BB
 \end{equation}
-
+%
 \paragraph{Example:} \(\Bp \parallel \Be_1\), \(\BB \parallel \Be_2\) or \(\Be_3\)
-
+%
 (since we have two linearly independent choices)
-
+%
 \paragraph{Example:} take \(\Bbeta \parallel \Be_2\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:290}
@@ -239,9 +236,9 @@ T = \frac{ 2 \pi} {k c} = \frac{\lambda_\Bk}{c}
 \section{Energy and momentum of EM waves}
 \index{energy}
 \index{momentum}
-
+%
 \paragraph{Classical mechanics motivation}
-
+%
 To motivate our approach, let us recall one route from our equations of motion in classical mechanics, to the energy conservation relation.  Our EOM in one dimension is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:450}
@@ -267,9 +264,9 @@ Taking differences, we have
 \end{equation}
 
 which allows us to find a conservation relationship that we label energy conservation (\(\calE = K + \calU\)).
-
+%
 \paragraph{Doing the same thing for Maxwell's equations}
-
+%
 Poppitz claims we have very little tricks in physics, and we really just do the same thing for our EM case.  Our equations are a bit messier to start with, and for the vacuum, our non-divergence equations are
 %label{eqn:relativisticElectrodynamicsL13:410}
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:530}
@@ -294,7 +291,7 @@ and then take differences
 + \BE \cdot \PD{t}{\BE} \right) + \BB \cdot (\spacegrad \cross \BE) -\BE \cdot (\spacegrad \cross \BB) =
 -\frac{4 \pi}{c} \BE \cdot \Bj.
 \end{equation}
-
+%
 \paragraph{Claim:}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:590}
@@ -363,9 +360,9 @@ We make the interpretations
 - \int_V d^3 \Bx \BE \cdot \Bj &= \mbox{work done}
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Justifying the sign, and clarifying work done by what, above.}
-
+%
 Recall that the energy term of the Lorentz force equation was
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:820}
@@ -382,9 +379,9 @@ so
 \end{equation}
 
 represents the rate of change of kinetic energy of the charged particles as they move through through a field.  If this is positive, then the charge distribution has gained energy.  The negation of this quantity would represent energy transfer to the field from the charge distribution, the work done \textunderline{on the field} by the charge distribution.
-
+%
 \paragraph{Aside: As a four vector relationship}
-
+%
 In tutorial today (after this lecture, but before typing up these lecture notes in full), we used \(\calU\) for the energy density term above
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:650b}

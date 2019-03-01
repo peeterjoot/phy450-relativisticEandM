@@ -8,9 +8,9 @@
 \label{chap:relativisticElectrodynamicsL13}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relativisticElectrodynamicsL13.pdf}
 %\date{Feb 15, 2011}
-
+%
 \paragraph{Reading}
-
+%
 Covering chapter 4 material from the text \citep{landau1980classical}, and
 \popcite{RelEMpp103-113.pdf}{lecture notes RelEMpp103-113.pdf}.
 %: variational principle for the electromagnetic field and the relevant boundary conditions (103-105); the second set of Maxwell's equations from the variational principle (106-108); Maxwell's equations in vacuum and the wave equation in the non-relativistic Coulomb gauge (109-111)
@@ -62,7 +62,7 @@ Only the \(S_{\text{particles}}\) and \(S_{\text{interaction}}\) depend on \(x_A
 
 \section{The field action variation}
 \index{action!field}
-
+%
 \paragraph{Today:} We will find the EOM for \(A^i(x)\).  The dynamical degrees of freedom are \(A^i(\Bx,t)\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:110}
@@ -181,20 +181,16 @@ Because we have specified that \(A^i\) is zero on the boundary, so is \(F^{ij}\)
 \end{equation}
 
 This gives us
-
 \boxedEquation{eqn:relativisticElectrodynamicsL13:210}{
-\partial_i F^{ij} = \frac{4 \pi}{c} j^j
+\partial_i F^{ij} = \frac{4 \pi}{c} j^j.
 }
-
 \section{Unpacking these}
-
 Recall that the Bianchi identity
 \index{Bianchi identity}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:230}
 \epsilon^{ijkl} \partial_j F_{kl} = 0,
 \end{equation}
-
 gave us
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:250}
@@ -275,30 +271,26 @@ or in vector form
 \end{equation}
 
 Summarizing what we know so far, we have
-
 \boxedEquation{eqn:relativisticElectrodynamicsL13:390}{
 \begin{aligned}
 \partial_i F^{ij} &= \frac{4 \pi}{c} j^j \\
-\epsilon^{ijkl} \partial_j F_{kl} &= 0
+\epsilon^{ijkl} \partial_j F_{kl} &= 0,
 \end{aligned}
 }
-
 or in vector form
-
 \boxedEquation{eqn:relativisticElectrodynamicsL13:410}{
 \begin{aligned}
 \spacegrad \cdot \BE &= 4 \pi \rho \\
 \spacegrad \cross \BB -\inv{c} \PD{t}{\BE} &= \frac{4 \pi}{c} \Bj \\
 \spacegrad \cdot \BB &= 0 \\
-\spacegrad \cross \BE +\inv{c} \PD{t}{\BB} &= 0
+\spacegrad \cross \BE +\inv{c} \PD{t}{\BB} &= 0.
 \end{aligned}
 }
-
 \section{Speed of light}
 \index{Speed of light}
-
+%
 \paragraph{Claim}: ``\(c\)'' is the speed of EM waves in vacuum.
-
+%
 Study equations in vacuum (no sources, so \(j^i = 0\)) for \(A^i = (\phi, \BA)\).
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:430}
@@ -381,10 +373,10 @@ Can choose \(\chi(\Bx, t)\) to make \(\phi' = 0\) (\(\forall \phi \exists \chi, 
 \end{equation}
 
 Can also find a transformation that also allows \(\spacegrad \cdot \BA = 0\)
-
+%
 \paragraph{Q:} What would that second transformation be explicitly?
 \paragraph{A:} To be revisited next lecture, when this is covered in full detail.
-
+%
 This is the Coulomb gauge
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:570}

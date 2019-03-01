@@ -2,9 +2,9 @@
 % Copyright © 2012 Peeter Joot.  All Rights Reserved.
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
-
+%
 \makeproblem{Spherical EM waves}{pr:relElectroDynProblemSet4:2}{
-
+%
 Suppose you are given:
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4TwoInternals:400}
@@ -15,26 +15,26 @@ Suppose you are given:
 \end{equation}
 
 where \(\omega = k/c\) and \(\phicap\) is the unit vector in the \(\phi\)-direction.  This is a simple example of a spherical wave.
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet4:2a}
-
+%
 Show that \(\vec{E}\) obeys all four Maxwell equations in vacuum and find the associated magnetic field.
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet4:2b}
-
+%
 Calculate the Poynting vector.  Average \(\vec{S}\) over a full cycle to get the intensity vector \(\vec{I} \equiv \expectation{\vec{S}}\).  Where does it point to?  How does it depend on \(r\)?
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet4:2c}
-
+%
 Integrate the intensity vector flux through a spherical surface centered at the origin to find the total power radiated.
 
 } % makeproblem
-
+%
 \makeanswer{pr:relElectroDynProblemSet4:2}{
 \makeSubAnswer{}{pr:relElectroDynProblemSet4:2a}
-
+%
 \paragraph{Maxwell equation verification and magnetic field}
-
+%
 Our vacuum Maxwell equations to verify are
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4TwoInternals:420}
@@ -81,9 +81,9 @@ A \frac{\sin\theta}{r} \left( \cos(k r - \omega t) - \inv{k r} \sin(k r - \omega
 We have a zero divergence since the component \(E_\phi\) has no \(\phi\) dependence (whereas \(\vec{E}\) itself does since the unit vector \(\phicap = \phicap(\phi)\)).
 
 All of the rest of Maxwell's equations require \(\vec{B}\) so we will have to first calculate that before progressing further.
-
+%
 \paragraph{A aside on approaches attempted to find \texorpdfstring{\(\vec{B}\)}{B}}
-
+%
 I tried two approaches without success to calculate \(\vec{B}\).  First I hoped that I could just integrate \(-\vec{E}\) to obtain \(\vec{A}\) and then take the curl.  Doing so gave me a result that had \(\grad \cross \vec{B} \ne 0\).  I hunted for an algebraic error that would account for this, but could not find one.
 
 The second approach that I tried, also without success, was to simply take the cross product \(\rcap \cross \vec{E}\).  This worked in the monochromatic plane wave case where we had
@@ -96,9 +96,9 @@ The second approach that I tried, also without success, was to simply take the c
 \end{equation}
 
 since one can easily show that \(\vec{B} = \vec{k} \cross \vec{E}\).  Again, I ended up with a result for \(\vec{B}\) that did not have a zero divergence.
-
+%
 \paragraph{Finding \texorpdfstring{\(\vec{B}\)}{B} with a more systematic approach}
-
+%
 Following \citep{jackson1975cew} \S 16.2, let us try a phasor approach, assuming that all the solutions, whatever they are, have all the time dependence in a \(e^{-i\omega t}\) term.
 
 Let us write our fields as
@@ -301,7 +301,7 @@ A \sin\theta e^{i k r}
 \end{equation}
 
 FIXME: Somewhere I must have made a sign error, because these are not matching!  Have an extra \(1/r^3\) term and the wrong sign on the \(1/r\) term.
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet4:2b}
 %Poynting and intensity
 
@@ -468,9 +468,9 @@ We can read off the intensity directly
 \frac{A^2 c \sin^2 \theta}{2 \pi r^2}
 \left( 1 + \frac{2}{k^2 r^2} \right) \rcap
 \end{equation}
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet4:2c}
-
+%
 %Find the power
 
 Through a surface of radius \(r\), integration of the intensity vector \eqnref{eqn:relElectroDynProblemSet4TwoInternals:680} is
@@ -502,9 +502,9 @@ Our average power through the surface is therefore
 \frac{4 A^2 c }{3}
 \left( 1 + \frac{2}{k^2 r^2} \right) \rcap.
 \end{equation}
-
+%
 \paragraph{Notes on grading of my solution}
-
+%
 This was the graded portion.
 
 FIXME1: I lost a mark in the spot I expected, where I failed to verify one of the Maxwell equations.  I will still need to figure out what got messed up there.

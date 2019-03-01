@@ -3,23 +3,23 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 \makeproblem{Toy GPS model}{pr:relElectroDynProblemSet1:3}{
-
+%
 A toy model of a GPS system has satellites moving in a straight line with constant velocity \(V_x\) and at a constant height \(h\) (measured, e.g., along the y-axis) above ``ground'' (the x-axis).  The satellites broadcast the time in their rest frame as well as their location at a time of broadcast.  Imagine a person on the ground receives simultaneously broadcasts from two satellites, \(A\) and \(B\), reporting their locations \(x_A'\) and \(x_B'\) as well as times of broadcast (which happen to be equal), \(t_A' = t_B'\).	
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet1:3:a}
-
+%
 Find a condition determining your position in \(x\).  Evaluate it to find your deviation from the midpoint between the satellites to first order in \(V_x/c\).
-
+%
 \makesubproblem{}{pr:relElectroDynProblemSet1:3:b}
-
+%
 For some real numbers, note that in reality there are 24 satellites, moving with \(V ~4 \text{km}/s\), a distance \(R \approx 2.7 \times 10^4 \text{km}\).  Use these numbers and the result from the previous problem (assuming a flat Earth, to be sure...) to get an idea whether (special) relativistic effects are important for the typical modern GPS accuracy of order 10 m (or less)?
 
 } % makeproblem
-
+%
 \makeanswer{pr:relElectroDynProblemSet1:3}{
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet1:3:a}
-
+%
 We are looking for a worldpoints \((ct', x', y')\) in satellite frame on the light cone emanating from the satellite worldpoints \((ct_A', x_A', y_A')\), and \((ct_B', x_B', y_B')\).  These are
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet1:1200}
@@ -141,9 +141,9 @@ x_0 = \inv{\gamma} x_m \mp \beta \sqrt{{L'}^2/4 + h^2}
 \end{equation}
 
 FIXME: Which sign is correct for this problem?  I had guess the negative sign.  Fixing that is probably the toughest part of this problem!
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet1:3:b}
-
+%
 FIXME: Had hand written notes for this part of the problem, with how I'd attempted it first (considering the actual geometric problem in 3D.)
 
 } % makeanswer

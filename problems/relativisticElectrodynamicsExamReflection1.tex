@@ -2,25 +2,25 @@
 % Copyright © 2012 Peeter Joot.  All Rights Reserved.
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
-
+%
 \makeproblem{Charged particle in a circle}{pr:relativisticElectrodynamicsExamReflection:1}{
-
+%
 From the 2008 PHY453 exam, given a particle of charge \(q\) moving in a circle of radius \(a\) at constant angular frequency \(\omega\).
-
+%
 \makesubproblem{}{pr:relativisticElectrodynamicsExamReflection:1:a}
-
+%
 Find the Lienard-Wiechert potentials for points on the z-axis.
 \makesubproblem{}{pr:relativisticElectrodynamicsExamReflection:1:b}
-
+%
 Find the electric and magnetic fields at the center.
 } % makeproblem
-
+%
 \makeanswer{pr:relativisticElectrodynamicsExamReflection:1}{
-
+%
 When I tried this I did it for points not just on the z-axis.  It turns out that we also got this question on the exam (but stated slightly differently).  Since I will not get to see my exam solution again, let us work through this at a leisurely rate, and see if things look right.  The problem as stated in this old practice exam is easier since it does not say to calculate the fields from the four potentials, so there was nothing preventing one from just grinding away and plugging stuff into the Lienard-Wiechert equations for the fields (as I did when I tried it for practice).
-
+%
 \makeSubAnswer{The potentials.}{pr:relativisticElectrodynamicsExamReflection:1:a}
-
+%
 Let us set up our coordinate system in cylindrical coordinates.  For the charged particle and the point that we measure the field, with \(i = \Be_1 \Be_2\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:10}
@@ -120,7 +120,6 @@ R^\conj = \sqrt{z^2 + \rho^2 + a^2 - 2 \rho a \cos( \phi - \omega t_r ) }
 \end{equation}
 
 Writing \(k = \omega/c\), and having a peek back at \eqnref{eqn:relativisticElectrodynamicsExamReflection:50}, our potentials are now solved for
-
 \boxedEquation{eqn:relativisticElectrodynamicsExamReflection:499}{
 \begin{aligned}
 A^0 &= \frac{q}
@@ -130,25 +129,22 @@ A^0 &= \frac{q}
 }
 
 The caveat is that \(t_r\) is only specified implicitly, according to
-
 \boxedEquation{eqn:relativisticElectrodynamicsExamReflection:520}{
 c t_r = c t - \sqrt{z^2 + \rho^2 + a^2 - 2 \rho a \cos( \phi - k c t_r ) }.
 }
 
 There does not appear to be much hope of solving for \(t_r\) explicitly in closed form.
-
+%
 \makeSubAnswer{}{pr:relativisticElectrodynamicsExamReflection:1:b}
-
+%
 \paragraph{General fields for this system}
-
+%
 With
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:540}
 \BR^\conj = \BR - \frac{\Bv}{c} R,
 \end{equation}
-
 the fields are
-
 \boxedEquation{eqn:relativisticElectrodynamicsExamReflection:560}{
 \begin{aligned}
 \BE &= q (1 - \Bv^2/c^2) \frac{\BR^\conj}{{R^\conj}^3} + \frac{q}{{R^\conj}^3} \BR \cross (\BR^\conj \cross \dot{\Bv}/c^2) \\
@@ -329,9 +325,9 @@ c t_r = c t - \sqrt{z^2 + a^2 }
 \end{subequations}
 
 The magnetic term here looks like it can be reduced a bit.
-
+%
 \paragraph{An approximation near the center}
-
+%
 Unlike the old exam I did, where it did not specify that the potentials had to be used to calculate the fields, and the problem was reduced to one of algebraic manipulation, our exam explicitly asked for the potentials to be used to calculate the fields.
 
 There was also the restriction to compute them near the center.  Setting \(\rho = 0\) so that we are looking only near the z-axis, we have
@@ -477,9 +473,9 @@ However, if I do this check I get
 \end{equation}
 
 %Did I get my electric field calculation wrong?  Tricky to get this all right.  With so much grunt work calculation involved, perhaps its time to give up and resort to something like Mathematica.
-
+%
 \paragraph{Without geometric algebra}
-
+%
 I tried the problem of calculating the Lienard-Wiechert potentials for circular motion once again in \citep{gabookII:matrixVectorPotentials} but with the added generalization that allowed the particle to have radial or z-axis motion.  Really that was no longer a circular motion problem, but really just a calculation where I was playing with the use of cylindrical coordinates to describe the motion.
 
 It occurred to me that this can be done without any use of Geometric Algebra (or Pauli matrices), which is probably how I should have attempted it on the exam.  Let us use a hybrid coordinate vector and complex number representation to describe the particle position

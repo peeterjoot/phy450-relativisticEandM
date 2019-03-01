@@ -7,11 +7,11 @@
 \label{chap:relElectroDynProblemSet3}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relElectroDynProblemSet3.pdf}
 %\date{Feb 15, 2011}
-
+%
 \makeproblem{Fun with \( \epsilon_{\alpha\beta\gamma}, \epsilon^{ijkl}, F_{ij} \), and the duality of Maxwell's equations in vacuum}{pr:relElectroDynProblemSet3:1}{
-
+%
 \makesubproblem{rank 3 spatial antisymmetric tensor identities}{pr:relElectroDynProblemSet3:1a}
-
+%
 Prove that
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:10}
@@ -38,39 +38,39 @@ Also show that
 \end{equation}
 
 (Einstein summation implied all throughout this problem).
-
+%
 \makesubproblem{Determinant of three by three matrix}{pr:relElectroDynProblemSet3:1b}
-
+%
 Prove that for any \(3 \times 3\) matrix \(\Norm{A_{\alpha\beta}}\): \(\epsilon_{\mu\nu\lambda} A_{\alpha \mu} A_{\beta\nu} A_{\gamma\lambda} = \epsilon_{\alpha \beta \gamma} \Det A\) and that \(\epsilon_{\alpha\beta\gamma} \epsilon_{\mu\nu\lambda} A_{\alpha \mu} A_{\beta\nu} A_{\gamma\lambda} = 6 \Det A\).
-
+%
 \makesubproblem{Rotational invariance of 3D antisymmetric tensor}{pr:relElectroDynProblemSet3:1c}
-
+%
 Use the previous results to show that \(\epsilon_{\mu\nu\lambda}\) is invariant under rotations.
-
+%
 \makesubproblem{Rotational invariance of 4D antisymmetric tensor}{pr:relElectroDynProblemSet3:1d}
-
+%
 Use the previous results to show that \(\epsilon_{i j k l}\) is invariant under Lorentz transformations.
-
+%
 \makesubproblem{Sum of contracting symmetric and antisymmetric rank 2 tensors}{pr:relElectroDynProblemSet3:1e}
-
+%
 Show that \(A^{ij} B_{ij} = 0\) if \(A\) is symmetric and \(B\) is antisymmetric.
-
+%
 \makesubproblem{Characteristic equation for the electromagnetic strength tensor}{pr:relElectroDynProblemSet3:1f}
-
+%
 Show that \(P(\lambda) = \Det \Norm{F_{i j} - \lambda g_{i j}}\) is invariant under Lorentz transformations.  Consider the polynomial of \(P(\lambda)\), also called the characteristic polynomial of the matrix \(\Norm{F_{i j}}\).  Find the coefficients of the expansion of \(P(\lambda)\) in powers of \(\lambda\) in terms of the components of \(\Norm{F_{i j}}\).  Use the result to argue that \(\BE \cdot \BB\) and \(\BE^2 - \BB^2\) are Lorentz invariant.
-
+%
 \makesubproblem{Show that the pseudoscalar invariant has only boundary effects}{pr:relElectroDynProblemSet3:1g}
-
+%
 Use integration by parts to show that \(\int d^4 x \epsilon^{i j k l} F_{ i j } F_{ k l }\) only depends on the values of \(A^i(x)\) at the ``boundary'' of spacetime (e.g. the ``surface'' depicted on page 105 of the notes) and hence does not affect the equations of motion for the electromagnetic field.
 \makesubproblem{Electromagnetic duality transformations}{pr:relElectroDynProblemSet3:1h}
-
+%
 Show that the Maxwell equations in vacuum are invariant under the transformation: \(F_{i j} \rightarrow \tilde{F}_{i j}\), where \(\tilde{F}_{i j} = \inv{2} \epsilon_{i j k l} F^{k l}\) is the dual electromagnetic stress tensor.  Replacing \(F\) with \(\tilde{F}\) is known as ``electric-magnetic duality''.  Explain this name by considering the transformation in terms of \(\BE\) and \(\BB\).  Are the Maxwell equations with sources invariant under electric-magnetic duality transformations?
 
 } % makeproblem
-
+%
 \makeanswer{pr:relElectroDynProblemSet3:1}{
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:1a}
-
+%
 We can explicitly expand the (implied) sum over indices \(\gamma\).  This is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:70}
@@ -101,7 +101,6 @@ whereas for \((\mu,\nu) = (\beta,\alpha)\) we have
 \end{equation}
 
 Our sum has value one when \((\alpha, \beta)\) matches \((\mu, \nu)\), and value minus one for when \((\mu, \nu)\) are permuted.  We can summarize this, by saying that when \(\alpha \ne \beta\) we have
-
 \boxedEquation{eqn:relElectroDynProblemSet3:150}{
 \epsilon_{\alpha \beta \gamma}
 \epsilon_{\mu \nu \gamma}
@@ -292,15 +291,14 @@ and the other of which is by introducing free indices for \(1\) and \(2\), and s
 \begin{equation}\label{eqn:relElectroDynProblemSet3:450}
 A^{1 s} A^{2 t} -A^{1 t} A^{2 s}
 =
-A^{a s} A^{b t} \epsilon_{a b}
+A^{a s} A^{b t} \epsilon_{a b}.
 \end{equation}
 
 So, we have
-
 \boxedEquation{eqn:relElectroDynProblemSet3:470}{
 A^{a s} A^{b t} \epsilon_{a b} =
 A^{1 i} A^{2 j} {\delta^{[t}}_j {\delta^{s]}}_i =
-\epsilon^{s t} \Det \Norm{A^{ij}},
+\epsilon^{s t} \Det \Norm{A^{ij}}.
 }
 
 This result hold regardless of the metric for the space, and does not require that we were using an orthonormal basis.  When the metric is Euclidean and we have an orthonormal basis, then all the indices can be dropped.
@@ -333,11 +331,9 @@ Again, with \(a^i = A^{1 i}\) and \(b^j = A^{2 j}\), and \(c^k = A^{3 k}\) we ha
 A^{1 i} A^{2 j} A^{3 k}
 {\delta^{[u}}_k
 {\delta^{t}}_j
-{\delta^{s]}}_i
+{\delta^{s]}}_i,
 \end{equation}
-
 and we can choose to write this in either form, resulting in the identity
-
 \boxedEquation{eqn:relElectroDynProblemSet3:510}{
 \epsilon^{s t u} \Det \Norm{A^{ij}}
 =
@@ -369,7 +365,6 @@ a^{[s} b^t c^{u} d^{v]}.
 \end{equation}
 
 This time with \(a^i = A^{0 i}\) and \(b^j = A^{1 j}\), and \(c^k = A^{2 k}\), and \(d^l = A^{3 l}\) we have
-
 \boxedEquation{eqn:relElectroDynProblemSet3:530}{
 \epsilon^{s t u v} \Det \Norm{A^{ij}}
 =
@@ -422,7 +417,6 @@ There is one more part to this problem, doing the antisymmetric sums over the in
 \end{equation}
 
 We conclude that
-
 \boxedEquation{eqn:relElectroDynProblemSet3:600}{
 \epsilon_{s t} \epsilon_{a b} A^{a s} A^{b t} = 2! \Det \Norm{A^{ij}}.
 }
@@ -474,15 +468,14 @@ So, for our SR case we have
 }
 
 This was part of question 1.4, albeit in lower index form.  Here since all indices are matched, we have the same result without major change
-
 \boxedEquation{eqn:relElectroDynProblemSet3:660}{
 \epsilon^{s t u v} \epsilon^{a b c d} A_{a s} A_{b t} A_{c u} A_{d v}= 4! \Det \Norm{A_{ij}}.
 }
 
 The main difference is that we are now taking the determinant of a lower index tensor.
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:1c}
-
+%
 We apply transformations to coordinates (and thus indices) of the form
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:680}
@@ -509,9 +502,9 @@ Let \(A_{i j} = O_{j i}\), which gives us
 
 but since \(\Det O = \Det O^\T\), we have shown that \(\epsilon_{\mu\nu\lambda}\) is invariant under rotation.
 
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:1d}
-
+%
 This follows the same way.  We assume a transformation of coordinates of the following form
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:740}
@@ -570,9 +563,9 @@ P_{a l} \\
 
 Since \(\epsilon_{i j k l} = -\epsilon^{i j k l}\) both are therefore invariant under Lorentz transformation.
 
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:1e}
-
+%
 We swap indices in \(B\), switch dummy indices, then swap indices in \(A\)
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2340}
@@ -589,11 +582,11 @@ A^{i j} B_{i j}
 
 Our result is the negative of itself, so must be zero.
 
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:1f}
-
+%
 \paragraph{The invariance of the determinant}
-
+%
 Let us consider how any lower index rank 2 tensor transforms.  Given a transformation of coordinates
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:800}
@@ -652,9 +645,9 @@ The determinant of the transformation tensor \({O_i}^j\) is
 \end{equation}
 
 We see that the determinant of a lower index rank 2 tensor is invariant under Lorentz transformation.  This would include our characteristic polynomial \(P(\lambda)\).
-
+%
 \paragraph{Expanding the determinant}
-
+%
 Utilizing \eqnref{eqn:relElectroDynProblemSet3:660} we can now calculate the characteristic polynomial.  This is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2360}
@@ -958,7 +951,6 @@ Computing the determinant is not so easy.  The dumb and simple way of expanding 
 \end{equation}
 
 That supplies us with a relation for the characteristic polynomial in \(\BE\) and \(\BB\)
-
 \boxedEquation{eqn:relElectroDynProblemSet3:980b}{
 P(\lambda) = (\BE \cdot \BB)^2 + \lambda^2 (\BB^2 - \BE^2) + \lambda^4.
 }
@@ -979,9 +971,9 @@ In general our eigenvalues are
 
 For the purposes of this problem we really only wish to show that \(\BE \cdot \BB\) and \(\BE^2 - \BB^2\) are Lorentz invariants.  When \(\lambda = 0\) we have \(P(\lambda) = (\BE \cdot \BB)^2\), a Lorentz invariant.  This must mean that \(\BE \cdot \BB\) is itself a Lorentz invariant.  Since that is invariant, and we require \(P(\lambda)\) to be invariant for any other possible values of \(\lambda\), the difference \(\BE^2 - \BB^2\) must also be Lorentz invariant.
 
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:1g}
-
+%
 This proceeds in a fairly straightforward fashion
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2500}
@@ -1033,9 +1025,9 @@ Now we have a set of perfect differentials, and can integrate
 \end{equation}
 
 We are left with a only contributions to the integral from the boundary terms on the spacetime hypervolume, three-volume normals bounding the four-volume integration  in the original integral.
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet3:1h}
-
+%
 Let us first consider the explanation of the name.  First recall what the expansions are of \(F_{i j}\) and \(F^{i j}\) in terms of \(\BE\) and \(\BE\).  These are
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2540}

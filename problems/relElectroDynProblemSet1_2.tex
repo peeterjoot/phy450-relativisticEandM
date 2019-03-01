@@ -3,16 +3,16 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 \makeproblem{Transformation of velocities}{pr:relElectroDynProblemSet1:2}{
-
+%
 From the Lorentz transformations of space and time coordinates.
 
-
+%
 \makesubproblem{Derive the transformation of velocities.}{pr:relElectroDynProblemSet1:2:a}
-
+%
 With a particle moving with \(\Bv\) in the unprimed (stationary) frame, find its velocity \(\Bv'\) in the primed frame.  The primed frame is moving with some \(\BV\) with respect to the unprimed one.  Make sure to finally derive the general ``addition of velocities'' equation in terms of vectors and dot products, as given in \citep{landau1971classical}.
-
+%
 \makesubproblem{Velocities relative to \( c \).}{pr:relElectroDynProblemSet1:2:b}
-
+%
 Then, use the addition of velocities rule to show that:
 
 \begin{enumerate}
@@ -27,7 +27,7 @@ If \(v = c\) in one frame, then \(v' = c\) in any other frame, and
 if \(v> c\) in one frame, than \(v' > c\) in any other frame.
 \end{enumerate}
 } % makeproblem
-
+%
 \makeanswer{pr:relElectroDynProblemSet1:2}{
 \makeSubAnswer{}{pr:relElectroDynProblemSet1:2:a}
 We need a vector form of the Lorentz transform to start with.  Let us write \(\Bsigma\) for a unit vector colinear with the primed frame velocity \(\BV\), so that \(\BV = (\BV \cdot \Bsigma) \Bsigma\).  When our boost was in the \(x\) direction, our Lorentz transformation was in terms of \(x = \Bx \cdot \xcap\).  The component in the direction of the boost is now \(\Bx \cdot \Bsigma\), and we have
@@ -75,7 +75,6 @@ Dividing this pair of equations, and using \(\Bv = d\Bx/dt\), and \(\Bv' = d\Bx'
 \end{equation}
 
 Since \(\BV\) and our direction vector \(\Bsigma\) are colinear, we have \((\Bv \cdot \Bsigma) (\BV \cdot \Bsigma) = \Bv \cdot \Bsigma\), and can simplify this last expression slightly
-
 \boxedEquation{eqn:relativisticElectrodynamicsA1:250}{
 \Bv' = \frac{\gamma^{-1} \Bv + (\Bv \cdot \Bsigma) \Bsigma (1 - \gamma^{-1}) - \BV}{ 1 - \Bv \cdot \BV/c^2 }.
 }
@@ -93,9 +92,9 @@ The expression in the text is also a small velocity approximation.  For \(\Abs{\
 \end{equation}
 
 One additional approximation was made dropping the \(\BV (\Bv' \cdot \BV)/c^2\) term which is quadratic in \(\BV/c\), which leave us with equation \(5.3\) in the text as desired.
-
+%
 \makeSubAnswer{}{pr:relElectroDynProblemSet1:2:b}
-
+%
 
 In \eqnref{eqn:relativisticElectrodynamicsA1:250i}, let us write \(\Bv' = u \Bu\), where \(\Bu\) is a unit vector, \(V = \BV \cdot \Bsigma\), and \(\alpha = \Bu \cdot \Bsigma\) for the direction cosine between the primed frame's direction of motion and the particle's velocity direction (also in the unprimed frame).  The stationary frame's particle velocity is then
 %

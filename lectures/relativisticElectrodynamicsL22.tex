@@ -8,9 +8,9 @@
 \label{chap:relativisticElectrodynamicsL22}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relativisticElectrodynamicsL22.pdf}
 %\date{Mar 23, 2011}
-
+%
 \paragraph{Reading}
-
+%
 Covering \S 32, \S 33 of chapter 4 in the text \citep{landau1980classical},
 and \popcite{RelEMpp166-180.pdf}{lecture notes RelEMpp166-180.pdf}.
 % pp. 169-172:} spacetime translation invariance of the EM field action and the conservation of the energy-momentum tensor (170-172); properties of the energy-momentum tensor (172.1); the meaning of its components: energy.
@@ -106,7 +106,6 @@ Since the operator \(F^{m j} \partial_m \partial_j\) is a product of symmetric a
 \end{equation}
 
 This provides the desired conservation relationship
-
 \boxedEquation{eqn:relativisticElectrodynamicsL22:90}{
 \begin{aligned}
 \partial_m T^{m k} &= - \inv{c} F^{k a} j_a \\
@@ -116,12 +115,11 @@ T^{m k} &=
 F^{m j}
 F^{k n}
 g_{n j}
-+ \frac{g^{m k}}{4} F_{i j} F^{i j} \right)
++ \frac{g^{m k}}{4} F_{i j} F^{i j} \right).
 \end{aligned}
 }
-
 \section{Unpacking the tensor}
-
+%
 \paragraph{Energy term of the stress energy tensor}
 \index{stress energy tensor!energy}
 %
@@ -176,14 +174,12 @@ F^{\alpha \beta} F^{\alpha \beta}
 \end{equation}
 
 A final bit of assembly gives us \(T^{0 0}\)
-
 \boxedEquation{eqn:relativisticElectrodynamicsPS6:200}{
-T^{ 0 0 } = \inv{8 \pi} ( \BE^2 + \BB^2 ) = \calE
+T^{ 0 0 } = \inv{8 \pi} ( \BE^2 + \BB^2 ) = \calE.
 }
-
+%
 \paragraph{Momentum terms of the stress energy tensor}
 \index{stress energy tensor!momentum}
-
 For the spatial \(T^{k 0}\) components we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:440}
@@ -206,19 +202,17 @@ F^{\alpha 0} {F^0}_0
 &=
 \inv{4 \pi} \epsilon^{\alpha \beta \sigma}
 (\BE)^\beta
-(\BB)^\sigma
-\\
+(\BB)^\sigma.
 \end{aligned}
 \end{equation}
 
 So we have
-
 \boxedEquation{eqn:relativisticElectrodynamicsPS6:220}{
 T^{\alpha 0} = \inv{4 \pi} (\BE \cross \BB)^\alpha = \frac{\BS^\alpha}{c}.
 }
-
+%
 \paragraph{Symmetry}
-
+%
 It is simple to show that \(T^{k m}\) is symmetric
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:460}
@@ -229,7 +223,7 @@ T^{m k}
 &= T^{k m}
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Pressure and shear terms}
 \index{pressure}
 \index{shear}
@@ -314,15 +308,14 @@ Again, with cyclic permutation of the coordinates we have
 \begin{aligned}
 T^{1 2} &= -\inv{4 \pi} \left( E_x E_y + B_x B_y \right) \\
 T^{2 3} &= -\inv{4 \pi} \left( E_y E_z + B_y B_z \right) \\
-T^{3 1} &= -\inv{4 \pi} \left( E_z E_x + B_z B_x \right)
+T^{3 1} &= -\inv{4 \pi} \left( E_z E_x + B_z B_x \right).
 \end{aligned}
 \end{equation}
 
 In class these were all written in the compact notation
-
 \boxedEquation{eqn:relativisticElectrodynamicsPS6:320}{
 T^{\alpha \beta} = -\inv{4 \pi} \left(
 E_\alpha E_\beta
 +B_\alpha B_\beta
-- \inv{2} \delta_{\alpha\beta} (\BE^2 + \BB^2) \right)
+- \inv{2} \delta_{\alpha\beta} (\BE^2 + \BB^2) \right).
 }

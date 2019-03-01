@@ -7,9 +7,9 @@
 \label{chap:relativisticElectrodynamicsL21}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relativisticElectrodynamicsL21.pdf}
 %\date{Mar 22, 2011}
-
+%
 \paragraph{Reading}
-
+%
 Covering chapter 8 material from the text \citep{landau1980classical}, and
 \popcite{RelEMpp147-165.pdf}{lecture notes RelEMpp147-165.pdf}.
 % radiated power (154); fields in the ``wave zone'' and discussions of approximations made (155-159); EM fields due to electric dipole radiation (160-163); Poynting vector, angular distribution, and power of dipole radiation (164-165) [Wednesday, Mar. 16...]
@@ -90,20 +90,15 @@ Then using the vector identity
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:120}
 (\BA \cross \rcap ) \cross \rcap = -\BA + (\rcap \cdot \BA) \rcap,
 \end{equation}
-
 we have for the fields
-
 \boxedEquation{eqn:relativisticElectrodynamicsL21:140}{
 \begin{aligned}
 \BE &= \inv{c^2 \Abs{\Bx}} (\ddot{\Bd}(t_r) \cross \rcap) \cross \rcap \\
 \BB &= \rcap \cross \BE.
 \end{aligned}
 }
-
-
 \section{Calculating the energy flux}
 \index{energy flux}
-
 Our Poynting vector, the energy flux, is
 \index{Poynting vector}
 %
@@ -161,9 +156,9 @@ PICTURE: dipole lobes diagram with \(\Bd\) up along the z axis, and \(\rcap\) po
 FIXME: understand how this lobes picture comes from our result above.
 
 PICTURE: field diagram along spherical north-south great circles, and the electric field \(\BE\) along what looks like it is the \(\thetacap\) direction, and \(\BB\) along what appear to be the \(\phicap\) direction, and \(\BS\) pointing radially out.
-
+%
 \paragraph{Utilizing the spherical unit vectors to express the field directions}
-
+%
 In class we see the picture showing these spherical unit vector directions.  We can see this algebraically as well.  Recall that we have for our unit vectors
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:260}
@@ -206,21 +201,18 @@ The direction of the electric field was in the direction of \((\ddot{\Bd} \cross
 &=
 -\sin\theta \phicap \cross \rcap \\
 &=
--\sin\theta \thetacap
+-\sin\theta \thetacap.
 \end{aligned}
 \end{equation}
-
 \boxedEquation{eqn:relativisticElectrodynamicsL21:140b}{
 \begin{aligned}
 \BE &= \frac{ q a \omega^2 }{c^2 \Abs{\Bx}} \sin(\omega t_r) \sin\theta \thetacap \\
 \BB &= -\frac{ q a \omega^2 }{c^2 \Abs{\Bx}} \sin(\omega t_r) \sin\theta \phicap \\
-\BS &= \left( \frac{ q a \omega^2 }{c^2 \Abs{\Bx}} \right)^2 \sin^2(\omega t_r) \sin^2\theta \rcap
+\BS &= \left( \frac{ q a \omega^2 }{c^2 \Abs{\Bx}} \right)^2 \sin^2(\omega t_r) \sin^2\theta \rcap.
 \end{aligned}
 }
-
 \section{Calculating the power}
 \index{power}
-
 Integrating \(\BS\) over a spherical surface, we can calculate the power
 
 FIXME: remind myself why Power is an appropriate label for this integral.
