@@ -5,7 +5,7 @@
 %\chapter{Proof of the d'Alembertian Green's function}
 
 Our Prof is excellent at motivating any results that he pulls out of magic hats.  He is said that he is included a derivation using Fourier transforms and tricky contour integration arguments in the class notes for anybody who is interested (and for those who also know how to do contour integration).  For those who do not know contour integration yet (some people are taking it concurrently), one can actually prove this by simply applying the wave equation operator to this function.  This treats the delta function as a normal function that one can take the derivatives of, something that can be well defined in the context of generalized functions.  Chugging ahead with this approach we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:110}
 \square G(\Bx, t)
 =
@@ -17,7 +17,7 @@ Our Prof is excellent at motivating any results that he pulls out of magic hats.
 \end{equation}
 
 This starts things off and now things get a bit hairy.  It is helpful to consider a chain rule expansion of the Laplacian
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:760}
 \begin{aligned}
 \Delta (u v)
@@ -36,13 +36,13 @@ v \partial_\alpha u
 \end{equation}
 
 In vector form this is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:130}
 \Delta (u v) = u \Delta v + 2 (\spacegrad u) \cdot (\spacegrad v) + v \Delta u.
 \end{equation}
 
 Applying this to the Laplacian portion of \eqnref{eqn:relativisticElectrodynamicsL18:110} we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:131}
 \begin{aligned}
 \Delta \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
@@ -63,7 +63,7 @@ Applying this to the Laplacian portion of \eqnref{eqn:relativisticElectrodynamic
 \end{equation}
 
 Here we make the identification
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:132}
 \Delta \inv{4 \pi \Abs{\Bx} } = - \delta^3(\Bx).
 \end{equation}
@@ -74,13 +74,13 @@ This could be considered a given from our knowledge of electrostatics, but it is
 \index{Laplacian!Green's function}
 
 If \(-1/{4 \pi \Abs{\Bx} }\) is a Green's function for the Laplacian, then the Laplacian of the convolution of this with a test function should recover that test function
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:133}
 \Delta \int d^3 \Bx' \left(-\inv{4 \pi \Abs{\Bx - \Bx'} } \right) f(\Bx') = f(\Bx).
 \end{equation}
 
 We can directly evaluate the LHS of this equation, following the approach in \citep{schwartz1987pe}.  First note that the Laplacian can be pulled into the integral and operates only on the presumed Green's function.  For that operation we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:134}
 \Delta \left(-\inv{4 \pi \Abs{\Bx - \Bx'} } \right)
 =
@@ -88,7 +88,7 @@ We can directly evaluate the LHS of this equation, following the approach in \ci
 \end{equation}
 
 It will be helpful to compute the gradient of various powers of \(\Abs{\Bx}\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:780}
 \begin{aligned}
 \spacegrad \Abs{\Bx}^a
@@ -100,7 +100,7 @@ e_\alpha \left(\frac{a}{2}\right) 2 x^\beta {\delta_\beta}^\alpha \Abs{\Bx}^{a -
 \end{equation}
 
 In particular we have, when \(\Bx \ne 0\), this gives us
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:135}
 \begin{aligned}
 \spacegrad \Abs{\Bx} &= \frac{\Bx}{\Abs{\Bx}} \\
@@ -110,7 +110,7 @@ In particular we have, when \(\Bx \ne 0\), this gives us
 \end{equation}
 
 For the Laplacian of \(1/\Abs{\Bx}\), at the points \(\Be \ne 0\) where this is well defined we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:800}
 \begin{aligned}
 \Delta \inv{\Abs{\Bx}}
@@ -131,7 +131,7 @@ For the Laplacian of \(1/\Abs{\Bx}\), at the points \(\Be \ne 0\) where this is 
 \end{equation}
 
 So we have a zero.  This means that the Laplacian operation
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:300}
 \Delta \int d^3 \Bx' \inv{\Abs{\Bx - \Bx'} } f(\Bx')
 =
@@ -140,7 +140,7 @@ f(\Bx) \int d^3 \Bx' \Delta \inv{\Abs{\Bx - \Bx'}},
 \end{equation}
 
 can only have a value in a neighborhood of point \(\Bx\).  Writing \(\Delta = \spacegrad \cdot \spacegrad\) we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:320}
 \Delta \int d^3 \Bx' \inv{\Abs{\Bx - \Bx'} } f(\Bx')
 =
@@ -149,7 +149,7 @@ f(\Bx) \int d^3 \Bx' \spacegrad \cdot -\frac{\Bx - \Bx'}{\Abs{\Bx - \Bx'}}.
 \end{equation}
 
 Observing that \(\spacegrad \cdot f(\Bx -\Bx') = -\spacegrad' f(\Bx - \Bx')\) we can put this in a form that allows for use of Stokes theorem so that we can convert this to a surface integral
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:820}
 \begin{aligned}
 \Delta \int d^3 \Bx' \inv{\Abs{\Bx - \Bx'} } f(\Bx')
@@ -166,13 +166,12 @@ f(\Bx) \int d^2 \Bx' \Bn \cdot \frac{\Bx - \Bx'}{\Abs{\Bx - \Bx'}^3} \\
 \end{equation}
 
 where we use \((\Bx' - \Bx)/\Abs{\Bx' - \Bx}\) as the outwards normal for a sphere centered at \(\Bx\) of radius \(\epsilon\).  This integral is just \(-4 \pi\), so we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:360}
 \Delta \int d^3 \Bx' \inv{-4 \pi \Abs{\Bx - \Bx'} } f(\Bx')
 =
 f(\Bx).
 \end{equation}
-
 The convolution of \(f(\Bx)\) with \(-\Delta/4 \pi \Abs{\Bx}\) produces \(f(\Bx)\), allowing an identification of this function with a delta function, since the two have the same operational effect
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:380}
 \int d^3 \Bx' \delta(\Bx - \Bx') f(\Bx')
@@ -184,7 +183,7 @@ f(\Bx).
 \index{d'Alembertian!Green's function}
 
 We need two additional computations to finish the job.  The first is the gradient of the delta function
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:840}
 \begin{aligned}
 \spacegrad \delta\left(t - \frac{\Abs{\Bx}}{c}\right) &= ? \\
@@ -193,7 +192,7 @@ We need two additional computations to finish the job.  The first is the gradien
 \end{equation}
 
 Consider \(\spacegrad f(g(\Bx))\).  This is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:860}
 \begin{aligned}
 \spacegrad f(g(\Bx))
@@ -203,7 +202,6 @@ e_\alpha \PD{x^\alpha}{f(g(\Bx))} \\
 e_\alpha \PD{g}{f} \PD{x^\alpha}{g},
 \end{aligned}
 \end{equation}
-
 so we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:400}
 \spacegrad f(g(\Bx))
@@ -212,7 +210,7 @@ so we have
 \end{equation}
 
 The Laplacian is similar
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:880}
 \begin{aligned}
 \Delta f(g)
@@ -230,7 +228,7 @@ The Laplacian is similar
 \end{equation}
 
 so we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:420}
 \Delta f(g)
 =
@@ -238,7 +236,7 @@ so we have
 \end{equation}
 
 With \(g(\Bx) = \Abs{\Bx}\), we will need the Laplacian of this vector magnitude
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:900}
 \begin{aligned}
 \Delta \Abs{\Bx}
@@ -255,7 +253,7 @@ With \(g(\Bx) = \Abs{\Bx}\), we will need the Laplacian of this vector magnitude
 \end{equation}
 
 So that we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:440}
 \begin{aligned}
 \spacegrad \delta\left(t - \frac{\Abs{\Bx}}{c}\right) &=
@@ -266,7 +264,7 @@ So that we have
 \end{equation}
 
 Now we have all the bits and pieces of \eqnref{eqn:relativisticElectrodynamicsL18:131} ready to assemble
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:920}
 \begin{aligned}
 \Delta \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
@@ -287,7 +285,7 @@ Now we have all the bits and pieces of \eqnref{eqn:relativisticElectrodynamicsL1
 \end{equation}
 
 Since we also have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:500}
 \inv{c^2} \partial_{tt}
 \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
@@ -296,7 +294,7 @@ Since we also have
 \end{equation}
 
 The \(\delta''\) terms cancel out in the d'Alembertian, leaving just
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:460}
 \square \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
 =
@@ -304,7 +302,7 @@ The \(\delta''\) terms cancel out in the d'Alembertian, leaving just
 \end{equation}
 
 Noting that the spatial delta function is non-zero only when \(\Bx = 0\), which means \(\delta(t - \Abs{\Bx}/c) = \delta(t)\) in this product, and we finally have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:480}
 \square \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
 =
@@ -312,7 +310,7 @@ Noting that the spatial delta function is non-zero only when \(\Bx = 0\), which 
 \end{equation}
 
 We write
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:520}
 G(\Bx, t) = \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} },
 \end{equation}

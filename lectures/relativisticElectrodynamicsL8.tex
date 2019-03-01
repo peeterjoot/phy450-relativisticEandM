@@ -21,7 +21,7 @@ and \popcite{RelEMpp56.1-73.pdf}{lecture notes RelEMpp56.1-73.pdf}.
 \index{proper velocity}
 
 For a free particle, our action is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:680}
 \begin{aligned}
 S
@@ -31,13 +31,13 @@ S
 \end{equation}
 
 Our Lagrangian is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:}
 \LL = -m c^2 \sqrt{1 - \frac{\Bv^2}{c^2}} .
 \end{equation}
 
 We can also make a non-relativistic velocity approximation
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:700}
 \begin{aligned}
 \LL
@@ -55,25 +55,25 @@ We can also make a non-relativistic velocity approximation
 It is good to know that we recover the familiar Newtonian case when our velocities are small enough.
 
 Our job is to vary the action between a pair of spacetime points
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:20}
 (t_a, \Bx_a) \rightarrow (t_b, \Bx_b)
 \end{equation}
 
 The equations of motion that result from this variation, or from the Euler-Lagrange equations that one can obtain from this variation, are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:40}
 \frac{d}{dt} ( \gamma \Bv) = 0
 \end{equation}
 
 We argued last time, by evaluating the derivatives of \eqnref{eqn:relativisticElectrodynamicsL8:40}, and taking dot and cross products with \(\Bv\) that we also have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:60}
 \frac{d\Bv}{dt} = 0
 \end{equation}
 
 Observe that since \(d\Bv/dt = 0\), we also have \(d\gamma/dt = 0\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:720}
 \begin{aligned}
 \frac{d\gamma}{dt}
@@ -86,7 +86,7 @@ Observe that since \(d\Bv/dt = 0\), we also have \(d\gamma/dt = 0\)
 \end{equation}
 
 We can therefore combine the pair of equations (after adjusting both to have dimensions of velocity)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:80}
 \begin{aligned}
 \frac{d}{dt} ( \gamma \Bv ) &= 0 \\
@@ -95,13 +95,13 @@ We can therefore combine the pair of equations (after adjusting both to have dim
 \end{equation}
 
 into
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:100}
 u^i = (u^0, \Bu).
 \end{equation}
 
 Here
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:120}
 \begin{aligned}
 u^0 &= \gamma \\
@@ -110,13 +110,13 @@ u^0 &= \gamma \\
 \end{equation}
 
 Since we have \(du^i/dt = 0\), pre-multiplying this by \(\gamma/c\) does not change the equation, and we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:140}
 0 = \inv{c \sqrt{1 - \frac{\Bv^2}{c^2}}} \frac{du^i}{dt}.
 \end{equation}
 
 This now puts things in a nice invariant form, with no bias towards any specific observer's time coordinates, and we have for the free particle
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:160}
 \frac{d u^i}{ds} = 0.
 \end{equation}
@@ -127,7 +127,7 @@ This now puts things in a nice invariant form, with no bias towards any specific
 The symmetries of \(S\) imply conservation laws.  Our action has \(SO(1,3) \times T^4 = \) Lorentz x spacetime translation \(\equiv\) Poincar\'{e} group of symmetries.
 
 Consider quantities conserved due to \(T^4\) factor
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:180}
 \begin{aligned}
 \Bx &\rightarrow \Bx + \Ba \qquad \mbox {where \(\Ba\) is constant} \\
@@ -136,7 +136,7 @@ t &\rightarrow t + \text{constant}
 \end{equation}
 
 Observe that the Lagrangian is not a function of \(\Bx\), or \(t\) explicitly
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:200}
 \LL(\Bx, \Bv, t) = - m c \sqrt{1 - \frac{\Bv^2}{c^2}}
 =
@@ -144,9 +144,9 @@ Observe that the Lagrangian is not a function of \(\Bx\), or \(t\) explicitly
 \end{equation}
 
 A consequence from this, utilizing the Euler-Lagrange equations is that we have a zero for the time derivative of the generalized momentum \(\PDi{\Bv}{\LL}\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:220}
-\frac{d}{dt} \PD{\Bv}{\LL} = \PD{\Bx}{\LL} = 0,
+\frac{d}{dt} \PD{\Bv}{\LL} = \PD{\Bx}{\LL} = 0.
 \end{equation}
 
 Let us calculate that generalized momentum
@@ -164,13 +164,13 @@ m \frac{\Bv}{ \sqrt{1 - \frac{\Bv^2}{c^2}} } \\
 \end{equation}
 
 So our generalized momentum is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:241}
 \PD{\Bv}{\LL} = m \Bv \gamma.
 \end{equation}
 
 Evaluating the Euler-Lagrange equations above we find
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:760}
 \begin{aligned}
 0 &= \frac{d}{dt} \left( m \gamma \Bv \right) \\
@@ -179,25 +179,25 @@ Evaluating the Euler-Lagrange equations above we find
 \end{equation}
 
 Recall that \(u^0 = \gamma\), and that \(d\gamma/dt = 0\), so we also have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:242}
 \frac{d}{dt} \left( m c u^i \right) = 0
 \end{equation}
 
 and again with multiplication by \(\gamma/c\) we have a Lorentz invariant relation, mostly a consequence of spacetime translation invariance
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:243}
 \frac{d}{ds} \left( m c u^i \right) = 0.
 \end{equation}
 
 We define this quantity, the invariant quantity (a four vector), as the relativistic momentum
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:244}
 p^i = m c u^i.
 \end{equation}
 
 A relativistic particle is characterizes by a conserved 4 vector quantity \(p^i\) with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:260}
 \begin{aligned}
 p^0 &= m c \gamma \\
@@ -208,19 +208,19 @@ p^i &= (p^0, \Bp)
 
 \section{Time translation invariance}
 \index{invariance!time translation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:280}
 \LL(\Bx, \Bv, t) = \LL(\Bv)
 \end{equation}
 
 However, it helps to consider the more general case
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:300}
 \LL(\Bx, \Bv, t) = \LL(\Bx, \Bv)
 \end{equation}
 
 since we have no explicit time dependence.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:780}
 \begin{aligned}
 \frac{d}{dt} \LL(\Bv)
@@ -231,7 +231,7 @@ since we have no explicit time dependence.
 \end{equation}
 
 Regrouping, to pull all the derivative terms together provides the conservation identity
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:319}
 \frac{d}{dt} \left(
 \PD{\Bv}{\LL} \cdot \Bv - \LL
@@ -241,13 +241,13 @@ Regrouping, to pull all the derivative terms together provides the conservation 
 This quantity \(\PD{\Bv}{\LL} \cdot \Bv - \LL\) is usually identified as the Hamiltonian \(H\), the energy, but we will call it \(E\) here.
 
 In our case, with the relativistic free particle Lagrangian
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:320}
 \LL = -m c^2 \sqrt{ 1 - \frac{\Bv^2}{c^2} },
 \end{equation}
 
 we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:800}
 \begin{aligned}
 E
@@ -266,20 +266,20 @@ E = \gamma m c^2 = \frac{ m c^2 }{\sqrt{1 - \frac{\Bv^2}{c^2}}}
 }
 
 It is only with the \(\Bv \rightarrow 0\) that we recover the famous tee-shirt expression
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:360}
 E = m c^2.
 \end{equation}
 
 Since we also know (from the spacetime translation) that \(p^0 = m c \gamma = E/c\), we get another conserved quantity for free since \((p^0, \Bp)\) then is also a symmetry (i.e. thus a conserved quantity)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:820}
 \begin{aligned}
 p^0 &= m \gamma c = \frac{E}{c} \\
 \Bp &= m \gamma \Bv
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:380}
 p^i = ( p^0, \Bp )
 \end{equation}
@@ -290,7 +290,7 @@ Note that the only ``mass'' you ever want to talk about is ``m''.  This is a Lor
 \index{four momentum}
 
 We have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:840}
 \begin{aligned}
 p^i p_i
@@ -312,7 +312,7 @@ We say that the 4-vector \(p^i\) represents a particle with mass \(m\).
 Since four momentum is a conserved quantity we can use this conservation property to study relativistic collisions
 
 PICTURE: two particles colliding with two particles resulting (particles trajectories as arrows)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:420}
 \mathLabelBox{p_1^i + p_2^i}{four momentum before} =
 \mathLabelBox
@@ -321,7 +321,7 @@ PICTURE: two particles colliding with two particles resulting (particles traject
 ]
 {p_3^i + p_4^i}{four momentum after}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:440}
 \begin{aligned}
 \Bp &= \frac{m \Bv}{\sqrt{ 1 - \frac{\Bv^2}{c^2} }} \rightarrow 0 \qquad \mbox{when \(m \rightarrow 0\)} \\
@@ -332,7 +332,7 @@ E &= \frac{m c^2}{\sqrt{ 1 - \frac{\Bv^2}{c^2} }} \rightarrow 0 \qquad \mbox{whe
 except when \(\Abs{\Bv} = c\), where if you take \(m \rightarrow 0\) and \(\Abs{\Bv} = c\) you can get anything (any values) in such a limit (limit does not exist).
 
 However, because
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:460}
 \frac{E^2}{c^2} - \Bp^2 = m^2 c^2 = 0
 \end{equation}
@@ -340,7 +340,7 @@ However, because
 when \(m \rightarrow 0\), \(E\) and \(\Bp\) for a massless particle must obey \(E = c \Abs{\Bp}\).
 
 Massless particles like photons (and gravitons if/when eventually measured) have lightlike 4 momentum vectors
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:480}
 p^i p_i = 0
 \end{equation}
@@ -355,26 +355,23 @@ In the notes there is a review (see that on one's own).  We will also want to ev
 \index{interaction}
 
 In classical mechanics we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:500}
 \LL_{\text{kinetic}} = \inv{2} m \Bv^2
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:520}
 \LL = \inv{2} m \Bv^2  - U(\Br)
 \end{equation}
-
 %FIXME: what did he mean by this equality?
 %\begin{equation}\label{eqn:relativisticElectrodynamicsL8:540}
 %U_{\text{internal}} = U(\Br)
 %\end{equation}
-
 Here \(U(\Br)\) is an external potential.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:560}
 S = S_{\text{free}} + S_{\text{interaction}}  = \int dt \inv{2} m \Bv^2 + \int dt (-U(\Br, t))
 \end{equation}
-
 The quantity \(U(\Br, t)\) is what we call a potential field.
 
 What is the simplest invariant field we can have?  The simplest possibility is to have a relativistic particle which interacts with an external \textunderline{Lorentz scalar field}.  We would imagine that this is due to some other particle or some distribution of other fields.
@@ -384,13 +381,13 @@ Recall that the scalar field under rotations (reminder)
 PICTURE: a point with coordinates in a fixed and a rotated coordinate system
 
 That point is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:580}
 P = (x, y) = (x', y')
 \end{equation}
 
 Similarly we can define a scalar quantity (like temperature or the Coulomb potential) is then assigned a value at each point
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:600}
 \phi(x, y) = \phi'(x', y')
 \end{equation}
@@ -400,7 +397,7 @@ The value of this scalar in the \(x,y\) coordinates system at point \(P\) equals
 A Lorentz scalar field is like this, but for an event \(P = (ct, x) = (ct', x')\) is the same.
 
 So, we would have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:620}
 \phi(ct, x) = \phi'(ct', x')
 \end{equation}
@@ -408,7 +405,7 @@ So, we would have
 The value of this scalar in the \(x,ct\) coordinates system at event \(P\) equals the value of this scalar in the \(x',ct'\) coordinates system at the same event \(P\) in the primed frame.
 
 Our action would then be
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:640}
 S = - m c \int ds + g \int ds \phi(x^i)
 \end{equation}
@@ -418,7 +415,7 @@ Here \(g\) is a coupling constant, also called the ``charge'' of a particle unde
 Note that unfortunately nature has not provided us with scalar fields that are stable enough to observe in classical interactions
 
 We do however have some scalar particles
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL8:660}
 \pi^0, \pi^\pm, k^0, k^\pm
 \end{equation}

@@ -22,7 +22,7 @@ Maxwell's equations in vacuum lead to Coulomb gauge and the Lorentz gauge.
 
 \paragraph{Coulomb gauge}
 \index{Coulomb gauge}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:10}
 \begin{aligned}
 A^0 &= 0 \\
@@ -33,7 +33,7 @@ A^0 &= 0 \\
 
 \paragraph{Lorentz gauge}
 \index{Lorentz gauge}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:30}
 \begin{aligned}
 \partial_i A^i &= 0 \\
@@ -42,13 +42,13 @@ A^0 &= 0 \\
 \end{equation}
 
 Note that \(\partial_i A^i = 0\) is invariant under gauge transformations
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:50}
 A^i \rightarrow A^i + \partial^i \chi
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:70}
 \partial_i \partial^i \chi = 0,
 \end{equation}
@@ -56,13 +56,13 @@ where
 So if one uses the Lorentz gauge, this has to be fixed.
 
 However, in both cases we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:90}
 \left( \inv{c^2} \PDSq{t}{} - \Delta \right) f = 0
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:110}
 \inv{c^2} \PDSq{t}{} - \Delta
 \end{equation}
@@ -70,13 +70,13 @@ where
 is the wave operator.
 
 Consider
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:130}
 \Delta = \PDSq{x}{}
 \end{equation}
 
 where we are looking for a solution that is independent of \(y, z\).  Recall that the general solution for this equation has the form
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:150}
 f(t, x) =
 F_1 \left(t - \frac{x}{c}\right)
@@ -90,47 +90,47 @@ It is notable that the text derives \eqnref{eqn:relativisticElectrodynamicsL15:1
 \section{Review of Fourier methods}
 
 It is often convenient to impose periodic boundary conditions
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:170}
 \BA(\Bx + \Be_i L) = \BA(\Bx), i = 1,2,3
 \end{equation}
 
 \paragraph{In one dimension}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:190}
 f(x + L) = f(x)
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:210}
 f(x) = \sum_{n=-\infty}^\infty e^{i \frac{2 \pi n}{L} x} \tilde{f}_n
 \end{equation}
 
 When \(f(x)\) is real we also have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:230}
 f^\conj(x) = \sum_{n = -\infty}^\infty e^{-i \frac{2 \pi n}{L} x} (\tilde{f}_n)^\conj
 \end{equation}
 
 which implies
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:250}
 {\tilde{f}^\conj}_{n} = \tilde{f}_{-n}.
 \end{equation}
 
 We introduce a wave number
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:270}
 k_n = \frac{2 \pi n}{L},
 \end{equation}
 
 allowing a slightly simpler expression of the Fourier decomposition
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:290}
 f(x) = \sum_{n=-\infty}^\infty e^{i k_n x} \tilde{f}_{k_n}.
 \end{equation}
 
 The inverse transform is obtained by integration over some length \(L\) interval
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:310}
 \tilde{f}_{k_n} = \inv{L} \int_{-L/2}^{L/2} dx e^{-i k_n x} f(x)
 \end{equation}
@@ -138,7 +138,7 @@ The inverse transform is obtained by integration over some length \(L\) interval
 \paragraph{Verify:}
 
 We should be able to recover the Fourier coefficient by utilizing the above
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:880}
 \begin{aligned}
 \inv{L} \int_{-L/2}^{L/2} dx e^{-i k_n x} \sum_{m=-\infty}^\infty e^{i k_m x} \tilde{f}_{k_m} \\
@@ -147,7 +147,7 @@ We should be able to recover the Fourier coefficient by utilizing the above
 \end{equation}
 
 where we use the easily verifiable fact that
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:800}
 \inv{L} \int_{-L/2}^{L/2} dx e^{i (k_m - k_n) x} =
 \begin{array}{l l}
@@ -157,7 +157,7 @@ where we use the easily verifiable fact that
 \end{equation}
 
 It is conventional to absorb \(\tilde{f}_{k_n} = \tilde{f}(k_n)\) for
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:330}
 \begin{aligned}
 f(x) &= \inv{L} \sum_n \tilde{f}(k_n) e^{i k_n x} \\
@@ -166,7 +166,7 @@ f(x) &= \inv{L} \sum_n \tilde{f}(k_n) e^{i k_n x} \\
 \end{equation}
 
 To take \(L \rightarrow \infty\) notice
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:350}
 k_n = \frac{2 \pi}{L} n
 \end{equation}
@@ -174,13 +174,13 @@ k_n = \frac{2 \pi}{L} n
 when \(n\) changes by \(\Delta n = 1\), \(k_n\) changes by \(\Delta k_n = \frac{2 \pi}{L} \Delta n\)
 
 Using this
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:370}
 f(x) = \inv{2\pi} \sum_n \left( \frac{2\pi}{L} \Delta n \right) \tilde{f}(k_n) e^{i k_n x}
 \end{equation}
 
 With \(L \rightarrow \infty\), and \(\Delta k_n \rightarrow 0\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:390}
 \begin{aligned}
 f(x) &= \int_{-\infty}^\infty \frac{dk}{2\pi} \tilde{f}(k) e^{i k x} \\
@@ -191,7 +191,7 @@ f(x) &= \int_{-\infty}^\infty \frac{dk}{2\pi} \tilde{f}(k) e^{i k x} \\
 \paragraph{Verify:}
 
 A loose verification of the inversion relationship (the most important bit) is possible by substitution
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:900}
 \begin{aligned}
 \int \frac{dk}{2\pi} e^{i k x} \tilde{f}(k)
@@ -203,7 +203,7 @@ A loose verification of the inversion relationship (the most important bit) is p
 \end{equation}
 
 Now we employ the old physics ploy where we identify
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:820}
 \inv{2\pi} \int dk e^{i k (x - x')} = \delta(x - x').
 \end{equation}
@@ -211,7 +211,7 @@ Now we employ the old physics ploy where we identify
 With that we see that we recover the function \(f(x)\) above as desired.
 
 \paragraph{In three dimensions}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:470}
 \begin{aligned}
 \BA(\Bx, t) &= \int
@@ -223,7 +223,7 @@ With that we see that we recover the function \(f(x)\) above as desired.
 
 \paragraph{Application to the wave equation}
 \index{wave equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:920}
 \begin{aligned}
 0 &=
@@ -244,7 +244,7 @@ e^{i \Bk \cdot \Bx}
 \end{equation}
 
 Now operate with \(\int d^3 \Bx e^{-i \Bp \cdot \Bx }\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:940}
 \begin{aligned}
 0 &=
@@ -266,19 +266,19 @@ d^3 \Bk
 \end{equation}
 
 Since this is true for all \(\Bp\) we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:490}
 \partial_{tt} \tilde{\BA}(\Bp, t) = -c^2 \Bp^2 \tilde{\BA}(\Bp, t)
 \end{equation}
 
 For every value of momentum we have a harmonic oscillator!
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:510}
 \ddot{x} = -\omega^2 x
 \end{equation}
 
 Fourier modes of EM potential in vacuum obey
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:530}
 \partial_{tt} \tilde{\BA}(\Bk, t) = -c^2 \Bk^2 \tilde{\BA}(\Bk, t)
 \end{equation}
@@ -287,7 +287,7 @@ Because we are operating in the Coulomb gauge we must also have zero divergence.
 
 
 implies
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:960}
 \begin{aligned}
 0 &= \spacegrad \cdot \BA(\Bx, t) \\
@@ -296,25 +296,23 @@ implies
 \end{equation}
 
 The chain rule for the divergence in this case takes the form
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:840}
 \spacegrad \cdot (\phi \BB) = (\spacegrad \phi) \cdot \BB + \phi \spacegrad \cdot \BB.
 \end{equation}
-
-But since our vector function \(\tilde{\BA}\) is not a function of spatial coordinates we have
+Since our vector function \(\tilde{\BA}\) is not a function of spatial coordinates we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:570}
 0 = \int \frac{d^3 \Bk }{(2 \pi)^3} e^{i \Bk \cdot \Bx} (i \Bk \cdot \tilde{\BA}(\Bk, t)).
 \end{equation}
-
 This has two immediate consequences.  The first is that our momentum space potential is perpendicular to the wave number vector at all points in momentum space, and the second gives us a conjugate relation (substitute \(\Bk \rightarrow -\Bk'\) after taking conjugates for that one)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:590}
 \begin{aligned}
 \Bk \cdot \tilde{\BA}(\Bk, t) &= 0 \\
 \tilde{\BA}(-\Bk, t) &= \tilde{\BA}^\conj(\Bk, t).
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:610}
 \BA(\Bx, t) = \int
 \frac{d^3 \Bk}{(2\pi)^3}
@@ -322,7 +320,7 @@ e^{i \Bk \cdot \Bx} \left( \inv{2} \tilde{\BA}(\Bk, t) + \inv{2} \tilde{\BA}^\co
 \end{equation}
 
 Since out system is essentially a harmonic oscillator at each point in momentum space
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:630}
 \begin{aligned}
 \partial_{tt} \tilde{\BA}(\Bk, t) &= - \omega_k^2 \tilde{\BA}(\Bk, t) \\
@@ -331,14 +329,14 @@ Since out system is essentially a harmonic oscillator at each point in momentum 
 \end{equation}
 
 our general solution is of the form
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:650}
 \begin{aligned}
 \tilde{\BA}(\Bk, t) &= e^{i \omega_k t} \Ba_{+}(\Bk) +e^{-i \omega_k t} \Ba_{-}(\Bk) \\
 \tilde{\BA}^\conj(\Bk, t) &= e^{-i \omega_k t} \Ba_{+}^\conj(\Bk) +e^{i \omega_k t} \Ba_{-}^\conj(\Bk)
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:670}
 \BA(\Bx, t)
 = \int \frac{d^3 \Bk}{(2 \pi)^3} e^{i \Bk \cdot \Bx}
@@ -349,19 +347,19 @@ e^{i \omega_k t} (\Ba_{+}(\Bk) + \Ba_{-}^\conj(-\Bk))
 \end{equation}
 
 Define
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:690}
 \Bbeta(\Bk) \equiv \inv{2} (\Ba_{-}(\Bk) + \Ba_{+}^\conj(-\Bk) )
 \end{equation}
 
 so that
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:710}
 \Bbeta(-\Bk) = \inv{2} (\Ba_{+}^\conj(\Bk) + \Ba_{-}(-\Bk))
 \end{equation}
 
 Our solution now takes the form
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:730}
 \BA(\Bx, t) = \int \frac{d^3\Bk}{(2 \pi)^3} \left(
 e^{i (\Bk \cdot \Bx + \omega_k t)} \Bbeta^\conj(-\Bk)
@@ -372,7 +370,7 @@ e^{i (\Bk \cdot \Bx + \omega_k t)} \Bbeta^\conj(-\Bk)
 \paragraph{Claim:}
 
 This is now manifestly real.  To see this, consider the first term with \(\Bk = -\Bk'\), noting that \(\int_{-\infty}^\infty dk = \int_{\infty}^\infty -dk' = \int_{-\infty}^\infty dk' \) with \(dk = -dk'\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:860}
 \int \frac{d^3\Bk'}{(2 \pi)^3} e^{i (-\Bk' \cdot \Bx + \omega_k t)} \Bbeta^\conj(\Bk')
 \end{equation}

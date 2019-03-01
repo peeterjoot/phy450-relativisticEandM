@@ -17,13 +17,13 @@ Covering chapter 8 material from the text \citep{landau1980classical}, and
 
 \section{Multipole expansion of the fields}
 \index{multipole expansion}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:10}
 A^i(\Bx, t) = \inv{c} \int d^3 \Bx' j^i\left(\Bx', t - \frac{\Abs{\Bx - \Bx'} }{c}\right) \inv{\Abs{\Bx - \Bx'} }
 \end{equation}
 
 This integral is over the region of space where the sources \(j^i\) are non-vanishing, but this region is limited.  The value \(\Abs{\Bx'} \le l\), so we can expand the denominator in multipole expansion
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:460}
 \begin{aligned}
 \inv{\Abs{\Bx - \Bx'} }
@@ -48,7 +48,7 @@ Neglecting all but the first order term in the expansion we have
 \end{equation}
 
 Similarly, for the retarded time we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:480}
 \begin{aligned}
 t - \frac{\Abs{\Bx - \Bx'} }{c}
@@ -58,7 +58,7 @@ t - \frac{\Abs{\Bx - \Bx'} }{c}
 \end{equation}
 
 We can now do a first order Taylor expansion of the current \(j^i\) about the retarded time
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:50}
 j^i\left(\Bx', t - \frac{\Abs{\Bx} }{c} + \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} } + \cdots \right)
 \approx
@@ -66,41 +66,37 @@ j^i\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right) + \PD{t}{j^i} \left(\Bx, t - \fra
 \end{equation}
 
 To elucidate the physics, imagine that time dependence of the source is periodic with angular frequency \(\omega_0\).  For example:
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:500}
 j^i = A(\Bx) e^{-i \omega t}.
 \end{equation}
 
 Here we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:70}
-\PD{t}{j^i} = -i \omega_0 j^i.
+\PD{t}{j^i} = -i \omega_0 j^i,
 \end{equation}
-
-So, for the magnitude of the second term we have
-
+so, for the magnitude of the second term we have
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:90}
 \Abs{\PD{t}{j^i} \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }} = \omega_0 \Abs{j^i \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }}.
 \end{equation}
-
 Requiring second term much less than the first term means
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:110}
 \Abs{\omega_0 \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }} \ll 1.
 \end{equation}
-
 But recall
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:130}
 \Abs{\frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }} \le l,
 \end{equation}
-
 so for our Taylor expansion to be valid we have the following constraints on the angular velocity and the position vectors for our charge and measurement position
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:150}
 \Abs{\omega_0 \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }} \le \frac{\omega_0 l}{c} \ll 1.
 \end{equation}
 
 This is a physical requirement size of the wavelength of the emitter (if the wavelength does not meet this requirement, this expansion does not work).  The connection to the wavelength can be observed by noting that we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:520}
 \begin{aligned}
 \frac{\omega_0}{c} &= k \\
@@ -121,14 +117,14 @@ This is a physical requirement size of the wavelength of the emitter (if the wav
 \end{enumerate}
 
 Plugging into our current
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:190}
 A^i(\Bx, t)
 \approx \inv{c} \int d^3 \Bx'
 \left( j^i\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right) + \PD{t}{j^i} \left(\Bx, t - \frac{\Abs{\Bx} }{c}\right) \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} } \right)
 \left( \inv{\Abs{\Bx} } + \frac{\Bx}{\Abs{\Bx}^3} \cdot \Bx' \right)
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:210}
 \begin{aligned}
 A^0(\Bx, t)
@@ -140,13 +136,13 @@ A^0(\Bx, t)
 \end{equation}
 
 The first term is the total charge evaluated at the retarded time.  In the second term (and in the third, where its derivative is taken) we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:230}
 \int d^3 \Bx' \Bx' \rho\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right) = \Bd(t_r),
 \end{equation}
 
 which is the dipole moment evaluated at the retarded time \(t_r = t - \Abs{\Bx}/c\).  In the last term we can pull out the time derivative (because we are integrating over \(\Bx'\))
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:540}
 \begin{aligned}
 \inv{\Abs{\Bx}^2} \Bx \cdot \int d^3 \Bx' \Bx' \PD{t}{} \rho\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right)
@@ -158,7 +154,7 @@ which is the dipole moment evaluated at the retarded time \(t_r = t - \Abs{\Bx}/
 \end{equation}
 
 For the spatial components of the current lets just keep the first term
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:560}
 \begin{aligned}
 A^\alpha(\Bx, t)
@@ -192,19 +188,19 @@ A^0(\Bx, t) &= \frac{Q\left(t - \frac{\Abs{\Bx} }{c}\right)}{\Abs{\Bx} } + \frac
 \makeexample{Electric dipole radiation}{example:relativisticElectrodynamicsL20:1}{
 
 PICTURE: two closely separated oppositely charges, wiggling along the line connecting them (on the z-axis).  \(-q\) at rest, while \(+q\) oscillates.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:270}
 z_+(t) = z_0 + a \sin\omega t.
 \end{equation}
 
 Since we have put the \(-q\) charge at the origin, it has no contribution to the dipole moment, and we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:290}
 \Bd(t) = \Be_3 q (z_0 + a \sin\omega t).
 \end{equation}
 
 Thus
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:310}
 \begin{aligned}
 A^0(\Bx, t) &= \inv{\Abs{\Bx}^3} \Bx \cdot \Bd\left(t - \frac{\Abs{\Bx} }{c}\right) + \inv{c \Abs{\Bx}^2} \Bx \cdot \dot{\Bd}\left(t - \frac{\Abs{\Bx} }{c}\right) \\
@@ -213,7 +209,7 @@ A^0(\Bx, t) &= \inv{\Abs{\Bx}^3} \Bx \cdot \Bd\left(t - \frac{\Abs{\Bx} }{c}\rig
 \end{equation}
 
 so with \(t_r = t - \Abs{\Bx}/c\), and \(z = \Bx \cdot \Be_3\) in the dipole dot product, we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:400}
 \begin{aligned}
 A^0(\Bx, t) &=
@@ -229,7 +225,7 @@ FIXME: think through and justify \(\omega l = v\).
 Observe that \(\omega l \sim v\) so this is a requirement that our charged positive particle is moving with \(\Abs{\Bv}/c \ll 1\).
 
 Now we will take derivatives.  The first term of the scalar potential will be ignored since the \(1/\Abs{\Bx}^2\) is non-radiative.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:580}
 \begin{aligned}
 \BE
@@ -240,13 +236,13 @@ Now we will take derivatives.  The first term of the scalar potential will be ig
 \end{equation}
 
 We have used \(\spacegrad t_r = -\spacegrad \Abs{\Bx}/c\), and \(\spacegrad \Abs{\Bx} = \rcap\), and \(\partial_t t_r = 1\).
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:420}
 \BE = \frac{ q a \omega^2 }{c^2 \Abs{\Bx} } \sin(\omega t_r) \left( \Be_3 - \frac{z}{\Abs{\Bx} } \rcap \right)
 \end{equation}
 
 So,
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:440}
 \Abs{\BS} \sim \omega^4
 \end{equation}

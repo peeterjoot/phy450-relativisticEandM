@@ -29,13 +29,13 @@ To plug in some numbers, note that the intensity of sunlight hitting the Earth i
 \makeSubAnswer{}{pr:relElectroDynProblemSet4:1a}
 
 Because it does not add too much complexity, I am going to calculate these using the more general elliptically polarized wave solutions.  Our vector potential (in the Coulomb gauge \(\phi = 0\), \(\spacegrad \cdot \BA = 0\)) has the form
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:10}
 \BA = \Real \Bbeta e^{i (\omega t - \Bk \cdot \Bx) }.
 \end{equation}
 
 The elliptical polarization case only differs from the linear by allowing \(\Bbeta\) to be complex, rather than purely real or purely imaginary.  Observe that the Coulomb gauge condition \(\spacegrad \cdot \BA\) implies
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:30}
 \Bbeta \cdot \Bk = 0,
 \end{equation}
@@ -43,25 +43,25 @@ The elliptical polarization case only differs from the linear by allowing \(\Bbe
 a fact that will kill of terms in a number of places in the following manipulations.
 
 Also observe that for this to be a solution to the wave equation operator
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:50}
 \inv{c^2} \PDSq{t}{} - \Delta,
 \end{equation}
 
 the frequency and wave vector must be related by the condition
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:70}
 \frac{\omega}{c} = \Abs{\Bk} = k.
 \end{equation}
 
 For the time and spatial phase let us write
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:90}
 \theta = \omega t - \Bk \cdot \Bx.
 \end{equation}
 
 In the Coulomb gauge, our electric and magnetic fields are
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:110}
 \begin{aligned}
 \BE &= -\inv{c}\PD{t}{\BA} = \Real \frac{-i\omega}{c} \Bbeta e^{i\theta} \\
@@ -70,44 +70,42 @@ In the Coulomb gauge, our electric and magnetic fields are
 \end{equation}
 
 Similar to \S 48 of the text \citep{landau1980classical}, let us split \(\Bbeta\) into a phase and perpendicular vector components so that
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:130}
 \Bbeta = \Bb e^{-i\alpha}
 \end{equation}
 
 where \(\Bb\) has a real square
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:150}
 \Bb^2 = \Abs{\Bbeta}^2.
 \end{equation}
 
 This allows a split into two perpendicular real vectors
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:170}
 \Bb = \Bb_1 + i \Bb_2,
 \end{equation}
-
 where \(\Bb_1 \cdot \Bb_2 = 0\) since \(\Bb^2 = \Bb_1^2 - \Bb_2^2 + 2 \Bb_1 \cdot \Bb_2\) is real.
 
 Our electric and magnetic fields are now reduced to
 \begin{equation}\label{eqn:relElectroDynProblemSet4:190}
 \begin{aligned}
 \BE &= \Real \left( \frac{-i\omega}{c} \Bb e^{i(\theta - \alpha)} \right) \\
-\BB &= \Real \left( i \Bb \cross \Bk e^{i(\theta - \alpha)} \right)
+\BB &= \Real \left( i \Bb \cross \Bk e^{i(\theta - \alpha)} \right),
 \end{aligned}
 \end{equation}
-
 or explicitly in terms of \(\Bb_1\) and \(\Bb_2\)
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:210}
 \begin{aligned}
 \BE &= \frac{\omega}{c} ( \Bb_1 \sin(\theta-\alpha) + \Bb_2 \cos(\theta-\alpha)) \\
-\BB &= ( \Bk \cross \Bb_1 ) \sin(\theta-\alpha) + (\Bk \cross \Bb_2) \cos(\theta-\alpha)
+\BB &= ( \Bk \cross \Bb_1 ) \sin(\theta-\alpha) + (\Bk \cross \Bb_2) \cos(\theta-\alpha).
 \end{aligned}
 \end{equation}
 
 The special case of interest for this problem, since it only strictly asked for linear polarization, is where \(\alpha = 0\) and one of \(\Bb_1\) or \(\Bb_2\) is zero (i.e. \(\Bbeta\) is strictly real or strictly imaginary).  The case with \(\Bbeta\) strictly real, as done in class, is
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:230}
 \begin{aligned}
 \BE &= \frac{\omega}{c} \Bb_1 \sin(\theta-\alpha) \\
@@ -116,7 +114,7 @@ The special case of interest for this problem, since it only strictly asked for 
 \end{equation}
 
 Now lets calculate the energy density and Poynting vectors.  We will need a few intermediate results.
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:380}
 \begin{aligned}
 (\Real \Bd e^{i\phi})^2
@@ -127,7 +125,7 @@ Now lets calculate the energy density and Poynting vectors.  We will need a few 
 \end{equation}
 
 and
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:400}
 \begin{aligned}
 (\Real \Bd e^{i\phi}) \cross (\Real \Be e^{i\phi})
@@ -138,7 +136,7 @@ and
 \end{equation}
 
 Let us use arrowed vectors for the phasor parts
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:250}
 \begin{aligned}
 \vec{E} &= \frac{-i\omega}{c} \Bb e^{i(\theta - \alpha)} \\
@@ -147,13 +145,12 @@ Let us use arrowed vectors for the phasor parts
 \end{equation}
 
 where we can recover our vector quantities by taking real parts \(\BE = \Real \vec{E}\), \(\BB = \Real \vec{B}\).  Our energy density in terms of these phasors is then
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:270}
 \calE
 = \inv{8\pi} (\BE^2 + \BB^2)
 = \inv{16\pi} \left( \Abs{\vec{E}}^2 + \Abs{\vec{B}}^2 + \Real ({\vec{E}}^2 + {\vec{B}}^2) \right).
 \end{equation}
-
 This is
 \begin{equation}\label{eqn:relElectroDynProblemSet4:420}
 \begin{aligned}
@@ -183,11 +180,10 @@ Note that \(\omega^2/c^2 = \Bk^2\), and \(\Abs{\Bb \cross \Bk} = \Abs{\Bb}^2 \Bk
 }
 
 Now, for the Poynting vector.  We have
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:310}
 S = \frac{c}{4 \pi} \BE \cross \BB = \frac{c}{8 \pi} \Real \left( \vec{E} \cross \vec{B}^\conj + \vec{E} \cross \vec{B} \right).
 \end{equation}
-
 This is
 \begin{equation}\label{eqn:relElectroDynProblemSet4:440}
 \begin{aligned}
@@ -204,7 +200,7 @@ S
 }
 
 Now, the text in \S 47 defines the energy flux as the Poynting vector, and the momentum density as \(\BS/c^2\), so we just divide \eqnref{eqn:relElectroDynProblemSet4:330} by \(c^2\) for the momentum density and we are done.  For the linearly polarized case (all that was actually asked for, but less cool to calculate), where \(\Bb\) is real, we have
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:350}
 \begin{aligned}
 \mbox{Energy density} &= \calE = \frac{ \Bk^2 \Bb^2 }{8\pi} ( 1 - \cos( 2 (\omega t - \Bk \cdot \Bx)) ) \\
@@ -216,13 +212,13 @@ Now, the text in \S 47 defines the energy flux as the Poynting vector, and the m
 \makeSubAnswer{}{pr:relElectroDynProblemSet4:1b}
 
 We want to average over one period, the time \(T\) such that \(\omega T = 2 \pi\), so the average is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:360}
 \expectation{f} = \frac{\omega}{2\pi} \int_0^{2\pi/\omega} f dt.
 \end{equation}
 
 It is clear that this will just kill off the sinusoidal terms, leaving
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:350b}
 \begin{aligned}
 \mbox{Average Energy density} &= \expectation{\calE} = \frac{ \Bk^2 \Abs{\Bb}^2 }{8\pi} \\
@@ -234,13 +230,13 @@ It is clear that this will just kill off the sinusoidal terms, leaving
 \makeSubAnswer{}{pr:relElectroDynProblemSet4:1c}
 
 The magnitude of the momentum of light is related to its energy by
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:351}
 \Bp = \frac{\calE}{c}
 \end{equation}
 
 and can thus loosely identify the magnitude of the force as
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:460}
 \begin{aligned}
 \ddt{\Bp}
@@ -250,19 +246,19 @@ and can thus loosely identify the magnitude of the force as
 \end{equation}
 
 With pressure as the force per area, we could identify
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:252}
 \frac{\BS}{c}
 \end{equation}
 
 as the instantaneous (directed) pressure on a surface.  What is that for linearly polarized light?  We have from above for the linear polarized case (where \(\Abs{\Bb}^2 = \Bb^2\))
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:353}
 \BS = \frac{c \kcap \Bk^2 \Bb^2 }{8 \pi} ( 1 - \cos( 2 (\omega t - \Bk \cdot \Bx) ) )
 \end{equation}
 
 If we look at the magnitude of the average pressure from the radiation, we have
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet4:354}
 \Abs{\frac{\expectation{\BS}}{c}} = \frac{\Bk^2 \Bb^2 }{8 \pi}.
 \end{equation}

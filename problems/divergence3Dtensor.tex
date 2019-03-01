@@ -10,7 +10,7 @@
 
 
 With the divergence of the energy momentum tensor converted from a volume to a surface integral given by
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:340}
 \int_V d^3 \Bx \partial_\beta T^{\beta \alpha} = \oint_{\partial V} d^2 \sigma^\beta T^{\beta \alpha},
 \end{equation}
@@ -20,13 +20,13 @@ I got to wondering what a closed form algebraic expression for this curious (and
 \section{A generally parametrized parallelepiped volume element}
 
 Suppose we parametrize a volume by specifying that all the points in that volume are covered by the position vector from the origin, given by
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:360}
 \Bx = \Bx(a_1, a_2, a_3).
 \end{equation}
 
 At any point in the volume of interest, we can create a level curve, holding two of the parameters \(a_\alpha\) constant, and varying the remaining one.  In particular, we can construct three direction vectors along these level curves, one for each parameter not held constant
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:380}
 \begin{aligned}
 d\Bx_1 &= da_1 \PD{a_1}{\Bx} \\
@@ -36,13 +36,13 @@ d\Bx_3 &= da_3 \PD{a_3}{\Bx}
 \end{equation}
 
 The span of these vectors, provided they are non-degenerate, forms a parallelepiped, the volume of which is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:400}
 d^3\Bx = d\Bx_3 \cdot (d\Bx_1 \cross d\Bx_2).
 \end{equation}
 
 This volume element can be expanded in a number of ways
-
+%
 \begin{equation}\label{eqn:divergence3Dtensor:660}
 \begin{aligned}
 d^3\Bx
@@ -71,7 +71,7 @@ da_1 da_2 da_3 \\
 \end{equation}
 
 where the Jacobian determinant is given by
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:420}
 \Abs{ \frac{\partial(x^1, x^2, x^3)}{\partial (a_1, a_2, a_3)}}
 =
@@ -83,7 +83,7 @@ where the Jacobian determinant is given by
 \end{equation}
 
 Provided we are interested in a volume for which the sign of this Jacobian determinant does not change sign, our task is to evaluate and reduce the integral
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:620}
 \int
 \Abs{ \frac{\partial(x^1, x^2, x^3)}{\partial (a_1, a_2, a_3)}}
@@ -96,7 +96,7 @@ to a set (and sum of) two dimensional integrals.
 \section{On the geometry of the surfaces}
 
 Suppose that we integrate over the ranges \([a_{1-}, a_{1+}]\), \([a_{2-}, a_{2+}]\), \([a_{3-}, a_{3+}]\).  Observe that the outwards normals along the \(a_1 = a_1+\) face is \(d\Bn_{1+} = da_2 da_3 \PDi{a_2}{\Bx} \cross \PDi{a_3}{\Bx}\).  This is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:440}
 d\Bn_{1+}
 = da_2 da_3 \PD{a_2}{\Bx} \cross \PD{a_3}{\Bx}
@@ -104,7 +104,7 @@ d\Bn_{1+}
 \end{equation}
 
 Similarly our normal on the \(a_2 = a_{2+}\) face is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:460}
 d\Bn_{2+}
 = da_3 da_1 \PD{a_3}{\Bx} \cross \PD{a_1}{\Bx}
@@ -112,7 +112,7 @@ d\Bn_{2+}
 \end{equation}
 
 and on the \(a_3 = a_{3+}\) face the outward normal is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:480}
 d\Bn_{3+}
 = da_1 da_2 \PD{a_1}{\Bx} \cross \PD{a_2}{\Bx}
@@ -120,7 +120,7 @@ d\Bn_{3+}
 \end{equation}
 
 Along the \(a_{\alpha-}\) faces these are just negated.  We can summarize these as
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:500}
 d\Bn_{\sigma\pm}
 = \pm \inv{2!} da_\alpha da_\beta \PD{a_\alpha}{\Bx} \cross \PD{a_\beta}{\Bx} \epsilon_{\alpha \beta \sigma}
@@ -130,13 +130,13 @@ d\Bn_{\sigma\pm}
 \section{Expansion of the Jacobian determinant}
 
 Suppose, to start with, our divergence volume integral \eqnref{eqn:relativisticElectrodynamicsPS6:620} has just the following term
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:520}
 \int d^3 \Bx \partial_3 M.
 \end{equation}
 
 The specifics of how the scalar \(M = T^{3 \alpha}\) is indexed will not matter yet, so let us suppress it.  The Jacobian determinant can be expanded along the \(\PD{a_\alpha}{x^3}\) column for
-
+%
 \begin{equation}\label{eqn:divergence3Dtensor:680}
 \begin{aligned}
 \int d^3 \Bx \partial_3 M
@@ -212,7 +212,7 @@ The specifics of how the scalar \(M = T^{3 \alpha}\) is indexed will not matter 
 \end{equation}
 
 Performing the same task (really just performing cyclic permutation of indices) we can now construct the whole divergence integral
-
+%
 \begin{equation}\label{eqn:divergence3Dtensor:700}
 \begin{aligned}
 \int d^3 \Bx \partial_\beta T^{\beta \alpha}
@@ -245,7 +245,7 @@ Performing the same task (really just performing cyclic permutation of indices) 
 \end{equation}
 
 Regrouping we have
-
+%
 \begin{equation}\label{eqn:divergence3Dtensor:720}
 \begin{aligned}
 \int d^3 \Bx \partial_\beta T^{\beta \alpha}
@@ -280,7 +280,7 @@ Regrouping we have
 \end{equation}
 
 Observe that we can factor these sums utilizing the normals for the parallelepiped volume element
-
+%
 \begin{equation}\label{eqn:divergence3Dtensor:740}
 \begin{aligned}
 \int d^3 \Bx \partial_\beta T^{\beta \alpha}
@@ -300,7 +300,7 @@ Observe that we can factor these sums utilizing the normals for the parallelepip
 \end{equation}
 
 Let us look at the first of these integrals in more detail.  We integrate the values of the \(\Be_\beta T^{\beta \alpha}\) evaluated on the points of the surface for which \(a_3 = a_{3+}\).  To perform this integral we dot against the outward normal area element
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:539}
 da_1 da_2 \PDi{a_1}{x^\mu} \PDi{a_2}{x^\nu} \epsilon_{\mu\nu\gamma} \Be_\gamma.
 \end{equation}
@@ -308,7 +308,7 @@ da_1 da_2 \PDi{a_1}{x^\mu} \PDi{a_2}{x^\nu} \epsilon_{\mu\nu\gamma} \Be_\gamma.
   We do the same, but subtract the integral where \(\Be_\beta T^{\beta\alpha}\) is evaluated on the surface \(a_3 = a_{3-}\), where we dot with the area element that has the inwards normal direction on that surface.  This is then done for each of the surfaces of the parallelepiped that we are integrating over.
 
 In terms of the outwards (area scaled) normals \(d\Bn_3, d\Bn_1, d\Bn_2\) on the \(a_{3+}, a_{1+}\) and \(a_{2+}\) surfaces respectively we can write
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:540}
 \int d^3 \Bx \partial_\beta T^{\beta \alpha} =
 \int d\Bn_3 \cdot \Be_\beta \evalbar{T^{\beta}{\alpha}}{\Delta a_3}
@@ -317,7 +317,7 @@ In terms of the outwards (area scaled) normals \(d\Bn_3, d\Bn_1, d\Bn_2\) on the
 \end{equation}
 
 This can be written more concisely in index form with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:640}
 d^2 \sigma^\beta =
 \epsilon_{\mu\nu\beta} \left(
@@ -331,7 +331,7 @@ d^2 \sigma^\beta =
 \end{equation}
 
 so that the divergence integral is just
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:560}
 \int d^3 \Bx =
 \int_{\text{over level surfaces \(a_{1+}\), \(a_{2+}\), \(a_{3+}\)}} d^2 \sigma^\beta T^{\beta \alpha}
@@ -339,7 +339,7 @@ so that the divergence integral is just
 \end{equation}
 
 In each case, for the \(a_{\alpha-}\) surfaces, our negated inwards normal form can be redefined so that we integrate over only the outwards normal directions, and we can use the oriented integral notation
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:580}
 \int d^3 \Bx = \oint d^2 \sigma^\beta T^{\beta \alpha},
 \end{equation}
@@ -349,7 +349,7 @@ To encode (or imply) whether we require a positive or negative sign on the area 
 \section{A look back, and looking forward}
 
 Now, having performed this long winded calculation, the meaning of \(d^2 \sigma^\beta\) becomes clear.  What is also clear is how this could have been arrived at directly utilizing the divergence theorem in its normal vector form.  We had only to re-write our equation as a vector equation in terms of the gradient
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:600}
 \int_V d^3 \Bx \PD{x^\alpha}{T^{\beta \alpha}} = \int_V d^3 \Bx \spacegrad \cdot (\Be_\beta T^{\beta \alpha}) = \int_{\partial_V} dA \Bn \cdot \Be_\beta T^{\beta \alpha}
 \end{equation}

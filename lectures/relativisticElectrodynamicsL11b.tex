@@ -7,19 +7,19 @@
 \index{invariant}
 
 For three vectors \(\BA\) and \(\BB\) invariants are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:510}
 \BA \cdot \BB = A^\alpha B_\alpha
 \end{equation}
 
 For four vectors \(A^i\) and \(B^i\) invariants are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:530}
 A^i B_i = A^i g_{i j} B^j
 \end{equation}
 
 For \(F_{i j}\) what are the invariants?  One invariant is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:550}
 g^{i j} F_{i j} = 0,
 \end{equation}
@@ -27,17 +27,16 @@ g^{i j} F_{i j} = 0,
 but this is not interesting since it is uniformly zero (product of symmetric and antisymmetric).
 
 The two invariants are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:570}
 F_{i j}F^{i j}
 \end{equation}
 
 and
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:590}
-\epsilon^{i j k l} F_{i j}F_{k l}
+\epsilon^{i j k l} F_{i j}F_{k l},
 \end{equation}
-
 where
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:610}
 \epsilon^{i j k l} =
@@ -51,11 +50,11 @@ where
 \end{equation}
 
 We can show (homework) that
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:630}
 F_{i j}F^{i j} \sim \BE^2 - \BB^2
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:650}
 \epsilon^{i j k l} F_{i j}F_{k l} \sim \BE \cdot \BB
 \end{equation}
@@ -70,25 +69,23 @@ From the first, note that if \(\Abs{\BE} > \Abs{\BB}\), the invariant is positiv
 \index{Maxwell's equations}
 
 \paragraph{Claim: } The source free portions of Maxwell's equations are a consequence of the definition of the field tensor alone.
-
 Given
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:670}
 F_{i j} = \partial_i A_j - \partial_j A_i,
 \end{equation}
-
 where
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:690}
-\partial_i = \PD{x^i}{}
+\partial_i = \PD{x^i}{}.
 \end{equation}
 
 This alone implies half of Maxwell's equations.  To show this we consider
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:710}
 \epsilon^{m k i j} \partial_k F_{i j} = 0.
 \end{equation}
 
 This is the Bianchi identity.  To demonstrate this identity, we will have to swap indices, employ derivative commutation, and then swap indices once more
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11b:1380}
 \begin{aligned}
 \epsilon^{m k i j} \partial_k F_{i j}
@@ -105,19 +102,19 @@ This is the Bianchi identity.  To demonstrate this identity, we will have to swa
 \end{equation}
 
 This is the 4D analogue of
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:790}
 \spacegrad \cross (\spacegrad f) = 0
 \end{equation}
 
 i.e.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:810}
 \epsilon^{\alpha\beta\gamma} \partial_\beta \partial_\gamma f = 0
 \end{equation}
 
 Let us do this explicitly, starting with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:370b}
 \Norm{ F_{i j} } =
 \begin{bmatrix}
@@ -129,7 +126,7 @@ Let us do this explicitly, starting with
 \end{equation}
 
 For the \(m= 0\) case we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11b:1400}
 \begin{aligned}
 \epsilon^{0 k i j} \partial_k F_{i j}
@@ -148,19 +145,19 @@ For the \(m= 0\) case we have
 \end{equation}
 
 We must then have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:830}
 \partial_\alpha B_\alpha = 0.
 \end{equation}
 
 This is just Gauss's law for magnetism
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:850}
 \spacegrad \cdot \BB = 0.
 \end{equation}
 
 Let us do the spatial portion, for which we have three equations, one for each \(\alpha\) of
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11b:1420}
 \begin{aligned}
 \epsilon^{\alpha j k l} \partial_j F_{k l}
@@ -187,7 +184,7 @@ Let us do the spatial portion, for which we have three equations, one for each \
 \end{equation}
 
 This implies
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1320}
 0 =
 -\partial_0 F_{\beta \gamma}
@@ -207,13 +204,13 @@ Referring back to the previous expansions of \eqnref{eqn:relativisticElectrodyna
 \end{equation}
 
 or
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1360}
 \inv{c} \PD{t}{B_\alpha} + (\spacegrad \cross \BE)_\alpha = 0.
 \end{equation}
 
 These are just the components of the Faraday's law
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:930}
 0 = \inv{c} \PD{t}{\BB} + \spacegrad \cross \BE.
 \end{equation}
@@ -223,7 +220,7 @@ These are just the components of the Faraday's law
 \paragraph{Transposition of mixed index tensor}
 
 Is the transpose of a mixed index object just a substitution of the free indices?  This was not obvious to me that it would be the case, especially since I had made an error in some index gymnastics that had me temporarily convinced differently.  However, working some examples clears the fog.  For example let us take the transpose of \eqnref{eqn:relativisticElectrodynamicsL11:470}.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11b:1440}
 \begin{aligned}
 \Norm{ {\delta^i}_j }^\T
@@ -243,11 +240,10 @@ Is the transpose of a mixed index object just a substitution of the free indices
 \end{equation}
 
 If the transpose of a mixed index tensor just swapped the indices we would have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1060}
-\Norm{ {\delta^i}_j }^\T = \Norm{ O_{a i} O^{a j} }
+\Norm{ {\delta^i}_j }^\T = \Norm{ O_{a i} O^{a j} }.
 \end{equation}
-
 From this it does appear that all we have to do is switch the indices and we will write
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1060b}
 {\delta^j}_i = O_{a i} O^{a j}
@@ -256,7 +252,7 @@ From this it does appear that all we have to do is switch the indices and we wil
 %It would be easy to brush aside this bit of slight of hand here in the transposition with the positioning of the indices?
 %With all this index gymnastics, even the transposition operation appears to be something that we have to treat carefully.
 We can consider a more general operation
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11b:1460}
 \begin{aligned}
 \Norm{{A^i}_j}^\T
@@ -298,7 +294,7 @@ So we see that we do just have to swap indices.
 \paragraph{Transposition of lower index tensor}
 
 We have saw above that we had
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1022}
 \begin{aligned}
 \Norm{ {A^{i}}_j }^\T &= \Norm{ {A_{j}}^i } \\
@@ -307,13 +303,13 @@ We have saw above that we had
 \end{equation}
 
 which followed by careful treatment of the transposition in terms of \(A^{i j}\) for which we defined a transpose operation.  We assumed as well that
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1042}
 \Norm{ A_{i j} }^\T = \Norm{ A_{j i} }.
 \end{equation}
 
 However, this does not have to be assumed, provided that \(g^{i j} = g_{i j}\), and \((AB)^\T = B^\T A^\T\).  We see this by expanding this transposition in products of \(A^{i j}\) and \(\hat{G}\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11b:1480}
 \begin{aligned}
 \Norm{ A_{i j} }^\T
@@ -333,7 +329,7 @@ It would be worthwhile to go through all of this index manipulation stuff and la
 A verification that the matrix expression \eqnref{eqn:relativisticElectrodynamicsL11:471}, matches the index expression \eqnref{eqn:relativisticElectrodynamicsL11:470} as claimed is worthwhile.  It would be easy to guess something similar like \(\hat{O}^\T \hat{G} \hat{O} \hat{G}\) is instead the matrix representation.  That was in fact my first erroneous attempt to form the matrix equivalent, but is the transpose of \eqnref{eqn:relativisticElectrodynamicsL11:471}.  Either way you get an identity, but the indices did not match.
 
 Since we have \(g^{i j} = g_{i j}\) which do we pick to do this verification?  This appears to be dictated by requirements to match lower and upper indices on the summed over index.  This is probably clearest by example, so let us expand the products on the LHS explicitly
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11b:1500}
 \begin{aligned}
 \Norm{ g^{i j} }

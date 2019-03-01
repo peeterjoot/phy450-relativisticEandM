@@ -10,20 +10,20 @@
 \makeproblem{Energy term of the Lorentz force equation}{pr:lorentzForceHamiltonian:1}{
 
 In class this week, the Lorentz force was derived from an action (the simplest Lorentz invariant, gauge invariant, action that could be constructed)
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:10}
 S = - m c \int ds - \frac{e}{c} \int ds A^i u_i.
 \end{equation}
 
 We end up with the familiar equation, with the exception that the momentum includes the relativistically required gamma factor
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:20}
 \frac{d (\gamma m \Bv)}{dt} = e \left( \BE + \frac{\Bv}{c} \cross \BB \right).
 \end{equation}
 
 I asked what the energy term of this equation would be and was answered that we would get to it, and
 This can be obtained by a four vector minimization of the action which produces the Lorentz force equation of the following form
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:30}
 \frac{du^i}{d\tau} \sim e F^{ij} u_j.
 \end{equation}
@@ -60,7 +60,7 @@ Now do the same, extracting the Lorentz force terms, and compare to the results 
 \makeSubAnswer{}{pr:lorentzForceHamiltonian:1:a}
 
 Parameterizing the action by time we have
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:400}
 \begin{aligned}
 S
@@ -70,32 +70,32 @@ S
 \end{equation}
 
 Our Lagrangian is therefore
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:31}
 \LL(\Bx, \Bv, t) =
 -m c^2 \InvGamma - e \phi(\Bx, t) + \frac{e}{c} \BA(\Bx, t) \cdot \Bv
 \end{equation}
 
 We can calculate our conjugate momentum easily enough
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:40}
 \PD{\Bv}{\LL} = \gamma m \Bv + \frac{e}{c} \BA,
 \end{equation}
 
 and for the gradient portion of the Euler-Lagrange equations we have
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:60}
 \PD{\Bx}{\LL} = -e \spacegrad \phi + e \spacegrad \left( \frac{\Bv}{c} \cdot \BA \right).
 \end{equation}
 
 Utilizing the convective derivative (i.e. chain rule in fancy clothes)
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:80}
 \frac{d}{dt} = \Bv \cdot \spacegrad + \PD{t}{}.
 \end{equation}
 
 This gives us
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:100}
 -e \spacegrad \phi + e \spacegrad \left( \frac{\Bv}{c} \cdot \BA \right) =
 \frac{d(\gamma m \Bv)}{dt}
@@ -104,7 +104,7 @@ This gives us
 \end{equation}
 
 and a final bit of rearranging gives us
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:120}
 \frac{d(\gamma m \Bv)}{dt} =
 e \left( -\spacegrad \phi - \inv{c} \PD{t}{\BA}
@@ -115,7 +115,7 @@ e \left( -\spacegrad \phi - \inv{c} \PD{t}{\BA}
 \end{equation}
 
 The first set of derivatives we identify with the electric field \(\BE\).  For the second, utilizing the vector triple product identity from \citep{wiki:tripleProduct}, gives
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:140}
 \Ba \cross (\Bb \cross \Bc) = \Bb (\Ba \cdot \Bc) - (\Ba \cdot \Bb) \Bc,
 \end{equation}
@@ -125,7 +125,7 @@ which we recognize as related to the magnetic field \(\Bv \cross \BB = \Bv \cros
 \makeSubAnswer{}{pr:lorentzForceHamiltonian:1:b}
 
 We can only actually calculate a Hamiltonian for the case where \(\phi(\Bx, t) = \phi(\Bx)\) and \(\BA(\Bx, t) = \BA(\Bx)\), because when the potentials have any sort of time dependence we do not have a Lagrangian that is invariant under time translation.  Returning to the derivation of the Hamiltonian conservation equation, we see that we must modify the argument slightly when there is a time dependence and get instead
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:160}
 \frac{d}{dt} \left( \PD{\Bv}{\LL} \cdot \Bv - \LL \right) + \PD{t}{\LL} = 0.
 \end{equation}
@@ -133,7 +133,7 @@ We can only actually calculate a Hamiltonian for the case where \(\phi(\Bx, t) =
 Only when there is no time dependence in the Lagrangian, do we have our conserved quantity, what we label as energy, or Hamiltonian.
 
 From \eqnref{eqn:lorentzForceHamiltonian:40}, we have
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:420}
 \begin{aligned}
 0 &=
@@ -146,7 +146,7 @@ From \eqnref{eqn:lorentzForceHamiltonian:40}, we have
 \end{equation}
 
 Our \(\BA \cdot \Bv\) terms cancel, and we can combine the \(\gamma\) and \(\gamma^{-1}\) terms, then apply the convective derivative again
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:440}
 \begin{aligned}
 \frac{d}{dt} \left(
@@ -162,7 +162,6 @@ Our \(\BA \cdot \Bv\) terms cancel, and we can combine the \(\gamma\) and \(\gam
 + e \Bv \cdot \left( - \spacegrad \phi - \inv{c} \PD{t}{\BA} \right).
 \end{aligned}
 \end{equation}
-
 This is just
 \begin{equation}\label{eqn:lorentzForceHamiltonian:200}
 \frac{d}{dt} \left(
@@ -170,9 +169,8 @@ This is just
 \right)
 = e \Bv \cdot \BE,
 \end{equation}
-
 and we find the rate of change of energy term of our four momentum equation
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:220}
 \frac{d}{dt}
 \left(
@@ -182,7 +180,7 @@ and we find the rate of change of energy term of our four momentum equation
 \end{equation}
 
 Specified explicitly, this is
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:220b}
 \frac{d}{dt}
 \left( \gamma m \left( c, \Bv \right) \right)
@@ -192,7 +190,7 @@ Specified explicitly, this is
 While this was the result I was looking for, once written it now stands out as incomplete relativistically.  We have an equation that specifies the time derivative of a four vector.  What about the spatial derivatives?  We really ought to have a rank two tensor result, and not a four vector result relating the fields and the energy and momentum of the particle.  The Lorentz force equation, even when expanded to four vector form, does not seem complete relativistically.
 
 With \(u^i = dx^i/ds\), we can rewrite \eqnref{eqn:lorentzForceHamiltonian:220b} as
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:230}
 \partial_0 (\gamma m u^i)
 = e \left( \frac{\Bv}{c} \cdot \BE, \BE + \frac{\Bv}{c} \cross \BB \right).
@@ -204,10 +202,10 @@ If we were to vary the action with respect to a spatial coordinate instead of ti
 \makeSubAnswer{}{pr:lorentzForceHamiltonian:1:c}
 
 We can rewrite our action, parameterizing with proper time.  This is
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:240}
 S = -m c^2 \int d\tau \sqrt{ \frac{dx^i}{d\tau} \frac{dx_i}{d\tau} }
-- \frac{e}{c} \int d\tau A_i \frac{dx^i}{d\tau}
+- \frac{e}{c} \int d\tau A_i \frac{dx^i}{d\tau}.
 \end{equation}
 
 Writing \(\dot{x}^i = dx^i/d\tau\), our Lagrangian is then
@@ -218,7 +216,7 @@ Writing \(\dot{x}^i = dx^i/d\tau\), our Lagrangian is then
 \end{equation}
 
 The Euler-Lagrange equations take the form
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:255}
 \PD{x^i}{\LL}
 =
@@ -226,7 +224,7 @@ The Euler-Lagrange equations take the form
 \end{equation}
 
 Our gradient and conjugate momentum are
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:260}
 \begin{aligned}
 \PD{x^i}{\LL}
@@ -237,11 +235,10 @@ Our gradient and conjugate momentum are
 \end{equation}
 
 With our convective derivative taking the form
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:270}
 \frac{d}{d\tau} = \dot{x}^i \PD{x^i}{},
 \end{equation}
-
 we have
 \begin{equation}\label{eqn:lorentzForceHamiltonian:460}
 \begin{aligned}
@@ -269,13 +266,13 @@ m \frac{d^2 x_i}{d\tau^2}
 \end{equation}
 
 Our Prof wrote this with indices raised and lowered respectively
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:280}
 m \frac{d^2 x^i}{d\tau^2} = \frac{e}{c} F^{ij} \dot{x}_j .
 \end{equation}
 
 Following the text \citep{landau1980classical} he also writes \(u^i = dx^i/ds = (1/c) dx^i/d\tau\), and in that form we have
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:290}
 \frac{d (m c u^i)}{ds} = \frac{e}{c} F^{ij} u_j.
 \end{equation}
@@ -284,27 +281,25 @@ Following the text \citep{landau1980classical} he also writes \(u^i = dx^i/ds = 
 %\paragraph{Expressed explicitly in terms of the three vector fields.  The power term.}
 
 From \eqnref{eqn:lorentzForceHamiltonian:290}, lets extract the \(i=0\) term, relating the rate of change of energy to the field and particle velocity.  With
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:300}
 \ddtau{} = \frac{dt}{d\tau} \frac{d}{dt} = \gamma \ddt{},
 \end{equation}
-
 we have
-
 %\frac{d (m dx^i/d\tau)}{ds} = \frac{e}{c} F^{ij} u_j.
 \begin{equation}\label{eqn:lorentzForceHamiltonian:310}
 \ddt{(m \gamma \ddt{x^i})} = \frac{e}{c} F^{ij} \ddt{x_j}.
 \end{equation}
 
 For \(i=0\) we have
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:320}
 F^{0j} \ddt{x_j}
 = -F^{0\alpha} \ddt{x^\alpha}
 \end{equation}
 
 That component of the field is
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:480}
 \begin{aligned}
 F^{\alpha 0}
@@ -317,7 +312,7 @@ F^{\alpha 0}
 \end{equation}
 
 This verifies the result obtained with considerably more difficulty, using the Hamiltonian like conservation relation obtained for a time translation of a time dependent Lagrangian
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:330}
 \ddt{(m \gamma c^2 )} = e \BE \cdot \Bv.
 \end{equation}
@@ -326,7 +321,7 @@ This verifies the result obtained with considerably more difficulty, using the H
 \makeSubAnswer{}{pr:lorentzForceHamiltonian:1:e}
 
 Let us also verify the signs for the \(i > 0\) terms.  For those we have
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:500}
 \begin{aligned}
 \ddt{(m \gamma \ddt{x^\alpha})}
@@ -343,7 +338,7 @@ v^\beta \\
 \end{equation}
 
 Since we have only spatial indices left, lets be sloppy and imply summation over all repeated indices, even if unmatched upper and lower.  This leaves us with
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:520}
 \begin{aligned}
 -\left( \partial^\alpha A^\beta - \partial^\beta A^\alpha \right) v^\beta
@@ -355,14 +350,14 @@ Since we have only spatial indices left, lets be sloppy and imply summation over
 \end{equation}
 
 With the \(v^\beta\) contraction we have
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:370}
 \epsilon_{\alpha \beta \gamma} B^\gamma v^\beta
 = (\Bv \cross \BB)^\alpha,
 \end{equation}
 
 leaving our first result obtained by the time parametrization of the Lagrangian
-
+%
 \begin{equation}\label{eqn:lorentzForceHamiltonian:380}
 \ddt{(m \gamma \Bv)} = e \left(\BE + \frac{\Bv}{c} \cross \BB \right).
 \end{equation}

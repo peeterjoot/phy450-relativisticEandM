@@ -11,19 +11,19 @@ Show explicitly that the electromagnetic 4-current \(j^i\) for a particle moving
 \makeanswer{pr:relElectroDynProblemSet3:3}{
 
 First lets review.  Our four current was defined as
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1900}
 j^i(x) = \sum_A c e_A \int_{x(\tau)} dx_A^i(\tau) \delta^4(x - x_A(\tau)).
 \end{equation}
 
 If each of the trajectories \(x_A(\tau)\) represents constant motion we have
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1920}
 x_A(\tau) = x_A(0) + \gamma_A \tau ( c, \Bv_A ).
 \end{equation}
 
 The spacetime split of this four vector is
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1940}
 \begin{aligned}
 x_A^0(\tau) &= x_A^0(0) + \gamma_A \tau c \\
@@ -32,7 +32,7 @@ x_A^0(\tau) &= x_A^0(0) + \gamma_A \tau c \\
 \end{equation}
 
 with differentials
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1960}
 \begin{aligned}
 dx_A^0(\tau) &= \gamma_A d\tau c \\
@@ -41,7 +41,7 @@ d\Bx_A(\tau) &= \gamma_A d\tau \Bv_A.
 \end{equation}
 
 Writing out the delta functions explicitly we have
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:1980}
 \begin{aligned}
 j^i(x) = \sum_A &c e_A \int_{x(\tau)} dx_A^i(\tau)
@@ -53,7 +53,7 @@ j^i(x) = \sum_A &c e_A \int_{x(\tau)} dx_A^i(\tau)
 \end{equation}
 
 So our time and space components of the current can be written
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2000}
 \begin{aligned}
 j^0(x) &= \sum_A c^2 e_A \gamma_A \int_{x(\tau)} d\tau
@@ -66,7 +66,7 @@ j^0(x) &= \sum_A c^2 e_A \gamma_A \int_{x(\tau)} d\tau
 \end{equation}
 
 Each of these integrals can be evaluated with respect to the time coordinate delta function leaving the distribution
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2020}
 \begin{aligned}
 j^0(x) &= \sum_A c e_A
@@ -79,7 +79,7 @@ j^0(x) &= \sum_A c e_A
 With this more general expression (multi-particle case) it should be possible to show that the four divergence is zero, however, the problem only asks for one particle.  For the one particle case, we can make things really easy by taking the initial point in space and time as the origin, and aligning our velocity with one of the coordinates (say \(x\)).
 
 Doing so we have the result derived in class
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2040}
 j = e
 \begin{bmatrix}
@@ -94,7 +94,7 @@ v \\
 \end{equation}
 
 Our divergence then has only two portions
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2060}
 \begin{aligned}
 \PD{x^0}{j^0} &= e c (-v/c) \delta'(x - v x^0/c) \delta(y) \delta(z) \\
@@ -107,7 +107,7 @@ and these cancel out when summed.  Note that this requires us to be loose with o
 For the more general multiparticle case, we can treat the sum one particle at a time, and in each case, rotate coordinates so that the four divergence only picks up one term.
 
 As for physical interpretation via integral, we have using the four dimensional divergence theorem
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2080}
 \int d^4 x \partial_i j^i = \int j^i dS_i
 \end{equation}
@@ -115,7 +115,7 @@ As for physical interpretation via integral, we have using the four dimensional 
 where \(dS_i\) is the three-volume element perpendicular to a \(x^i = \text{constant}\) plane.  These volume elements are detailed generally in the text \citep{landau1980classical}, however, they do note that one special case specifically \(dS_0 = dx dy dz\), the element of the three-dimensional (spatial) volume ``normal'' to hyperplanes \(ct = \text{constant}\).
 
 Without actually computing the determinants, we have something that is roughly of the form
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2100}
 0
 = \int j^i dS_i
@@ -129,7 +129,7 @@ This is cheating a bit to just write \(\Bn_x, \Bn_y, \Bn_z\).  Are there specifi
 Per unit time, we can write instead
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2120}
 \PD{t}{} \int \rho dV
-= -\int \Bj \cdot (\Bn_x dy dz + \Bn_y dx dz + \Bn_z dx dy)
+= -\int \Bj \cdot (\Bn_x dy dz + \Bn_y dx dz + \Bn_z dx dy).
 \end{equation}
 
 Rather loosely this appears to roughly describe that the rate of change of charge in a volume must be matched with the ``flow'' of current through the surface within that amount of time.

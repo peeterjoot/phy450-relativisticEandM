@@ -21,7 +21,7 @@ Covering chapter 6 material from the text \citep{landau1980classical}, and
 
 Recall that in the Coulomb gauge
 \index{Coulomb gauge}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:10}
 \begin{aligned}
 A^0 &= 0 \\
@@ -30,13 +30,13 @@ A^0 &= 0 \\
 \end{equation}
 
 our equation to solve is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:30}
 \left( \inv{c^2} \PDSq{t}{} - \Delta \right) \BA = 0.
 \end{equation}
 
 We found that the general solution was
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:50}
 \BA(\Bx, t) = \int \frac{d^3\Bk}{(2 \pi)^3} \left(
 e^{i (\Bk \cdot \Bx + \omega_k t)} \Bbeta^\conj(-\Bk)
@@ -45,13 +45,13 @@ e^{i (\Bk \cdot \Bx + \omega_k t)} \Bbeta^\conj(-\Bk)
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:70}
 \Bk \cdot \Bbeta(\Bk) = 0
 \end{equation}
 
 It is clear that this is a solution since
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:90}
 \left( \inv{c^2} \PDSq{t}{} - \Delta \right) e^{i (\Bk \cdot \Bx \pm \omega_k t)} = 0
 \end{equation}
@@ -59,7 +59,7 @@ It is clear that this is a solution since
 \section{Moving to physically relevant results}
 
 Since the most general solution is a sum over \(\Bk\), it is enough to consider only a single \(\Bk\), or equivalently, take
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:110}
 \begin{aligned}
 \Bbeta(\Bk) &= \Bbeta ( 2\pi)^3 \delta^3(\Bk - \Bp) \\
@@ -68,7 +68,7 @@ Since the most general solution is a sum over \(\Bk\), it is enough to consider 
 \end{equation}
 
 but we have the freedom to pick a real and constant \(\Bbeta\).  Now our solution is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:130}
 \BA(\Bx, t) = \Bbeta \left(
 e^{-i (\Bp \cdot \Bx + \omega_k t)}
@@ -78,7 +78,7 @@ e^{-i (\Bp \cdot \Bx + \omega_k t)}
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:150}
 \Bbeta \cdot \Bp = 0.
 \end{equation}
@@ -86,28 +86,25 @@ where
 Note that the more general case, utilizing complex \(\Bbeta\), leads to eliptically polarized fields.  This is handled very elegantly (and compactly) in \S 48 of the text.
 
 Let us choose
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:170}
-\Bp = (p, 0, 0)
+\Bp = (p, 0, 0).
 \end{equation}
 
 Since
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:190}
-\Bp \cdot \Bbeta = p_x \beta_x
+\Bp \cdot \Bbeta = p_x \beta_x,
 \end{equation}
-
 we must have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:210}
-\Bbeta_x = 0
+\Bbeta_x = 0,
 \end{equation}
-
 so
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:230}
 \Bbeta = (0, \beta_y, \beta_z)
 \end{equation}
-
 \paragraph{Claim:} The Coulomb gauge \(0 = \spacegrad \cdot \BA = (\Bbeta \cdot \Bp)\sin(\omega t - \Bp \cdot \Bx)\) implies that there are two linearly independent choices of \(\Bbeta\) and \(\Bp\).
 
 FIXME: missing exactly how this is?
@@ -115,7 +112,7 @@ FIXME: missing exactly how this is?
 PICTURE:
 
 \(\Bbeta_1\), \(\Bbeta_2\), \(\Bp\) all mutually perpendicular.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:880}
 \begin{aligned}
 \BE
@@ -131,7 +128,7 @@ PICTURE:
 \boxedEquation{eqn:relativisticElectrodynamicsL16:250}{
 \BE = \Bbeta \Abs{\Bp} \sin(\omega t - \Bp \cdot \Bx)
 }
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:900}
 \begin{aligned}
 \BB
@@ -147,7 +144,7 @@ PICTURE:
 }
 
 Observe also that \(\BE\) and \(\BB\) are not independent.  We have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:271}
 \hat{\Bp} \cross \BE = (\hat{\Bp} \cross \Bbeta) \Abs{\Bp} \sin(\omega t - \Bp \cdot \Bx) = \BB
 \end{equation}
@@ -157,7 +154,7 @@ Observe also that \(\BE\) and \(\BB\) are not independent.  We have
 (since we have two linearly independent choices)
 
 \paragraph{Example:} take \(\Bbeta \parallel \Be_2\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:290}
 \begin{aligned}
 \BE &= \Bbeta p \sin(c p t - p x)  \\
@@ -166,7 +163,7 @@ Observe also that \(\BE\) and \(\BB\) are not independent.  We have
 \end{equation}
 
 At \(t = 0\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:310}
 \begin{aligned}
 \BE &= -\Bbeta p \sin( p x)  \\
@@ -178,7 +175,7 @@ B_z &= - \Abs{\Bbeta} \Be_3 c p \sin(p x)
 PICTURE: two oscillating mutually perpendicular sinusoids.
 
 So physically, we see that \(\Bp\) is the direction of propagation.  We have always
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:330}
 \Bp \perp \BE
 \end{equation}
@@ -196,7 +193,7 @@ This is the starting point for the field of optics, because the polarization of 
 Maxwell field in vacuum is the sum of plane monochromatic waves, two per wave vector.
 
 PICTURE:
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:920}
 \begin{aligned}
 \BE &\parallel \Be_3 \\
@@ -206,19 +203,18 @@ PICTURE:
 \end{equation}
 
 PICTURE:
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:940}
 \begin{aligned}
 \BB &\parallel -\Be_3 \\
 \BE &\parallel \Be_1 \\
-\Bk &\parallel \Be_2
+\Bk &\parallel \Be_2,
 \end{aligned}
 \end{equation}
-
-(two linearly independent polarizations)
+two linearly independent polarizations.
 
 Our wave frequency is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:370}
 \omega_{\Bk} = c \Abs{\Bk}
 \end{equation}
@@ -229,13 +225,13 @@ FIXME:DIY: see:
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:390}
 \sin(k c t - k x)
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:410}
 \lambda_{\Bk} = \frac{2 \pi}{k}
 \end{equation}
 
 period
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:430}
 T = \frac{ 2 \pi} {k c} = \frac{\lambda_\Bk}{c}
 \end{equation}
@@ -247,25 +243,25 @@ T = \frac{ 2 \pi} {k c} = \frac{\lambda_\Bk}{c}
 \paragraph{Classical mechanics motivation}
 
 To motivate our approach, let us recall one route from our equations of motion in classical mechanics, to the energy conservation relation.  Our EOM in one dimension is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:450}
 m \frac{d}{dt} \dot{x} = - \calU'(x).
 \end{equation}
 
 We can multiply both sides by what we take the time derivative of
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:470}
 m \dot{x} \ddt{\dot{x}} = - \dot{x} \calU'(x),
 \end{equation}
 
 and then manipulate it a bit so that we have time derivatives on both sides
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:490}
 \ddt{} \frac{m \dot{x}^2}{2} = - \ddt{ \calU(x) }.
 \end{equation}
 
 Taking differences, we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:510}
 \ddt{} \left( \frac{m \xdot^2}{2} + \calU(x) \right) = 0,
 \end{equation}
@@ -275,26 +271,23 @@ which allows us to find a conservation relationship that we label energy conserv
 \paragraph{Doing the same thing for Maxwell's equations}
 
 Poppitz claims we have very little tricks in physics, and we really just do the same thing for our EM case.  Our equations are a bit messier to start with, and for the vacuum, our non-divergence equations are
-
 %label{eqn:relativisticElectrodynamicsL13:410}
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:530}
 \begin{aligned}
 \spacegrad \cross \BB -\inv{c} \PD{t}{\BE} &= \frac{4 \pi}{c} \Bj \\
-\spacegrad \cross \BE +\inv{c} \PD{t}{\BB} &= 0
+\spacegrad \cross \BE +\inv{c} \PD{t}{\BB} &= 0.
 \end{aligned}
 \end{equation}
-
 We can dot these with \(\BE\) and \(\BB\) respectively, repeating the trick of ``multiplying'' by what we take the time derivative of
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:550}
 \begin{aligned}
 \BE \cdot (\spacegrad \cross \BB) -\inv{c} \BE \cdot \PD{t}{\BE} &= \frac{4 \pi}{c} \BE \cdot \Bj \\
 \BB \cdot (\spacegrad \cross \BE) +\inv{c} \BB \cdot \PD{t}{\BB} &= 0,
 \end{aligned}
 \end{equation}
-
 and then take differences
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:570}
 \inv{c} \left(
 \BB \cdot \PD{t}{\BB}
@@ -303,13 +296,13 @@ and then take differences
 \end{equation}
 
 \paragraph{Claim:}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:590}
 -\BB \cdot (\spacegrad \cross \BE) +\BE \cdot (\spacegrad \cross \BB) = \spacegrad \cdot ( \BB \cross \BE ).
 \end{equation}
 
 This is almost trivial with an expansion of the RHS in tensor notation
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:960}
 \begin{aligned}
 \spacegrad \cdot ( \BB \cross \BE )
@@ -326,7 +319,7 @@ e^{\alpha \beta \sigma} B^\beta (\partial_\alpha E^\sigma) \\
 \end{equation}
 
 Regrouping we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:610}
 \inv{2 c} \PD{t}{} \left(
 \BB^2 + \BE^2 \right) + \spacegrad \cdot ( \BE \cross \BB )
@@ -335,13 +328,13 @@ Regrouping we have
 \end{equation}
 
 A final rescaling makes the units natural
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:630}
 \PD{t}{} \frac{ \BE^2 + \BB^2 }{8 \pi} + \spacegrad \cdot \left( \frac{c}{4 \pi} \BE \cross \BB \right) = - \BE \cdot \Bj.
 \end{equation}
 
 We define the cross product term as the Poynting vector
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:650}
 \begin{aligned}
 \BS &= \frac{c}{4 \pi} \BE \cross \BB.
@@ -349,20 +342,20 @@ We define the cross product term as the Poynting vector
 \end{equation}
 
 Suppose we integrate over a spatial volume.  This gives us
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:670b}
 \PD{t}{}\int_V d^3 \Bx \frac{ \BE^2 + \BB^2 }{8 \pi} + \int_V d^3 \Bx \spacegrad \cdot \BS = - \int_V d^3 \Bx \BE \cdot \Bj.
 \end{equation}
 
 Our Poynting integral can be converted to a surface integral utilizing Stokes theorem
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:800}
 \int_V d^3 \Bx \spacegrad \cdot \BS = \int_{\partial V} d^2 \sigma \Bn \cdot \BS =
 \int_{\partial V} d^2 \Bsigma \cdot \BS
 \end{equation}
 
 We make the interpretations
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:980}
 \begin{aligned}
 \int_V d^3 \Bx \frac{ \BE^2 + \BB^2 }{8 \pi} &= \mbox{energy} \\
@@ -374,17 +367,15 @@ We make the interpretations
 \paragraph{Justifying the sign, and clarifying work done by what, above.}
 
 Recall that the energy term of the Lorentz force equation was
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:820}
-\ddt{\calE_{\text{kinetic}}} = e \BE \cdot \Bv
+\ddt{\calE_{\text{kinetic}}} = e \BE \cdot \Bv,
 \end{equation}
-
 and
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:840}
-\Bj = e \rho \Bv
+\Bj = e \rho \Bv,
 \end{equation}
-
 so
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:860}
 \int_V d^3 \Bx \BE \cdot \Bj
@@ -395,25 +386,25 @@ represents the rate of change of kinetic energy of the charged particles as they
 \paragraph{Aside: As a four vector relationship}
 
 In tutorial today (after this lecture, but before typing up these lecture notes in full), we used \(\calU\) for the energy density term above
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:650b}
 \calU = \frac{ \BE^2 + \BB^2 }{8 \pi} .
 \end{equation}
 
 This allows us to group the quantities in our conservation relationship above nicely
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:670}
 \PD{t}{\calU} + \spacegrad \cdot \BS = - \BE \cdot \Bj.
 \end{equation}
 
 It appears natural to write \eqnref{eqn:relativisticElectrodynamicsL16:670} in the form of a four divergence.  Suppose we define
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:710}
 P^i = (\calU/c, \BS/c^2)
 \end{equation}
 
 then we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:730}
 \partial_i P^i = - \BE \cdot \Bj/c^2.
 \end{equation}

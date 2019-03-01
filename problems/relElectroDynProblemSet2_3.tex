@@ -25,7 +25,7 @@ Use the relations between electric and magnetic field strengths and vector poten
 \makeSubAnswer{}{pr:relElectroDynProblemSet2:3a}
 
 In the unprimed frame we have
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1210}
 \begin{aligned}
 \BE
@@ -35,7 +35,6 @@ In the unprimed frame we have
 &= \rcap \frac{q}{r^2},
 \end{aligned}
 \end{equation}
-
 and
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1230}
 \begin{aligned}
@@ -46,7 +45,7 @@ and
 \makeSubAnswer{}{pr:relElectroDynProblemSet2:3b}
 
 The coordinates in the moving frame, assuming the frames are overlapping at \(t=0\), are related to the unprimed coordinates by
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:930}
 \begin{bmatrix}
 ct' \\
@@ -70,7 +69,7 @@ z
 \end{equation}
 
 Our four vector potential also transforms in the same fashion, and we have
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:950}
 \begin{bmatrix}
 \phi' \\
@@ -91,10 +90,9 @@ A_z' \\
 0 \\
 0 \\
 \end{bmatrix}
-= \gamma \phi ( 1, -\beta, 0, 0 )
+= \gamma \phi ( 1, -\beta, 0, 0 ),
 \end{equation}
-
-So in the primed frame we have
+so in the primed frame we have
 \begin{equation}\label{eqn:relElectroDynProblemSet2:970}
 \begin{aligned}
 \phi' &= \gamma \frac{q}{r} \\
@@ -103,20 +101,18 @@ A_y' &= 0 \\
 A_z' &= 0
 \end{aligned}
 \end{equation}
-
-
 \makeSubAnswer{}{pr:relElectroDynProblemSet2:3c}
 In the primed frame our electric and magnetic fields are
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:990}
 \begin{aligned}
 \BE' &= - \spacegrad' \phi' - \inv{c} \PD{t'}{\BA'} \\
-\BB' &= \spacegrad' \cross \BA'
+\BB' &= \spacegrad' \cross \BA'.
 \end{aligned}
 \end{equation}
 
 We have \(\phi'\) and \(\BA'\) expressed in terms of the unprimed coordinates, so need to calculate the transformation of the gradient and time partial too.  These partials transform as
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1010}
 \begin{aligned}
 \PD{c t'}{} &= \PD{ct'}{ct} \PD{ct}{} + \PD{ct'}{x} \PD{x}{} \\
@@ -127,7 +123,7 @@ We have \(\phi'\) and \(\BA'\) expressed in terms of the unprimed coordinates, s
 \end{equation}
 
 Utilizing the inverse transformation
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1030}
 \begin{bmatrix}
 ct \\
@@ -147,9 +143,8 @@ ct' \\
 x' \\
 y' \\
 z'
-\end{bmatrix}
+\end{bmatrix},
 \end{equation}
-
 we have
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1050}
 \begin{aligned}
@@ -161,7 +156,7 @@ we have
 \end{equation}
 
 Since neither \(\phi'\) nor \(\BA'\) have time dependence, we have for electric field in the primed frame
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1250}
 \begin{aligned}
 \BE'
@@ -173,17 +168,16 @@ Since neither \(\phi'\) nor \(\BA'\) have time dependence, we have for electric 
 -\left( \gamma \PD{x}{}, \PD{y}{}, \PD{z}{} \right) \gamma \frac{q}{r}
 - \gamma \beta \PD{x}{} \left( -\gamma \beta \frac{q}{r}, 0, 0 \right) \\
 &= -q \left( \gamma^2 ( 1 - \beta^2 ) \PD{x}{}, \gamma \PD{y}{}, \gamma \PD{z}{} \right) \inv{r} \\
-&= -q \left( \PD{x}{}, \gamma \PD{y}{}, \gamma \PD{z}{} \right) \inv{r}
+&= -q \left( \PD{x}{}, \gamma \PD{y}{}, \gamma \PD{z}{} \right) \inv{r}.
 \end{aligned}
 \end{equation}
-
 Our electric field in the primed frame is thus
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1070}
 \BE' = \frac{q}{r^3} \left( x, \gamma y, \gamma z \right)
 \end{equation}
 
 Now for the magnetic field.  We want
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1270}
 \begin{aligned}
 \BB'
@@ -197,7 +191,7 @@ Now for the magnetic field.  We want
 \left( 0, \partial_{z'}, -\partial_{y'} \right) \frac{-\gamma \beta q}{r} \\
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1090}
 \BB'
 =

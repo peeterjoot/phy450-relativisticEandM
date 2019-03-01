@@ -21,23 +21,23 @@ Covering chapter 6 material \S 31, and starting chapter 8 material from the text
 \index{Poynting vector}
 
 Last time we showed that Maxwell's equations imply
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:10}
 \PD{t}{} \frac{\BE^2 + \BB^2 }{8 \pi} = -\Bj c\dot \BE - \spacegrad \cdot \BS
 \end{equation}
 
 In the lecture, Professor Poppitz said he was free here to use a full time derivative.  When asked why, it was because he was considering \(\BE\) and \(\BB\) here to be functions of time only, since they were measured at a fixed point in space.  This is really the same thing as using a time partial, so in these notes I will just be explicit and stick to using partials.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:30}
 \BS = \frac{c}{4 \pi} \BE \cross \BB
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:50}
 \PD{t}{} \int_V \frac{\BE^2 + \BB^2 }{8 \pi} = - \int_V \Bj \cdot \BE - \int_{\partial_V} d^2 \Bsigma \cdot \BS
 \end{equation}
 
 Any change in the energy must either due to currents, or energy escaping through the surface.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:70}
 \begin{aligned}
 \calE = \frac{\BE^2 + \BB^2 }{8 \pi} &= \mbox{Energy density of the EM field} \\
@@ -58,7 +58,7 @@ So, \(\BS \parallel \Bk\) since \(\BE \cross \BB \sim \Bk\).
 \(\Abs{\BS}\) for a plane wave is the amount of energy through unit area perpendicular to \(\Bk\) in unit time.
 
 Recall that we calculated
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:90}
 \begin{aligned}
 \BB &= (\Bk \cross \Bbeta) \sin(\omega t - \Bk \cdot \Bx) \\
@@ -67,7 +67,7 @@ Recall that we calculated
 \end{equation}
 
 Since we had \(\Bk \cdot \Bbeta = 0\), we have \(\Abs{\BE} = \Abs{\BB}\), and our Poynting vector follows nicely
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:210}
 \begin{aligned}
 \BS
@@ -76,11 +76,11 @@ Since we had \(\Bk \cdot \Bbeta = 0\), we have \(\Abs{\BE} = \Abs{\BB}\), and ou
 &= \frac{\Bk}{\Abs{\Bk}} e \calE
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:110}
 [\BS] = \frac{\text{energy}}{\text{time \(\times\) area}} = \frac{\text{momentum \(\times\) speed}}{\text{time \(\times\) area}}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:230}
 \begin{aligned}
 \left[\frac{\BS}{c^2} \right]
@@ -93,7 +93,7 @@ Since we had \(\Bk \cdot \Bbeta = 0\), we have \(\Abs{\BE} = \Abs{\BB}\), and ou
 So we wee that \(\BS/c^2\) is indeed rightly called ``the momentum density'' of the EM field.
 
 We will later find that \(\calE\) and \(\BS\) are components of a rank-2 four tensor
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:130}
 T^{ij} =
 \begin{bmatrix}
@@ -111,19 +111,19 @@ T^{ij} =
 where \(\sigma^{\alpha\beta}\) is the stress tensor.  We will get to all this in more detail later.
 
 For EM wave we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:150}
 \BS = \kcap c \calE
 \end{equation}
 
 (this is the energy flux)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:170}
 \frac{\BS}{c^2} = \kcap \frac{\calE}{c}
 \end{equation}
 
 (the momentum density of the wave).
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL17:190}
 c \Abs{\frac{\BS}{c^2}} = \calE
 \end{equation}

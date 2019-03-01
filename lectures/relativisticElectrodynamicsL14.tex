@@ -20,7 +20,7 @@ Covering chapter 4 material from the text \citep{landau1980classical}, and
 %: reminder on wave equations (114); reminder on Fourier series and integral (115-117); Fourier expansion of the EM potential in Coulomb gauge and equation of motion for the spatial Fourier components (118-119); the general solution of Maxwell's equations in vacuum (120-121) [Tuesday, Mar. 1]; properties of monochromatic plane EM waves (122-124); energy and energy flux of the EM field and energy conservation from the equations of motion (125-127)  [Wednesday, Mar. 2]
 
 \section{Trying to understand ``c''}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:10}
 \begin{aligned}
 \spacegrad \cdot \BE &= 0 \\
@@ -29,7 +29,7 @@ Covering chapter 4 material from the text \citep{landau1980classical}, and
 \end{equation}
 
 Maxwell's equations in a vacuum were
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:30}
 \begin{aligned}
 \spacegrad (\spacegrad \cdot \BA) &= \spacegrad^2 \BA  -\inv{c} \PD{t}{} \spacegrad \phi - \inv{c^2} \frac{\partial^2 \BA}{\partial t^2} \\
@@ -38,30 +38,30 @@ Maxwell's equations in a vacuum were
 \end{equation}
 
 There is a redundancy here since we can change \(\phi\) and \(\BA\) without changing the EOM
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:50}
 (\phi, \BA) \rightarrow (\phi', \BA')
 \end{equation}
 
 with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:70}
 \begin{aligned}
 \phi &= \phi' + \inv{c} \PD{t}{\chi} \\
 \BA &= \BA' - \spacegrad \chi
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:90}
 \chi(\Bx, t) = c \int dt \phi(\Bx, t)
 \end{equation}
 
 which gives
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:110}
 \phi' = 0
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:130}
 \begin{aligned}
 (\phi, \BA) \sim (\phi = 0, \BA')
@@ -69,7 +69,7 @@ which gives
 \end{equation}
 
 Maxwell's equations are now
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:820}
 \begin{aligned}
 \spacegrad (\spacegrad \cdot \BA') &= \spacegrad^2 \BA'  - \inv{c^2} \frac{\partial^2 \BA'}{\partial t^2} \\
@@ -78,63 +78,56 @@ Maxwell's equations are now
 \end{equation}
 
 Can we make \(\spacegrad \cdot \BA'' = 0\), while \(\phi'' = 0\).
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:150}
 \begin{aligned}
 \mathLabelBox{\phi}{\(=0\)} &= \mathLabelBox
 [
    labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
 ]
-{\phi'}{\(=0\)} + \inv{c} \PD{t}{\chi'} \\
+{\phi'}{\(=0\)} + \inv{c} \PD{t}{\chi'}.
 \end{aligned}
 \end{equation}
-
 We need
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:170}
-\PD{t}{\chi'} = 0
+\PD{t}{\chi'} = 0.
 \end{equation}
-
 How about \(\BA'\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:190}
-\BA' = \BA'' - \spacegrad \chi'
+\BA' = \BA'' - \spacegrad \chi'.
 \end{equation}
-
 We want the divergence of \(\BA'\) to be zero, which means
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:210}
-\spacegrad \cdot \BA' = \mathLabelBox{\spacegrad \cdot \BA''}{\(=0\)} - \spacegrad^2 \chi'
+\spacegrad \cdot \BA' = \mathLabelBox{\spacegrad \cdot \BA''}{\(=0\)} - \spacegrad^2 \chi',
 \end{equation}
-
-So we want
-
+so we want
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:230}
-\spacegrad^2 \chi' = \spacegrad \cdot \BA'
+\spacegrad^2 \chi' = \spacegrad \cdot \BA'.
 \end{equation}
-
 This has the solution
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:240}
 \chi'(\Bx) = -\inv{4\pi} \int d^3 \Bx' \frac{\spacegrad' \cdot \BA'(\Bx')}{\Abs{\Bx - \Bx'}}.
 \end{equation}
-
 \paragraph{Green's function for the Laplacian}
-\paragraph{Laplacian!Green's function}
-
+\index{Laplacian!Green's function}
 Recall that in electrostatics we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:250}
 \spacegrad \cdot \BE = 4 \pi \rho
 \end{equation}
 
 and
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:270}
 \BE = -\spacegrad \phi
 \end{equation}
 
 which meant that we had
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:290}
 \spacegrad^2 \phi = -4 \pi \rho
 \end{equation}
@@ -144,25 +137,25 @@ This has the identical form to the equation in \(\chi'\) that we wanted to solve
 Without resorting to electrostatics another way to look at this problem is that it is just a Laplace equation, and we could utilize a Green's function solution if desired.  This would generate the same result for \(\chi'\) above, and also works for the electrostatics case.
 
 Recall that the Green's function for the Laplacian was
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:292}
 G(\Bx, \Bx') = -\inv{4 \pi \Abs{\Bx - \Bx'}}
 \end{equation}
 
 with the property
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:294}
 \spacegrad^2 G(\Bx, \Bx') = \delta(\Bx - \Bx')
 \end{equation}
 
 Our LDE to solve by Green's method is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:296}
 \spacegrad^2 \phi = 4 \pi \rho,
 \end{equation}
 
 We let this equation (after switching to primed coordinates) operate on the Green's function
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:298}
 \int d^3 \Bx' {\spacegrad'}^2 \phi(\Bx') G(\Bx, \Bx')
 =
@@ -170,7 +163,7 @@ We let this equation (after switching to primed coordinates) operate on the Gree
 \end{equation}
 
 Assuming that the left action of the Green's function on the test function \(\phi(\Bx')\) is the same as the right action (i.e. \(\phi(\Bx')\) and \(G(\Bx, \Bx')\) commute), we have for the LHS
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:840}
 \begin{aligned}
 \int d^3 \Bx' {\spacegrad'}^2 \phi(\Bx') G(\Bx, \Bx')
@@ -184,7 +177,7 @@ Assuming that the left action of the Green's function on the test function \(\ph
 \end{equation}
 
 Substitution of \(G(\Bx, \Bx') = -1/4 \pi \Abs{\Bx - \Bx'}\) on the RHS then gives us the general solution
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:300}
 \phi(\Bx) = \int d^3 \Bx' \frac{\rho(\Bx') }{\Abs{\Bx - \Bx'}}
 \end{equation}
@@ -194,7 +187,7 @@ Substitution of \(G(\Bx, \Bx') = -1/4 \pi \Abs{\Bx - \Bx'}\) on the RHS then giv
 What are the Maxwell's vacuum equations now?
 
 With the second gauge substitution we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:860}
 \begin{aligned}
 \spacegrad (\spacegrad \cdot \BA'') &= \spacegrad^2 \BA''  - \inv{c^2} \frac{\partial^2 \BA''}{\partial t^2} \\
@@ -203,13 +196,13 @@ With the second gauge substitution we have
 \end{equation}
 
 but we can utilize
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:310}
 \spacegrad \cross (\spacegrad \cross \BA) = \spacegrad (\spacegrad \cdot \BA) - \spacegrad^2 \BA,
 \end{equation}
 
 to reduce Maxwell's equations (after dropping primes) to just
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:330}
 \inv{c^2} \frac{\partial^2 \BA''}{\partial t^2} - \Delta \BA = 0
 \end{equation}
@@ -223,7 +216,7 @@ where
 \end{equation}
 
 Note that for this to be correct we have to also explicitly include the gauge condition used.  This particular gauge is called the \textunderline{Coulomb gauge}.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:370}
 \begin{aligned}
 \phi &= 0 \\
@@ -241,76 +234,69 @@ Note that for this to be correct we have to also explicitly include the gauge co
 
 The gauge that is Lorentz Invariant is the ``Lorentz gauge''.  This one uses
 \index{Lorentz gauge}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:390}
 \partial_i A^i = 0
 \end{equation}
 
 Recall that Maxwell's equations are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:410}
 \partial_i F^{ij} = j^j = 0
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:430}
 \begin{aligned}
 \partial_i &= \PD{x^i}{} \\
-\partial^i &= \PD{x_i}{}
+\partial^i &= \PD{x_i}{}.
 \end{aligned}
 \end{equation}
-
 Writing out the equations in terms of potentials we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:880}
 \begin{aligned}
 0 &= \partial_i (\partial^i A^j - \partial^j A^i)  \\
 &= \partial_i \partial^i A^j - \partial_i \partial^j A^i \\
-&= \partial_i \partial^i A^j - \partial^j \partial_i A^i \\
+&= \partial_i \partial^i A^j - \partial^j \partial_i A^i,
 \end{aligned}
 \end{equation}
-
-So, if we pick the gauge condition \(\partial_i A^i = 0\), we are left with just
-
+so, if we pick the gauge condition \(\partial_i A^i = 0\), we are left with just
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:450}
-0 = \partial_i \partial^i A^j
+0 = \partial_i \partial^i A^j.
 \end{equation}
-
 Can we choose \({A'}^i\) such that \(\partial_i A^i = 0\)?
-
 Our gauge condition is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:470}
-A^i = {A'}^i + \partial^i \chi
+A^i = {A'}^i + \partial^i \chi.
 \end{equation}
 
 Hit it with a derivative for
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:490}
-\partial_i A^i = \partial_i {A'}^i + \partial_i \partial^i \chi
+\partial_i A^i = \partial_i {A'}^i + \partial_i \partial^i \chi.
 \end{equation}
-
 If we want \(\partial_i A^i = 0\), then we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:510}
 -\partial_i {A'}^i = \partial_i \partial^i \chi = \left( \inv{c^2} \frac{\partial^2}{\partial t^2} - \Delta \right) \chi
 \end{equation}
-
 This is the physicist proof.  Yes, it can be solved.  To really solve this, we would want to use Green's functions.  I seem to recall the Green's function is a retarded time version of the Laplacian Green's function, and we can figure that exact form out by switching to a Fourier frequency domain representation.
 
 Anyways.  Returning to Maxwell's equations we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:530}
 \begin{aligned}
 0 &= \partial_i \partial^i A^j \\
-0 &= \partial_i A^i ,
+0 &= \partial_i A^i,
 \end{aligned}
 \end{equation}
-
 where the first is Maxwell's equation, and the second is our gauge condition.
 
 Observe that the gauge condition is now a Lorentz scalar.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:550}
 \partial^i A_i \rightarrow \partial^j {O_j}^i {O_i}^k A_k
 \end{equation}
@@ -318,7 +304,7 @@ Observe that the gauge condition is now a Lorentz scalar.
 But the Lorentz transform matrices multiply out to identity, in the same way that they do for the transformation of a plain old four vector dot product \(x^i y_i\).
 
 \section{What happens with a Massive vector field?}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:570}
 S = \int d^4 x \left( \inv{4} F^{ij} F_{ij} + \frac{m^2}{2} A^i A_i \right)
 \end{equation}
@@ -328,7 +314,7 @@ S = \int d^4 x \left( \inv{4} F^{ij} F_{ij} + \frac{m^2}{2} A^i A_i \right)
 ``Note that this action is expressed in dimensions where \(\Hbar = c = 1\), making the action is unit-less (energy and time are inverse units of each other).  The \(d^4x\) has units of \(m^{-4}\) (since \([x] = \Hbar/mc\)), so \(F\) has units of \(m^2\), and then \(A\) has units of mass. Therefore \(d^4x A A\) has units of \(m^{-2}\) and therefore you need something that has units of \(m^2\) to make the action unit-less. When you do not take \(c=1\), then you have got to worry about those factors, but I think you will see it works out fine.''
 
 For what it is worth, I can adjust the units of this action to those that we have used in class with,
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:800}
 S = \int d^4 x \left( -\inv{16 \pi c} F^{ij} F_{ij} - \frac{m^2 c^2}{8 \Hbar^2} A^i A_i \right)
 \end{equation}
@@ -342,7 +328,7 @@ S = \int d^4 x \left( -\inv{16 \pi c} F^{ij} F_{ij} - \frac{m^2 c^2}{8 \Hbar^2} 
 %\end{align*}
 %
 The variation of the field invariant is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:900}
 \begin{aligned}
 \delta (F_{ij} F^{ij})
@@ -360,13 +346,13 @@ The variation of the field invariant is
 \end{equation}
 
 Variation of the \(A^2\) term gives us
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:700}
 \delta (A^j A_j) = 2 A^j \delta(A_j),
 \end{equation}
 
 so we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:920}
 \begin{aligned}
 0 &= \delta S \\
@@ -378,13 +364,13 @@ so we have
 The last integral vanishes on the boundary with the assumption that \(\delta(A_j) = 0\) on that boundary.
 
 Since this must be true for all variations, this leaves us with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:720}
 \partial_i F^{ij} = m^2 A^j
 \end{equation}
 
 The RHS can be expanded into wave equation and divergence parts
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:940}
 \begin{aligned}
 \partial_i F^{ij}
@@ -396,13 +382,13 @@ The RHS can be expanded into wave equation and divergence parts
 \end{equation}
 
 With \(\square\) for the wave equation operator
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:750}
 \square = \partial_i \partial^i = \inv{c^2} \PDSq{t}{} - \Delta,
 \end{equation}
 
 we can manipulate the EOM to pull out an \(A_i\) factor
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:960}
 \begin{aligned}
 0
@@ -413,7 +399,7 @@ we can manipulate the EOM to pull out an \(A_i\) factor
 \end{equation}
 
 If we hit this with a derivative we get	
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL14:980}
 \begin{aligned}
 0

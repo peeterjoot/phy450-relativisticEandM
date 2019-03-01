@@ -19,7 +19,7 @@ PICTURE: cross section of wacky shape.
 \paragraph{At the surface of a conductor}
 
 At the surface of the conductor (I presume this means the interior surface where there is no charge or current enclosed) we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:10}
 \begin{aligned}
 \spacegrad \cross \BE &= - \inv{c} \PD{t}{\BB} \\
@@ -36,7 +36,7 @@ If we are talking about the exterior surface, do we need to make any other assum
 For electric and magnetic fields in vacuum, we can show easily that these, like the potentials, separately satisfy the wave equation
 
 Taking curls of the Maxwell curl equations above we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:30}
 \begin{aligned}
 \spacegrad \cross (\spacegrad \cross \BE) &= - \inv{c^2} \PDSq{t}{\BE} \\
@@ -45,7 +45,7 @@ Taking curls of the Maxwell curl equations above we have
 \end{equation}
 
 but we have for vector \(\BM\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:50}
 \spacegrad \cross (\spacegrad \cross \BM)
 =
@@ -53,7 +53,7 @@ but we have for vector \(\BM\)
 \end{equation}
 
 which gives us a pair of wave equations
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:70}
 \begin{aligned}
 \square \BE &= 0 \\
@@ -62,7 +62,7 @@ which gives us a pair of wave equations
 \end{equation}
 
 We still have the original constraints of Maxwell's equations to deal with, but we are free now to pick the complex exponentials as fundamental solutions, as our starting point
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:90}
 \begin{aligned}
 \BE &= \BE_0 e^{i k^a x_a} = \BE_0 e^{ i (k^0 x_0 - \Bk \cdot \Bx) } \\
@@ -71,7 +71,7 @@ We still have the original constraints of Maxwell's equations to deal with, but 
 \end{equation}
 
 With \(k_0 = \omega/c\) and \(x_0 = c t\) this is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:110}
 \begin{aligned}
 \BE &= \BE_0 e^{ i (\omega t - \Bk \cdot \Bx) } \\
@@ -80,7 +80,7 @@ With \(k_0 = \omega/c\) and \(x_0 = c t\) this is
 \end{equation}
 
 For the vacuum case, with monochromatic light, we treated the amplitudes as constants.  Let us see what happens if we relax this assumption, and allow for spatial dependence (but no time dependence) of \(\BE_0\) and \(\BB_0\).  For the LHS of the electric field curl equation we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:580}
 \begin{aligned}
 0
@@ -93,7 +93,7 @@ For the vacuum case, with monochromatic light, we treated the amplitudes as cons
 \end{equation}
 
 Similarly for the divergence we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:600}
 \begin{aligned}
 0
@@ -106,7 +106,7 @@ Similarly for the divergence we have
 \end{equation}
 
 This provides constraints on the amplitudes
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:130}
 \begin{aligned}
 \spacegrad \cross \BE_0 - i \Bk \cross \BE_0 &= -i \frac{\omega}{c} \BB_0 \\
@@ -132,7 +132,7 @@ This provides constraints on the amplitudes
 %
 %This does not look like it will be terribly helpful.  Backing up, and
 Applying the wave equation operator to our phasor we get
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:620}
 \begin{aligned}
 0 &=
@@ -143,7 +143,7 @@ Applying the wave equation operator to our phasor we get
 \end{equation}
 
 So the momentum space equivalents of the wave equations are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:170}
 \begin{aligned}
 \left( \spacegrad^2 +\frac{\omega^2}{c^2} - \Bk^2 \right) \BE_0 &= 0 \\
@@ -156,7 +156,7 @@ Observe that if \(c^2 \Bk^2 = \omega^2\), then these amplitudes are harmonic fun
 \section{Back to the tutorial notes}
 
 In class we went straight to an assumed solution of the form
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:190}
 \begin{aligned}
 \BE &= \BE_0(x, y) e^{ i(\omega t - k z) } \\
@@ -165,13 +165,13 @@ In class we went straight to an assumed solution of the form
 \end{equation}
 
 where \(\Bk = k \zcap\).  Our Laplacian was also written as the sum of components in the propagation and perpendicular directions
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:210}
 \spacegrad^2 = \PDSq{x_\perp}{} + \PDSq{z}{}.
 \end{equation}
 
 With no \(z\) dependence in the amplitudes we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:170b}
 \begin{aligned}
 \left( \PDSq{x_\perp}{} +\frac{\omega^2}{c^2} - \Bk^2 \right) \BE_0 &= 0 \\
@@ -182,7 +182,7 @@ With no \(z\) dependence in the amplitudes we have
 \section{Separation into components}
 
 It was left as an exercise to separate out our Maxwell equations, so that our field components \(\BE_0 = \BE_\perp + \BE_z\) and \(\BB_0 = \BB_\perp + \BB_z\) in the propagation direction, and components in the perpendicular direction are separated
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:640}
 \begin{aligned}
 \spacegrad \cross \BE_0
@@ -205,7 +205,7 @@ It was left as an exercise to separate out our Maxwell equations, so that our fi
 \end{equation}
 
 We can do something similar for \(\BB_0\).  This allows for a split of \eqnref{eqn:relativisticElectrodynamicsT4:130} into \(\zcap\) and perpendicular components
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:130b}
 \begin{aligned}
 % zcap terms
@@ -222,7 +222,7 @@ We can do something similar for \(\BB_0\).  This allows for a split of \eqnref{e
 So we see that once we have a solution for \(\BE_z\) and \(\BB_z\) (by solving the wave equation above for those components), the components for the fields in terms of those components can be found.  Alternately, if one solves for the perpendicular components of the fields, these propagation components are available immediately with only differentiation.
 
 In the case where the perpendicular components are taken as given
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:300}
 \begin{aligned}
 \BB_z &= i \frac{ c  }{\omega} \spacegrad_\perp \cross \BE_\perp \\
@@ -231,7 +231,7 @@ In the case where the perpendicular components are taken as given
 \end{equation}
 
 we can express the remaining ones strictly in terms of the perpendicular fields
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:320}
 \begin{aligned}
 \frac{\omega}{c} \BB_\perp &= \frac{c}{\omega} \spacegrad_\perp \cross (\spacegrad_\perp \cross \BB_\perp) + \Bk \cross \BE_\perp \\
@@ -242,7 +242,7 @@ we can express the remaining ones strictly in terms of the perpendicular fields
 \end{equation}
 
 Is it at all helpful to expand the double cross products?
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:660}
 \begin{aligned}
 \frac{\omega^2}{c^2} \BB_\perp
@@ -261,7 +261,6 @@ i \frac{c}{\omega}
 %-{\spacegrad_\perp}^2 \BE_\perp
 %)
 %- \Bk \cross \BB_\perp  \\
-
 This gives us
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:340}
 \begin{aligned}
@@ -277,15 +276,15 @@ but that does not seem particularly useful for completely solving the system?  I
 \section{Solving the momentum space wave equations}
 
 Back to the class notes.  We proceeded to solve for \(\BE_z\) and \(\BB_z\) from the wave equations by separation of variables.  We wish to solve equations of the form
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:360}
 \left( \PDSq{x}{} + \PDSq{y}{} + \frac{\omega^2}{c^2} - \Bk^2 \right) \phi(x,y) = 0
 \end{equation}
 
 Write \(\phi(x,y) = X(x) Y(y)\), so that we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:380}
-\frac{X''}{X} + \frac{Y''}{Y} = \Bk^2 - \frac{\omega^2}{c^2}
+\frac{X''}{X} + \frac{Y''}{Y} = \Bk^2 - \frac{\omega^2}{c^2}.
 \end{equation}
 
 One solution is sinusoidal
@@ -301,7 +300,7 @@ One solution is sinusoidal
 The example in the tutorial now switched to a rectangular waveguide, still oriented with the propagation direction down the z-axis, but with lengths \(a\) and \(b\) along the \(x\) and \(y\) axis respectively.
 
 Writing \(k_1 = 2\pi m/a\), and \(k_2 = 2 \pi n/ b\), we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:420}
 \phi(x, y) = \sum_{m n} a_{m n}
 \exp\left( \frac{2 \pi i m}{a} x \right)
@@ -344,7 +343,7 @@ Why: I had in my notes
 \end{equation}
 
 and then
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:700}
 \begin{aligned}
 \spacegrad^2 \phi &= 0 \\
@@ -357,7 +356,7 @@ In retrospect I fail to see how these are connected?  What happened to the \(\pa
 It was argued that we have \(\BE_\parallel = \BB_\perp = 0\) on the boundary.
 
 So for the TE case, where \(\BE_3 = 0\), we have from the separation of variables argument
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:440}
 \zcap \cdot \BB_0(x, y) =
 \sum_{m n} a_{m n}
@@ -366,13 +365,13 @@ So for the TE case, where \(\BE_3 = 0\), we have from the separation of variable
 \end{equation}
 
 No sines because
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:460}
 B_1 \sim \PD{x_a}{B_3} \rightarrow \cos(k_1 x^1).
 \end{equation}
 
 The quantity
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:480}
 a_{m n}
 \cos\left( \frac{2 \pi i m}{a} x \right)
@@ -382,7 +381,7 @@ a_{m n}
 is called the \(TE_{m n}\) mode.  Note that since \(B = \text{const}\) an ampere loop requires \(\BB = 0\) since there is no current.
 
 Writing
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:500}
 \begin{aligned}
 k &= \frac{\omega}{c} \sqrt{ 1 - \left(\frac{\omega_{m n}}{\omega}\right)^2 } \\
@@ -391,7 +390,7 @@ k &= \frac{\omega}{c} \sqrt{ 1 - \left(\frac{\omega_{m n}}{\omega}\right)^2 } \\
 \end{equation}
 
 Since \(\omega < \omega_{m n}\) we have \(k\) purely imaginary, and the term
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:520}
 e^{-i k z} = e^{- \Abs{k} z}
 \end{equation}
@@ -403,13 +402,13 @@ represents the die off.
 Note that the convention is that the \(m\) in \(TE_{m n}\) is the bigger of the two indices, so \(\omega > \omega_{10}\).
 
 The phase velocity
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:530}
 V_\phi = \frac{\omega}{k} = \frac{c}{\sqrt{ 1 - \left(\frac{\omega_{m n}}{\omega}\right)^2 }} \ge c
 \end{equation}
 
 However, energy is transmitted with the group velocity, the ratio of the Poynting vector and energy density
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:540}
 \frac{\expectation{\BS}}{\expectation{U}} = V_g = \PD{k}{\omega} = 1/\PD{\omega}{k}
 \end{equation}
@@ -417,7 +416,7 @@ However, energy is transmitted with the group velocity, the ratio of the Poyntin
 (This can be shown).
 
 Since
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:560}
 \left(\PD{\omega}{k}\right)^{-1} =
 \left(

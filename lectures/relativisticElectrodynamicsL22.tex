@@ -25,7 +25,7 @@ and \popcite{RelEMpp166-180.pdf}{lecture notes RelEMpp166-180.pdf}.
 Rather cleverly, our Professor avoided the spacetime translation arguments of the text.  Inspired by an approach possible in classical mechanics to find that we have a conserved quantity derivable from a force law, he proceeds directly to taking the derivative of the Lagrangian density (see previous lecture notes for details building up to this).
 
 I will proceed in exactly the same fashion.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:340}
 \begin{aligned}
 \partial_k \left( -\inv{16 \pi c} F_{i j} F^{i j} \right)
@@ -43,7 +43,7 @@ I will proceed in exactly the same fashion.
 \end{equation}
 
 Multiplying through by \(c\) and renaming our derivative index using a delta function we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:10}
 \partial_k \left( -\inv{16 \pi } F_{i j} F^{i j} \right) =
 \partial_m {\delta^{m}}_k \left( -\inv{16 \pi } F_{i j} F^{i j} \right)
@@ -51,7 +51,7 @@ Multiplying through by \(c\) and renaming our derivative index using a delta fun
 \end{equation}
 
 We can now group the \(\partial_m\) terms for
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:30}
 \partial_m \left(
 -\inv{4 \pi } (\partial_k A_j )F^{m j}
@@ -62,7 +62,7 @@ We can now group the \(\partial_m\) terms for
 \end{equation}
 
 Knowing the end goal, a quantity that is expressed in terms of \(F^{ij}\) let us raise the \(k\) indices, and any of the \(A_i\)'s that are along side of those
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:50}
 \partial_m \left(
 -\inv{4 \pi } (\partial^k A^n )F^{m j} g_{n j}
@@ -73,7 +73,7 @@ Knowing the end goal, a quantity that is expressed in terms of \(F^{ij}\) let us
 \end{equation}
 
 Next, we want to get rid of the explicit vector potential dependence
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:360}
 \begin{aligned}
 \partial_m &\left( -\inv{4 \pi } (\partial^k A^n )F^{m j} g_{n j} \right) \\
@@ -95,7 +95,7 @@ Next, we want to get rid of the explicit vector potential dependence
 \end{equation}
 
 Since the operator \(F^{m j} \partial_m \partial_j\) is a product of symmetric and antisymmetric tensors (or operators), the middle term is zero, and we are left with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:70}
 \partial_m \left(
 -\inv{4 \pi } F^{k n} F^{m j} g_{n j}
@@ -124,7 +124,7 @@ g_{n j}
 
 \paragraph{Energy term of the stress energy tensor}
 \index{stress energy tensor!energy}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:380}
 \begin{aligned}
 T^{ 0 0 }
@@ -147,7 +147,7 @@ F^{0 \alpha} F_{0 \alpha}
 &=
 \inv{4 \pi} \BE^2 + \inv{16 \pi} \left(
 -2 \BE^2 +F^{\alpha \beta} F^{\alpha \beta}
-\right)
+\right).
 \end{aligned}
 \end{equation}
 
@@ -160,9 +160,8 @@ F^{\alpha \beta}
 &= -\epsilon^{\sigma \alpha \beta} (\BB)^\sigma,
 \end{aligned}
 \end{equation}
-
 so
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:420}
 \begin{aligned}
 F^{\alpha \beta} F^{\alpha \beta}
@@ -186,7 +185,7 @@ T^{ 0 0 } = \inv{8 \pi} ( \BE^2 + \BB^2 ) = \calE
 \index{stress energy tensor!momentum}
 
 For the spatial \(T^{k 0}\) components we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:440}
 \begin{aligned}
 T^{\alpha 0}
@@ -221,7 +220,7 @@ T^{\alpha 0} = \inv{4 \pi} (\BE \cross \BB)^\alpha = \frac{\BS^\alpha}{c}.
 \paragraph{Symmetry}
 
 It is simple to show that \(T^{k m}\) is symmetric
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:460}
 \begin{aligned}
 T^{m k}
@@ -236,7 +235,7 @@ T^{m k}
 \index{shear}
 
 Let us now expand \(T^{\beta \alpha}\), starting with the diagonal terms \(T^{\alpha\alpha}\).  Because this repeated index is not summed over, things get slightly irregular, so it is easier to drop the abstraction and just pick a specific \(\alpha\), say, \(\alpha = 1\).  Then we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:480}
 \begin{aligned}
 T^{1 1}
@@ -251,7 +250,7 @@ T^{1 1}
 \end{equation}
 
 For the magnetic components above we have for example
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:500}
 \begin{aligned}
 F^{1 2} F^{1 2}
@@ -265,7 +264,7 @@ B_z^2
 \end{equation}
 
 So we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:240}
 T^{1 1}
 = \inv{4 \pi} \left(
@@ -274,7 +273,7 @@ T^{1 1}
 \end{equation}
 
 Or
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:260}
 T^{1 1}
 = \inv{8 \pi} \left(
@@ -284,7 +283,7 @@ T^{1 1}
 \end{equation}
 
 Clearly, the other diagonal terms follow the same pattern, and we can do a cyclic permutation of coordinates to find
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:280}
 \begin{aligned}
 T^{1 1} &= \inv{8 \pi} \left( - E_x^2 + E_y^2 + E_z^2 - B_x^2 + B_y^2 + B_z^2 \right) \\
@@ -294,7 +293,7 @@ T^{3 3} &= \inv{8 \pi} \left( - E_z^2 + E_x^2 + E_y^2 - B_z^2 + B_x^2 + B_y^2 \r
 \end{equation}
 
 For the off diagonal terms, let us pick \(T^{1 2}\) and expand that.  We have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL22:520}
 \begin{aligned}
 T^{1 2}
@@ -310,7 +309,7 @@ T^{1 2}
 \end{equation}
 
 Again, with cyclic permutation of the coordinates we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:300}
 \begin{aligned}
 T^{1 2} &= -\inv{4 \pi} \left( E_x E_y + B_x B_y \right) \\

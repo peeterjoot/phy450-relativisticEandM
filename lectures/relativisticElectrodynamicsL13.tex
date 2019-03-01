@@ -16,7 +16,7 @@ Covering chapter 4 material from the text \citep{landau1980classical}, and
 %: variational principle for the electromagnetic field and the relevant boundary conditions (103-105); the second set of Maxwell's equations from the variational principle (106-108); Maxwell's equations in vacuum and the wave equation in the non-relativistic Coulomb gauge (109-111)
 
 \section{Review.  Our action}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:630}
 \begin{aligned}
 S
@@ -30,7 +30,7 @@ S
 \end{equation}
 
 Our dynamics variables are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:30}
 \left\{
 \begin{array}{l l}
@@ -45,14 +45,13 @@ We saw that the interaction term could also be written in terms of a delta funct
 S_{\text{interaction}}
 = -\inv{c^2} \int d^4x j^i(x) A_i(x),
 \end{equation}
-
 and
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:70}
 j^i(x) = \sum_A c e_A \int_{x(\tau)} dx_A^i \delta^4( x - x_A(\tau)).
 \end{equation}
 
 Variation with respect to \(x_A^i(\tau)\) gave us
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:90}
 m c \dds{u^i_A} = \frac{e}{c} u_A^j F_{ij}.
 \end{equation}
@@ -65,7 +64,7 @@ Only the \(S_{\text{particles}}\) and \(S_{\text{interaction}}\) depend on \(x_A
 \index{action!field}
 
 \paragraph{Today:} We will find the EOM for \(A^i(x)\).  The dynamical degrees of freedom are \(A^i(\Bx,t)\)
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:110}
 S[A^i(\Bx, t)] = -\inv{16 \pi c} \int d^4x F_{ij}F^{ij} - \inv{c^2} \int d^4 x A^i j_i.
 \end{equation}
@@ -73,7 +72,7 @@ S[A^i(\Bx, t)] = -\inv{16 \pi c} \int d^4x F_{ij}F^{ij} - \inv{c^2} \int d^4 x A
 Here \(j^i\) are treated as ``sources''.
 
 We demand that
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:130}
 \delta S = S[ A^i(\Bx, t) + \delta A^i(\Bx, t)] - S[ A^i(\Bx, t) ] = 0 + O(\delta A)^2.
 \end{equation}
@@ -81,7 +80,7 @@ We demand that
 We need to impose two conditions.
 \begin{itemize}
 \item At spatial \(\infty\), i.e. at \(\Abs{\Bx} \rightarrow \infty, \forall t\), we will impose the condition
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:150}
 \evalbar{A^i(\Bx, t)}{\Abs{\Bx} \rightarrow \infty} \rightarrow 0.
 \end{equation}
@@ -93,7 +92,7 @@ This is sensible, because fields are created by charges, and charges are assumed
 This is analogous to \(x(t_i) = x_1\) and \(x(t_f) = x_2\) in particle mechanics.
 
 Since \(A^i(\Bx, \pm T)\) is given, and equivalent to the initial and final field configurations, our extremes at the boundary is zero
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:170}
 \delta A^i(\Bx, \pm T) = 0.
 \end{equation}
@@ -103,14 +102,14 @@ Since \(A^i(\Bx, \pm T)\) is given, and equivalent to the initial and final fiel
 PICTURE: a cylinder in spacetime, with an attempt to depict the boundary.
 
 \section{Computing the variation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:190}
 \delta S[A^i(\Bx, t)]
 = -\inv{16 \pi c} \int d^4 x \delta (F_{ij}F^{ij}) - \inv{c^2} \int d^4 x \delta(A^i) j_i.
 \end{equation}
 
 Looking first at the variation of just the \(F^2\) bit we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:650}
 \begin{aligned}
 \delta (F_{ij}F^{ij})
@@ -130,7 +129,6 @@ Looking first at the variation of just the \(F^2\) bit we have
 4 F_{ij} \partial^i \delta(A^j).
 \end{aligned}
 \end{equation}
-
 Our variation is now reduced to
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:670}
 \begin{aligned}
@@ -141,7 +139,7 @@ Our variation is now reduced to
 \end{equation}
 
 We can integrate this first term by parts
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:690}
 \begin{aligned}
 \int d^4 x F^{ij} \PD{x^i}{} \delta(A_j)
@@ -168,7 +166,7 @@ Prof. Poppitz chose \(dx^0 d^3 \Bx\) split of \(d^4 x\) to illustrate that this 
 %\end{align*}
 
 Because we have specified that \(A^i\) is zero on the boundary, so is \(F^{ij}\), so these boundary terms are killed off.  We are left with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:710}
 \begin{aligned}
 \delta S[A^i(\Bx, t)]
@@ -192,13 +190,13 @@ This gives us
 
 Recall that the Bianchi identity
 \index{Bianchi identity}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:230}
 \epsilon^{ijkl} \partial_j F_{kl} = 0,
 \end{equation}
 
 gave us
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:250}
 \begin{aligned}
 \spacegrad \cdot \BB &= 0 \\
@@ -207,7 +205,7 @@ gave us
 \end{equation}
 
 How about the EOM that we have found by varying the action?  One of those equations is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:270}
 \partial_\alpha F^{\alpha 0} = \frac{4 \pi}{c} j^0 = 4 \pi \rho,
 \end{equation}
@@ -215,32 +213,30 @@ How about the EOM that we have found by varying the action?  One of those equati
 since \(j^0 = c \rho\).
 
 Because
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:290}
 F^{\alpha 0} = (\BE)^\alpha,
 \end{equation}
-
 we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:310}
 \spacegrad \cdot \BE = 4 \pi \rho.
 \end{equation}
 
 The messier one to deal with is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:330}
 \partial_i F^{i\alpha} = \frac{4 \pi}{c} j^\alpha.
 \end{equation}
 
 Splitting out the spatial and time indices for the four gradient we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:730}
 \begin{aligned}
 \partial_i F^{i\alpha}
 &= \partial_\beta F^{\beta \alpha} + \partial_0 F^{0 \alpha} \\
-&= \partial_\beta F^{\beta \alpha} - \inv{c} \PD{t}{(\BE)^\alpha} \\
+&= \partial_\beta F^{\beta \alpha} - \inv{c} \PD{t}{(\BE)^\alpha}.
 \end{aligned}
 \end{equation}
-
 The spatial index tensor element is
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:750}
 \begin{aligned}
@@ -255,7 +251,7 @@ F^{\beta \alpha}
 \end{equation}
 
 so the sum becomes
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:770}
 \begin{aligned}
 \partial_i F^{i\alpha}
@@ -266,7 +262,6 @@ so the sum becomes
 (\spacegrad \cross \BB)^\alpha - \inv{c} \PD{t}{(\BE)^\alpha}.
 \end{aligned}
 \end{equation}
-
 This gives us
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:350}
 \frac{4 \pi}{c} j^\alpha
@@ -274,7 +269,7 @@ This gives us
 \end{equation}
 
 or in vector form
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:370}
 \spacegrad \cross \BB - \inv{c} \PD{t}{\BE} = \frac{4 \pi}{c} \Bj.
 \end{equation}
@@ -305,7 +300,7 @@ or in vector form
 \paragraph{Claim}: ``\(c\)'' is the speed of EM waves in vacuum.
 
 Study equations in vacuum (no sources, so \(j^i = 0\)) for \(A^i = (\phi, \BA)\).
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:430}
 \begin{aligned}
 \spacegrad \cdot \BE &= 0 \\
@@ -314,7 +309,7 @@ Study equations in vacuum (no sources, so \(j^i = 0\)) for \(A^i = (\phi, \BA)\)
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:450}
 \begin{aligned}
 \BE &= - \spacegrad \phi - \inv{c} \PD{t}{\BA} \\
@@ -323,7 +318,7 @@ where
 \end{equation}
 
 In terms of potentials
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:790}
 \begin{aligned}
 0 &= \spacegrad \cross (\spacegrad \cross \BA) \\
@@ -335,19 +330,19 @@ In terms of potentials
 \end{equation}
 
 Since we also have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:600}
 \spacegrad \cross (\spacegrad \cross \BA) = \spacegrad (\spacegrad \cdot \BA) - \spacegrad^2 \BA,
 \end{equation}
 
 some rearrangement gives
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:600b}
 \spacegrad (\spacegrad \cdot \BA) = \spacegrad^2 \BA  -\inv{c} \PD{t}{} \spacegrad \phi - \inv{c^2} \frac{\partial^2 \BA}{\partial t^2}.
 \end{equation}
 
 The remaining equation \(\spacegrad \cdot \BE = 0\), in terms of potentials is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:491}
 \begin{aligned}
 \spacegrad \cdot \BE = - \spacegrad^2 \phi - \inv{c} \PD{t}{\spacegrad \cdot \BA}
@@ -355,7 +350,7 @@ The remaining equation \(\spacegrad \cdot \BE = 0\), in terms of potentials is
 \end{equation}
 
 We can make a gauge transformation that completely eliminates \eqnref{eqn:relativisticElectrodynamicsL13:491}, and reduces \eqnref{eqn:relativisticElectrodynamicsL13:600b} to a wave equation.
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:490}
 \begin{aligned}
 (\phi, \BA) \rightarrow (\phi', \BA')
@@ -363,7 +358,7 @@ We can make a gauge transformation that completely eliminates \eqnref{eqn:relati
 \end{equation}
 
 with
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:510}
 \begin{aligned}
 \phi &= \phi' - \inv{c} \PD{t}{\chi} \\
@@ -372,13 +367,13 @@ with
 \end{equation}
 
 Can choose \(\chi(\Bx, t)\) to make \(\phi' = 0\) (\(\forall \phi \exists \chi, \phi' = 0\))
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:530}
 \begin{aligned}
 \inv{c} \PD{t}{} \chi(\Bx, t) = \phi(\Bx, t)
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:550}
 \begin{aligned}
 \chi(\Bx, t) = c \int_{-\infty}^t dt' \phi(\Bx, t')
@@ -391,7 +386,7 @@ Can also find a transformation that also allows \(\spacegrad \cdot \BA = 0\)
 \paragraph{A:} To be revisited next lecture, when this is covered in full detail.
 
 This is the Coulomb gauge
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:570}
 \begin{aligned}
 \phi &= 0 \\
@@ -400,7 +395,7 @@ This is the Coulomb gauge
 \end{equation}
 
 From \eqnref{eqn:relativisticElectrodynamicsL13:600b}, we then have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL13:610}
 \inv{c^2} \frac{\partial^2 \BA'}{\partial t^2} -\spacegrad^2 \BA' = 0
 \end{equation}

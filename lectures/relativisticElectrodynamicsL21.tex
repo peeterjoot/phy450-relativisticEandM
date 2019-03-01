@@ -17,7 +17,7 @@ Covering chapter 8 material from the text \citep{landau1980classical}, and
 \section{Where we left off}
 
 For a localized charge distribution, we would arrived at expressions for the scalar and vector potentials far from the point where the charges and currents were localized.  This was then used to consider the specific case of a dipole system where one of the charges had a sinusoidal oscillation.  The charge positions for the negative and positive charges respectively were
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:10}
 \begin{aligned}
 z_{-} &= 0 \\
@@ -26,24 +26,23 @@ z_{+} &= \Be_3( z_0 + a \sin(\omega t)) ,
 \end{equation}
 
 so that our dipole moment \(\Bd = \int \rho(\Bx') \Bx'\) is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:30}
 \Bd = \Be_3 q (z_0 + a \sin(\omega t)).
 \end{equation}
 
 The scalar potential, to first order in a number of Taylor expansions at our point far from the source, evaluated at the retarded time \(t_r = t - \Abs{\Bx}/c\), was found to be
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:35}
 A^0(\Bx, t) = \frac{z q}{\Abs{\Bx}^3} ( z_0 + a \sin(\omega t_r) ) + \frac{z q}{c \Abs{\Bx}^2} a \omega \cos(\omega t_r),
 \end{equation}
-
 and our vector potential, also with the same approximations, was
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:40}
 \BA(\Bx, t) = \inv{c \Abs{\Bx} } \Be_3 q a \omega \cos(\omega t_r).
 \end{equation}
 
 We found that the electric field (neglecting any non-radiation terms that died off as inverse square in the distance) was
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:50}
 \BE = \frac{a \omega^2 q}{c^2 \Abs{\Bx}} \sin( \omega (t - \Abs{\Bx}/c) ) \left( \Be_3 - \rcap \frac{z}{\Abs{\Bx}} \right).
 \end{equation}
@@ -51,7 +50,7 @@ We found that the electric field (neglecting any non-radiation terms that died o
 \section{Direct computation of the magnetic radiation field}
 
 Taking the curl of the vector potential \eqnref{eqn:relativisticElectrodynamicsL21:50} for the magnetic field, we will neglect the contribution from the \(1/\Abs{\Bx}\) since that will be inverse square, and die off too quickly far from the source
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:320}
 \begin{aligned}
 \BB
@@ -64,7 +63,7 @@ Taking the curl of the vector potential \eqnref{eqn:relativisticElectrodynamicsL
 \end{equation}
 
 which is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:60}
 \BB = \frac{q a \omega^2}{c^2 \Abs{\Bx} } (\Be_3 \cross \rcap) \sin(\omega (t - \Abs{\Bx}/c)).
 \end{equation}
@@ -75,19 +74,19 @@ Comparing to \eqnref{eqn:relativisticElectrodynamicsL21:50}, we see that this eq
 \index{electric dipole field}
 
 We can rewrite the electric field \eqnref{eqn:relativisticElectrodynamicsL21:50} in terms of the retarded time dipole
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:80}
 \BE = \inv{c^2 \Abs{\Bx}} \Bigl( -\ddot{\Bd}(t_r) + \rcap ( \ddot{\Bd}(t_r) \cdot \rcap ) \Bigr),
 \end{equation}
 
 where
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:100}
 \ddot{\Bd}(t) = - q a \omega^2 \sin(\omega t) \Be_3
 \end{equation}
 
 Then using the vector identity
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:120}
 (\BA \cross \rcap ) \cross \rcap = -\BA + (\rcap \cdot \BA) \rcap,
 \end{equation}
@@ -107,7 +106,7 @@ we have for the fields
 
 Our Poynting vector, the energy flux, is
 \index{Poynting vector}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:160}
 \BS = \frac{c}{4 \pi} \BE \cross \BB =
 \frac{c}{4 \pi}
@@ -117,7 +116,7 @@ Our Poynting vector, the energy flux, is
 \end{equation}
 
 Expanding just the cross terms we have
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:340}
 \begin{aligned}
 \left( \Be_3 - \rcap \frac{z}{\Abs{\Bx}} \right) \cross (\rcap \cross \Be_3)
@@ -133,7 +132,7 @@ Expanding just the cross terms we have
 \end{equation}
 
 Note that we have utilized \(\rcap \cdot \Be_3 = z/\Abs{\Bx}\) to do the cancellations above, and for the final grouping.  Since \(\rcap \cdot \Be_3 = \cos\theta\), the direction cosine of the unit radial vector with the z-axis, we have for the direction of the Poynting vector
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:360}
 \begin{aligned}
 \rcap( 1 - (\rcap \cdot \Be_3)^2 )
@@ -143,7 +142,7 @@ Note that we have utilized \(\rcap \cdot \Be_3 = z/\Abs{\Bx}\) to do the cancell
 \end{equation}
 
 Our Poynting vector is found to be directed radially outwards, and is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:180}
 \BS =
 \frac{c}{4 \pi}
@@ -152,7 +151,7 @@ Our Poynting vector is found to be directed radially outwards, and is
 \end{equation}
 
 The intensity is constant along the curves
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:200}
 \Abs{\sin\theta} \sim r
 \end{equation}
@@ -166,7 +165,7 @@ PICTURE: field diagram along spherical north-south great circles, and the electr
 \paragraph{Utilizing the spherical unit vectors to express the field directions}
 
 In class we see the picture showing these spherical unit vector directions.  We can see this algebraically as well.  Recall that we have for our unit vectors
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:260}
 \begin{aligned}
 \rcap &= \Be_1 \sin\theta \cos\phi + \Be_2 \sin\theta \sin\phi + \Be_3 \cos\theta \\
@@ -176,13 +175,13 @@ In class we see the picture showing these spherical unit vector directions.  We 
 \end{equation}
 
 with the volume element orientation governed by cyclic permutations of
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:280}
 \rcap \cross \thetacap = \phicap.
 \end{equation}
 
 We can now express the direction of the magnetic field in terms of the spherical unit vectors
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:380}
 \begin{aligned}
 \Be_3 \cross \rcap
@@ -200,7 +199,7 @@ We can now express the direction of the magnetic field in terms of the spherical
 \end{equation}
 
 The direction of the electric field was in the direction of \((\ddot{\Bd} \cross \rcap) \cross \rcap\) where \(\Bd\) was directed along the z-axis.  This is then
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:400}
 \begin{aligned}
 (\Be_3 \cross \rcap) \cross \rcap
@@ -227,7 +226,7 @@ Integrating \(\BS\) over a spherical surface, we can calculate the power
 FIXME: remind myself why Power is an appropriate label for this integral.
 
 This is
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:420}
 \begin{aligned}
 P(r, t)
@@ -242,14 +241,14 @@ P(r, t)
 \mathLabelBox{\int \sin^3\theta d\theta}{\(=4/3\)}
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:220}
 P(r, t) = \frac{2}{3} \frac{q^2 a^2 \omega^4}{c^3} \sin^2(\omega (t - r/c)) =
 \frac{q^2 a^2 \omega^4}{3 c^3} (1 - \cos(2 \omega (t - r/c))
 \end{equation}
 
 Averaging over a period kills off the cosine term
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:240}
 \expectation{P(r, t)} = \frac{\omega}{2 \pi} \int_0^{2 \pi/\omega} dt P(t) = \frac{q^2 a^2 \omega^4}{3 c^3} = \frac{2}{3 c^3} \expectation{ \ddot{d}(t_r) }
 \end{equation}
@@ -273,7 +272,7 @@ This sort of current loop is a source of magnetic dipole radiation.
 This is the label for acceleration induced radiation (at high velocities) by particles moving in a uniform magnetic field.
 
 PICTURE: circular orbit with speed \(v = \omega r\).  The particle trajectories are
-
+%
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:300}
 \begin{aligned}
 x &= r \cos \omega t \\
