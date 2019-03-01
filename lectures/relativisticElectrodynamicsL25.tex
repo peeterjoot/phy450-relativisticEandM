@@ -25,20 +25,20 @@ Last time we started with our relativistic Lagrangian for a single particle
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:470}
 \LL_a = - m c^2 \sqrt{ 1 - \frac{\Bv_a^2}{c^2} } - \frac{q_a}{c} \frac{dx^i}{dt} A_i
 \end{equation}
-
+%
 and found that to the first order in \(v/c\) we had
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:10}
 \LL_a = \inv{2} m_a \Bv_a^2 - q_a \phi(\Bx_a, t).
 \end{equation}
-
+%
 Here the potential was approximated by Taylor expansion to contain just
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:30}
 \phi(\Bx_a, t) = \inv{2} \sum_{a \ne b} \frac{q_b }{\Abs{\Bx_a - \Bx_b}}
 + \frac{q_a}{``\Bx_a - \Bx_a''}.
 \end{equation}
-
+%
 The second term is something that no sane person would write, and represents the infinite electrostatic self energy of a charge.  This is infinite because we have assumed (by virtue of using a delta function for the current and charge distribution) that the charge is pointlike.  The ``solution'' to this problem was to omit this self energy term completely, essentially treating the charge of the electron as distributed.  We avoid looking specifically where it is located.
 
 The logic here is that this does not affect the motion (i.e. The Euler Lagrange equations) for the particle, provided it is viewed from afar, with distances \(\gg\) \textunderline{size of particle}.
@@ -48,13 +48,13 @@ We made an estimate of the scale for which our Lagrangian does not apply.  Namel
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:50}
 \frac{e^2}{r_e} \sim m_e c^2,
 \end{equation}
-
+%
 so we were able to conclude that the ``classical radius of the electron'', something that does not really exist, was of the scale
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:70}
 r_e \sim \frac{e^2 }{m_e c^2} \sim 10^{-13} \text{cm}
 \end{equation}
-
+%
 (We do see this quantity arise in physics, but it is not a radius in the classical sense).
 
 If this estimate was right, we would calculate that classical EM is value at \(r \gg r_e \sim 10^{-13} \text{cm}\).  In reality, classical electrodynamics breaks down at much larger distances.
@@ -72,7 +72,7 @@ Recall that we dropped terms from the original Lagrangian, which was
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:90}
 \LL_a = - m_a c^2 \sqrt{ 1 - \frac{\Bv_a^2}{c^2}} - q_a \phi(\Bx_a, t) + q_a \frac{\Bv_a}{c} \cdot \BA(\Bx_a, t).
 \end{equation}
-
+%
 We expanded the square root previously keeping only the first order term in \((v/c)^2\).  Now we will do one more.  Recall that our fractional binomial series expansion is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:91}
@@ -81,7 +81,7 @@ We expanded the square root previously keeping only the first order term in \((v
 + \frac{n(n-1)}{2!} x^2 +
 + \frac{n(n-1)(n-2)}{3!} x^3 + \cdots
 \end{equation}
-
+%
 so the square root in the Lagrangian expands as
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:490}
@@ -100,7 +100,7 @@ so the square root in the Lagrangian expands as
 - m_a c^2 + m_a \frac{\Bv_a^2}{2} + m_a \frac{\Bv_a^4}{8 c^2} + \cdots
 \end{aligned}
 \end{equation}
-
+%
 Thus to the next order the single particle Lagrangian is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:110}
@@ -117,13 +117,13 @@ We write
 +\phi^{(1)}(\Bx_a, t)
 +\phi^{(2)}(\Bx_a, t).
 \end{equation}
-
+%
 Last time we found that the zeroth order term in this approximation was
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:150}
 \phi^{(0)}(\Bx_a, t) = \sum_{b \ne a} \frac{q_b}{\Abs{\Bx_a(t) - \Bx_b(t)}},
 \end{equation}
-
+%
 and we wish to calculate the next term in the expansion.
 
 We also want to a first order approximation of the vector potential
@@ -134,7 +134,7 @@ We also want to a first order approximation of the vector potential
 +\BA^{(1)}(\Bx_a, t)
 +\cancel{\BA^{(2)}(\Bx_a, t)}
 \end{equation}
-
+%
 There is no zero order term and we do not need the second order term (today).
 
 Because
@@ -142,7 +142,7 @@ Because
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:190}
 \square \BA \sim \frac{\rho \Bv}{c}
 \end{equation}
-
+%
 We know the charge and current distributions
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:210}
@@ -155,7 +155,7 @@ We know the charge and current distributions
 \Bj(\Bx, t) &= \sum_b q_b \Bv_b(t) \delta^3 (\Bx - \Bx_b(t))
 \end{aligned}
 \end{equation}
-
+%
 We will use the fact that particles have \(v \ll c\).  The typical time where the charge distribution will change significantly is of order \(\frac{r_{ab}}{v} \gg \frac{r_{ab}}{c}\).  (Here \(r_ab/c\) is the time that it takes light to cross the interval, whereas \(r_ab/v\) is the time that it takes the particle to do the same).
 
 In other words, in time \(\Abs{\Bx - \Bx'}/c \sim r_{ab}/c\), \(\rho\) will not change much.
@@ -171,13 +171,13 @@ In other words, in time \(\Abs{\Bx - \Bx'}/c \sim r_{ab}/c\), \(\rho\) will not 
 +
 \inv{2 c^2} \int d^3 \Bx \Abs{\Bx - \Bx'} \PDSq{t}{} \rho(\Bx', t)
 \end{equation}
-
+%
 The second integral is the total charge \(\times 1/c\), and does not change in time.  So to first order our charge density is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:290}
 \rho\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right) \approx \rho(\Bx', t) = \sum_b \frac{q_b}{\Abs{\Bx - \Bx_b(t)}}
 \end{equation}
-
+%
 %FIXME: do we want to second order here?
 
 How about \(\BA\)?
@@ -196,7 +196,7 @@ A^{(1)}
 &\approx \inv{c} \int d^3 \Bx' \inv{\Abs{\Bx - \Bx'}} \Bj(\Bx', t)
 \end{aligned}
 \end{equation}
-
+%
 Ah, this shows why it was written that there is no second order term.  Because \(\Bj \sim \Bv_a\), we necessarily have \(\Bv_a/c\) dependence even in the zeroth order expansion about \(t=0\) in our retarded time expansion of \(\BA(\Bx', t_r)\).
 
 Assembling all the results, we have
@@ -213,7 +213,7 @@ Assembling all the results, we have
 &= \PD{t}{} \left( \inv{2 c^2} \PD{t}{} \sum_b q_b \Abs{\Bx - \Bx_b(t)} \right)
 \end{aligned}
 \end{equation}
-
+%
 And
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:550}
@@ -224,7 +224,7 @@ And
 &= \inv{c} \sum_b q_b \Bv_b \inv{\Abs{\Bx -\Bx_b}} \\
 \end{aligned}
 \end{equation}
-
+%
 Recall that \(\phi^{(0)}\) was given by \eqnref{eqn:relativisticElectrodynamicsL25:150}.
 %
 \section{A gauge transformation to simplify things}
@@ -239,13 +239,13 @@ Recall that \(\phi^{(0)}\) was given by \eqnref{eqn:relativisticElectrodynamicsL
 \BA'(\Bx, t) &= \BA(\Bx, t) + \spacegrad f(\Bx, t) \\
 \end{aligned}
 \end{equation}
-
+%
 This will not change the physics.  Take
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:370}
 f(\Bx, t) = \sum_b \frac{q_b}{2 c} \PD{t}{} \Abs{\Bx - \Bx_b(t)}
 \end{equation}
-
+%
 Then
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:390}
@@ -255,7 +255,7 @@ Then
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:410}
 {\BA'}^{(1)}(\Bx, t) = \inv{c} \sum_b \frac{q_b \Bv_b}{\Abs{\Bx - \Bx_b}} + \spacegrad \sum_b \frac{q_b}{2 c} \PD{t}{} \Abs{\Bx - \Bx_b}.
 \end{equation}
-
+%
 Inverting the order of time and space derivatives we find
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:570}
@@ -279,13 +279,13 @@ Inverting the order of time and space derivatives we find
 \frac{\Bx - \Bx_b(t)}{\Abs{\Bx -\Bx_b(t)}}.
 \end{aligned}
 \end{equation}
-
+%
 Let us write
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:430}
 \Bn \equiv \frac{\Bx - \Bx_b(t)}{\Abs{\Bx - \Bx_b}},
 \end{equation}
-
+%
 for the unit vector in the direction pointing from \(\Bx_b\) to \(\Bx\).  Evaluating the time derivative, we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:590}
@@ -305,13 +305,13 @@ for the unit vector in the direction pointing from \(\Bx_b\) to \(\Bx\).  Evalua
 + \frac{\Bn (\Bn \cdot \Bv_b)}{\Abs{\Bx - \Bx_b(t)}}.
 \end{aligned}
 \end{equation}
-
+%
 Assembling all the results we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:450}
 {\BA'}^{(1)}(\Bx, t) = \sum_b q_b \frac{\Bv_b + \Bn (\Bn \cdot \Bv_b)}{2 c \Abs{\Bx - \Bx_b} },
 \end{equation}
-
+%
 and the Lagrangian for our particle after the gauge transformation is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:330b}
@@ -319,5 +319,5 @@ and the Lagrangian for our particle after the gauge transformation is
 -\sum_{b \ne a} \frac{q_a q_b}{\Abs{\Bx_a(t) - \Bx_b(t)}}
 +\sum_b q_a q_b \frac{\Bv_a \cdot \Bv_b + (\Bn \cdot \Bv_a) (\Bn \cdot \Bv_b)}{2 c^2 \Abs{\Bx - \Bx_b} }.
 \end{equation}
-
+%
 Next time we will probably get to the Lagrangian for the entire system.  It was hinted that this is called the Darwin Lagrangian (after Charles Darwin's grandson).

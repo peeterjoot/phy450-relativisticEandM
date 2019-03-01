@@ -47,7 +47,7 @@ or
   &   &   & 0 \\
 \end{bmatrix}
 \end{equation}
-
+%
 This is a no-brainer, for we just have to mechanically plug in the elements of the field strength tensor
 
 Recall
@@ -72,7 +72,7 @@ F_{0\alpha}
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:71}
 F_{0\alpha} = E_\alpha
 \end{equation}
-
+%
 For the purely spatial index combinations we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1340}
@@ -90,7 +90,7 @@ F_{2 3} &= \partial_3 (\BA)_2 -\partial_2 (\BA)_3  \\
 F_{3 1} &= \partial_1 (\BA)_3 -\partial_3 (\BA)_1 .
 \end{aligned}
 \end{equation}
-
+%
 We can compare this to the elements of \(\BB\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:110}
@@ -109,7 +109,7 @@ We see that
 (\BB)_y &= \partial_3 A_x - \partial_1 A_z
 \end{aligned}
 \end{equation}
-
+%
 So we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:150}
@@ -119,13 +119,13 @@ F_{2 3} &= - (\BB)_1 \\
 F_{3 1} &= - (\BB)_2.
 \end{aligned}
 \end{equation}
-
+%
 These can be summarized as simply
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:170}
 F_{\alpha\beta} = - \epsilon_{\alpha\beta\gamma} B_\gamma.
 \end{equation}
-
+%
 This provides all the info needed to fill in the matrix above
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:190}
@@ -159,7 +159,7 @@ g^{a l} (\partial_l A_k - \partial_k A_l) \\
 \partial^a A_k - \partial_k A^a.
 \end{aligned}
 \end{equation}
-
+%
 Now apply the metric tensor once more
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1380}
@@ -171,7 +171,7 @@ g^{b k} (\partial^a A_k - \partial_k A^a) \\
 \partial^a A^b - \partial^b A^a.
 \end{aligned}
 \end{equation}
-
+%
 This is, by definition \(F^{a b}\).  Since a rank 2 tensor has been defined as an object that transforms like the product of two pairs of coordinates, it makes sense that this particular tensor raises in the same fashion as would a product of two vector coordinates (in this case, it happens to be an antisymmetric product of two vectors, and one of which is an operator, but we have the same idea).
 %
 \paragraph{Consider the components of the raised \texorpdfstring{\(F_{i j}\)}{Fij} tensor}
@@ -205,7 +205,7 @@ u^i &= \gamma \left( 1, \frac{\Bv}{c} \right) \\
 u_i &= \gamma \left( 1, -\frac{\Bv}{c} \right)
 \end{aligned}
 \end{equation}
-
+%
 For the spatial components of the Lorentz force equation we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1400}
@@ -227,13 +227,13 @@ m c \dds{ u_\alpha }
 &= -\gamma \frac{d(m \gamma \Bv_\alpha)}{c dt}.
 \end{aligned}
 \end{equation}
-
+%
 Canceling the common \(-\gamma/c\) terms, and switching to vector notation, we are left with
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:310}
 \frac{d( m \gamma \Bv_\alpha)}{dt} = e \left( E_\alpha + \inv{c} (\Bv \cross \BB)_\alpha \right).
 \end{equation}
-
+%
 Now for the energy term.  We have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1440}
@@ -268,7 +268,7 @@ The rank two tensor \(\hat{G}\) transforms in the following sort of sandwich ope
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:430}
 \hat{G} \rightarrow \hat{O} \hat{G} \hat{O}^\T = \hat{G}.
 \end{equation}
-
+%
 To demonstrate this let us consider a transformed vector in coordinate form as follows
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:450}
@@ -277,7 +277,7 @@ To demonstrate this let us consider a transformed vector in coordinate form as f
 {x'}_i &= O_{i j} x^j = {O_i}^j x_j.
 \end{aligned}
 \end{equation}
-
+%
 We can thus write the equation in matrix form with
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:940}
@@ -288,7 +288,7 @@ X' &= \Norm{{x'}^i} \\
 X' &= \hat{O} X
 \end{aligned}
 \end{equation}
-
+%
 Our invariant for the vector square, which is required to remain unchanged is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1460}
@@ -298,25 +298,25 @@ Our invariant for the vector square, which is required to remain unchanged is
 &= x^k (O^{i j} O_{i k}) x_j.
 \end{aligned}
 \end{equation}
-
+%
 This shows that we have a delta function relationship for the Lorentz transform matrix, when we sum over the first index
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:470}
 O^{a i} O_{a j} = {\delta^i}_j.
 \end{equation}
-
+%
 It appears we can put \eqnref{eqn:relativisticElectrodynamicsL11:470} into matrix form as
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:471}
 \hat{G} \hat{O}^\T \hat{G} \hat{O} = I
 \end{equation}
-
+%
 Now, if one considers that the transpose of a rotation is an inverse rotation, and the transpose of a boost leaves it unchanged, the transpose of a general Lorentz transformation, a composition of an arbitrary sequence of boosts and rotations, must also be a Lorentz transformation, and must then also leave the norm unchanged.  For the transpose of our Lorentz transformation \(\hat{O}\) lets write
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1000}
 \hat{P} = \hat{O}^\T
 \end{equation}
-
+%
 For the action of this on our position vector let us write
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1020}
@@ -325,7 +325,7 @@ For the action of this on our position vector let us write
 {x''}_i &= P_{i j} x^j = O_{j i} x^j
 \end{aligned}
 \end{equation}
-
+%
 so that our norm is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1480}
@@ -336,13 +336,13 @@ so that our norm is
 &= x^j x_j \\
 \end{aligned}
 \end{equation}
-
+%
 We must then also have an identity when summing over the second index
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1040}
 {\delta_{k}}^j = O_{k a} O^{j a}
 \end{equation}
-
+%
 Armed with these facts on the products of \(O_{i j}\) and \(O^{i j}\) we can now consider the transformation of the metric tensor.
 
 The rule (definition) supplied to us for the transformation of an arbitrary rank two tensor, is that this transforms as its indices transform individually.  Very much as if it was the product of two coordinate vectors and we transform those coordinates separately.  Doing so for the metric tensor we have
@@ -357,13 +357,13 @@ g^{i j}
 &= (O^{i m} O_{a m}) g^{a j}
 \end{aligned}
 \end{equation}
-
+%
 However, by \eqnref{eqn:relativisticElectrodynamicsL11:1040}, we have \(O_{a m} O^{i m} = {\delta_a}^i\), and we prove that
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:960}
 g^{i j} \rightarrow g^{i j}.
 \end{equation}
-
+%
 Finally, we wish to put the above transformation in matrix form, look more carefully at the very first line
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1520}
@@ -372,13 +372,13 @@ g^{i j}
 &\rightarrow {O^i}_k g^{k m} {O^j}_m \\
 \end{aligned}
 \end{equation}
-
+%
 which is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1070}
 \hat{G} \rightarrow \hat{O} \hat{G} \hat{O}^\T = \hat{G}
 \end{equation}
-
+%
 We see that this particular form of transformation, a sandwich between \(\hat{O}\) and \(\hat{O}^\T\), leaves the metric tensor invariant.
 %
 \paragraph{Lorentz transformation of the electrodynamic tensor}
@@ -391,25 +391,25 @@ Having identified a composition of Lorentz transformation matrices, when acting 
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:490}
 \hat{F} \rightarrow \hat{O} \hat{F} \hat{O}^\T ,
 \end{equation}
-
+%
 where \(\hat{F} = \Norm{F^{i j}}\).  Observe that our Lorentz force equation can be written exclusively in upper index quantities as
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:370}
 m c \dds{u^i} = \frac{e}{c} F^{i j} g_{j l} u^l
 \end{equation}
-
+%
 Because we have a vector on one side of the equation, and it transforms by multiplication with by a Lorentz matrix in SO(1,3)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:390}
 \frac{du^i}{ds} \rightarrow \hat{O} \frac{du^i}{ds}
 \end{equation}
-
+%
 The LHS of the Lorentz force equation provides us with one invariant
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1090}
 (m c)^2 \dds{u^i} \dds{u_i}
 \end{equation}
-
+%
 so the RHS must also provide one
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1110}
@@ -421,19 +421,19 @@ F_{i k} g^{k m} u_m
 F^{i j} u_j
 F_{i k} u^k.
 \end{equation}
-
+%
 Let us look at the RHS in matrix form.  Writing
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1130}
 U = \Norm{u^i},
 \end{equation}
-
+%
 we can rewrite the Lorentz force equation as
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1150}
 m c \dot{U} = \frac{e}{c} \hat{F} \hat{G} U.
 \end{equation}
-
+%
 In this matrix formalism our invariant \eqnref{eqn:relativisticElectrodynamicsL11:1110} is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1200}
@@ -459,7 +459,7 @@ thus the transformed electrodynamic tensor \(\hat{F}'\) must satisfy the identit
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1240}
 \hat{O}^\T \hat{G} \hat{F'}^\T \hat{G} \hat{F'} \hat{G} \hat{O} = \hat{G} \hat{F}^\T \hat{G} \hat{F} \hat{G}.
 \end{equation}
-
+%
 With the substitution \(\hat{F}' = \hat{O} \hat{F} \hat{O}^\T\) the LHS is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1560}
@@ -474,7 +474,7 @@ With the substitution \(\hat{F}' = \hat{O} \hat{F} \hat{O}^\T\) the LHS is
 (\hat{O}^\T \hat{G} \hat{O}) \hat{F}^\T (\hat{O}^\T \hat{G} \hat{O}) \hat{F} (\hat{O}^\T \hat{G} \hat{O}) \\
 \end{aligned}
 \end{equation}
-
+%
 We have argued that \(\hat{P} = \hat{O}^\T\) is also a Lorentz transformation, thus
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1580}
@@ -486,7 +486,7 @@ We have argued that \(\hat{P} = \hat{O}^\T\) is also a Lorentz transformation, t
 \hat{G}
 \end{aligned}
 \end{equation}
-
+%
 This is enough to make both sides of \eqnref{eqn:relativisticElectrodynamicsL11:1240} match, verifying that this transformation does provide the invariant properties desired.
 %
 \paragraph{Direct computation of the Lorentz transformation of the electrodynamic tensor}
@@ -505,10 +505,10 @@ F^{i j} =
 {O^i}_a F^{a b} {O^j}_b
 \end{aligned}
 \end{equation}
-
+%
 By inspection we can see that this can be represented in matrix form as
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL11:1300}
 \hat{F} \rightarrow \hat{O} \hat{F} \hat{O}^\T
 \end{equation}
-
+%

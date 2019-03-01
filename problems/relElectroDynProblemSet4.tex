@@ -33,13 +33,13 @@ Because it does not add too much complexity, I am going to calculate these using
 \begin{equation}\label{eqn:relElectroDynProblemSet4:10}
 \BA = \Real \Bbeta e^{i (\omega t - \Bk \cdot \Bx) }.
 \end{equation}
-
+%
 The elliptical polarization case only differs from the linear by allowing \(\Bbeta\) to be complex, rather than purely real or purely imaginary.  Observe that the Coulomb gauge condition \(\spacegrad \cdot \BA\) implies
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:30}
 \Bbeta \cdot \Bk = 0,
 \end{equation}
-
+%
 a fact that will kill of terms in a number of places in the following manipulations.
 
 Also observe that for this to be a solution to the wave equation operator
@@ -47,19 +47,19 @@ Also observe that for this to be a solution to the wave equation operator
 \begin{equation}\label{eqn:relElectroDynProblemSet4:50}
 \inv{c^2} \PDSq{t}{} - \Delta,
 \end{equation}
-
+%
 the frequency and wave vector must be related by the condition
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:70}
 \frac{\omega}{c} = \Abs{\Bk} = k.
 \end{equation}
-
+%
 For the time and spatial phase let us write
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:90}
 \theta = \omega t - \Bk \cdot \Bx.
 \end{equation}
-
+%
 In the Coulomb gauge, our electric and magnetic fields are
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:110}
@@ -68,19 +68,19 @@ In the Coulomb gauge, our electric and magnetic fields are
 \BB &= \spacegrad \cross \BA = \Real i \Bbeta \cross \Bk e^{i\theta}
 \end{aligned}
 \end{equation}
-
+%
 Similar to \S 48 of the text \citep{landau1980classical}, let us split \(\Bbeta\) into a phase and perpendicular vector components so that
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:130}
 \Bbeta = \Bb e^{-i\alpha}
 \end{equation}
-
+%
 where \(\Bb\) has a real square
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:150}
 \Bb^2 = \Abs{\Bbeta}^2.
 \end{equation}
-
+%
 This allows a split into two perpendicular real vectors
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:170}
@@ -103,7 +103,7 @@ or explicitly in terms of \(\Bb_1\) and \(\Bb_2\)
 \BB &= ( \Bk \cross \Bb_1 ) \sin(\theta-\alpha) + (\Bk \cross \Bb_2) \cos(\theta-\alpha).
 \end{aligned}
 \end{equation}
-
+%
 The special case of interest for this problem, since it only strictly asked for linear polarization, is where \(\alpha = 0\) and one of \(\Bb_1\) or \(\Bb_2\) is zero (i.e. \(\Bbeta\) is strictly real or strictly imaginary).  The case with \(\Bbeta\) strictly real, as done in class, is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:230}
@@ -112,7 +112,7 @@ The special case of interest for this problem, since it only strictly asked for 
 \BB &= ( \Bk \cross \Bb_1 ) \sin(\theta-\alpha)
 \end{aligned}
 \end{equation}
-
+%
 Now lets calculate the energy density and Poynting vectors.  We will need a few intermediate results.
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:380}
@@ -123,7 +123,7 @@ Now lets calculate the energy density and Poynting vectors.  We will need a few 
 &= \inv{2} \left( \Abs{\Bd}^2 + \Real ( \Bd e^{i \phi} )^2 \right),
 \end{aligned}
 \end{equation}
-
+%
 and
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:400}
@@ -134,7 +134,7 @@ and
 &= \inv{2} \Real \left( \Bd \cross \Be^\conj + (\Bd \cross \Be) e^{2 i \phi} \right).
 \end{aligned}
 \end{equation}
-
+%
 Let us use arrowed vectors for the phasor parts
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:250}
@@ -143,7 +143,7 @@ Let us use arrowed vectors for the phasor parts
 \vec{B} &= i \Bb \cross \Bk e^{i(\theta - \alpha)},
 \end{aligned}
 \end{equation}
-
+%
 where we can recover our vector quantities by taking real parts \(\BE = \Real \vec{E}\), \(\BB = \Real \vec{B}\).  Our energy density in terms of these phasors is then
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:270}
@@ -166,7 +166,7 @@ e^{2 i(\theta - \alpha)}
 \right).
 \end{aligned}
 \end{equation}
-
+%
 Note that \(\omega^2/c^2 = \Bk^2\), and \(\Abs{\Bb \cross \Bk} = \Abs{\Bb}^2 \Bk^2\) (since \(\Bb \cdot \Bk = 0\)).  Also \((\Bb \cross \Bk)^2 = \Bb^2 \Bk^2\), so we have
 \boxedEquation{eqn:relElectroDynProblemSet4:290}{
 \calE
@@ -190,7 +190,7 @@ S
 &= \frac{c}{8 \pi} \Real \left( -k \Bb \cross (\Bb^\conj \cross \Bk) + k \Bb \cross (\Bb \cross \Bk ) e^{2 i(\theta - \alpha)} \right) \\
 \end{aligned}
 \end{equation}
-
+%
 Reducing the terms we get \(\Bb \cross (\Bb^\conj \cross \Bk) = -\Bk \Abs{\Bb}^2\), and \(\Bb \cross (\Bb \cross \Bk) = -\Bk \Bb^2\), leaving
 \boxedEquation{eqn:relElectroDynProblemSet4:330}{
 S
@@ -214,7 +214,7 @@ We want to average over one period, the time \(T\) such that \(\omega T = 2 \pi\
 \begin{equation}\label{eqn:relativisticElectrodynamicsL16:360}
 \expectation{f} = \frac{\omega}{2\pi} \int_0^{2\pi/\omega} f dt.
 \end{equation}
-
+%
 It is clear that this will just kill off the sinusoidal terms, leaving
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:350b}
@@ -232,7 +232,7 @@ The magnitude of the momentum of light is related to its energy by
 \begin{equation}\label{eqn:relElectroDynProblemSet4:351}
 \Bp = \frac{\calE}{c}
 \end{equation}
-
+%
 and can thus loosely identify the magnitude of the force as
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:460}
@@ -242,19 +242,19 @@ and can thus loosely identify the magnitude of the force as
 &= \int d^2 \Bsigma \cdot \frac{\BS}{c}.
 \end{aligned}
 \end{equation}
-
+%
 With pressure as the force per area, we could identify
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:252}
 \frac{\BS}{c}
 \end{equation}
-
+%
 as the instantaneous (directed) pressure on a surface.  What is that for linearly polarized light?  We have from above for the linear polarized case (where \(\Abs{\Bb}^2 = \Bb^2\))
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:353}
 \BS = \frac{c \kcap \Bk^2 \Bb^2 }{8 \pi} ( 1 - \cos( 2 (\omega t - \Bk \cdot \Bx) ) )
 \end{equation}
-
+%
 If we look at the magnitude of the average pressure from the radiation, we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4:354}

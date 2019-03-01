@@ -24,13 +24,13 @@ z_{-} &= 0 \\
 z_{+} &= \Be_3( z_0 + a \sin(\omega t)) ,
 \end{aligned}
 \end{equation}
-
+%
 so that our dipole moment \(\Bd = \int \rho(\Bx') \Bx'\) is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:30}
 \Bd = \Be_3 q (z_0 + a \sin(\omega t)).
 \end{equation}
-
+%
 The scalar potential, to first order in a number of Taylor expansions at our point far from the source, evaluated at the retarded time \(t_r = t - \Abs{\Bx}/c\), was found to be
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:35}
@@ -40,7 +40,7 @@ and our vector potential, also with the same approximations, was
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:40}
 \BA(\Bx, t) = \inv{c \Abs{\Bx} } \Be_3 q a \omega \cos(\omega t_r).
 \end{equation}
-
+%
 We found that the electric field (neglecting any non-radiation terms that died off as inverse square in the distance) was
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:50}
@@ -61,13 +61,13 @@ Taking the curl of the vector potential \eqnref{eqn:relativisticElectrodynamicsL
 (\Be_3 \cross \spacegrad \Abs{\Bx}) \sin(\omega (t - \Abs{\Bx}/c)),
 \end{aligned}
 \end{equation}
-
+%
 which is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:60}
 \BB = \frac{q a \omega^2}{c^2 \Abs{\Bx} } (\Be_3 \cross \rcap) \sin(\omega (t - \Abs{\Bx}/c)).
 \end{equation}
-
+%
 Comparing to \eqnref{eqn:relativisticElectrodynamicsL21:50}, we see that this equals \(\rcap \cross \BE\) as expected.
 %
 \section{An aside: A tidier form for the electric dipole field}
@@ -78,13 +78,13 @@ We can rewrite the electric field \eqnref{eqn:relativisticElectrodynamicsL21:50}
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:80}
 \BE = \inv{c^2 \Abs{\Bx}} \Bigl( -\ddot{\Bd}(t_r) + \rcap ( \ddot{\Bd}(t_r) \cdot \rcap ) \Bigr),
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:100}
 \ddot{\Bd}(t) = - q a \omega^2 \sin(\omega t) \Be_3
 \end{equation}
-
+%
 Then using the vector identity
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:120}
@@ -109,7 +109,7 @@ Our Poynting vector, the energy flux, is
 \sin^2(\omega (t - \Abs{\Bx}/c))
 \left( \Be_3 - \rcap \frac{z}{\Abs{\Bx}} \right) \cross (\rcap \cross \Be_3).
 \end{equation}
-
+%
 Expanding just the cross terms we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:340}
@@ -125,7 +125,7 @@ Expanding just the cross terms we have
 \rcap( 1 - (\rcap \cdot \Be_3)^2 ).
 \end{aligned}
 \end{equation}
-
+%
 Note that we have utilized \(\rcap \cdot \Be_3 = z/\Abs{\Bx}\) to do the cancellations above, and for the final grouping.  Since \(\rcap \cdot \Be_3 = \cos\theta\), the direction cosine of the unit radial vector with the z-axis, we have for the direction of the Poynting vector
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:360}
@@ -135,7 +135,7 @@ Note that we have utilized \(\rcap \cdot \Be_3 = z/\Abs{\Bx}\) to do the cancell
 &= \rcap \sin^2\theta.
 \end{aligned}
 \end{equation}
-
+%
 Our Poynting vector is found to be directed radially outwards, and is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:180}
@@ -144,13 +144,13 @@ Our Poynting vector is found to be directed radially outwards, and is
 \left( \frac{q a \omega^2}{c^2 \Abs{\Bx} } \right)^2
 \sin^2(\omega (t - \Abs{\Bx}/c)) \sin^2\theta \rcap.
 \end{equation}
-
+%
 The intensity is constant along the curves
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:200}
 \Abs{\sin\theta} \sim r
 \end{equation}
-
+%
 PICTURE: dipole lobes diagram with \(\Bd\) up along the z axis, and \(\rcap\) pointing in an arbitrary direction.
 
 FIXME: understand how this lobes picture comes from our result above.
@@ -168,13 +168,13 @@ In class we see the picture showing these spherical unit vector directions.  We 
 \thetacap &= \cos\theta ( \Be_1 \cos\phi + \Be_2 \sin\phi ) - \Be_3 \sin\theta,
 \end{aligned}
 \end{equation}
-
+%
 with the volume element orientation governed by cyclic permutations of
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:280}
 \rcap \cross \thetacap = \phicap.
 \end{equation}
-
+%
 We can now express the direction of the magnetic field in terms of the spherical unit vectors
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:380}
@@ -192,7 +192,7 @@ We can now express the direction of the magnetic field in terms of the spherical
 \sin\theta \phicap.
 \end{aligned}
 \end{equation}
-
+%
 The direction of the electric field was in the direction of \((\ddot{\Bd} \cross \rcap) \cross \rcap\) where \(\Bd\) was directed along the z-axis.  This is then
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:400}
@@ -238,13 +238,13 @@ P(r, t)
 P(r, t) = \frac{2}{3} \frac{q^2 a^2 \omega^4}{c^3} \sin^2(\omega (t - r/c)) =
 \frac{q^2 a^2 \omega^4}{3 c^3} (1 - \cos(2 \omega (t - r/c))
 \end{equation}
-
+%
 Averaging over a period kills off the cosine term
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL21:240}
 \expectation{P(r, t)} = \frac{\omega}{2 \pi} \int_0^{2 \pi/\omega} dt P(t) = \frac{q^2 a^2 \omega^4}{3 c^3} = \frac{2}{3 c^3} \expectation{ \ddot{d}(t_r) }
 \end{equation}
-
+%
 and we once again see that higher frequencies radiate more power (i.e. why the sky is blue).
 %
 \section{Types of radiation}
@@ -271,7 +271,7 @@ x &= r \cos \omega t \\
 y &= r \sin \omega t
 \end{aligned}
 \end{equation}
-
+%
 This problem can be treated as two electric dipoles out of phase by 90 degrees.
 
 PICTURE: 4 lobe dipole picture, with two perpendicular dipole moment arrows.  Resulting superposition sort of smeared together.

@@ -38,13 +38,13 @@ With the particle's energy given by
 \begin{equation}\label{eqn:relElectroDynProblemSet2:150}
 \calE = \gamma m c^2,
 \end{equation}
-
+%
 we note that
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:170}
 \calE\Bv = (\gamma m \Bv) c^2 = \Bp c^2.
 \end{equation}
-
+%
 Taking derivatives we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1130}
@@ -54,7 +54,7 @@ c^2 \ddt{\Bp}
 &= \Bv (e \BE \cdot \Bv) + \ddt{\Bv} \calE \\
 \end{aligned}
 \end{equation}
-
+%
 Rearranging we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:190}
@@ -62,7 +62,7 @@ Rearranging we have
 =
 \frac{c^2 e \left( \BE + \frac{\Bv}{c} \cross \BB \right) - \Bv (e \BE \cdot \Bv) }{ \calE }
 \end{equation}
-
+%
 which leaves us with the desired result
 \boxedEquation{eqn:relElectroDynProblemSet2:210}{
 \dot{\Bv} =
@@ -76,7 +76,7 @@ Note that when the problem set was assigned, the relation
 \begin{equation}\label{eqn:relElectroDynProblemSet2:230}
 \ddt{\calE} = e \BE \cdot \Bv
 \end{equation}
-
+%
 had not been demonstrated.  To show this observe that we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1150}
@@ -88,7 +88,7 @@ had not been demonstrated.  To show this observe that we have
 &= \frac{m \gamma \Bv \cdot \frac{d\Bv}{dt}}{1 - \frac{\Bv^2}{c^2}}
 \end{aligned}
 \end{equation}
-
+%
 We also have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1170}
@@ -100,7 +100,7 @@ We also have
 &= m c^2 \ddt{\gamma}.
 \end{aligned}
 \end{equation}
-
+%
 Utilizing the Lorentz force equation, we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:250}
@@ -126,7 +126,7 @@ we can write
 \begin{equation}\label{eqn:relElectroDynProblemSet2:330}
 \InvGamma = \frac{ m c^2 }{\calE}
 \end{equation}
-
+%
 This eliminates the worst of the coupling, leaving three less hairy equations to solve
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:350}
@@ -136,7 +136,7 @@ This eliminates the worst of the coupling, leaving three less hairy equations to
 \dot{v}_z &= \frac{e c^2}{\calE} \left( - \frac{v_y v_z}{c^2} E \right)
 \end{aligned}
 \end{equation}
-
+%
 We do not actually want to compute general solutions for these equations.  Instead we just wish to examine the constraints on \(E\) and \(B\) that will keep \(v_y = v_z = 0\).
 
 First off we see from the \(\dot{v}_z\) equation above that if \(v_y = 0\) or \(v_z = 0\) initially, then \(\dot{v}_z = 0\), and \(v_z(t) = \text{constant} = v_z(0) = 0\).  So, if the beam is initially aligned with the x direction, it will not deviate towards the \(z\) axis (in the direction of the magnetic field) at all.
@@ -149,7 +149,7 @@ Next, if we initially have \(v_y = 0\), then at that point of time, our equation
 \dot{v}_y &= \frac{e c^2}{\calE} \left( E - \frac{v_x}{c} B \right)
 \end{aligned}
 \end{equation}
-
+%
 We are able to solve for the time evolution of the velocities directly
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:390}
@@ -158,13 +158,13 @@ v_x(t) &= \text{constant} = v_x(0) \\
 v_y(t) &= \frac{e c^2}{\calE} \left( E - \frac{v_x(0)}{c} B \right) t
 \end{aligned}
 \end{equation}
-
+%
 We can maintain zero deviation in the \(y\) direction (\(v_y(t) = 0\)) provided we pick
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:410}
 E = \frac{v_x(0)}{c} B
 \end{equation}
-
+%
 \subsubsection{2. (b). Finding the mass of the electron}
 
 After measuring the fields that once adjusted produce no deviation in the \(y\) and \(z\) directions, our particles velocity must then be
@@ -172,19 +172,19 @@ After measuring the fields that once adjusted produce no deviation in the \(y\) 
 \begin{equation}\label{eqn:relElectroDynProblemSet2:430}
 \frac{v_x}{c} = \frac{E}{B}
 \end{equation}
-
+%
 If the energy has also been measured, we have a relation between the mass from
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:450}
 \calE = \frac{m c^2}{\sqrt{1 - v_x^2/c^2}} = \frac{ m c^2 }{ \sqrt{ 1 - E^2/B^2 }}
 \end{equation}
-
+%
 With a slight rearrangement, our mass can then be calculated from the energy \(\calE\), and field measurements
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:470}
 m = \frac{ \calE }{c^2} \sqrt{ 1 - E^2/B^2 }.
 \end{equation}
-
+%
 %
 \makeSubAnswer{Solve for the relativistic trajectory of a particle in perpendicular fields.}{pr:relElectroDynProblemSet2:2c}
 %
@@ -193,7 +193,7 @@ Our equation to solve is
 \begin{equation}\label{eqn:relElectroDynProblemSet2:490}
 \dds{u^i} = \frac{e}{m c^2} F^{ij} g_{jk} u^k,
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:510}
@@ -221,7 +221,7 @@ E_z & B_y & -B_x & 0
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
-
+%
 However, with the fields being perpendicular, we are free to align them with our choice of axis.  As above, let us use \(\BE = E \ycap\), and \(\BB = B \zcap\).  Writing \(u\) for the column vector with components \(u^i\) we have a matrix equation to solve
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:530}
@@ -234,7 +234,7 @@ E & -B & 0 & 0 \\
 0 & 0 & 0 & 0
 \end{bmatrix} u = F u.
 \end{equation}
-
+%
 It is simple to verify that our characteristic equation is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:1190}
@@ -250,13 +250,13 @@ E & -B & -\lambda & 0 \\
 &= -\lambda^2 ( -\lambda^2 - B^2 + E^2 )
 \end{aligned}
 \end{equation}
-
+%
 so that our eigenvalues are
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:550}
 \lambda = 0, 0, \pm \sqrt{E^2 - B^2}.
 \end{equation}
-
+%
 Since the fields are constant, we can diagonalize this, and solve by exponentiation.
 
 Let
@@ -264,7 +264,7 @@ Let
 \begin{equation}\label{eqn:relElectroDynProblemSet2:570}
 D = \sqrt{E^2 - B^2}.
 \end{equation}
-
+%
 To solve for the eigenvector \(e_D\) for \(\lambda = D\) we need solutions to
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:590}
@@ -282,7 +282,7 @@ d
 \end{bmatrix}
  = 0,
 \end{equation}
-
+%
 and it is straightforward to compute
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:610}
@@ -295,7 +295,7 @@ D \\
 0
 \end{bmatrix}.
 \end{equation}
-
+%
 Similarly for the \(\lambda = -D\) eigenvector \(e_{-D}\) we wish to solve
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:630}
@@ -313,7 +313,7 @@ d
 \end{bmatrix}
  = 0,
 \end{equation}
-
+%
 and find that
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:650}
@@ -326,7 +326,7 @@ B \\
 0
 \end{bmatrix}.
 \end{equation}
-
+%
 We can also pick orthonormal eigenvectors for the degenerate zero eigenvalues from the null space of the matrix
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:670}
@@ -353,7 +353,7 @@ E \\
 1
 \end{bmatrix}.
 \end{equation}
-
+%
 Unfortunately, the first is not generally orthonormal to either of \(e_{\pm D}\), so our similarity transformation matrix is not invertible by Hermitian transposition.  Regardless, we are now well on track to putting the matrix equation we wish to solve into a much simpler form.  With
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:710}
@@ -389,7 +389,7 @@ E \\
 \end{bmatrix}
 \end{bmatrix},
 \end{equation}
-
+%
 and
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:730}
@@ -401,31 +401,31 @@ D & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 \end{bmatrix}
 \end{equation}
-
+%
 observe that our Lorentz force equation can now be written
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:750}
 \dds{u} = \frac{e}{m c^2} S \Sigma S^{-1} u.
 \end{equation}
-
+%
 This we can rearrange, leaving us with a diagonal system that has a trivial solution
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:770}
 \dds{} (S^{-1} u) = \frac{e}{m c^2} \Sigma (S^{-1} u).
 \end{equation}
-
+%
 Let us write
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:790}
 v = S^{-1} u,
 \end{equation}
-
+%
 and introduce a sort of proper distance wave number
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:810}
 k = \frac{e \sqrt{E^2 - B^2}}{m c^2}.
 \end{equation}
-
+%
 With this the Lorentz force equation is left in the form
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:830}
@@ -437,7 +437,7 @@ k & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 \end{bmatrix} v.
 \end{equation}
-
+%
 Integrating once, our solution is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:850}
@@ -449,7 +449,7 @@ e^{ks} & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 \end{bmatrix} v(s=0)
 \end{equation}
-
+%
 Our proper velocity is thus given by
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:870}
@@ -461,7 +461,7 @@ e^{ks} & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 \end{bmatrix} S^{-1} u(s=0).
 \end{equation}
-
+%
 We can integrate once more for our trajectory, parametrized by proper distance on the worldline of the particle.  That is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:890}
@@ -475,7 +475,7 @@ e^{ks'} & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 \end{bmatrix} \right) S^{-1} u(s=0).
 \end{equation}
-
+%
 With \(u(0) = \gamma_0 (1, \Bv_0/c)\), and \(X = (c t_0, \Bx_0)\), plus the defining relations \eqnref{eqn:relElectroDynProblemSet2:710}, and \eqnref{eqn:relElectroDynProblemSet2:810} our parametric equation for the trajectory is fully specified
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet2:910}
@@ -502,7 +502,7 @@ c t_0 \\
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
-
+%
 Observe that for the case \(E^2 > B^2\), our value \(k\) is real, so the solution is entirely composed of linear combinations of the hyperbolic functions \(\cosh(k s)\) and \(\sinh(ks)\).  However, for the \(E^2 < B^2\) case where our eigenvalues are purely imaginary, the constant \(k\) is also purely imaginary (and our eigenvectors \(e_{\pm D}\) are complex).  In that case, we can take the real part of this equation, and will be left with a solution that is formed of linear combinations of \(\sin(ks)\) and \(\cos(ks)\) terms.  The \(E = B\) case would have to be handled separately, and this is done in depth in the text, so there is little value repeating it here.
 
 }

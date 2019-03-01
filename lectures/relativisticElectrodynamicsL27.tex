@@ -29,7 +29,7 @@ Recall that our potentials are
 \BA(\Bx, t) &= \inv{c}\int d^3 \Bx' \frac{\Bj\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right)}{\Abs{\Bx - \Bx'}}.
 \end{aligned}
 \end{equation}
-
+%
 We can expand in Taylor series about \(t\).  For the charge density this is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:30}
@@ -42,7 +42,7 @@ We can expand in Taylor series about \(t\).  For the charge density this is
 - \inv{6} \left(\frac{\Abs{\Bx - \Bx'}}{c}\right)^3 \frac{\partial^3}{\partial t^3} \rho(\Bx', t)
 \end{aligned},
 \end{equation}
-
+%
 so that our scalar potential to third order is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:330}
@@ -68,7 +68,7 @@ so that our scalar potential to third order is
 &= \phi^{(0)} + \phi^{(2)} + \phi^{(3)}
 \end{aligned}
 \end{equation}
-
+%
 Expanding the vector potential in Taylor series to second order we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:350}
@@ -93,7 +93,7 @@ Expanding the vector potential in Taylor series to second order we have
 &= \BA^{(1)} + \BA^{(2)}
 \end{aligned}
 \end{equation}
-
+%
 We have already considered the effects of the \(\BA^{(1)}\) term, and now move on to \(\BA^{(2)}\).  We will write \(\phi^{(3)}\) as a total derivative
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:50}
@@ -104,7 +104,7 @@ We have already considered the effects of the \(\BA^{(1)}\) term, and now move o
 \right)
 = \inv{c} \PD{t}{} f^{(2)}(\Bx, t)
 \end{equation}
-
+%
 and gauge transform it away as we did with \(\phi^{(2)}\) previously.
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:70}
@@ -125,7 +125,7 @@ and gauge transform it away as we did with \(\phi^{(2)}\) previously.
 \spacegrad_{\Bx} \Abs{\Bx - \Bx'}^2 \\
 \end{aligned}
 \end{equation}
-
+%
 Looking first at the first integral we can employ the trick of writing \(\Be_\alpha = \PDi{x^{\alpha'}}{\Bx'}\), and then employ integration by parts
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:390}
@@ -154,7 +154,7 @@ j^\alpha (\Bx', t)  \\
 \Bx' \rho(\Bx', t) \\
 \end{aligned}
 \end{equation}
-
+%
 For the second integral, we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:410}
@@ -170,7 +170,7 @@ For the second integral, we have
 &= 2 (\Bx - \Bx'),
 \end{aligned}
 \end{equation}
-
+%
 so our gauge transformed vector potential term is reduced to
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:430}
@@ -182,13 +182,13 @@ so our gauge transformed vector potential term is reduced to
 -\inv{c^2} \frac{\partial^2}{\partial t^2} \int d^3 \Bx' \rho(\Bx', t) \left(\inv{3} \Bx + \frac{2}{3}\Bx' \right) \\
 \end{aligned}
 \end{equation}
-
+%
 Now we wish to employ a discrete representation of the charge density
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:90}
 \rho(\Bx', t) = \sum_{b=1}^N q_b \delta^3(\Bx' - \Bx_b(t)).
 \end{equation}
-
+%
 The second order vector potential becomes
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:450}
 \begin{aligned}
@@ -206,31 +206,31 @@ The second order vector potential becomes
 \left( \sum_{b=1}^N q_b \Bx_b(t) \right).
 \end{aligned}
 \end{equation}
-
+%
 We end up with a dipole moment
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:110}
 \Bd(t) = \sum_{b=1}^N q_b \Bx_b(t)
 \end{equation}
-
+%
 so we can write
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:130}
 \BA^{(2)'} = -\frac{2}{3 c^2} \ddot{\Bd}(t).
 \end{equation}
-
+%
 Observe that there is no magnetic field due to this contribution since there is no explicit spatial dependence
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:150}
 \spacegrad \cross \BA^{(2)'} = 0
 \end{equation}
-
+%
 we have also gauge transformed away the scalar potential contribution so have only the time derivative contribution to the electric field
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:170}
 \BE = -\inv{c} \PD{t}{\BA} - \cancel{\spacegrad \phi} = \frac{2}{3 c^2} \dddot{\Bd}(t).
 \end{equation}
-
+%
 To \(O((v/c)^3)\) there is a homogeneous electric field felt by all particles, hence every particle feels a ``friction'' force
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:190}
@@ -249,7 +249,7 @@ m \ddot{z}
 &= - m \omega^2 a + \frac{2 m}{3} \frac{r_e}{c} \dddot{z} \\
 \end{aligned}
 \end{equation}
-
+%
 Here \(r_e \sim 10^{-13} \text{cm}\) is the classical radius of the electron.  For periodic motion
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:490}
@@ -259,13 +259,13 @@ z &\sim e^{i \omega t} z_0 \\
 \dddot{z} &\sim \omega^3 z_0.
 \end{aligned}
 \end{equation}
-
+%
 The ratio of the last term to the inertial term is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:210}
 \sim \frac{ \omega^3 m (r_e/c) z_0 }{ m \omega^2 z_0 } \sim \omega \frac{r_e}{c} \ll 1,
 \end{equation}
-
+%
 so
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:510}
@@ -277,7 +277,7 @@ so
 &\sim 10^{23} \text{Hz} \\
 \end{aligned}
 \end{equation}
-
+%
 So long as \(\omega \ll 10^{23} \text{Hz}\), this approximation is valid.
 }
 %
@@ -293,13 +293,13 @@ What sort of energy is this?  At these frequencies QM effects come in
 \Hbar \omega_{max} \sim
 10^{-15} \text{eV} \cdot \text{s} \times 10^{23} \inv{\text{s}} \sim 10^8 \text{eV} \sim 100 \text{MeV}
 \end{equation}
-
+%
 whereas the rest energy of the electron is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:270}
 m_e c^2 \sim \inv{2} \text{MeV} \sim \text{MeV}.
 \end{equation}
-
+%
 At these frequencies it is possible to create \(e^{+}\) and \(e^{-}\) pairs.  A theory where the number of particles (electrons and positrons) is NOT fixed anymore is required.  An estimate of this frequency, where these effects have to be considered is possible.
 
 PICTURE: different length scales with frequency increasing to the left and length scales increasing to the right.
@@ -315,7 +315,7 @@ here
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:290}
 \alpha = \frac{e^2}{4 \pi \epsilon_0 \Hbar c } = \inv{137},
 \end{equation}
-
+%
 is the fine structure constant.
 
 Similar to the distance scale restrictions, we have field strength restrictions.  A strong enough field (Electric) can start creating electron and positron pairs.  This occurs at about
@@ -323,7 +323,7 @@ Similar to the distance scale restrictions, we have field strength restrictions.
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:310}
 e E \lambda/2\pi \sim 2 m_e c^2
 \end{equation}
-
+%
 so the critical field strength is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL27:530}

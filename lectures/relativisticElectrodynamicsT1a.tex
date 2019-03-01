@@ -15,12 +15,12 @@ A 3-vector:
 \Bb &= (b_x, b_y, b_z) = (b^1, b^2, b^3).
 \end{aligned}
 \end{equation}
-
+%
 For this we have the dot product
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:20}
 \Ba \cdot \Bb = \sum_{\alpha=1}^3 a^\alpha b^\alpha
 \end{equation}
-
+%
 Greek letters in this course (opposite to everybody else in the world, because of Landau and Lifshitz) run from 1 to 3, whereas roman letters run through the set \(\{0,1,2,3\}\).
 
 We want to put space and time on an equal footing and form the composite quantity (four vector)
@@ -36,7 +36,7 @@ x^2 &= y \\
 x^3 &= z.
 \end{aligned}
 \end{equation}
-
+%
 It will also be convenient to drop indices when referring to all the components of a four vector and we will use lower or upper case non-bold letters to represent such four vectors.  For example
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:81}
@@ -46,7 +46,7 @@ or
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:82}
 u = \gamma \left(1, \Bv/c \right).
 \end{equation}
-
+%
 Three vectors will be represented as letters with over arrows \(\vec{a}\) or (in text) bold face \(\Ba\).
 
 Recall that the squared spacetime interval between two events \(X_1\) and \(X_2\) is defined as
@@ -54,19 +54,19 @@ Recall that the squared spacetime interval between two events \(X_1\) and \(X_2\
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:60}
 {S_{X_1, X_2}}^2 = (ct_1 - c t_2)^2 - (\Bx_1 - \Bx_2)^2.
 \end{equation}
-
+%
 In particular, with one of these zero, we have an operator which takes a single four vector and spits out a scalar, measuring a ``distance'' from the origin
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:30}
 s^2 = (ct)^2 - \Br^2.
 \end{equation}
-
+%
 This motivates the introduction of a dot product for our four vector space.
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:50}
 X \cdot X = (ct)^2 - \Br^2 = (x^0)^2 - \sum_{\alpha=1}^3 (x^\alpha)^2
 \end{equation}
-
+%
 Utilizing the spacetime dot product of \eqnref{eqn:relativisticElectrodynamicsT1:50} we have for the dot product of the difference between two events
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1a:140}
@@ -78,13 +78,13 @@ Utilizing the spacetime dot product of \eqnref{eqn:relativisticElectrodynamicsT1
 X \cdot X + Y \cdot Y - 2 x^0 y^0 + 2 \sum_{\alpha =1}^3 x^\alpha y^\alpha.
 \end{aligned}
 \end{equation}
-
+%
 From this, assuming our dot product \eqnref{eqn:relativisticElectrodynamicsT1:50} is both linear and symmetric, we have for any pair of spacetime events
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:55}
 X \cdot Y = x^0 y^0 - \sum_{\alpha =1}^3 x^\alpha y^\alpha.
 \end{equation}
-
+%
 How do our four vectors transform?  This is really just a notational issue, since this has already been discussed.  In this new notation we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:90}
@@ -95,7 +95,7 @@ How do our four vectors transform?  This is really just a notational issue, sinc
 {x^3}' &= x^3
 \end{aligned}
 \end{equation}
-
+%
 where \(\beta = V/c\), and \(\gamma^{-2} = 1 - \beta^2\).
 
 In order to put some structure to this, it can be helpful to express this dot product as a quadratic form.  We write
@@ -119,7 +119,7 @@ b^0 \\
 = A^\T G B.
 \end{aligned}
 \end{equation}
-
+%
 We can write our Lorentz boost as a matrix
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:110}
@@ -130,7 +130,7 @@ We can write our Lorentz boost as a matrix
 0 & 0 & 0 & 1
 \end{bmatrix}
 \end{equation}
-
+%
 so that the dot product between two transformed four vectors takes the form
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT1:120}

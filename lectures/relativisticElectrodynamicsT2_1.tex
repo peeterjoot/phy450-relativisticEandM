@@ -15,7 +15,7 @@ ct(\sigma) &= \inv{a} \sinh(\sigma) \\
 x(\sigma) &= \inv{a} \cosh(\sigma)
 \end{aligned}
 \end{equation}
-
+%
 where the dimension of the constant \([a] = \inv{L}\), is inverse length, and our parameter takes any values \(-\infty < \sigma < \infty\).
 
 Find the
@@ -47,7 +47,7 @@ First note that we can re-parametrize \(x = x^1\) in terms of \(t\).  That is
 &= a \sqrt{ a^{-2} + (ct)^2 }
 \end{aligned}
 \end{equation}
-
+%
 So
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:20}
@@ -61,13 +61,13 @@ Squaring and rearranging, shows that our particle is moving through half of a hy
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:30}
 x^2 - (ct)^2 = a^{-2}
 \end{equation}
-
+%
 Observe that the asymptotes of this curve are the lightcone boundaries.  Taking derivatives we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:40}
 2 x \frac{dx}{d(ct)} -2 (ct) = 0,
 \end{equation}
-
+%
 and rearranging we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:2080}
@@ -93,7 +93,7 @@ s_{12}^2
 &= 2 a^{-2} \left( \cosh( \sigma_2 - \sigma_1) -1 \right) \ge 0
 \end{aligned}
 \end{equation}
-
+%
 Yes, this is timelike.  That is what we want for a particle that is realistic moving along a worldline in spacetime.  If the spacetime interval between any two points were to be negative, we would be talking about something of tachyon like hypothetical nature.
 
 %
@@ -117,19 +117,19 @@ Taking roots we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:50}
 \frac{d\tau}{d\sigma} = \pm \inv{a c},
 \end{equation}
-
+%
 We take the positive root, so that the worldline is traversed in a strictly increasing fashion, and then integrate once
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:60}
 \tau = \inv{ac} \sigma + \tau_s.
 \end{equation}
-
+%
 We are free to let \(\tau_s = 0\), effectively starting our proper time at \(t=0\).
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:70}
 x^i(\tau) = ( a^{-1} \sinh( a c \tau), a^{-1} \cosh( a c \tau ), 0, 0 )
 \end{equation}
-
+%
 As noted already this is a hyperbola (or degenerate hyperboloid) in spacetime, with asymptote 1 (ie: approaching the speed of light).
 
 %
@@ -141,7 +141,7 @@ u^i
 = \inv{c} \frac{dx^i}{d\tau}
 = ( \cosh( a c \tau ), \sinh( a c \tau ), 0, 0) \\
 \end{equation}
-
+%
 Is this light like or time like?  We can answer this by considering the four vector square
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:80}
@@ -159,7 +159,7 @@ Consider the very simplest example of a time like trajectory, that of a particle
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:71}
 X = ( c t, \Bx_0 )
 \end{equation}
-
+%
 While we interpret \(t\) here as time, it functions as a parametrization of the curve, just as \(\sigma\) does in this question.  If we want to compute the proper time interval between two points on this worldline we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:2140}
@@ -174,7 +174,7 @@ While we interpret \(t\) here as time, it functions as a parametrization of the 
 &= t_b - t_a
 \end{aligned}
 \end{equation}
-
+%
 The conclusion (arrived at the hard way, but methodologically) is that proper time on this worldline is just the parameter \(t\) itself.
 
 Now examine the proper velocity for this trajectory.  This is
@@ -182,7 +182,7 @@ Now examine the proper velocity for this trajectory.  This is
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:72}
 u = \frac{dX}{ds} = (1, 0, 0, 0)
 \end{equation}
-
+%
 We can compute the dot product \(u \cdot u = 1 > 0\) easily enough, and in this case for the particle at rest (but moving in time) we see that this four-vector velocity does have a time like separation from the origin, and it therefore makes sense to label the four-velocity vector itself as time like.
 
 Now, let us return to our non-inertial system.  Is our four velocity vector time like?  Let us compute its square to check
@@ -190,7 +190,7 @@ Now, let us return to our non-inertial system.  Is our four velocity vector time
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:90}
 u \cdot u = \cosh^2 - \sinh^2 = 1 > 0
 \end{equation}
-
+%
 Yes, it is timelike.
 \index{timelike}
 %
@@ -205,7 +205,7 @@ v^\alpha
 =
 \frac{dx^\alpha}{ds} c \frac{d\tau}{dt}
 \end{equation}
-
+%
 Since \(ct = \sinh( a c \tau )/a\) we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:110}
@@ -215,19 +215,19 @@ or
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:110b}
 \frac{d\tau}{dt} = \inv{\cosh( a c \tau) }
 \end{equation}
-
+%
 Similarly from \eqnref{eqn:relativisticElectrodynamicsT2:70}, we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:120}
 \frac{dx^1}{ds} = \inv{c} \frac{dx^1}{d\tau} = \sinh( a c \tau )
 \end{equation}
-
+%
 So our spatial velocity is \(\sinh/\cosh = \tanh\), and we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:130}
 v^\alpha = (c \tanh( a c \tau), 0, 0)
 \end{equation}
-
+%
 Note how tricky this index notation is.  For our four vector velocity we use \(u^i = dx^i/ds\), whereas our spatial velocity is distinguished by a change of letter as well as the indices, so when we write \(v^\alpha\) we are taking our derivatives with respect to time and not proper time (i.e. \(v^\alpha = dx^\alpha/dt\)).
 
 %
@@ -240,13 +240,13 @@ From \eqnref{eqn:relativisticElectrodynamicsT2:77}, we have
 w^i = \frac{ du^i }{ds} = a x^i
 \end{aligned}
 \end{equation}
-
+%
 Observe that our four-velocity square is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:78}
 w \cdot w = a^2 a^{-1} (-1)
 \end{equation}
-
+%
 What does this really signify?  Think on this.  A check to verify that things are okay is to see if this four-acceleration is orthogonal to our four-velocity as expected
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT2:2180}
@@ -293,7 +293,7 @@ w^i(\tau) &= a x^i(\tau) \\
 a^\alpha(\tau) &= \left( \frac{a c^2}{\cosh^3 (a c \tau)}, 0, 0 \right).
 \end{aligned}
 \end{equation}
-
+%
 } % makeanswer
 
 XX

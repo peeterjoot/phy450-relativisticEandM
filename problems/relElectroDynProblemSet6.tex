@@ -17,7 +17,7 @@ Show that the energy momentum tensor of a plane monochromatic wave with 4-vector
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:10}
 k^i = \left( \frac{\omega}{c}, \Bk \right),
 \end{equation}
-
+%
 and energy density \(\calE\) can be written as
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:20}
@@ -44,19 +44,19 @@ c^2 \Bk^2 &= \omega^2 \\
 \Bbeta \cdot \Bk &= 0.
 \end{aligned}
 \end{equation}
-
+%
 For this problem it appears that working in the Lorentz gauge is required, and we want solutions of the form
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:50}
 A^m = D^m \cos( k_a x^a ).
 \end{equation}
-
+%
 First, observe that the Lorentz gauge condition \(\partial_m A^m = 0\) requires
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:70}
 -D^m k_m \sin( k_a x^a ) = 0.
 \end{equation}
-
+%
 Application of the wave equation operator
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:90}
@@ -75,7 +75,7 @@ k^a k_a &= 0 \\
 D^m k_m &= 0.
 \end{aligned}
 \end{equation}
-
+%
 We could also arrive at this point using 4D Fourier methods, which would be fun, but a bit more time consuming, and a little overkill given that the problem only requires us to tackle the linear monochromatic case.
 
 On to the problem.  We now need our electromagnetic tensor components.
@@ -91,7 +91,7 @@ D^j \partial^i \cos( k^a x_a )
 \sin( k^a x_a ) ( D^i k^j - D^j k^i )
 \end{aligned}
 \end{equation}
-
+%
 Our stress energy tensor is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:230}
@@ -107,7 +107,7 @@ T^{i j}
 \right)
 \end{aligned}
 \end{equation}
-
+%
 Let us now expand the product of tensors
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:250}
@@ -133,13 +133,13 @@ D_a D^a k_b k^i
 \sin^2( k^a x_a) D_a D^a k_b k^i
 \end{aligned}
 \end{equation}
-
+%
 We see from this that our action term is zero
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:150}
 F_{a b} F^{a b} = \sin^2( k^a x_a) D_a D^a \cancel{k_b k^b},
 \end{equation}
-
+%
 so the stress energy tensor is reduced to
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:270}
@@ -149,21 +149,21 @@ T^{i j}
 &= -\inv{4 \pi} \sin^2( k^a x_a) D_a D^a k^j k^i \\
 \end{aligned}
 \end{equation}
-
+%
 The energy density term of the stress energy tensor encapsulates most of these terms
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:170}
 T^{0 0}
 = -\inv{4 \pi} \sin^2( k^a x_a) D_a D^a \frac{\omega^2}{c^2} = \calE,
 \end{equation}
-
+%
 so we can write
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet6:190}
 T^{i j}
 = \calE \frac{c^2}{\omega^2} k^i k^j,
 \end{equation}
-
+%
 which completes the first part of this problem.
 %
 \makeSubAnswer{On the question of the Lorentz scalar.}{pr:relElectroDynProblemSet6:2:b}

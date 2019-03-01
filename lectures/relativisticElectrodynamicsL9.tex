@@ -22,7 +22,7 @@ Action for a relativistic particle in an external 4-scalar field
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:700}
 S = -m c \int ds - g \int ds \phi(x)
 \end{equation}
-
+%
 Unfortunately we have no 4-vector scalar fields (at least for particles that are long lived and stable).
 
 PICTURE: 3-vector field, some arrows in various directions.
@@ -53,7 +53,7 @@ A_x(x, y) \\
 A_y(x, y)
 \end{bmatrix}
 \end{equation}
-
+%
 More generally we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:40}
@@ -70,7 +70,7 @@ A_y(x, y, z) \\
 A_z(x, y, z)
 \end{bmatrix}
 \end{equation}
-
+%
 Here \(\hat{O}\) is an \(SO(3)\) matrix rotating \(x \rightarrow x'\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:60}
@@ -80,7 +80,7 @@ Here \(\hat{O}\) is an \(SO(3)\) matrix rotating \(x \rightarrow x'\)
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:80}
 \BA \cdot \BB = \text{invariant}
 \end{equation}
-
+%
 A four vector field is \(A^i(x)\), with \(x = x^i, i = 0,1,2,3\) and we would write
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:100}
@@ -99,7 +99,7 @@ x^2 \\
 x^3
 \end{bmatrix}
 \end{equation}
-
+%
 Now \(\hat{O}\) is an \(SO(1,3)\) matrix.    Our four vector field is then
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:120}
@@ -118,13 +118,13 @@ A^2 \\
 A^3
 \end{bmatrix}
 \end{equation}
-
+%
 We have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:140}
 A^i g_{ij} x^i = \text{invariant} = {A'}^i g_{ij} {x'}^i
 \end{equation}
-
+%
 From electrodynamics we know that we have a scalar field, the electrostatic potential, and a vector field
 
 What is a plausible action?
@@ -134,25 +134,25 @@ How about
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:160}
 \int ds x^i g_{ij} A^j
 \end{equation}
-
+%
 This is not translation invariant.
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:180}
 \int ds x^i g_{ij} A^j
 \end{equation}
-
+%
 Next simplest is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:200}
 \int ds u^i g_{ij} A^j
 \end{equation}
-
+%
 Could also do
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:220}
 \int ds A^i g_{ij} A^j
 \end{equation}
-
+%
 but it turns out that this is not gauge invariant (to be defined and discussed in detail).
 %
 \paragraph{An aside.  Dimensions of proper velocity.}
@@ -163,13 +163,13 @@ Note that the convention for this course is to write
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:240}
 u^i = \left( \gamma, \gamma \frac{\Bv}{c} \right) = \frac{dx^i}{ds}
 \end{equation}
-
+%
 Where \(u^i\) is dimensionless (\(u^i u_i = 1\)).  Some authors use
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:260}
 u^i = \left( \gamma c, \gamma \Bv \right) = \frac{dx^i}{d\tau},
 \end{equation}
-
+%
 where \(u^i u_i = c^2\), and \(u^i\) has dimensions of velocity.
 %
 \paragraph{Return to the problem}
@@ -179,7 +179,7 @@ The simplest action for a four vector field \(A^i\) is then
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:280}
 S = - m c \int ds - \frac{e}{c} \int ds u^i A_i
 \end{equation}
-
+%
 (Recall that \(u^i A_i = u^i g_{ij} A^j\)).
 
 In this action \(e\) is nothing but a Lorentz scalar, a property of the particle that describes how it ``couples'' (or ``feels'') the electrodynamics field.
@@ -195,7 +195,7 @@ Returning to our discussion, we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:300}
 S = - m c \int ds - \frac{e}{c} \int ds u^i g_{ij} A^j
 \end{equation}
-
+%
 with the electrodynamics four vector potential
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:320}
@@ -223,7 +223,7 @@ S
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:360}
 \frac{d}{dt} \PD{\Bv}{\LL} = m \frac{d}{dt} (\gamma \Bv) + \frac{e}{c} \PD{t}{\BA} + \frac{e}{c} \PD{x^\alpha}{\BA} v^\alpha
 \end{equation}
-
+%
 Here \(\alpha,\beta = 1,2,3\) and are summed over.
 
 For the other half of the Euler-Lagrange equations we have
@@ -231,20 +231,20 @@ For the other half of the Euler-Lagrange equations we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:380}
 \PD{x^\alpha}{\LL} = - e \PD{x^\alpha}{\phi} + \frac{e}{c} v^\beta \PD{x^\alpha}{A^\beta}
 \end{equation}
-
+%
 Equating these, and switching to coordinates for \eqnref{eqn:relativisticElectrodynamicsL9:360}, we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:381}
 m \frac{d}{dt} (\gamma v^\alpha) + \frac{e}{c} \PD{t}{A^\alpha} + \frac{e}{c} \PD{x^\beta}{A^\alpha} v^\beta
 = - e \PD{x^\alpha}{\phi} + \frac{e}{c} v^\beta \PD{x^\alpha}{A^\beta}
 \end{equation}
-
+%
 A final rearrangement yields
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:400}
 \frac{d}{dt} m \gamma v^\alpha = e \mathLabelBox{\left( - \inv{c} \PD{t}{A^\alpha} - \PD{x^\alpha}{\phi} \right)}{\(E^\alpha\)} + \frac{e}{c} v^\beta \left( \PD{x^\alpha}{A^\beta} - \PD{x^\beta}{A^\alpha} \right)
 \end{equation}
-
+%
 We can identity the second term with the magnetic field but first have to introduce antisymmetric matrices.
 %
 \section{antisymmetric matrices}
@@ -257,7 +257,7 @@ M_{\mu\nu}
 &= \epsilon_{\mu\nu\lambda} B_\lambda,
 \end{aligned}
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:440}
@@ -268,7 +268,7 @@ where
 -1 & \quad \mbox{for odd permutations of \(\mu\nu\lambda\)}
 \end{array}
 \end{equation}
-
+%
 Example:
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:770}
@@ -278,7 +278,7 @@ Example:
 \epsilon_{231} &= 1.
 \end{aligned}
 \end{equation}
-
+%
 We can show that
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:420}
@@ -293,14 +293,14 @@ B_1
 &= \partial_2 A_3 - \partial_3 A_2.
 \end{aligned}
 \end{equation}
-
+%
 Using
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:430}
 \epsilon_{\mu\nu\alpha} \epsilon_{\sigma\kappa\alpha} =
 \delta_{\mu\sigma} \delta_{\nu\kappa} - \delta_{\nu\sigma} \delta_{\mu\kappa},
 \end{equation}
-
+%
 we can verify the identity \eqnref{eqn:relativisticElectrodynamicsL9:420} by expanding
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:810}
@@ -319,7 +319,7 @@ M_{\alpha\beta} \\
 M_{\mu\nu}
 \end{aligned}
 \end{equation}
-
+%
 Returning to the action evaluation we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:460}
@@ -347,13 +347,13 @@ Observe that this is almost a relativistic equation, but we are not going to get
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:540}
 \frac{du^0}{ds} = e F^{0j} u_j
 \end{equation}
-
+%
 Since the full equation is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:560}
 \frac{du^i}{ds} = e F^{ij} u_j
 \end{equation}
-
+%
 ``take with a grain of salt, may be off by sign, or factors of \(c\)''.
 
 Also curious is that he claimed the energy component of this equation was not very important.  Why would that be?
@@ -366,7 +366,7 @@ Claim
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:580}
 S_{\text{interaction}} = - \frac{e}{c} \int ds u^i A_i
 \end{equation}
-
+%
 changes by boundary terms only under
 
 ``gauge transformation'' :
@@ -374,7 +374,7 @@ changes by boundary terms only under
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:600}
 A_i = A_i' + \PD{x^i}{\chi}
 \end{equation}
-
+%
 where \(\chi\) is a Lorentz scalar.  This \(\PDi{x^i}{}\) is the four gradient.  Let us see this
 
 Therefore the equations of motion are the same in an external \(A^i\) and \({A'}^i\).
@@ -389,7 +389,7 @@ S
 &= - \frac{e}{c} \int ds u^i {A'}_i  - \frac{e}{c} \int ds \frac{dx^i}{ds} \PD{x^i}{\chi} \\
 \end{aligned}
 \end{equation}
-
+%
 Observe that this last bit is just a chain rule expansion
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:850}
@@ -409,13 +409,13 @@ so we have
 S
 = - \frac{e}{c} \int ds u^i {A'}_i - \frac{e}{c} \int ds \frac{d \chi}{ds}.
 \end{equation}
-
+%
 This allows the line integral to be evaluated, and we find that it only depends on the end points of the interval
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL9:620}
 S = - \frac{e}{c} \int ds u^i {A'}_i - \frac{e}{c} ( \chi(x_b) - \chi(x_a) ),
 \end{equation}
-
+%
 which completes the proof of the claim that this gauge transformation results in an action difference that only depends on the end points of the interval.
 %
 \paragraph{Gauge invariance of \texorpdfstring{\(A \cdot A\)}{A squared} action}
@@ -439,5 +439,5 @@ Now that we know what gauge invariance means, let us look at the portion of the 
 + \PD{x^i}{\chi} \PD{x_i}{\chi}  \\
 \end{aligned}
 \end{equation}
-
+%
 Without the proper velocity term we do not have a way to simply re-pack the chain rule expansion and eliminate the last two terms as we did with the Lorentz force action.

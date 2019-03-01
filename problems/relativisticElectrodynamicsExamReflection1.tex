@@ -29,13 +29,13 @@ Let us set up our coordinate system in cylindrical coordinates.  For the charged
 \Br &= z \Be_3 + \rho \Be_1 e^{i \phi}
 \end{aligned}
 \end{equation}
-
+%
 Here I am using the geometric product of vectors (if that is unfamiliar then just substitute
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:30}
 \{\Be_1, \Be_2, \Be_3\} \rightarrow \{\sigma_1, \sigma_2, \sigma_3\}
 \end{equation}
-
+%
 We can do that since the Pauli matrices also have the same semantics (with a small difference since the geometric square of a unit vector is defined as the unit scalar, whereas the Pauli matrix square is the identity matrix).  The semantics we require of this vector product are just \(\Be_\alpha^2 = 1\) and \(\Be_\alpha \Be_\beta = - \Be_\beta \Be_\alpha\) for any \(\alpha \ne \beta\).
 
 I will also be loose with notation and use \(\Real(X) = \gpgradezero{X}\) to select the scalar part of a multivector (or with the Pauli matrices, the portion proportional to the identity matrix).
@@ -48,7 +48,7 @@ A^0 &= \frac{q}{R^\conj} \\
 \BA &= A^0 \frac{\Bv}{c},
 \end{aligned}
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:70}
@@ -59,7 +59,7 @@ R^\conj &= R - \frac{\Bv}{c} \cdot \BR \\
 \Bv &= \frac{d\Bx}{dt_r}.
 \end{aligned}
 \end{equation}
-
+%
 We will need (eventually)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:90}
@@ -69,13 +69,13 @@ We will need (eventually)
 -a \omega^2 (\cos\omega t_r, \sin\omega t_r, 0)
 \end{aligned}
 \end{equation}
-
+%
 and also need our retarded distance vector
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:110}
 \BR = z \Be_3 + \Be_1 (\rho e^{i \phi} - a e^{i \omega t_r} ),
 \end{equation}
-
+%
 From this we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1050}
@@ -111,14 +111,14 @@ a \frac{\omega }{c}
 \rho \sin(\phi - \omega t_r)
 \end{aligned}
 \end{equation}
-
+%
 So we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:150}
 R^\conj = \sqrt{z^2 + \rho^2 + a^2 - 2 \rho a \cos( \phi - \omega t_r ) }
 -a \frac{\omega }{c} \rho \sin(\phi - \omega t_r)
 \end{equation}
-
+%
 Writing \(k = \omega/c\), and having a peek back at \eqnref{eqn:relativisticElectrodynamicsExamReflection:50}, our potentials are now solved for
 \boxedEquation{eqn:relativisticElectrodynamicsExamReflection:499}{
 \begin{aligned}
@@ -157,7 +157,7 @@ In there we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:580}
 1 - \Bv^2/c^2 = 1 - a^2 \frac{\omega^2}{c^2} = 1 - a^2 k^2
 \end{equation}
-
+%
 and
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1090}
@@ -171,7 +171,7 @@ a k \Be_2 e^{i k c t_r} R \\
 z \Be_3 + \Be_1 (\rho e^{i \phi} - a (1 - k R i) e^{i k c t_r} )
 \end{aligned}
 \end{equation}
-
+%
 Writing this out in coordinates is not particularly illuminating, but can be done for completeness without too much trouble
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:600}
@@ -180,7 +180,7 @@ Writing this out in coordinates is not particularly illuminating, but can be don
   \rho \sin\phi - a \sin t_r - a k R \cos t_r,
   z )
 \end{equation}
-
+%
 In one sense the problem could be considered solved, since we have all the pieces of the puzzle.  The outstanding question is whether or not the resulting mess can be simplified at all.  Let us see if the cross product reduces at all.  Using
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:620}
@@ -190,7 +190,7 @@ In one sense the problem could be considered solved, since we have all the piece
 - \frac{\dot{\Bv}}{c^2}
 (\BR \cdot \BR^\conj)
 \end{equation}
-
+%
 Perhaps one or more of these dot products can be simplified?  One of them does reduce nicely
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1110}
@@ -227,7 +227,7 @@ e^{-i \omega t_r} )
 - a k^2 ( \rho \cos(\phi - k c t_r) - a )
 \end{aligned}
 \end{equation}
-
+%
 Putting this cross product back together we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1150}
@@ -243,13 +243,13 @@ z \Be_3 + \Be_1 (\rho e^{i \phi} - a (1 - k R i) e^{i k c t_r} )
 &\qquad +a k^2 R \Be_1 e^{i k c  t_r} (R - a k \rho \sin(\phi - k c t_r))
 \end{aligned}
 \end{equation}
-
+%
 Writing
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:640}
 \phi_r = \phi - k c t_r,
 \end{equation}
-
+%
 this can be grouped into similar terms
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:660}
@@ -271,7 +271,7 @@ a k^2
 \right) e^{i k c t_r}
 \end{aligned}
 \end{equation}
-
+%
 The electric field pieces can now be collected.  Not expanding out the \(R^\conj\) from \eqnref{eqn:relativisticElectrodynamicsExamReflection:150}, this is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:700}
@@ -290,7 +290,7 @@ The electric field pieces can now be collected.  Not expanding out the \(R^\conj
 \right) e^{i k c t_r}
 \end{aligned}
 \end{equation}
-
+%
 Along the z-axis where \(\rho = 0\) what do we have?
 
 \begin{subequations}
@@ -343,7 +343,7 @@ A^0 &= \frac{q}{\sqrt{z^2 + a^2}} \\
 t_r &= t - R/c = t - \sqrt{z^2 + a^2}/c
 \end{aligned}
 \end{equation}
-
+%
 Now we are set to calculate the electric and magnetic fields directly from these.  Observe that we have a spatial dependence in due to the \(t_r\) quantities and that will have an effect when we operate with the gradient.
 
 In the exam I had asked Simon (our TA) if this question was asking for the fields at the origin (ie: in the plane of the charge's motion in the center) or along the z-axis.  He said in the plane.  That would simplify things, but perhaps too much since \(A^0\) becomes constant (in my exam attempt I somehow fudged this to get what I wanted for the \(v = 0\) case, but that must have been wrong, and was the result of rushed work).
@@ -356,7 +356,7 @@ Let us now proceed with the field calculation from these potentials
 \BB &= \spacegrad \cross \BA.
 \end{aligned}
 \end{equation}
-
+%
 For the electric field we need
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1170}
@@ -366,14 +366,14 @@ For the electric field we need
 &= -q \Be_3 \frac{z}{(\sqrt{z^2 + a^2})^3},
 \end{aligned}
 \end{equation}
-
+%
 and
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:210}
 \inv{c} \PD{t}{\BA} =
 \frac{q a k^2 \Be_2 \Be_1 \Be_2 e^{i k c t_r} }{\sqrt{z^2 + a^2}}.
 \end{equation}
-
+%
 Putting these together, our electric field near the z-axis is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:230}
@@ -382,7 +382,7 @@ q \Be_3 \frac{z}{(\sqrt{z^2 + a^2})^3}
 +
 \frac{q a k^2 \Be_1 e^{i k c t_r} }{\sqrt{z^2 + a^2}}.
 \end{equation}
-
+%
 (another mistake I made on the exam, since I somehow fooled myself into forcing what I knew had to be in the gradient term, despite having essentially a constant scalar potential (having taken \(z = 0\))).
 
 What do we get for the magnetic field.  In that case we have
@@ -412,7 +412,7 @@ q a  k^2 \frac{z}{z^2 + a^2} \Be_3 \cross \left( \Be_1 k e^{i  k c t_r} \right) 
 \right)
 \end{aligned}
 \end{equation}
-
+%
 For the direction vectors in the cross products above we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1210}
@@ -426,7 +426,7 @@ For the direction vectors in the cross products above we have
 -\Be_1 e^{i \mu}
 \end{aligned}
 \end{equation}
-
+%
 and
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1230}
@@ -440,7 +440,7 @@ and
 \Be_2 e^{i \mu}
 \end{aligned}
 \end{equation}
-
+%
 Putting everything, and summarizing results for the fields, we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:250}
@@ -453,7 +453,7 @@ q \Be_3 \frac{z}{(\sqrt{z^2 + a^2})^3}
 &= \frac{q a k z}{ z^2 + a^2} \left( \frac{\Be_1}{\sqrt{z^2 + a^2}} - k \Be_2 \right) e^{i \omega t_r}
 \end{aligned}
 \end{equation}
-
+%
 The electric field expression above compares well to \eqnref{eqn:relativisticElectrodynamicsExamReflection:500e}.  We have the Coulomb term and the radiation term.  It is harder to compare the magnetic field to the exact result \eqnref{eqn:relativisticElectrodynamicsExamReflection:500f} since I did not expand that out.
 
 FIXME: A question to consider.  If all this worked should we not also get
@@ -463,7 +463,7 @@ FIXME: A question to consider.  If all this worked should we not also get
 \questionEquals
 \frac{z \Be_3 - \Be_1 a e^{i \omega t_r}}{\sqrt{z^2 + a^2}} \cross \BE.
 \end{equation}
-
+%
 However, if I do this check I get
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:290}
@@ -471,7 +471,7 @@ However, if I do this check I get
 =
 \frac{q a z}{z^2 + a^2} \left( \inv{z^2 + a^2} + k^2 \right) \Be_2 e^{i \omega t_r}.
 \end{equation}
-
+%
 %Did I get my electric field calculation wrong?  Tricky to get this all right.  With so much grunt work calculation involved, perhaps its time to give up and resort to something like Mathematica.
 %
 \paragraph{Without geometric algebra}
@@ -495,7 +495,7 @@ with the field measurement position of
 z
 \end{bmatrix}.
 \end{equation}
-
+%
 The particle velocity is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:840}
@@ -516,7 +516,7 @@ a \thetadot \\
 \hdot
 \end{bmatrix}
 \end{equation}
-
+%
 We also want the vectorial difference between the field measurement position and the particle position
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:860}
@@ -531,7 +531,7 @@ a \\
 z - h
 \end{bmatrix}.
 \end{equation}
-
+%
 The dot product between \(\BR\) and \(\Bv_c\) is then
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1250}
@@ -595,7 +595,7 @@ z - h
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
-
+%
 Expansion of the final matrix products is then
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:880}
@@ -644,13 +644,13 @@ z - h
 \end{bmatrix} \\
 \end{aligned}
 \end{equation}
-
+%
 The retarded time at which the field is measured is therefore defined implicitly by
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:900}
 R = \sqrt{(\rho^2 + (a(t_r))^2 + (z-h(t_r))^2 - 2 a(t_r) \rho \cos(\phi - \theta(t_r))} = c( t - t_r).
 \end{equation}
-
+%
 Together \eqnref{eqn:relativisticElectrodynamicsExamReflection:840}, \eqnref{eqn:relativisticElectrodynamicsExamReflection:880}, and \eqnref{eqn:relativisticElectrodynamicsExamReflection:900} define the four potentials
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:910}
@@ -659,7 +659,7 @@ A^0 &= \frac{q}{R - \BR \cdot \Bv_c/c} \\
 \BA &= \frac{\Bv_c}{c} A^0,
 \end{aligned}
 \end{equation}
-
+%
 where all quantities are evaluated at the retarded time \(t_r\) given by \eqnref{eqn:relativisticElectrodynamicsExamReflection:900}.
 
 In the homework (and in the text \citep{landau1980classical} \S 63) we found for \(\BE\) and \(\BB\)
@@ -671,7 +671,7 @@ In the homework (and in the text \citep{landau1980classical} \S 63) we found for
 \BB &= \Rcap \cross \BE.
 \end{aligned}
 \end{equation}
-
+%
 Expanding out the cross products this yields
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:930}
@@ -686,7 +686,7 @@ Expanding out the cross products this yields
 + e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \cross \Rcap
 \end{aligned}
 \end{equation}
-
+%
 While longer, it is nice to call out the symmetry between \(\BE\) and \(\BB\) explicitly.  As a side note, how do these combine in the Geometric Algebra formalism where we have \(F = \BE + I\BB\)?  That gives us
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:935}
@@ -705,7 +705,7 @@ e \frac{1}{(1 - \Rcap \cdot \Bbeta_c)^3}
 \right)
 \right)
 \end{equation}
-
+%
 I had guess a multivector of the form \(\Ba + \Ba \wedge \bcap\), can be tidied up a bit more, but this will not be persued here.  Instead let us write out the fields corresponding to the potentials of \eqnref{eqn:relativisticElectrodynamicsExamReflection:910} explicitly.  We need to calculate \(\Ba_c\), \(\Bv_c \cross \BR\), \(\Ba_c \cross \BR\), and \(\Ba_c \cdot \BR\).  For the acceleration we get
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:940}
@@ -715,7 +715,7 @@ I had guess a multivector of the form \(\Ba + \Ba \wedge \bcap\), can be tidied 
 \ddot{h}
 \end{bmatrix}
 \end{equation}
-
+%
 Dotted with \(\BR\) we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1290}
@@ -737,7 +737,7 @@ h \ddot{h} + \Real\left(
 \right) ,
 \end{aligned}
 \end{equation}
-
+%
 which gives us
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:950}
@@ -746,7 +746,7 @@ h \ddot{h} +
 ( \ddot{a} - a {\dot{\theta}}^2 ) (\rho \cos(\phi - \theta) - a)
 + (a \ddot{\theta} + 2 \dot{a} \dot{\theta}) \rho \sin(\phi - \theta).
 \end{equation}
-
+%
 Now, how do we handle the cross products in this complex number, scalar hybrid format?  With some playing around such a cross product can be put into the following tidy form
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:960}
@@ -765,7 +765,7 @@ i (h_1 z_2 - h_2 z_1) \\
 \Imag(z_1^\conj z_2)
 \end{bmatrix}.
 \end{equation}
-
+%
 This is a sensible result.  Crossing with \(\Be_3\) will rotate in the \(x-y\) plane, which accounts for the factors of \(i\) in the complex portion of the cross product.  The imaginary part has only contributions from the portions of the vectors \(z_1\) and \(z_2\) that are perpendicular to each other, so while the real part of \(z_1^\conj z_2\) measures the colinearity, the imaginary part is a measure of the amount perpendicular.
 
 Using this for our velocity cross product we have
@@ -790,7 +790,7 @@ i\left(\hdot ( \rho e^{i\phi} - a e^{i\theta} ) - h (\dot{a} + i a \dot{\theta})
 \end{bmatrix}
 \end{aligned}
 \end{equation}
-
+%
 which is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:970}
@@ -801,7 +801,7 @@ i( \hdot \rho e^{i\phi} - (h \adot + i h a \thetadot + a \hdot) e^{i\theta} ) \\
 \adot \rho \sin(\phi - \theta) - a \thetadot \rho \cos(\phi - \theta) + a^2 \thetadot
 \end{bmatrix}.
 \end{equation}
-
+%
 The last thing required to write out the fields is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1330}
@@ -826,7 +826,7 @@ i \ddot{h} (\rho e^{i\phi} - a e^{i\theta} ) - i (z - h) \left( \ddot{a} - a {\d
 \end{bmatrix} \\
 \end{aligned}
 \end{equation}
-
+%
 So the acceleration cross product is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:980}
@@ -839,7 +839,7 @@ i \ddot{h} \rho e^{i\phi}
 -( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) (\rho \cos(\phi -\theta) - a)
 \end{bmatrix}
 \end{equation}
-
+%
 Putting all the results together creates something that is too long to easily write, but can at least be summarized
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:990}
@@ -895,7 +895,7 @@ i \ddot{h} \rho e^{i\phi}
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
-
+%
 This is a whole lot more than the exam question asked for, since it is actually the most general solution to the electric and magnetic fields associated with an arbitrary charged particle (when that motion is described in cylindrical coordinates).  The exam question had \(\theta = k c t\) and \(\dot{a} = 0, h = 0\), which kills a number of the terms
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1010}
@@ -931,7 +931,7 @@ i z a k^2 e^{i k c t_r} \\
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
-
+%
 This is still messy, but is a satisfactory solution to the problem.
 
 The exam question also asked only about the \(\rho = 0\), so \(\phi\) also becomes irrelevant.  In that case we have along the z-axis the fields are given by
@@ -986,7 +986,7 @@ R &= \sqrt{a^2 + z^2}
 %\end{bmatrix}.
 \end{aligned}
 \end{equation}
-
+%
 Similar to when things were calculated from the potentials directly, I get a different result from \(\Rcap \cross \BE\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:1030}
@@ -996,7 +996,7 @@ a k z (1 + i k R) e^{i k (c t - R)} \\
 -a^2 k
 \end{bmatrix}
 \end{equation}
-
+%
 compared to the value of \(\BB\) that was directly calculated above.  With the sign swapped in the z-axis term of \(\BB(z)\) here I had guess I have got an algebraic error hiding somewhere?
 
 } % makeanswer

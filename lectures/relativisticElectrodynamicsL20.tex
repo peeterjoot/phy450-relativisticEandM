@@ -21,7 +21,7 @@ Covering chapter 8 material from the text \citep{landau1980classical}, and
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:10}
 A^i(\Bx, t) = \inv{c} \int d^3 \Bx' j^i\left(\Bx', t - \frac{\Abs{\Bx - \Bx'} }{c}\right) \inv{\Abs{\Bx - \Bx'} }
 \end{equation}
-
+%
 This integral is over the region of space where the sources \(j^i\) are non-vanishing, but this region is limited.  The value \(\Abs{\Bx'} \le l\), so we can expand the denominator in multipole expansion
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:460}
@@ -39,14 +39,14 @@ This integral is over the region of space where the sources \(j^i\) are non-vani
 \inv{\Abs{\Bx} } \left(1 + \frac{\rcap}{\Abs{\Bx} } \cdot \Bx' \right).
 \end{aligned}
 \end{equation}
-
+%
 Neglecting all but the first order term in the expansion we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:30}
 \inv{\Abs{\Bx - \Bx'} }
 \approx
 \inv{\Abs{\Bx} } + \frac{\Bx}{\Abs{\Bx}^3} \cdot \Bx' .
 \end{equation}
-
+%
 Similarly, for the retarded time we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:480}
@@ -56,7 +56,7 @@ t - \frac{\Abs{\Bx - \Bx'} }{c}
 &= t - \frac{\Abs{\Bx} }{c} + \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }
 \end{aligned}
 \end{equation}
-
+%
 We can now do a first order Taylor expansion of the current \(j^i\) about the retarded time
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:50}
@@ -64,13 +64,13 @@ j^i\left(\Bx', t - \frac{\Abs{\Bx} }{c} + \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} } + 
 \approx
 j^i\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right) + \PD{t}{j^i} \left(\Bx, t - \frac{\Abs{\Bx} }{c}\right) \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }.
 \end{equation}
-
+%
 To elucidate the physics, imagine that time dependence of the source is periodic with angular frequency \(\omega_0\).  For example:
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:500}
 j^i = A(\Bx) e^{-i \omega t}.
 \end{equation}
-
+%
 Here we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:70}
 \PD{t}{j^i} = -i \omega_0 j^i,
@@ -94,7 +94,7 @@ so for our Taylor expansion to be valid we have the following constraints on the
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:150}
 \Abs{\omega_0 \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }} \le \frac{\omega_0 l}{c} \ll 1.
 \end{equation}
-
+%
 This is a physical requirement size of the wavelength of the emitter (if the wavelength does not meet this requirement, this expansion does not work).  The connection to the wavelength can be observed by noting that we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:520}
@@ -134,13 +134,13 @@ A^0(\Bx, t)
 +\frac{\Bx}{c \Abs{\Bx}^2} \cdot \int d^3 \Bx' \Bx' \PD{t}{\rho}\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right).
 \end{aligned}
 \end{equation}
-
+%
 The first term is the total charge evaluated at the retarded time.  In the second term (and in the third, where its derivative is taken) we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:230}
 \int d^3 \Bx' \Bx' \rho\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right) = \Bd(t_r),
 \end{equation}
-
+%
 which is the dipole moment evaluated at the retarded time \(t_r = t - \Abs{\Bx}/c\).  In the last term we can pull out the time derivative (because we are integrating over \(\Bx'\))
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:540}
@@ -152,7 +152,7 @@ which is the dipole moment evaluated at the retarded time \(t_r = t - \Abs{\Bx}/
 \inv{\Abs{\Bx}^2} \Bx \cdot \PD{t}{}\Bd \left(t - \frac{\Abs{\Bx} }{c}\right)
 \end{aligned}
 \end{equation}
-
+%
 For the spatial components of the current lets just keep the first term
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:560}
@@ -173,7 +173,7 @@ A^\alpha(\Bx, t)
 +\inv{ c \Abs{\Bx} } \int d^3 \Bx' {x'}^\alpha \PD{t}{}\rho\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right)
 \end{aligned}
 \end{equation}
-
+%
 There is two tricks used here.  One was writing the unit vector \(\Be_\alpha = \spacegrad x^\alpha\).  The other was use of the continuity equation \(\PDi{t}{\rho} + \spacegrad \cdot \Bj = 0\).  This first trick was mentioned as one of the few tricks of physics that will often be repeated since there are not many good ones.
 
 With the first term vanishing on the boundary (since \(j^i\) is localized), and pulling the time derivatives out of the integral, we can summarize the dipole potentials as
@@ -191,13 +191,13 @@ PICTURE: two closely separated oppositely charges, wiggling along the line conne
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:270}
 z_+(t) = z_0 + a \sin\omega t.
 \end{equation}
-
+%
 Since we have put the \(-q\) charge at the origin, it has no contribution to the dipole moment, and we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:290}
 \Bd(t) = \Be_3 q (z_0 + a \sin\omega t).
 \end{equation}
-
+%
 Thus
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:310}
@@ -206,7 +206,7 @@ A^0(\Bx, t) &= \inv{\Abs{\Bx}^3} \Bx \cdot \Bd\left(t - \frac{\Abs{\Bx} }{c}\rig
 \BA(\Bx, t) &= \frac{\dot{\Bd}\left(t - \frac{\Abs{\Bx} }{c}\right)}{c \Abs{\Bx} }
 \end{aligned}
 \end{equation}
-
+%
 so with \(t_r = t - \Abs{\Bx}/c\), and \(z = \Bx \cdot \Be_3\) in the dipole dot product, we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:400}
@@ -216,7 +216,7 @@ A^0(\Bx, t) &=
 \BA(\Bx, t) &= \inv{c \Abs{\Bx} } \Be_3 q a \omega \cos(\omega t_r)
 \end{aligned}
 \end{equation}
-
+%
 These hold provided \(\Abs{\Bx} \gg (z_0, a)\) and \(\omega l/c \ll 1\).  Recall that \(\omega \lambda = c/2\pi\), which has dimensions of velocity.
 
 FIXME: think through and justify \(\omega l = v\).
@@ -233,18 +233,18 @@ Now we will take derivatives.  The first term of the scalar potential will be ig
 - \inv{c^2 \Abs{\Bx} } \Be_3 q a \omega^2 (-\sin(\omega t_r)).
 \end{aligned}
 \end{equation}
-
+%
 We have used \(\spacegrad t_r = -\spacegrad \Abs{\Bx}/c\), and \(\spacegrad \Abs{\Bx} = \rcap\), and \(\partial_t t_r = 1\).
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:420}
 \BE = \frac{ q a \omega^2 }{c^2 \Abs{\Bx} } \sin(\omega t_r) \left( \Be_3 - \frac{z}{\Abs{\Bx} } \rcap \right)
 \end{equation}
-
+%
 So,
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:440}
 \Abs{\BS} \sim \omega^4
 \end{equation}
-
+%
 The power is proportional to \(\omega^4\).  Higher frequency radiation has more power : this is why the sky is blue!  It all comes from the fact that the electric field is proportional to the squared acceleration (\(\sim \omega^2\)).
 }
