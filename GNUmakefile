@@ -5,6 +5,10 @@ THISBOOK_DEPS += poppitz.tex
 include make.revision
 include ../latex/make.bookvars
 
+# Override my default:
+MY_CLASSICTHESIS_FRONTBACK_FILES := $(filter-out ../classicthesis_mine/FrontBackmatter/Contents.tex,$(MY_CLASSICTHESIS_FRONTBACK_FILES))
+MY_CLASSICTHESIS_FRONTBACK_FILES := $(filter-out ../classicthesis_mine/FrontBackmatter/Version.tex,$(MY_CLASSICTHESIS_FRONTBACK_FILES))
+
 #ONCEFLAGS := -justonce
 
 #SOURCE_DIRS += appendix
@@ -68,3 +72,8 @@ backmatter.tex : ../latex/classicthesis_mine/backmatter.tex
 
 poppitz.tex : mkpref
 	./mkpref > $@
+
+clean ::
+	git checkout FrontBackmatter/Contents.tex
+	git checkout FrontBackmatter/Version.tex
+	git checkout $(THISBOOK).tex
