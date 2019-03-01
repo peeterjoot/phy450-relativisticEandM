@@ -27,7 +27,7 @@ Maxwell's equations in vacuum lead to Coulomb gauge and the Lorentz gauge.
 \begin{aligned}
 A^0 &= 0 \\
 \spacegrad \cdot \BA &= 0 \\
-\left( \inv{c^2} \PDSq{t}{} - \Delta \right) \BA &= 0
+\left( \inv{c^2} \PDSq{t}{} - \Delta \right) \BA &= 0.
 \end{aligned}
 \end{equation}
 %
@@ -37,14 +37,14 @@ A^0 &= 0 \\
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:30}
 \begin{aligned}
 \partial_i A^i &= 0 \\
-\left( \inv{c^2} \PDSq{t}{} - \Delta \right) A^i &= 0
+\left( \inv{c^2} \PDSq{t}{} - \Delta \right) A^i &= 0.
 \end{aligned}
 \end{equation}
 %
 Note that \(\partial_i A^i = 0\) is invariant under gauge transformations
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:50}
-A^i \rightarrow A^i + \partial^i \chi
+A^i \rightarrow A^i + \partial^i \chi.
 \end{equation}
 %
 where
@@ -58,13 +58,13 @@ So if one uses the Lorentz gauge, this has to be fixed.
 However, in both cases we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:90}
-\left( \inv{c^2} \PDSq{t}{} - \Delta \right) f = 0
+\left( \inv{c^2} \PDSq{t}{} - \Delta \right) f = 0.
 \end{equation}
 %
 where
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:110}
-\inv{c^2} \PDSq{t}{} - \Delta
+\inv{c^2} \PDSq{t}{} - \Delta.
 \end{equation}
 %
 is the wave operator.
@@ -72,7 +72,7 @@ is the wave operator.
 Consider
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:130}
-\Delta = \PDSq{x}{}
+\Delta = \PDSq{x}{}.
 \end{equation}
 %
 where we are looking for a solution that is independent of \(y, z\).  Recall that the general solution for this equation has the form
@@ -80,7 +80,7 @@ where we are looking for a solution that is independent of \(y, z\).  Recall tha
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:150}
 f(t, x) =
 F_1 \left(t - \frac{x}{c}\right)
-+F_2 \left(t + \frac{x}{c}\right)
++F_2 \left(t + \frac{x}{c}\right).
 \end{equation}
 %
 PICTURE: superposition of two waves with \(F_1\) moving along the x-axis in the positive direction, and \(F_2\) in the negative x direction.
@@ -92,23 +92,23 @@ It is notable that the text derives \eqnref{eqn:relativisticElectrodynamicsL15:1
 It is often convenient to impose periodic boundary conditions
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:170}
-\BA(\Bx + \Be_i L) = \BA(\Bx), i = 1,2,3
+\BA(\Bx + \Be_i L) = \BA(\Bx), i = 1,2,3.
 \end{equation}
 %
 \paragraph{In one dimension}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:190}
-f(x + L) = f(x)
+f(x + L) = f(x).
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:210}
-f(x) = \sum_{n=-\infty}^\infty e^{i \frac{2 \pi n}{L} x} \tilde{f}_n
+f(x) = \sum_{n=-\infty}^\infty e^{i \frac{2 \pi n}{L} x} \tilde{f}_n.
 \end{equation}
 %
 When \(f(x)\) is real we also have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:230}
-f^\conj(x) = \sum_{n = -\infty}^\infty e^{-i \frac{2 \pi n}{L} x} (\tilde{f}_n)^\conj
+f^\conj(x) = \sum_{n = -\infty}^\infty e^{-i \frac{2 \pi n}{L} x} (\tilde{f}_n)^\conj.
 \end{equation}
 %
 which implies
@@ -132,7 +132,7 @@ f(x) = \sum_{n=-\infty}^\infty e^{i k_n x} \tilde{f}_{k_n}.
 The inverse transform is obtained by integration over some length \(L\) interval
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:310}
-\tilde{f}_{k_n} = \inv{L} \int_{-L/2}^{L/2} dx e^{-i k_n x} f(x)
+\tilde{f}_{k_n} = \inv{L} \int_{-L/2}^{L/2} dx e^{-i k_n x} f(x).
 \end{equation}
 %
 \paragraph{Verify:}
@@ -161,14 +161,14 @@ It is conventional to absorb \(\tilde{f}_{k_n} = \tilde{f}(k_n)\) for
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:330}
 \begin{aligned}
 f(x) &= \inv{L} \sum_n \tilde{f}(k_n) e^{i k_n x} \\
-\tilde{f}(k_n) &= \int_{-L/2}^{L/2} dx f(x) e^{-i k_n x}
+\tilde{f}(k_n) &= \int_{-L/2}^{L/2} dx f(x) e^{-i k_n x}.
 \end{aligned}
 \end{equation}
 %
 To take \(L \rightarrow \infty\) notice
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:350}
-k_n = \frac{2 \pi}{L} n
+k_n = \frac{2 \pi}{L} n.
 \end{equation}
 %
 when \(n\) changes by \(\Delta n = 1\), \(k_n\) changes by \(\Delta k_n = \frac{2 \pi}{L} \Delta n\)
@@ -176,7 +176,7 @@ when \(n\) changes by \(\Delta n = 1\), \(k_n\) changes by \(\Delta k_n = \frac{
 Using this
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:370}
-f(x) = \inv{2\pi} \sum_n \left( \frac{2\pi}{L} \Delta n \right) \tilde{f}(k_n) e^{i k_n x}
+f(x) = \inv{2\pi} \sum_n \left( \frac{2\pi}{L} \Delta n \right) \tilde{f}(k_n) e^{i k_n x}.
 \end{equation}
 %
 With \(L \rightarrow \infty\), and \(\Delta k_n \rightarrow 0\)
@@ -184,7 +184,7 @@ With \(L \rightarrow \infty\), and \(\Delta k_n \rightarrow 0\)
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:390}
 \begin{aligned}
 f(x) &= \int_{-\infty}^\infty \frac{dk}{2\pi} \tilde{f}(k) e^{i k x} \\
-\tilde{f}(k) &= \int_{-\infty}^\infty dx f(x) e^{-i k x}
+\tilde{f}(k) &= \int_{-\infty}^\infty dx f(x) e^{-i k x}.
 \end{aligned}
 \end{equation}
 %
@@ -198,7 +198,7 @@ A loose verification of the inversion relationship (the most important bit) is p
 &=
 \iint \frac{dk}{2\pi} e^{i k x} dx' f(x') e^{-i k x'} \\
 &=
-\int dx' f(x') \inv{2\pi} \int dk e^{i k (x - x')}
+\int dx' f(x') \inv{2\pi} \int dk e^{i k (x - x')}.
 \end{aligned}
 \end{equation}
 %
@@ -217,7 +217,7 @@ With that we see that we recover the function \(f(x)\) above as desired.
 \BA(\Bx, t) &= \int
 \frac{d^3 \Bk}{(2\pi)^3}
 \tilde{\BA}(\Bk, t) e^{i \Bk \cdot \Bx} \\
-\tilde{\BA}(\Bx, t) &= \int d^3 \Bx \BA(\Bx, t) e^{-i \Bk \cdot \Bx}
+\tilde{\BA}(\Bx, t) &= \int d^3 \Bx \BA(\Bx, t) e^{-i \Bk \cdot \Bx}.
 \end{aligned}
 \end{equation}
 %
@@ -239,7 +239,7 @@ With that we see that we recover the function \(f(x)\) above as desired.
 \left(
 \inv{c^2} \partial_{tt} \tilde{\BA}(\Bk, t) + \Bk^2 \BA(\Bk, t)
 \right)
-e^{i \Bk \cdot \Bx}
+e^{i \Bk \cdot \Bx}.
 \end{aligned}
 \end{equation}
 %
@@ -261,26 +261,26 @@ d^3 \Bk
 \delta^3(\Bp -\Bk)
 \left(
 \inv{c^2} \partial_{tt} \tilde{\BA}(\Bk, t) + \Bk^2 \BA(\Bk, t)
-\right)
+\right).
 \end{aligned}
 \end{equation}
 %
 Since this is true for all \(\Bp\) we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:490}
-\partial_{tt} \tilde{\BA}(\Bp, t) = -c^2 \Bp^2 \tilde{\BA}(\Bp, t)
+\partial_{tt} \tilde{\BA}(\Bp, t) = -c^2 \Bp^2 \tilde{\BA}(\Bp, t).
 \end{equation}
 %
 For every value of momentum we have a harmonic oscillator!
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:510}
-\ddot{x} = -\omega^2 x
+\ddot{x} = -\omega^2 x.
 \end{equation}
 %
 Fourier modes of EM potential in vacuum obey
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:530}
-\partial_{tt} \tilde{\BA}(\Bk, t) = -c^2 \Bk^2 \tilde{\BA}(\Bk, t)
+\partial_{tt} \tilde{\BA}(\Bk, t) = -c^2 \Bk^2 \tilde{\BA}(\Bk, t).
 \end{equation}
 %
 Because we are operating in the Coulomb gauge we must also have zero divergence.  Let us see how that translates to our Fourier representation
@@ -291,7 +291,7 @@ implies
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:960}
 \begin{aligned}
 0 &= \spacegrad \cdot \BA(\Bx, t) \\
-&= \int \frac{d^3 \Bk }{(2 \pi)^3} \spacegrad \cdot \left( e^{i \Bk \cdot \Bx} \cdot \tilde{\BA}(\Bk, t) \right)
+&= \int \frac{d^3 \Bk }{(2 \pi)^3} \spacegrad \cdot \left( e^{i \Bk \cdot \Bx} \cdot \tilde{\BA}(\Bk, t) \right).
 \end{aligned}
 \end{equation}
 %
@@ -316,7 +316,7 @@ This has two immediate consequences.  The first is that our momentum space poten
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:610}
 \BA(\Bx, t) = \int
 \frac{d^3 \Bk}{(2\pi)^3}
-e^{i \Bk \cdot \Bx} \left( \inv{2} \tilde{\BA}(\Bk, t) + \inv{2} \tilde{\BA}^\conj(- \Bk, t) \right)
+e^{i \Bk \cdot \Bx} \left( \inv{2} \tilde{\BA}(\Bk, t) + \inv{2} \tilde{\BA}^\conj(- \Bk, t) \right).
 \end{equation}
 %
 Since out system is essentially a harmonic oscillator at each point in momentum space
@@ -324,7 +324,7 @@ Since out system is essentially a harmonic oscillator at each point in momentum 
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:630}
 \begin{aligned}
 \partial_{tt} \tilde{\BA}(\Bk, t) &= - \omega_k^2 \tilde{\BA}(\Bk, t) \\
-\omega_k^2 &= c^2 \Bk^2
+\omega_k^2 &= c^2 \Bk^2.
 \end{aligned}
 \end{equation}
 %
@@ -333,7 +333,7 @@ our general solution is of the form
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:650}
 \begin{aligned}
 \tilde{\BA}(\Bk, t) &= e^{i \omega_k t} \Ba_{+}(\Bk) +e^{-i \omega_k t} \Ba_{-}(\Bk) \\
-\tilde{\BA}^\conj(\Bk, t) &= e^{-i \omega_k t} \Ba_{+}^\conj(\Bk) +e^{i \omega_k t} \Ba_{-}^\conj(\Bk)
+\tilde{\BA}^\conj(\Bk, t) &= e^{-i \omega_k t} \Ba_{+}^\conj(\Bk) +e^{i \omega_k t} \Ba_{-}^\conj(\Bk).
 \end{aligned}
 \end{equation}
 %
@@ -343,19 +343,19 @@ our general solution is of the form
 \inv{2} \left(
 e^{i \omega_k t} (\Ba_{+}(\Bk) + \Ba_{-}^\conj(-\Bk))
 +e^{-i \omega_k t} (\Ba_{-}(\Bk) + \Ba_{+}^\conj(-\Bk))
-\right)
+\right).
 \end{equation}
 %
 Define
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:690}
-\Bbeta(\Bk) \equiv \inv{2} (\Ba_{-}(\Bk) + \Ba_{+}^\conj(-\Bk) )
+\Bbeta(\Bk) \equiv \inv{2} (\Ba_{-}(\Bk) + \Ba_{+}^\conj(-\Bk) ).
 \end{equation}
 %
 so that
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:710}
-\Bbeta(-\Bk) = \inv{2} (\Ba_{+}^\conj(\Bk) + \Ba_{-}(-\Bk))
+\Bbeta(-\Bk) = \inv{2} (\Ba_{+}^\conj(\Bk) + \Ba_{-}(-\Bk)).
 \end{equation}
 %
 Our solution now takes the form
@@ -364,7 +364,7 @@ Our solution now takes the form
 \BA(\Bx, t) = \int \frac{d^3\Bk}{(2 \pi)^3} \left(
 e^{i (\Bk \cdot \Bx + \omega_k t)} \Bbeta^\conj(-\Bk)
 +e^{i (\Bk \cdot \Bx - \omega_k t)} \Bbeta(\Bk)
-\right)
+\right).
 \end{equation}
 %
 \paragraph{Claim:}
@@ -372,7 +372,7 @@ e^{i (\Bk \cdot \Bx + \omega_k t)} \Bbeta^\conj(-\Bk)
 This is now manifestly real.  To see this, consider the first term with \(\Bk = -\Bk'\), noting that \(\int_{-\infty}^\infty dk = \int_{\infty}^\infty -dk' = \int_{-\infty}^\infty dk' \) with \(dk = -dk'\)
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL15:860}
-\int \frac{d^3\Bk'}{(2 \pi)^3} e^{i (-\Bk' \cdot \Bx + \omega_k t)} \Bbeta^\conj(\Bk')
+\int \frac{d^3\Bk'}{(2 \pi)^3} e^{i (-\Bk' \cdot \Bx + \omega_k t)} \Bbeta^\conj(\Bk').
 \end{equation}
 %
 Dropping primes this is the conjugate of the second term.

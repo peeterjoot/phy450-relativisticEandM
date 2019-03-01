@@ -28,11 +28,11 @@ m \ddot{\Br} = \Bf.
 %
 Observe that in coordinate form this is
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:20}
-m \ddot{r}^i = f^i, \qquad i = 1,2,3
+m \ddot{r}^i = f^i, \qquad i = 1,2,3.
 \end{equation}
 or for a rotated frame \(O'\)
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:30}
-m \ddot{r'}^i = {f'}^i, \qquad i = 1,2,3
+m \ddot{r'}^i = {f'}^i, \qquad i = 1,2,3.
 \end{equation}
 This must be generalized to 4-vectors, so we need 4-velocity and 4-acceleration.
 
@@ -50,13 +50,13 @@ PICTURE: 3D vectors, \(\Br(t)\), \(\Br(t + \Delta t)\), and the difference vecto
 We write
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:40}
-\Bv(t) \equiv \lim_{\Delta t \rightarrow 0} \frac{\Br(t + \Delta t) - \Br(t)}{ \Delta t}
+\Bv(t) \equiv \lim_{\Delta t \rightarrow 0} \frac{\Br(t + \Delta t) - \Br(t)}{ \Delta t}.
 \end{equation}
 %
 For four vectors we will parametrize the worldline by its ``length'', with \(O\) taken from some arbitrary point on it.  We can also take \(\tau\) to be the proper time, and the only difference will be the factor of \(c\) (which becomes especially easy with the choice \(c=1\) that is avoided in this class).
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:50}
-\frac{x^i(\tau + \Delta \tau) - x^i(\tau)}{\Delta \tau}
+\frac{x^i(\tau + \Delta \tau) - x^i(\tau)}{\Delta \tau}.
 \end{equation}
 %
 We will take the limit
@@ -64,7 +64,7 @@ We will take the limit
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:60}
 \frac{dx^i}{d\tau} =
 \lim_{\Delta \tau \rightarrow 0}
-\frac{x^i(\tau + \Delta \tau) - x^i(\tau)}{\Delta \tau}
+\frac{x^i(\tau + \Delta \tau) - x^i(\tau)}{\Delta \tau}.
 \end{equation}
 %
 and then define a dimensionless ``proper velocity''
@@ -78,7 +78,7 @@ This is a nice quantity, we are dividing a vector by a Lorentz scalar, and thus 
 PICTURE: small fragment of a worldline with constant slope over the infinitesimal interval.  \(dx^0\) up and \(dx^1\) over.
 %
 %\begin{equation}\label{eqn:relativisticElectrodynamicsL7:70}
-%u^i \equiv \frac{dx^i}{ds}
+%u^i \equiv \frac{dx^i}{ds}.
 %\end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:290}
@@ -86,7 +86,7 @@ PICTURE: small fragment of a worldline with constant slope over the infinitesima
 ds^2
 &= (dx^0)^2 - (dx^1)^2 \\
 &= c^2 \left( (dt)^2 - \inv{c^2} (dx^1)^2 \right) \\
-&= c^2 (dt)^2 \left( 1 - \inv{c^2} \frac{dx^1}{dt^2} \right)
+&= c^2 (dt)^2 \left( 1 - \inv{c^2} \frac{dx^1}{dt^2} \right).
 \end{aligned}
 \end{equation}
 %
@@ -94,7 +94,7 @@ Or
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:90}
 \begin{aligned}
-ds = c dt \sqrt{1 - \inv{c^2} \frac{dx^1}{dt^2} }
+ds = c dt \sqrt{1 - \inv{c^2} \frac{dx^1}{dt^2} }.
 \end{aligned}
 \end{equation}
 %
@@ -106,7 +106,7 @@ u^0
 &= \frac{dx^0}{ds} \\
 &= \frac{c dt}{ c dt \sqrt{ 1 - \Bv^2/c^2} } \\
 &= \frac{1}{ \sqrt{ 1 - \Bv^2/c^2} } \\
-&= \gamma
+&= \gamma.
 \end{aligned}
 \end{equation}
 %
@@ -149,7 +149,7 @@ u^i g_{ij} u^j
 %
 The four velocity in physics is
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:110}
-u^i = \left( \gamma, \frac{\Bv}{c} \gamma \right)
+u^i = \left( \gamma, \frac{\Bv}{c} \gamma \right).
 \end{equation}
 %
 but in mathematics the meaning of \(u^i u_i = 1\) means that this quantity is the unit tangent vector to the worldline.
@@ -160,13 +160,13 @@ but in mathematics the meaning of \(u^i u_i = 1\) means that this quantity is th
 In Newtonian physics we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:111}
-\Ba = \frac{d\Bv}{dt}
+\Ba = \frac{d\Bv}{dt}.
 \end{equation}
 %
 Our relativistic mapping of this, with \(v \rightarrow u^i\) and \(t \rightarrow s\), gives
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:120}
-w^i = \frac{d u^i}{ds}
+w^i = \frac{d u^i}{ds}.
 \end{equation}
 %
 Geometrically \(w^i\) is the normal to the worldline.  This follows from \(u^i g_{ij} u^j = 1\), so
@@ -190,7 +190,7 @@ Geometrically \(w^i\) is the normal to the worldline.  This follows from \(u^i g
 \frac{d u^i}{ds} g_{ij} u^j
 +u^j g_{ji} \frac{d u^i}{ds} \\
 &=
-2 \frac{d u^i}{ds} g_{ij} u^j
+2 \frac{d u^i}{ds} g_{ij} u^j.
 \end{aligned}
 \end{equation}
 %
@@ -206,7 +206,7 @@ w_i u^i = 0.
 \index{action!relativistic}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:140}
-S_{ab} = ?
+S_{ab} = ?.
 \end{equation}
 %
 What is the action for a worldline from \(a \rightarrow b\).
@@ -217,13 +217,13 @@ We want something that has velocity dependence (\(u^i\) not \(\Bv\)), but that i
 The relativistic length is the simplest so we could form
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:150}
-\int ds u^i u_i
+\int ds u^i u_i.
 \end{equation}
 %
 but that is not interesting since \(u^i u_i = 1\).  We could form
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:160}
-\int ds u^i \frac{u_i}{ds} = \int ds w^i u_i
+\int ds u^i \frac{u_i}{ds} = \int ds w^i u_i.
 \end{equation}
 %
 but then this is just zero.
@@ -236,7 +236,7 @@ We could form something like
 This is non zero and non-constant, but evaluating the EOM for such an action would produce a result that has higher than second order derivatives.
 We are left with
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:180}
-S_{ab} = \text{constant} \int_a^b ds
+S_{ab} = \text{constant} \int_a^b ds.
 \end{equation}
 %
 To fix this constant we note that if we want to minimize the action over the infinitesimal interval, then we need a minus sign.  Since the Lagrangian has dimensions of energy, and the dimensions of energy times time are momentum, our action must then have dimensions of momentum.  So one possible constant that fixes up our dimensions is \(mc\).  Construct an action with the following form
@@ -247,34 +247,34 @@ S_{ab} = - m c\int_a^b ds,
 does the job we want.  Here ``m'' is a characteristic of the particle, which \textunderline{is a Lorentz scalar}.  It also happens to have dimensions of mass.  With \(ds = c dt \sqrt{1 - \Bv^2/c^2}\), we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:200}
-S_{ab} = - m c^2 \int_{t_a}^{t_b} dt \sqrt{ 1 - \inv{c^2} \left( \frac{d \Bx(t) }{dt} \right)^2 }
+S_{ab} = - m c^2 \int_{t_a}^{t_b} dt \sqrt{ 1 - \inv{c^2} \left( \frac{d \Bx(t) }{dt} \right)^2 }.
 \end{equation}
 %
 Now everything looks like it was in classical mechanics.
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:210}
-S_{ab} = \int_{t_a}^{t_b} \LL(\dot{\Bx}(t)) dt
+S_{ab} = \int_{t_a}^{t_b} \LL(\dot{\Bx}(t)) dt.
 \end{equation}
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:220}
-\LL(\dot{\Bx}(t)) = -m c^2
+\LL(\dot{\Bx}(t)) = -m c^2.
 \end{equation}
 %
 Now find the extremum of \(S\).  That problem is really to compute the variation in the action that results from varying the coordinates around the stationary point, and equate that variation to zero to find the extremum
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:230}
-\delta S = S[\Bx(t) + \delta \Bx(t)] - S[ \Bx(t) ] = 0
+\delta S = S[\Bx(t) + \delta \Bx(t)] - S[ \Bx(t) ] = 0.
 \end{equation}
 %
 The usual condition is imposed where we have zero variation of the coordinates at the boundaries of the action integral
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:231}
-0 = \delta \Bx(t_a) = \delta \Bx(t_b)
+0 = \delta \Bx(t_a) = \delta \Bx(t_b).
 \end{equation}
 %
 Returning to our action we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:240}
-\frac{d}{dt} \PD{\dot{\Bx}}{\LL} = \PD{\Bx}{\LL} = 0
+\frac{d}{dt} \PD{\dot{\Bx}}{\LL} = \PD{\Bx}{\LL} = 0.
 \end{equation}
 %
 This last is zero because it is a free particle with no position dependence.
@@ -284,14 +284,14 @@ This last is zero because it is a free particle with no position dependence.
 0
 &= -m c^2 \frac{d}{dt} \PD{\dot{\Bx}}{} \sqrt{ 1 - \dot{\Bx}^2 } \\
 &= -m c^2 \frac{d}{dt} \frac{- \dot{\Bx}}{\sqrt{ 1 - \dot{\Bx}^2 } } \\
-&= m c^2 \frac{d}{dt} \gamma \dot\Bx
+&= m c^2 \frac{d}{dt} \gamma \dot\Bx.
 \end{aligned}
 \end{equation}
 %
 So we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:241}
-\frac{d}{dt} (\gamma \dot{\Bx}) = 0
+\frac{d}{dt} (\gamma \dot{\Bx}) = 0.
 \end{equation}
 %
 By evaluating this, we can eventually show that we can construct a four vector equation.  Doing this we have
@@ -318,7 +318,7 @@ Dotting this with \(\Bv\) we have
 0
 &= \frac{\Bv^2 (\Bv \cdot \dot{\Bv}) }{ c^2 - \Bv^2 } + \dot{\Bv} \cdot \Bv  \\
 &= (\Bv \cdot \dot{\Bv}) \left( 1 + \frac{\Bv^2}{c^2 - \Bv^2} \right) \\
-&= (\Bv \cdot \dot{\Bv}) \frac{c^2}{c^2 - \Bv^2}
+&= (\Bv \cdot \dot{\Bv}) \frac{c^2}{c^2 - \Bv^2}.
 \end{aligned}
 \end{equation}
 %
@@ -326,7 +326,7 @@ This implies that \(\dot{\Bv} = 0\) (a contraction) or that \(\Bv \cdot \dot{\Bv
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:243}
 0 =
-\frac{(\Bv \cross \Bv) (\Bv \cdot \dot{\Bv}) }{ c^2 - \Bv^2 } + \dot{\Bv} \cross \Bv
+\frac{(\Bv \cross \Bv) (\Bv \cdot \dot{\Bv}) }{ c^2 - \Bv^2 } + \dot{\Bv} \cross \Bv.
 \end{equation}
 %
 We have found that \(\Bv \cdot \dot{\Bv} = 0\) and \(\Bv \cross \dot{\Bv} = 0\).  This can only mean that \(\dot{\Bv} = 0\), contradicting the assumption that is non-zero.  We conclude that \(\dot{\Bv} = 0\) is the only solution to \eqnref{eqn:relativisticElectrodynamicsL7:242}.
@@ -336,17 +336,17 @@ We have found that \(\Bv \cdot \dot{\Bv} = 0\) and \(\Bv \cross \dot{\Bv} = 0\).
 We want to finish up and show how this results in a four velocity equation.  We have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:250}
-\frac{d}{dt} ( \gamma \Bv) = 0
+\frac{d}{dt} ( \gamma \Bv) = 0.
 \end{equation}
 %
 which is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:260}
-\frac{d}{dt} ( u^\alpha ) = 0, \qquad \mbox{for \(u^\alpha = u^1, u^2, u^3\)}
+\frac{d}{dt} ( u^\alpha ) = 0, \qquad \mbox{for \(u^\alpha = u^1, u^2, u^3\)}.
 \end{equation}
 %
 eventually, we will show that we also have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL7:270}
-\frac{d}{dt} ( u^i ) = 0
+\frac{d}{dt} ( u^i ) = 0.
 \end{equation}

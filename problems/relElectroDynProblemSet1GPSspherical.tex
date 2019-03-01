@@ -23,7 +23,7 @@ Our problem is then to find the simultaneous solution to the following set of eq
 (\Bx - \Bp_1)^2 &= d_1^2 \\
 (\Bx - \Bp_2)^2 &= d_2^2 \\
 \vdots \\
-(\Bx - \Bk_2)^2 &= d_k^2.
+(\Bx - \Bk_2)^2 &= d_k^2..
 \end{aligned}
 \end{equation}
 
@@ -34,7 +34,7 @@ Observe that even if we reduce this to a one dimensional problem in a single var
 0 &= (x - p_1)^2 - d_1^2 \\
 0 &= (x - p_2)^2 - d_2^2 \\
 \vdots \\
-0 &= (x - k_2)^2 - d_k^2.
+0 &= (x - k_2)^2 - d_k^2..
 \end{aligned}
 \end{equation}
 
@@ -54,25 +54,25 @@ F_i(x)
 \vdots \\
 \Abs{\Bx - \Bp_k} - c \Abs{ t - t_k } \\
 \end{bmatrix}
-= 0.
+= 0..
 \end{equation}
 
 We seek the spacetime event vector \(x = (c t, \Bx)\) for the spatial location and the exact local time at the location of the GPS receiver.  Given any approximation of the solution, we can refine the solution using Newton's root finding method by taking partials, forming the Jacobian matrix for our function \(F(x)\).  That is
 
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:320}
-F(x_0 + \Delta x) \approx F(x_0) + \evalbar{\PD{x^j}{F_i(x)}}{x_0} \Delta x^j = F(x_0) + J(x_0) \Delta x = 0
+F(x_0 + \Delta x) \approx F(x_0) + \evalbar{\PD{x^j}{F_i(x)}}{x_0} \Delta x^j = F(x_0) + J(x_0) \Delta x = 0.
 \end{equation}
 
 This leaves us with the our least squares problem, requiring the generalized inverse to the matrix equation
 
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:330}
-x_1 = x_0 - J^\dagger (x_0) F(x_0),
+x_1 = x_0 - J^\dagger (x_0) F(x_0),.
 \end{equation}
 
 where 
 
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:340}
-J^\dagger = (J^\T J)^{-1} J^\T.
+J^\dagger = (J^\T J)^{-1} J^\T..
 \end{equation}
 
 This is a solution in the least squares sense that given \(b = J x\), the norm \(\Abs{ J \overbar{x} - b}\) is minimized by \(\overbar{x} = J^\dagger b\).
@@ -89,7 +89,7 @@ F(x) =
 \begin{bmatrix}
 \sqrt{ h^2 + (x - x_A')^2 } - c \Abs{t - t_A'} \\
 \sqrt{ h^2 + (x - x_B')^2 } - c \Abs{t - t_B'} \\
-\end{bmatrix} = 0.
+\end{bmatrix} = 0..
 \end{equation}
 
 If we assume that our GPS receiver's clock is synchronized sufficiently with satellites \(A\) and \(B\), this single variable problem admits a closed form for one iteration of the least squares process.  However, since we are asked for a result that includes a \(V_x/c\) term, we can augment our matrix equation by two additional rows, with a secondary set of data points introduced at an offset time interval.  That is
@@ -101,7 +101,7 @@ F(x) =
 \sqrt{ h^2 + (x - x_B')^2 } - \Abs{c t - c t_B'} \\
 \sqrt{ h^2 + (x - x_A' - (V_x/c) c \delta t)^2 } - \Abs{c t - c t_A' - c \delta t} \\
 \sqrt{ h^2 + (x - x_B' - (V_x/c) c \delta t)^2 } - \Abs{c t - c t_B' - c \delta t} \\
-\end{bmatrix} = 0.
+\end{bmatrix} = 0..
 \end{equation}
 
 With \(t\), \(\delta t\), \(x_A'\), and \(x_B'\) given, and an initial seed value for the iterative procedure assumed to be the midpoint \(x_0 = (x_A' + x_B')/2\), we can calculate a first approximation to the receiver position \(x_1 = x_0 + \Delta x\) using the Newton's procedure outlined above.
@@ -109,7 +109,7 @@ With \(t\), \(\delta t\), \(x_A'\), and \(x_B'\) given, and an initial seed valu
 For this system our Jacobian elements are all differentials of the following form
 
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:370}
-\PD{x}{} \sqrt{ h^2 + (x - p)^2 } - \Delta = \frac{x-p}{\sqrt{h^2 + (x-p)^2}},
+\PD{x}{} \sqrt{ h^2 + (x - p)^2 } - \Delta = \frac{x-p}{\sqrt{h^2 + (x-p)^2}},.
 \end{equation}
 
 so, our Jacobian is
@@ -121,23 +121,23 @@ J =
 \frac{x - x_B'}{\sqrt{ h^2 + (x - x_B')^2 } } \\
 \frac{x - x_A' - (V_x/c) c \delta t}{\sqrt{ h^2 + (x - x_A' - (V_x/c) c \delta t)^2 } } \\
 \frac{x - x_B' - (V_x/c) c \delta t}{\sqrt{ h^2 + (x - x_B' - (V_x/c) c \delta t)^2 } } \\
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 
 Our deviation from the midpoint to first order in \(V_x/c\) is
 
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:390}
-\Delta x = - \evalbar{ \frac{J^\T F}{J^T J} }{x = (x_A' + x_B')/2}
+\Delta x = - \evalbar{ \frac{J^\T F}{J^T J} }{x = (x_A' + x_B')/2}.
 \end{equation}
 
 To tidy this up, let
 
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:391}
-s = \inv{2} (x_B' - x_A')
+s = \inv{2} (x_B' - x_A').
 \end{equation}
 
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:392}
-D = (V_x/c) c \delta t
+D = (V_x/c) c \delta t.
 \end{equation}
 
 \begin{equation}\label{eqn:relElectroDynProblemSet1:1500}
@@ -151,7 +151,7 @@ D = (V_x/c) c \delta t
 &= 
 \frac{2 s^2}{h^2 + s^2}
 +\frac{(s - D)^2}{h^2 + (s -D)^2}
-+\frac{(s + D)^2}{h^2 + (s +D)^2}
++\frac{(s + D)^2}{h^2 + (s +D)^2}.
 \end{aligned}
 \end{equation}
 
@@ -176,7 +176,7 @@ and
 &=
 \frac{s}{\sqrt{s^2 + D^2}} \left( \Abs{ ct - c t_B' } - \Abs{ c t - c t_A'} \right) -2 D \\
 &- \frac{(s - D)\Abs{c t - c t_A' - c \delta t} }{ \sqrt{ h^2 + (s - D)^2 } } 
-+ \frac{(s + D)\Abs{c t - c t_B' - c \delta t} }{ \sqrt{ h^2 + (s + D)^2 } } 
++ \frac{(s + D)\Abs{c t - c t_B' - c \delta t} }{ \sqrt{ h^2 + (s + D)^2 } } .
 \end{aligned}
 \end{equation}
 
@@ -192,7 +192,7 @@ The final beastly ugly result, utilizing the helper variables of \eqnref{eqn:rel
    \frac{2 s^2}{h^2 + s^2}
    +\frac{(s - D)^2}{h^2 + (s -D)^2}
    +\frac{(s + D)^2}{h^2 + (s +D)^2}
-}
+}.
 \end{equation}
 
 In practice it does not make much sense to compute this.  You will want to use a computer, and assuming the availability of a pre-canned SVD routine to compute the generalized inverse, the toy model would not be any easier to solve than the real thing.

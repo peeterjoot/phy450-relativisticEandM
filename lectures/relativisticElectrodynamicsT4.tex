@@ -25,7 +25,7 @@ At the surface of the conductor (I presume this means the interior surface where
 \spacegrad \cross \BE &= - \inv{c} \PD{t}{\BB} \\
 \spacegrad \cross \BB &= \inv{c} \PD{t}{\BE} \\
 \spacegrad \cdot \BB &= 0 \\
-\spacegrad \cdot \BE &= 0
+\spacegrad \cdot \BE &= 0.
 \end{aligned}
 \end{equation}
 %
@@ -112,7 +112,7 @@ This provides constraints on the amplitudes
 \spacegrad \cross \BE_0 - i \Bk \cross \BE_0 &= -i \frac{\omega}{c} \BB_0 \\
 \spacegrad \cross \BB_0 - i \Bk \cross \BB_0 &= i \frac{\omega}{c} \BE_0 \\
 \spacegrad \cdot \BE_0 - i \Bk \cdot \BE_0 &= 0 \\
-\spacegrad \cdot \BB_0 - i \Bk \cdot \BB_0 &= 0
+\spacegrad \cdot \BB_0 - i \Bk \cdot \BB_0 &= 0.
 \end{aligned}
 \end{equation}
 %
@@ -138,7 +138,7 @@ Applying the wave equation operator to our phasor we get
 0 &=
 \left(\inv{c^2} \partial_{tt} - \spacegrad^2 \right) \BE_0 e^{i (\omega t - \Bk \cdot \Bx)} \\
 &=
-\left(-\frac{\omega^2}{c^2} - \spacegrad^2 + \Bk^2 \right) \BE_0 e^{i (\omega t - \Bk \cdot \Bx)}
+\left(-\frac{\omega^2}{c^2} - \spacegrad^2 + \Bk^2 \right) \BE_0 e^{i (\omega t - \Bk \cdot \Bx)}.
 \end{aligned}
 \end{equation}
 %
@@ -252,7 +252,7 @@ Is it at all helpful to expand the double cross products?
 i \frac{c}{\omega}
 (i k - \partial_z)
 \spacegrad_\perp \zcap \cdot (\spacegrad_\perp \cross \BE_\perp)
--{\spacegrad_\perp}^2 \BB_\perp + \frac{\omega}{c} \Bk \cross \BE_\perp
+-{\spacegrad_\perp}^2 \BB_\perp + \frac{\omega}{c} \Bk \cross \BE_\perp.
 \end{aligned}
 \end{equation}
 %\frac{\omega}{c} \BE_\perp &=
@@ -278,7 +278,7 @@ but that does not seem particularly useful for completely solving the system?  I
 Back to the class notes.  We proceeded to solve for \(\BE_z\) and \(\BB_z\) from the wave equations by separation of variables.  We wish to solve equations of the form
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:360}
-\left( \PDSq{x}{} + \PDSq{y}{} + \frac{\omega^2}{c^2} - \Bk^2 \right) \phi(x,y) = 0
+\left( \PDSq{x}{} + \PDSq{y}{} + \frac{\omega^2}{c^2} - \Bk^2 \right) \phi(x,y) = 0.
 \end{equation}
 %
 Write \(\phi(x,y) = X(x) Y(y)\), so that we have
@@ -304,7 +304,7 @@ Writing \(k_1 = 2\pi m/a\), and \(k_2 = 2 \pi n/ b\), we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:420}
 \phi(x, y) = \sum_{m n} a_{m n}
 \exp\left( \frac{2 \pi i m}{a} x \right)
-\exp\left( \frac{2 \pi i n}{b} y \right)
+\exp\left( \frac{2 \pi i n}{b} y \right).
 \end{equation}
 %
 We were also provided with some definitions
@@ -338,7 +338,7 @@ Why: I had in my notes
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:680}
 \begin{aligned}
 \spacegrad \cross \BE = 0 & \implies \PD{x^1}{E_2} -\PD{x^2}{E_1} = 0 \\
-\spacegrad \cdot \BE = 0 & \implies \PD{x^1}{E_1} +\PD{x^2}{E_2} = 0
+\spacegrad \cdot \BE = 0 & \implies \PD{x^1}{E_1} +\PD{x^2}{E_2} = 0.
 \end{aligned}
 \end{equation}
 %
@@ -347,7 +347,7 @@ and then
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:700}
 \begin{aligned}
 \spacegrad^2 \phi &= 0 \\
-\phi &= \text{const}
+\phi &= \text{const}.
 \end{aligned}
 \end{equation}
 %
@@ -385,14 +385,14 @@ Writing
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:500}
 \begin{aligned}
 k &= \frac{\omega}{c} \sqrt{ 1 - \left(\frac{\omega_{m n}}{\omega}\right)^2 } \\
-\omega_{m n} &= 2 \pi c \sqrt{ \left(\frac{m}{a} \right)^2 + \left(\frac{n}{b} \right)^2 }
+\omega_{m n} &= 2 \pi c \sqrt{ \left(\frac{m}{a} \right)^2 + \left(\frac{n}{b} \right)^2 }.
 \end{aligned}
 \end{equation}
 %
 Since \(\omega < \omega_{m n}\) we have \(k\) purely imaginary, and the term
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:520}
-e^{-i k z} = e^{- \Abs{k} z}
+e^{-i k z} = e^{- \Abs{k} z}.
 \end{equation}
 %
 represents the die off.
@@ -404,13 +404,13 @@ Note that the convention is that the \(m\) in \(TE_{m n}\) is the bigger of the 
 The phase velocity
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:530}
-V_\phi = \frac{\omega}{k} = \frac{c}{\sqrt{ 1 - \left(\frac{\omega_{m n}}{\omega}\right)^2 }} \ge c
+V_\phi = \frac{\omega}{k} = \frac{c}{\sqrt{ 1 - \left(\frac{\omega_{m n}}{\omega}\right)^2 }} \ge c.
 \end{equation}
 %
 However, energy is transmitted with the group velocity, the ratio of the Poynting vector and energy density
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsT4:540}
-\frac{\expectation{\BS}}{\expectation{U}} = V_g = \PD{k}{\omega} = 1/\PD{\omega}{k}
+\frac{\expectation{\BS}}{\expectation{U}} = V_g = \PD{k}{\omega} = 1/\PD{\omega}{k}.
 \end{equation}
 %
 (This can be shown).
@@ -422,7 +422,7 @@ Since
 \left(
 \PD{\omega}{}
 \sqrt{ (\omega/c)^2 - (\omega_{m n}/c)^2 }
-\right)^{-1} = c \sqrt{ 1 - (\omega_{m n}/\omega)^2 } \le c
+\right)^{-1} = c \sqrt{ 1 - (\omega_{m n}/\omega)^2 } \le c.
 \end{equation}
 %
 We see that the energy is transmitted at less than the speed of light as expected.

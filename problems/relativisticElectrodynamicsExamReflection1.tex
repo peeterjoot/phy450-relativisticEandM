@@ -26,14 +26,14 @@ Let us set up our coordinate system in cylindrical coordinates.  For the charged
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:10}
 \begin{aligned}
 \Bx(t) &= a \Be_1 e^{i \omega t} \\
-\Br &= z \Be_3 + \rho \Be_1 e^{i \phi}
+\Br &= z \Be_3 + \rho \Be_1 e^{i \phi}.
 \end{aligned}
 \end{equation}
 %
 Here I am using the geometric product of vectors (if that is unfamiliar then just substitute
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:30}
-\{\Be_1, \Be_2, \Be_3\} \rightarrow \{\sigma_1, \sigma_2, \sigma_3\}
+\{\Be_1, \Be_2, \Be_3\} \rightarrow \{\sigma_1, \sigma_2, \sigma_3\}.
 \end{equation}
 %
 We can do that since the Pauli matrices also have the same semantics (with a small difference since the geometric square of a unit vector is defined as the unit scalar, whereas the Pauli matrix square is the identity matrix).  The semantics we require of this vector product are just \(\Be_\alpha^2 = 1\) and \(\Be_\alpha \Be_\beta = - \Be_\beta \Be_\alpha\) for any \(\alpha \ne \beta\).
@@ -66,7 +66,7 @@ We will need (eventually)
 \begin{aligned}
 \Bv &= a \omega \Be_2 e^{i \omega t_r} = a \omega ( -\sin \omega t_r, \cos\omega t_r, 0) \\
 \dot{\Bv} &= -a \omega^2 \Be_1 e^{i \omega t_r} =
--a \omega^2 (\cos\omega t_r, \sin\omega t_r, 0)
+-a \omega^2 (\cos\omega t_r, \sin\omega t_r, 0).
 \end{aligned}
 \end{equation}
 %
@@ -108,7 +108,7 @@ a \frac{\omega }{c}
 \rho \Real( i e^{-i \phi + i \omega t_r} ) \\
 &=
 a \frac{\omega }{c}
-\rho \sin(\phi - \omega t_r)
+\rho \sin(\phi - \omega t_r).
 \end{aligned}
 \end{equation}
 %
@@ -116,7 +116,7 @@ So we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:150}
 R^\conj = \sqrt{z^2 + \rho^2 + a^2 - 2 \rho a \cos( \phi - \omega t_r ) }
--a \frac{\omega }{c} \rho \sin(\phi - \omega t_r)
+-a \frac{\omega }{c} \rho \sin(\phi - \omega t_r).
 \end{equation}
 %
 Writing \(k = \omega/c\), and having a peek back at \eqnref{eqn:relativisticElectrodynamicsExamReflection:50}, our potentials are now solved for
@@ -155,7 +155,7 @@ the fields are
 In there we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:580}
-1 - \Bv^2/c^2 = 1 - a^2 \frac{\omega^2}{c^2} = 1 - a^2 k^2
+1 - \Bv^2/c^2 = 1 - a^2 \frac{\omega^2}{c^2} = 1 - a^2 k^2.
 \end{equation}
 %
 and
@@ -168,7 +168,7 @@ z \Be_3 + \Be_1 (\rho e^{i \phi} - a e^{i k c t_r} )
 -
 a k \Be_2 e^{i k c t_r} R \\
 &=
-z \Be_3 + \Be_1 (\rho e^{i \phi} - a (1 - k R i) e^{i k c t_r} )
+z \Be_3 + \Be_1 (\rho e^{i \phi} - a (1 - k R i) e^{i k c t_r} ).
 \end{aligned}
 \end{equation}
 %
@@ -178,7 +178,7 @@ Writing this out in coordinates is not particularly illuminating, but can be don
 \BR^\conj =
 ( \rho \cos\phi - a \cos t_r + a k R \sin t_r,
   \rho \sin\phi - a \sin t_r - a k R \cos t_r,
-  z )
+  z ).
 \end{equation}
 %
 In one sense the problem could be considered solved, since we have all the pieces of the puzzle.  The outstanding question is whether or not the resulting mess can be simplified at all.  Let us see if the cross product reduces at all.  Using
@@ -188,7 +188,7 @@ In one sense the problem could be considered solved, since we have all the piece
 =
 \BR^\conj (\BR \cdot \dot{\Bv}/c^2)
 - \frac{\dot{\Bv}}{c^2}
-(\BR \cdot \BR^\conj)
+(\BR \cdot \BR^\conj).
 \end{equation}
 %
 Perhaps one or more of these dot products can be simplified?  One of them does reduce nicely
@@ -199,7 +199,7 @@ Perhaps one or more of these dot products can be simplified?  One of them does r
 &= ( \BR - R \Bv/c ) \cdot \BR  \\
 &= R^2 - (\BR \cdot \Bv/c) R \\
 &= R^2 - R a k \rho \sin(\phi - k c t_r) \\
-&= R(R - a k \rho \sin(\phi - k c t_r))
+&= R(R - a k \rho \sin(\phi - k c t_r)).
 \end{aligned}
 \end{equation}
 %
@@ -224,7 +224,7 @@ e^{-i \omega t_r} )
 \rho e^{i \phi - i \omega t_r} - a
 } \\
 &=
-- a k^2 ( \rho \cos(\phi - k c t_r) - a )
+- a k^2 ( \rho \cos(\phi - k c t_r) - a ).
 \end{aligned}
 \end{equation}
 %
@@ -240,7 +240,7 @@ a k^2 ( a -\rho \cos(\phi - k c t_r) ) \BR^\conj
 a k^2 ( a -\rho \cos(\phi - k c t_r) ) \Bigl(
 z \Be_3 + \Be_1 (\rho e^{i \phi} - a (1 - k R i) e^{i k c t_r} )
 \Bigr) \\
-&\qquad +a k^2 R \Be_1 e^{i k c  t_r} (R - a k \rho \sin(\phi - k c t_r))
+&\qquad +a k^2 R \Be_1 e^{i k c  t_r} (R - a k \rho \sin(\phi - k c t_r)).
 \end{aligned}
 \end{equation}
 %
@@ -268,7 +268,7 @@ a k^2
 \left(
 -a (a - \rho \cos\phi_r) (1 - k R i)
 + R(R - a k \rho \sin \phi_r)
-\right) e^{i k c t_r}
+\right) e^{i k c t_r}.
 \end{aligned}
 \end{equation}
 %
@@ -287,7 +287,7 @@ The electric field pieces can now be collected.  Not expanding out the \(R^\conj
 \left(
 -\Bigl( 1 + a k^2 (a - \rho \cos\phi_r) \Bigr) (1 - k R i)(1 - a^2 k^2)
 + k^2 R(R - a k \rho \sin \phi_r)
-\right) e^{i k c t_r}
+\right) e^{i k c t_r}.
 \end{aligned}
 \end{equation}
 %
@@ -296,16 +296,16 @@ Along the z-axis where \(\rho = 0\) what do we have?
 \begin{subequations}
 \label{eqn:relativisticElectrodynamicsExamReflection:500}
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:500a}
-R = \sqrt{z^2 + a^2 }
+R = \sqrt{z^2 + a^2 }.
 \end{equation}
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:500b}
-A^0 = \frac{q}{R}
+A^0 = \frac{q}{R}.
 \end{equation}
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:500c}
-\BA = A^0 a k \Be_2 e^{i k c t_r }
+\BA = A^0 a k \Be_2 e^{i k c t_r }.
 \end{equation}
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:500d}
-c t_r = c t - \sqrt{z^2 + a^2 }
+c t_r = c t - \sqrt{z^2 + a^2 }.
 \end{equation}
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:500e}
 \begin{aligned}
@@ -316,11 +316,11 @@ c t_r = c t - \sqrt{z^2 + a^2 }
 \left(
 -( 1 - a^4 k^4 ) (1 - k R i)
 + k^2 R^2
-\right) e^{i k c t_r}
+\right) e^{i k c t_r}.
 \end{aligned}
 \end{equation}
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:500f}
-\BB = \frac{ z \Be_3 - a \Be_1 e^{i k c t_r}}{R} \cross \BE
+\BB = \frac{ z \Be_3 - a \Be_1 e^{i k c t_r}}{R} \cross \BE.
 \end{equation}
 \end{subequations}
 
@@ -340,7 +340,7 @@ A^0 &= \frac{q}{\sqrt{z^2 + a^2}} \\
 \frac{q a k \Be_2 e^{i k c t_r} }{\sqrt{z^2 + a^2}}
 =
 \frac{q a k (-\sin k c t_r, \cos k c t_r, 0)}{\sqrt{z^2 + a^2}} \\
-t_r &= t - R/c = t - \sqrt{z^2 + a^2}/c
+t_r &= t - R/c = t - \sqrt{z^2 + a^2}/c.
 \end{aligned}
 \end{equation}
 %
@@ -409,7 +409,7 @@ q a  k^2 \frac{z}{z^2 + a^2} \Be_3 \cross \left( \Be_1 k e^{i  k c t_r} \right) 
 &=
 -\frac{q a k z \Be_3}{z^2 + a^2} \cross \left(
 \frac{ \Be_2 e^{i k c t_r} }{\sqrt{z^2 + a^2}} + k \Be_1 e^{i k c t_r}
-\right)
+\right).
 \end{aligned}
 \end{equation}
 %
@@ -423,7 +423,7 @@ For the direction vectors in the cross products above we have
 &=
 -\Be_1 \cos\mu - \Be_2 \sin\mu \\
 &=
--\Be_1 e^{i \mu}
+-\Be_1 e^{i \mu}.
 \end{aligned}
 \end{equation}
 %
@@ -437,7 +437,7 @@ and
 &=
 \Be_2 \cos\mu - \Be_1 \sin\mu \\
 &=
-\Be_2 e^{i \mu}
+\Be_2 e^{i \mu}.
 \end{aligned}
 \end{equation}
 %
@@ -450,7 +450,7 @@ q \Be_3 \frac{z}{(\sqrt{z^2 + a^2})^3}
 +
 \frac{q a k^2 \Be_1 e^{i \omega t_r} }{\sqrt{z^2 + a^2}} \\
 \BB
-&= \frac{q a k z}{ z^2 + a^2} \left( \frac{\Be_1}{\sqrt{z^2 + a^2}} - k \Be_2 \right) e^{i \omega t_r}
+&= \frac{q a k z}{ z^2 + a^2} \left( \frac{\Be_1}{\sqrt{z^2 + a^2}} - k \Be_2 \right) e^{i \omega t_r}.
 \end{aligned}
 \end{equation}
 %
@@ -514,7 +514,7 @@ e^{i\theta} & i e^{i\theta} & 0 \\
 \adot \\
 a \thetadot \\
 \hdot
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 %
 We also want the vectorial difference between the field measurement position and the particle position
@@ -683,7 +683,7 @@ Expanding out the cross products this yields
 \BB
 &= e (1 - \Bbeta_c^2) \frac{\Bbeta_c \cross \Rcap}{R^2 (1 - \Rcap \cdot \Bbeta_c)^3}
 + e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Bbeta_c \cross \Rcap) \left(\Rcap \cdot \frac{\Ba_c}{c^2} \right)
-+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \cross \Rcap
++ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \cross \Rcap.
 \end{aligned}
 \end{equation}
 %
@@ -703,7 +703,7 @@ e \frac{1}{(1 - \Rcap \cdot \Bbeta_c)^3}
 \frac{\Ba_c}{c^2}
 + \frac{\Ba_c}{c^2} \wedge \Rcap
 \right)
-\right)
+\right).
 \end{equation}
 %
 I had guess a multivector of the form \(\Ba + \Ba \wedge \bcap\), can be tidied up a bit more, but this will not be persued here.  Instead let us write out the fields corresponding to the potentials of \eqnref{eqn:relativisticElectrodynamicsExamReflection:910} explicitly.  We need to calculate \(\Ba_c\), \(\Bv_c \cross \BR\), \(\Ba_c \cross \BR\), and \(\Ba_c \cdot \BR\).  For the acceleration we get
@@ -713,7 +713,7 @@ I had guess a multivector of the form \(\Ba + \Ba \wedge \bcap\), can be tidied 
 \begin{bmatrix}
 \left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) e^{i\theta} \\
 \ddot{h}
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 %
 Dotted with \(\BR\) we have
@@ -787,7 +787,7 @@ h
 \begin{bmatrix}
 i\left(\hdot ( \rho e^{i\phi} - a e^{i\theta} ) - h (\dot{a} + i a \dot{\theta}) e^{i\theta} \right) \\
 \Imag \left( ( \adot - i a \thetadot) (\rho e^{i(\phi - \theta)} - a) \right)
-\end{bmatrix}
+\end{bmatrix}.
 \end{aligned}
 \end{equation}
 %
@@ -837,7 +837,7 @@ i \ddot{h} \rho e^{i\phi}
 - i \left( \ddot{h} a + (z - h) \left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) \right) e^{i\theta} \\
 \left( \ddot{a} - a {\dot{\theta}}^2 \right) \rho \sin(\phi - \theta)
 -( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) (\rho \cos(\phi -\theta) - a)
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 %
 Putting all the results together creates something that is too long to easily write, but can at least be summarized
@@ -994,7 +994,7 @@ Similar to when things were calculated from the potentials directly, I get a dif
 \begin{bmatrix}
 a k z (1 + i k R) e^{i k (c t - R)} \\
 -a^2 k
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 %
 compared to the value of \(\BB\) that was directly calculated above.  With the sign swapped in the z-axis term of \(\BB(z)\) here I had guess I have got an algebraic error hiding somewhere?

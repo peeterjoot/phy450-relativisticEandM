@@ -126,7 +126,7 @@ For the Laplacian of \(1/\Abs{\Bx}\), at the points \(\Be \ne 0\) where this is 
 - \Bx \cdot \spacegrad \frac{1}{\Abs{\Bx}^3} \\
 &=
 -\frac{3}{\Abs{\Bx}^3}
-+ 3 \frac{\Bx^2}{\Abs{\Bx}^5}
++ 3 \frac{\Bx^2}{\Abs{\Bx}^5}.
 \end{aligned}
 \end{equation}
 %
@@ -161,7 +161,7 @@ f(\Bx) \int d^3 \Bx' \spacegrad' \cdot \frac{\Bx - \Bx'}{\Abs{\Bx - \Bx'}^3} \\
 f(\Bx) \int d^2 \Bx' \Bn \cdot \frac{\Bx - \Bx'}{\Abs{\Bx - \Bx'}^3} \\
 &= \int_{\phi=0}^{2\pi} \int_{\theta = 0}^\pi \epsilon^2 \sin\theta d\theta d\phi
 \frac{\Bx' - \Bx}{\Abs{\Bx - \Bx'}} \cdot \frac{\Bx - \Bx'}{\Abs{\Bx - \Bx'}^3} \\
-&= -\int_{\phi=0}^{2\pi} \int_{\theta = 0}^\pi \epsilon^2 \sin\theta d\theta d\phi \frac{\epsilon^2}{\epsilon^4}
+&= -\int_{\phi=0}^{2\pi} \int_{\theta = 0}^\pi \epsilon^2 \sin\theta d\theta d\phi \frac{\epsilon^2}{\epsilon^4}.
 \end{aligned}
 \end{equation}
 %
@@ -187,7 +187,7 @@ We need two additional computations to finish the job.  The first is the gradien
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:840}
 \begin{aligned}
 \spacegrad \delta\left(t - \frac{\Abs{\Bx}}{c}\right) &= ? \\
-\Delta \delta\left(t - \frac{\Abs{\Bx}}{c}\right) &= ?
+\Delta \delta\left(t - \frac{\Abs{\Bx}}{c}\right) &= ?.
 \end{aligned}
 \end{equation}
 %
@@ -232,7 +232,7 @@ so we have
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:420}
 \Delta f(g)
 =
-\PDSq{g}{f} (\spacegrad g)^2 +\PD{g}{f} \Delta g
+\PDSq{g}{f} (\spacegrad g)^2 +\PD{g}{f} \Delta g.
 \end{equation}
 %
 With \(g(\Bx) = \Abs{\Bx}\), we will need the Laplacian of this vector magnitude
@@ -248,7 +248,7 @@ With \(g(\Bx) = \Abs{\Bx}\), we will need the Laplacian of this vector magnitude
 &=
 \frac{3}{\Abs{\Bx}}
 - \frac{x_\alpha x_\alpha}{\Abs{\Bx}^3} \\
-&= \frac{2}{\Abs{\Bx}}
+&= \frac{2}{\Abs{\Bx}}.
 \end{aligned}
 \end{equation}
 %
@@ -259,7 +259,7 @@ So that we have
 \spacegrad \delta\left(t - \frac{\Abs{\Bx}}{c}\right) &=
 -\inv{c} \delta'\left(t - \frac{\Abs{\Bx}}{c}\right) \frac{\Bx}{\Abs{\Bx}} \\
 \Delta \delta\left(t - \frac{\Abs{\Bx}}{c}\right) &=
-\inv{c^2} \delta''\left(t - \frac{\Abs{\Bx}}{c}\right) -\inv{c} \delta'\left(t - \frac{\Abs{\Bx}}{c}\right) \frac{2}{\Abs{\Bx}}
+\inv{c^2} \delta''\left(t - \frac{\Abs{\Bx}}{c}\right) -\inv{c} \delta'\left(t - \frac{\Abs{\Bx}}{c}\right) \frac{2}{\Abs{\Bx}}.
 \end{aligned}
 \end{equation}
 %
@@ -280,7 +280,7 @@ Now we have all the bits and pieces of \eqnref{eqn:relativisticElectrodynamicsL1
 &=
 -\delta\left(t - \frac{\Abs{\Bx}}{c}\right) \delta^3(\Bx)
 +\inv{4 \pi \Abs{\Bx} c^2 }
-\delta''\left(t - \frac{\Abs{\Bx}}{c}\right)
+\delta''\left(t - \frac{\Abs{\Bx}}{c}\right).
 \end{aligned}
 \end{equation}
 %
@@ -290,7 +290,7 @@ Since we also have
 \inv{c^2} \partial_{tt}
 \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
 =
-\frac{\delta''\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} c^2}
+\frac{\delta''\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} c^2}.
 \end{equation}
 %
 The \(\delta''\) terms cancel out in the d'Alembertian, leaving just
@@ -298,7 +298,7 @@ The \(\delta''\) terms cancel out in the d'Alembertian, leaving just
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:460}
 \square \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
 =
-\delta\left(t - \frac{\Abs{\Bx}}{c}\right) \delta^3(\Bx)
+\delta\left(t - \frac{\Abs{\Bx}}{c}\right) \delta^3(\Bx).
 \end{equation}
 %
 Noting that the spatial delta function is non-zero only when \(\Bx = 0\), which means \(\delta(t - \Abs{\Bx}/c) = \delta(t)\) in this product, and we finally have
@@ -306,7 +306,7 @@ Noting that the spatial delta function is non-zero only when \(\Bx = 0\), which 
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:480}
 \square \frac{\delta\left(t - \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx} }
 =
-\delta(t) \delta^3(\Bx)
+\delta(t) \delta^3(\Bx).
 \end{equation}
 %
 We write

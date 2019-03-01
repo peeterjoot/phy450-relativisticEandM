@@ -10,7 +10,7 @@ Suppose you are given:
 \begin{equation}\label{eqn:relElectroDynProblemSet4TwoInternals:400}
 \begin{aligned}
 &\vec{E}(r, \theta, \phi, t) \\
-&= A \frac{\sin\theta}{r} \left( \cos(k r - \omega t) - \inv{k r} \sin(k r - \omega t) \right) \phicap
+&= A \frac{\sin\theta}{r} \left( \cos(k r - \omega t) - \inv{k r} \sin(k r - \omega t) \right) \phicap.
 \end{aligned}
 \end{equation}
 %
@@ -65,7 +65,7 @@ We will also need the spherical polar forms of the divergence and curl operators
 +
 \inv{r } \left(
 \partial_r (r v_\theta) - \partial_\theta v_r
-\right) \phicap
+\right) \phicap.
 \end{aligned}
 \end{equation}
 %
@@ -91,7 +91,7 @@ The second approach that I tried, also without success, was to simply take the c
 \begin{equation}\label{eqn:relElectroDynProblemSet4TwoInternals:480}
 \begin{aligned}
 \vec{B} &= (\vec{k} \cross \vec{\beta}) \sin(\omega t - \vec{k} \cdot \vec{x}) \\
-\vec{E} &= \vec{\beta} \Abs{\vec{k}} \sin(\omega t - \vec{k} \cdot \vec{x})
+\vec{E} &= \vec{\beta} \Abs{\vec{k}} \sin(\omega t - \vec{k} \cdot \vec{x}).
 \end{aligned}
 \end{equation}
 %
@@ -117,7 +117,7 @@ Substitution back into Maxwell's equations thus requires equality in the real pa
 \grad \cdot \BE &= 0 \\
 \grad \cdot \BB &= 0 \\
 \grad \cross \BB &= - i \frac{\omega}{c} \BE \\
-\grad \cross \BE &= i \frac{\omega}{c} \BB
+\grad \cross \BE &= i \frac{\omega}{c} \BB.
 \end{aligned}
 \end{equation}
 %
@@ -175,7 +175,7 @@ so our magnetic phasor is
 \left( -i - \frac{1}{k r} \right) e^{i k r}
 \rcap
 - \frac{A\sin\theta}{r} \left( 1 - \frac{i}{k r} + \frac{1}{k^2 r^2} \right) e^{i k r}
-\thetacap
+\thetacap.
 \end{equation}
 %
 Multiplying by \(e^{-i\omega t}\) and taking real parts gives us the messy magnetic field expression
@@ -226,14 +226,14 @@ From \eqnref{eqn:relElectroDynProblemSet4TwoInternals:600} we have for the diver
 -
 \left( 1 - \frac{i}{k r} + \frac{1}{k^2 r^2} \right)
 \right) \\
-&= 0. \qedmarker
+&= 0. \qedmarker.
 \end{aligned}
 \end{equation}
 %
 Let us also verify the last of Maxwell's equations in phasor form.  The time dependence is knocked out, and we want to see that taking the curl of the magnetic phasor returns us (scaled) the electric phasor.  That is
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet4TwoInternals:620}
-\grad \cross \BB = - i \frac{\omega}{c} \BE
+\grad \cross \BB = - i \frac{\omega}{c} \BE.
 \end{equation}
 %
 With only \(r\) and \(\theta\) components in the magnetic phasor we have
@@ -251,7 +251,7 @@ With only \(r\) and \(\theta\) components in the magnetic phasor we have
 +
 \inv{r } \left(
 \partial_r (r v_\theta) - \partial_\theta v_r
-\right) \phicap
+\right) \phicap.
 \end{equation}
 %
 Immediately, we see that with no explicit \(\phi\) dependence in the coordinates, we have no \(\rcap\) nor \(\thetacap\) terms in the curl, which is good.  Our curl is now just
@@ -297,7 +297,7 @@ What we expect is \(\grad \cross \BB = - i k \BE\) which is
 A \sin\theta e^{i k r}
 \inv{r } \left(
 - i k - \inv{r}
-\right) \phicap
+\right) \phicap.
 \end{equation}
 %
 FIXME: Somewhere I must have made a sign error, because these are not matching!  Have an extra \(1/r^3\) term and the wrong sign on the \(1/r\) term.
@@ -405,7 +405,7 @@ E_\phi B_r &=
 \left( i + \frac{1}{k r} \right) \\
 &=
 -\frac{ \sin(2\theta)}{k r^3}
-\left( i + \frac{2}{k r} - \frac{i}{k^2 r^2} \right)
+\left( i + \frac{2}{k r} - \frac{i}{k^2 r^2} \right).
 \end{aligned}
 \end{equation}
 %
@@ -456,7 +456,7 @@ Assembling all the results we have
 -\frac{ \sin(2\theta)}{k r^3} \left( i + \frac{2}{k r} - \frac{i}{k^2 r^2} \right) \thetacap
 +\frac{\sin^2\theta}{r^2} \left( 1 - \frac{2i}{k r} - \frac{i}{k^3 r^3}\right) \rcap
 \right) e^{ 2 i ( k r - \omega t ) }
-\right)
+\right).
 \end{aligned}
 \end{aligned}
 \end{equation}
@@ -466,7 +466,7 @@ We can read off the intensity directly
 \begin{equation}\label{eqn:relElectroDynProblemSet4TwoInternals:680}
 \vec{I} = \expectation{\vec{S}} =
 \frac{A^2 c \sin^2 \theta}{2 \pi r^2}
-\left( 1 + \frac{2}{k^2 r^2} \right) \rcap
+\left( 1 + \frac{2}{k^2 r^2} \right) \rcap.
 \end{equation}
 %
 \makeSubAnswer{}{pr:relElectroDynProblemSet4:2c}

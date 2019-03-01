@@ -31,7 +31,7 @@ At any point in the volume of interest, we can create a level curve, holding two
 \begin{aligned}
 d\Bx_1 &= da_1 \PD{a_1}{\Bx} \\
 d\Bx_2 &= da_2 \PD{a_2}{\Bx} \\
-d\Bx_3 &= da_3 \PD{a_3}{\Bx}
+d\Bx_3 &= da_3 \PD{a_3}{\Bx}.
 \end{aligned}
 \end{equation}
 %
@@ -88,7 +88,7 @@ Provided we are interested in a volume for which the sign of this Jacobian deter
 \int
 \Abs{ \frac{\partial(x^1, x^2, x^3)}{\partial (a_1, a_2, a_3)}}
 da_1 da_2 da_3
-\PD{x^\beta}{T^{\beta \alpha}}
+\PD{x^\beta}{T^{\beta \alpha}}.
 \end{equation}
 %
 to a set (and sum of) two dimensional integrals.
@@ -100,7 +100,7 @@ Suppose that we integrate over the ranges \([a_{1-}, a_{1+}]\), \([a_{2-}, a_{2+
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:440}
 d\Bn_{1+}
 = da_2 da_3 \PD{a_2}{\Bx} \cross \PD{a_3}{\Bx}
-= da_2 da_3 \PD{a_2}{x^\mu} \PD{a_3}{x^\nu} \epsilon_{\mu \nu \gamma} \Be_\gamma
+= da_2 da_3 \PD{a_2}{x^\mu} \PD{a_3}{x^\nu} \epsilon_{\mu \nu \gamma} \Be_\gamma.
 \end{equation}
 %
 Similarly our normal on the \(a_2 = a_{2+}\) face is
@@ -124,7 +124,7 @@ Along the \(a_{\alpha-}\) faces these are just negated.  We can summarize these 
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:500}
 d\Bn_{\sigma\pm}
 = \pm \inv{2!} da_\alpha da_\beta \PD{a_\alpha}{\Bx} \cross \PD{a_\beta}{\Bx} \epsilon_{\alpha \beta \sigma}
-= \pm \inv{2!} da_\alpha da_\beta \PD{a_\alpha}{x^\mu} \PD{a_\beta}{x^\nu} \epsilon_{\alpha \beta \sigma} \epsilon_{\mu \nu \gamma} \Be_\gamma
+= \pm \inv{2!} da_\alpha da_\beta \PD{a_\alpha}{x^\mu} \PD{a_\beta}{x^\nu} \epsilon_{\alpha \beta \sigma} \epsilon_{\mu \nu \gamma} \Be_\gamma.
 \end{equation}
 %
 \section{Expansion of the Jacobian determinant}
@@ -207,7 +207,7 @@ The specifics of how the scalar \(M = T^{3 \alpha}\) is indexed will not matter 
 \Bigl( M(a_{1+}) - M(a_{1+}) \Bigr) \\
 &\qquad +
 \int da_3 da_1 \Abs{ \frac{\partial(x^1, x^2)}{\partial (a_3, a_1)}}
-\Bigl( M(a_{2+}) - M(a_{2+}) \Bigr)
+\Bigl( M(a_{2+}) - M(a_{2+}) \Bigr).
 \end{aligned}
 \end{equation}
 %
@@ -295,7 +295,7 @@ Observe that we can factor these sums utilizing the normals for the parallelepip
 &+
 \int da_3 da_1
 \Abs{ \frac{\partial(x^\mu, x^\nu)}{\partial (a_3, a_1)}} \epsilon_{\mu \nu \gamma} \Be_\gamma \cdot \Be_\beta
-\evalbar{T^{\beta \alpha}}{\Delta a_2}
+\evalbar{T^{\beta \alpha}}{\Delta a_2}.
 \end{aligned}
 \end{equation}
 %
@@ -335,7 +335,7 @@ so that the divergence integral is just
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:560}
 \int d^3 \Bx =
 \int_{\text{over level surfaces \(a_{1+}\), \(a_{2+}\), \(a_{3+}\)}} d^2 \sigma^\beta T^{\beta \alpha}
--\int_{\text{over level surfaces \(a_{1-}\), \(a_{2-}\), \(a_{3-}\)}} d^2 \sigma^\beta T^{\beta \alpha}
+-\int_{\text{over level surfaces \(a_{1-}\), \(a_{2-}\), \(a_{3-}\)}} d^2 \sigma^\beta T^{\beta \alpha}.
 \end{equation}
 %
 In each case, for the \(a_{\alpha-}\) surfaces, our negated inwards normal form can be redefined so that we integrate over only the outwards normal directions, and we can use the oriented integral notation
@@ -351,7 +351,7 @@ To encode (or imply) whether we require a positive or negative sign on the area 
 Now, having performed this long winded calculation, the meaning of \(d^2 \sigma^\beta\) becomes clear.  What is also clear is how this could have been arrived at directly utilizing the divergence theorem in its normal vector form.  We had only to re-write our equation as a vector equation in terms of the gradient
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:600}
-\int_V d^3 \Bx \PD{x^\alpha}{T^{\beta \alpha}} = \int_V d^3 \Bx \spacegrad \cdot (\Be_\beta T^{\beta \alpha}) = \int_{\partial_V} dA \Bn \cdot \Be_\beta T^{\beta \alpha}
+\int_V d^3 \Bx \PD{x^\alpha}{T^{\beta \alpha}} = \int_V d^3 \Bx \spacegrad \cdot (\Be_\beta T^{\beta \alpha}) = \int_{\partial_V} dA \Bn \cdot \Be_\beta T^{\beta \alpha}.
 \end{equation}
 %
 From this we see directly that \(d^2 \sigma^\beta = dA \Bn \cdot \Be_\beta\).

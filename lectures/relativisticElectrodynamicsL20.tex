@@ -19,7 +19,7 @@ Covering chapter 8 material from the text \citep{landau1980classical}, and
 \index{multipole expansion}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:10}
-A^i(\Bx, t) = \inv{c} \int d^3 \Bx' j^i\left(\Bx', t - \frac{\Abs{\Bx - \Bx'} }{c}\right) \inv{\Abs{\Bx - \Bx'} }
+A^i(\Bx, t) = \inv{c} \int d^3 \Bx' j^i\left(\Bx', t - \frac{\Abs{\Bx - \Bx'} }{c}\right) \inv{\Abs{\Bx - \Bx'} }.
 \end{equation}
 %
 This integral is over the region of space where the sources \(j^i\) are non-vanishing, but this region is limited.  The value \(\Abs{\Bx'} \le l\), so we can expand the denominator in multipole expansion
@@ -53,7 +53,7 @@ Similarly, for the retarded time we have
 \begin{aligned}
 t - \frac{\Abs{\Bx - \Bx'} }{c}
 &\approx t - \frac{\Abs{\Bx} }{c} \left( 1 - \frac{\Bx \cdot \Bx'}{\Abs{\Bx}^2} \right) \\
-&= t - \frac{\Abs{\Bx} }{c} + \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }
+&= t - \frac{\Abs{\Bx} }{c} + \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} }.
 \end{aligned}
 \end{equation}
 %
@@ -122,7 +122,7 @@ Plugging into our current
 A^i(\Bx, t)
 \approx \inv{c} \int d^3 \Bx'
 \left( j^i\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right) + \PD{t}{j^i} \left(\Bx, t - \frac{\Abs{\Bx} }{c}\right) \frac{\Bx \cdot \Bx'}{c \Abs{\Bx} } \right)
-\left( \inv{\Abs{\Bx} } + \frac{\Bx}{\Abs{\Bx}^3} \cdot \Bx' \right)
+\left( \inv{\Abs{\Bx} } + \frac{\Bx}{\Abs{\Bx}^3} \cdot \Bx' \right).
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:210}
@@ -149,7 +149,7 @@ which is the dipole moment evaluated at the retarded time \(t_r = t - \Abs{\Bx}/
 &=
 \inv{\Abs{\Bx}^2} \Bx \cdot \PD{t}{} \int d^3 \Bx' \Bx' \rho\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right) \\
 &=
-\inv{\Abs{\Bx}^2} \Bx \cdot \PD{t}{}\Bd \left(t - \frac{\Abs{\Bx} }{c}\right)
+\inv{\Abs{\Bx}^2} \Bx \cdot \PD{t}{}\Bd \left(t - \frac{\Abs{\Bx} }{c}\right).
 \end{aligned}
 \end{equation}
 %
@@ -170,7 +170,7 @@ A^\alpha(\Bx, t)
 \right) \\
 &=
 \inv{ c \Abs{\Bx} } \oint_{S^2_\infty} d^2 \Bsigma \cdot {x'}^\alpha \Bj\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right)
-+\inv{ c \Abs{\Bx} } \int d^3 \Bx' {x'}^\alpha \PD{t}{}\rho\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right)
++\inv{ c \Abs{\Bx} } \int d^3 \Bx' {x'}^\alpha \PD{t}{}\rho\left(\Bx', t - \frac{\Abs{\Bx} }{c}\right).
 \end{aligned}
 \end{equation}
 %
@@ -203,7 +203,7 @@ Thus
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:310}
 \begin{aligned}
 A^0(\Bx, t) &= \inv{\Abs{\Bx}^3} \Bx \cdot \Bd\left(t - \frac{\Abs{\Bx} }{c}\right) + \inv{c \Abs{\Bx}^2} \Bx \cdot \dot{\Bd}\left(t - \frac{\Abs{\Bx} }{c}\right) \\
-\BA(\Bx, t) &= \frac{\dot{\Bd}\left(t - \frac{\Abs{\Bx} }{c}\right)}{c \Abs{\Bx} }
+\BA(\Bx, t) &= \frac{\dot{\Bd}\left(t - \frac{\Abs{\Bx} }{c}\right)}{c \Abs{\Bx} }.
 \end{aligned}
 \end{equation}
 %
@@ -213,7 +213,7 @@ so with \(t_r = t - \Abs{\Bx}/c\), and \(z = \Bx \cdot \Be_3\) in the dipole dot
 \begin{aligned}
 A^0(\Bx, t) &=
 \frac{z q}{\Abs{\Bx}^3} ( z_0 + a \sin(\omega t_r) ) + \frac{z q}{c \Abs{\Bx}^2} a \omega \cos(\omega t_r) \\
-\BA(\Bx, t) &= \inv{c \Abs{\Bx} } \Be_3 q a \omega \cos(\omega t_r)
+\BA(\Bx, t) &= \inv{c \Abs{\Bx} } \Be_3 q a \omega \cos(\omega t_r).
 \end{aligned}
 \end{equation}
 %
@@ -237,13 +237,13 @@ Now we will take derivatives.  The first term of the scalar potential will be ig
 We have used \(\spacegrad t_r = -\spacegrad \Abs{\Bx}/c\), and \(\spacegrad \Abs{\Bx} = \rcap\), and \(\partial_t t_r = 1\).
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:420}
-\BE = \frac{ q a \omega^2 }{c^2 \Abs{\Bx} } \sin(\omega t_r) \left( \Be_3 - \frac{z}{\Abs{\Bx} } \rcap \right)
+\BE = \frac{ q a \omega^2 }{c^2 \Abs{\Bx} } \sin(\omega t_r) \left( \Be_3 - \frac{z}{\Abs{\Bx} } \rcap \right).
 \end{equation}
 %
 So,
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL20:440}
-\Abs{\BS} \sim \omega^4
+\Abs{\BS} \sim \omega^4.
 \end{equation}
 %
 The power is proportional to \(\omega^4\).  Higher frequency radiation has more power : this is why the sky is blue!  It all comes from the fact that the electric field is proportional to the squared acceleration (\(\sim \omega^2\)).

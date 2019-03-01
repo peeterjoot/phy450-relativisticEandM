@@ -23,7 +23,7 @@ Covering chapter 8 \S 65 material from the text \citep{landau1980classical}, and
 Last time we started with our relativistic Lagrangian for a single particle
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:470}
-\LL_a = - m c^2 \sqrt{ 1 - \frac{\Bv_a^2}{c^2} } - \frac{q_a}{c} \frac{dx^i}{dt} A_i
+\LL_a = - m c^2 \sqrt{ 1 - \frac{\Bv_a^2}{c^2} } - \frac{q_a}{c} \frac{dx^i}{dt} A_i.
 \end{equation}
 %
 and found that to the first order in \(v/c\) we had
@@ -52,7 +52,7 @@ We made an estimate of the scale for which our Lagrangian does not apply.  Namel
 so we were able to conclude that the ``classical radius of the electron'', something that does not really exist, was of the scale
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:70}
-r_e \sim \frac{e^2 }{m_e c^2} \sim 10^{-13} \text{cm}
+r_e \sim \frac{e^2 }{m_e c^2} \sim 10^{-13} \text{cm}.
 \end{equation}
 %
 (We do see this quantity arise in physics, but it is not a radius in the classical sense).
@@ -79,7 +79,7 @@ We expanded the square root previously keeping only the first order term in \((v
 (1 + x)^n = 1
 + \frac{n}{1!} x +
 + \frac{n(n-1)}{2!} x^2 +
-+ \frac{n(n-1)(n-2)}{3!} x^3 + \cdots
++ \frac{n(n-1)(n-2)}{3!} x^3 + \cdots.
 \end{equation}
 %
 so the square root in the Lagrangian expands as
@@ -97,7 +97,7 @@ so the square root in the Lagrangian expands as
 \left(- \frac{\Bv_a^2}{c^2}  \right)^3 + \cdots
 \right) \\
 &=
-- m_a c^2 + m_a \frac{\Bv_a^2}{2} + m_a \frac{\Bv_a^4}{8 c^2} + \cdots
+- m_a c^2 + m_a \frac{\Bv_a^2}{2} + m_a \frac{\Bv_a^4}{8 c^2} + \cdots.
 \end{aligned}
 \end{equation}
 %
@@ -132,7 +132,7 @@ We also want to a first order approximation of the vector potential
 \BA(\Bx_a, t) =
 \cancel{\BA^{(0)}(\Bx_a, t)}
 +\BA^{(1)}(\Bx_a, t)
-+\cancel{\BA^{(2)}(\Bx_a, t)}
++\cancel{\BA^{(2)}(\Bx_a, t)}.
 \end{equation}
 %
 There is no zero order term and we do not need the second order term (today).
@@ -140,19 +140,19 @@ There is no zero order term and we do not need the second order term (today).
 Because
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:190}
-\square \BA \sim \frac{\rho \Bv}{c}
+\square \BA \sim \frac{\rho \Bv}{c}.
 \end{equation}
 %
 We know the charge and current distributions
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:210}
-\phi(\Bx, t) = \int d^3 \Bx \frac{\rho\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right)}{\Abs{\Bx - \Bx'}}
+\phi(\Bx, t) = \int d^3 \Bx \frac{\rho\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right)}{\Abs{\Bx - \Bx'}}.
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:230}
 \begin{aligned}
 \rho(\Bx, t) &= \sum_b q_b \delta^3 (\Bx - \Bx_b(t)) \\
-\Bj(\Bx, t) &= \sum_b q_b \Bv_b(t) \delta^3 (\Bx - \Bx_b(t))
+\Bj(\Bx, t) &= \sum_b q_b \Bv_b(t) \delta^3 (\Bx - \Bx_b(t)).
 \end{aligned}
 \end{equation}
 %
@@ -162,20 +162,20 @@ In other words, in time \(\Abs{\Bx - \Bx'}/c \sim r_{ab}/c\), \(\rho\) will not 
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:250}
 \rho\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right) \approx \rho(\Bx', t)
-- \frac{\Abs{\Bx - \Bx'}}{c} \PD{t}{} \rho(\Bx', t) + \inv{2} \left(\frac{\Abs{\Bx - \Bx'}}{c}\right)^2 \PDSq{t}{} \rho(\Bx', t)
+- \frac{\Abs{\Bx - \Bx'}}{c} \PD{t}{} \rho(\Bx', t) + \inv{2} \left(\frac{\Abs{\Bx - \Bx'}}{c}\right)^2 \PDSq{t}{} \rho(\Bx', t).
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:270}
 \phi(\Bx, t)
 = \int d^3 \Bx' \frac{\rho(\Bx', t)}{\Abs{\Bx - \Bx'}} - \PD{t}{} \int d^3 \Bx' \inv{c} \rho(\Bx', t)
 +
-\inv{2 c^2} \int d^3 \Bx \Abs{\Bx - \Bx'} \PDSq{t}{} \rho(\Bx', t)
+\inv{2 c^2} \int d^3 \Bx \Abs{\Bx - \Bx'} \PDSq{t}{} \rho(\Bx', t).
 \end{equation}
 %
 The second integral is the total charge \(\times 1/c\), and does not change in time.  So to first order our charge density is
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:290}
-\rho\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right) \approx \rho(\Bx', t) = \sum_b \frac{q_b}{\Abs{\Bx - \Bx_b(t)}}
+\rho\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right) \approx \rho(\Bx', t) = \sum_b \frac{q_b}{\Abs{\Bx - \Bx_b(t)}}.
 \end{equation}
 %
 %FIXME: do we want to second order here?
@@ -186,14 +186,14 @@ How about \(\BA\)?
 \BA(\Bx_a, t) =
 \cancel{\BA^{(0)}(\Bx_a, t)}
 +\BA^{(1)}(\Bx_a, t)
-+\cancel{\BA^{(2)}(\Bx_a, t)}
++\cancel{\BA^{(2)}(\Bx_a, t)}.
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:510}
 \begin{aligned}
 A^{(1)}
 &= \inv{c} \int d^3 \Bx' \inv{\Abs{\Bx - \Bx'}} \Bj\left(\Bx', t - \Abs{\Bx - \Bx'}/c\right)  \\
-&\approx \inv{c} \int d^3 \Bx' \inv{\Abs{\Bx - \Bx'}} \Bj(\Bx', t)
+&\approx \inv{c} \int d^3 \Bx' \inv{\Abs{\Bx - \Bx'}} \Bj(\Bx', t).
 \end{aligned}
 \end{equation}
 %
@@ -202,7 +202,7 @@ Ah, this shows why it was written that there is no second order term.  Because \
 Assembling all the results, we have
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:330}
-\LL_a = \inv{2} m_a \Bv_a^2 + \frac{m_a}{8} \frac{\Bv_a^4}{c^2} - q_a \phi^{(0)}(\Bx_a, t) - q_a \phi^{(2)}(\Bx_a, t) + q_a \frac{\Bv_a}{c} \cdot \BA^{(1)}(\Bx_a, t)
+\LL_a = \inv{2} m_a \Bv_a^2 + \frac{m_a}{8} \frac{\Bv_a^4}{c^2} - q_a \phi^{(0)}(\Bx_a, t) - q_a \phi^{(2)}(\Bx_a, t) + q_a \frac{\Bv_a}{c} \cdot \BA^{(1)}(\Bx_a, t).
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:530}
@@ -210,7 +210,7 @@ Assembling all the results, we have
 \phi^{(2)}(\Bx, t)
 &= \PD{t}{} \left( \inv{2 c^2} \PD{t}{} \int d^3 \Bx' \Abs{\Bx - \Bx'} \rho(\Bx', t) \right) \\
 &= \PD{t}{} \left( \inv{2 c^2} \PD{t}{} \int d^3 \Bx' \Abs{\Bx - \Bx'} \sum_b q_b \delta^3(\Bx - \Bx_b(t)) \right) \\
-&= \PD{t}{} \left( \inv{2 c^2} \PD{t}{} \sum_b q_b \Abs{\Bx - \Bx_b(t)} \right)
+&= \PD{t}{} \left( \inv{2 c^2} \PD{t}{} \sum_b q_b \Abs{\Bx - \Bx_b(t)} \right).
 \end{aligned}
 \end{equation}
 %
@@ -243,13 +243,13 @@ Recall that \(\phi^{(0)}\) was given by \eqnref{eqn:relativisticElectrodynamicsL
 This will not change the physics.  Take
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:370}
-f(\Bx, t) = \sum_b \frac{q_b}{2 c} \PD{t}{} \Abs{\Bx - \Bx_b(t)}
+f(\Bx, t) = \sum_b \frac{q_b}{2 c} \PD{t}{} \Abs{\Bx - \Bx_b(t)}.
 \end{equation}
 %
 Then
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:390}
-{\phi'}^{(2)} = 0
+{\phi'}^{(2)} = 0.
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL25:410}

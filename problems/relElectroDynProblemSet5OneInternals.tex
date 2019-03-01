@@ -9,7 +9,7 @@
 An infinitely thin flat conducting surface lying in the \(x-z\) plane carries a surface current density:
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet5P1:10}
-\Bkappa = \Be_3 \theta(t) \kappa_0 \sin\omega t
+\Bkappa = \Be_3 \theta(t) \kappa_0 \sin\omega t.
 \end{equation}
 %
 Here \(\Be_3\) is a unit vector in the \(z\) direction, \(\kappa_0\) is the peak value of the current density, and \(\theta(t)\) is the theta function: \(\theta(t < 0) - 0, \theta(t > 0) = 1\).
@@ -55,7 +55,7 @@ With only a current distribution specified use of the Coulomb gauge allows for s
 \begin{aligned}
 \square \BA &= \frac{4 \pi \BJ}{c} \\
 \BE &= - \inv{c} \PD{t}{\BA} \\
-\BB &= \spacegrad \cross \BB
+\BB &= \spacegrad \cross \BB.
 \end{aligned}
 \end{equation}
 %
@@ -91,7 +91,7 @@ we can invert our vector potential equation, solving for \(\BA\)
 \Be_3 \kappa_0
 }{c} \int dx' dz'
 \theta\left(t - \inv{c} \sqrt{(x-x')^2 + y^2 + (z-z')^2}\right)  \\
-&\qquad \frac{\sin\left(\omega\left(t - \inv{c} \sqrt{(x-x')^2 + y^2 + (z-z')^2}\right)\right)}{\sqrt{(x-x')^2 + y^2 + (z-z')^2}}
+&\qquad \frac{\sin\left(\omega\left(t - \inv{c} \sqrt{(x-x')^2 + y^2 + (z-z')^2}\right)\right)}{\sqrt{(x-x')^2 + y^2 + (z-z')^2}}.
 \end{aligned}
 \end{equation}
 %
@@ -100,7 +100,7 @@ Now a switch to polar coordinates makes sense.  Let us use
 \begin{equation}\label{eqn:relElectroDynProblemSet5P1:90}
 \begin{aligned}
 x' - x &= r \cos\alpha \\
-z' - z &= r \sin\alpha
+z' - z &= r \sin\alpha.
 \end{aligned}
 \end{equation}
 %
@@ -125,7 +125,7 @@ This gives us
 Since the theta function imposes a
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet5P1:110}
-t - \inv{c} \sqrt{r^2 + y^2 } > 0
+t - \inv{c} \sqrt{r^2 + y^2 } > 0.
 \end{equation}
 %
 constraint, equivalent to
@@ -174,7 +174,7 @@ gives us
 \begin{aligned}
 u du \frac{\sin\left( \omega t - \sqrt{u^2 + k^2 y^2 } \right)}{\sqrt{u^2 + k^2 y^2}}
 &= v dv \frac{\sin\left( \omega t - \Abs{v} \right)}{\Abs{v}} \\
-&= dv \frac{d}{dv} \cos(\omega t - \Abs{v})
+&= dv \frac{d}{dv} \cos(\omega t - \Abs{v}).
 \end{aligned}
 \end{equation}
 %
@@ -192,7 +192,7 @@ Omitting the integration limits temporarily we want to evaluate
 \cos(\omega t - \Abs{v})
 \theta( t - \Abs{v}/\omega )
 -
-\int dv \cos(\omega t - \Abs{v} ) \delta( t - \Abs{v}/\omega ) \left(-\frac{\sgn{v}}{\omega}\right)
+\int dv \cos(\omega t - \Abs{v} ) \delta( t - \Abs{v}/\omega ) \left(-\frac{\sgn{v}}{\omega}\right).
 \end{aligned}
 \end{equation}
 %
@@ -220,7 +220,7 @@ However because we are integrating over a definite range, this entire term there
 \Bigl(
 \cos(\omega t - \omega \Abs{t}) \theta(t - \Abs{t})
 - \cos(\omega t - k \Abs{y} ) \theta( t - \Abs{y}/c )
-\Bigr)
+\Bigr).
 \end{aligned}
 \end{equation}
 %
@@ -280,7 +280,7 @@ which gives us
 \begin{equation}\label{eqn:relElectroDynProblemSet5P1:210}
 \begin{aligned}
 \BE &= -\frac{ 2 \pi \kappa_0 \omega }{c^2} \Be_3 \sin(\omega(t - \Abs{y}/c)) \theta(t - \Abs{y}/c) \\
-\BB &= -\frac{ 2 \pi \kappa_0 \omega }{c^2} \Be_1 \sin(\omega(t - \Abs{y}/c)) \theta(t - \Abs{y}/c)
+\BB &= -\frac{ 2 \pi \kappa_0 \omega }{c^2} \Be_1 \sin(\omega(t - \Abs{y}/c)) \theta(t - \Abs{y}/c).
 \end{aligned}
 \end{equation}
 %
@@ -327,7 +327,7 @@ I am assuming here that this question does not refer to the flux intensity \(\ex
 The time varying portion of either the electric or magnetic field is proportional to
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet5P1:261}
-\sin( \omega t - \omega \Abs{y}/c )
+\sin( \omega t - \omega \Abs{y}/c ).
 \end{equation}
 %
 We have a sinusoid as a function of time, of period \(T = 2 \pi/\omega\) where the phase is adjusted at each position by the factor \(\omega \Abs{y}/c\).  Every increase of \(\Delta y = 2 \pi c/\omega\) shifts the waveform back.
@@ -341,7 +341,7 @@ It is sufficient to consider either the electric or magnetic field for the conti
 The point in time only changes the phase, so let us consider the electric field at \(t=0\), and an infinitesimal distance \(y = \pm \epsilon c/\omega\).  At either point we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet5P1:262}
-\BE(0, \pm \epsilon c/\omega, 0, 0) = \frac{ 2 \pi \kappa_0 \omega }{c^2} \Be_3 \epsilon
+\BE(0, \pm \epsilon c/\omega, 0, 0) = \frac{ 2 \pi \kappa_0 \omega }{c^2} \Be_3 \epsilon.
 \end{equation}
 %
 In the limit as \(\epsilon \rightarrow 0\) the field strength matches on either side of the plane (and happens to equal zero for this \(t= 0\) case).

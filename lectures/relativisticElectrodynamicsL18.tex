@@ -21,7 +21,7 @@ Covering chapter 8 material from the text \citep{landau1980classical}, and
 See the notes for a complex variables and Fourier transform method of deriving the Green's function.  In class, we will just pull it out of a magic hat.  We wish to solve
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:10}
-\square A^k = \partial_i \partial^i A^k = \frac{4 \pi}{c} j^k
+\square A^k = \partial_i \partial^i A^k = \frac{4 \pi}{c} j^k.
 \end{equation}
 %
 (with a \(\partial_i A^i = 0\) gauge choice).
@@ -29,7 +29,7 @@ See the notes for a complex variables and Fourier transform method of deriving t
 Our Green's method utilizes
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:30}
-\square_{(\Bx, t)} G(\Bx - \Bx', t - t') = \delta^3( \Bx - \Bx') \delta( t - t')
+\square_{(\Bx, t)} G(\Bx - \Bx', t - t') = \delta^3( \Bx - \Bx') \delta( t - t').
 \end{equation}
 %
 If we know such a function, our solution is simple to obtain
@@ -50,20 +50,20 @@ G(\Bx - \Bx', t - t') \\
 \int d^3 \Bx' dt' \frac{4 \pi}{c} j^k(\Bx', t')
 \delta^3( \Bx - \Bx') \delta( t - t') \\
 &=
-\frac{4 \pi}{c} j^k(\Bx, t)
+\frac{4 \pi}{c} j^k(\Bx, t).
 \end{aligned}
 \end{equation}
 %
 Claim:
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:70}
-G(\Bx, t) = \frac{\delta(t - \Abs{\Bx}/c)}{4 \pi \Abs{\Bx} }
+G(\Bx, t) = \frac{\delta(t - \Abs{\Bx}/c)}{4 \pi \Abs{\Bx} }.
 \end{equation}
 %
 This is the retarded Green's function of the operator \(\square\), where
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:90}
-\square G(\Bx, t) = \delta^3(\Bx) \delta(t)
+\square G(\Bx, t) = \delta^3(\Bx) \delta(t).
 \end{equation}
 %
 \section{Elaborating on the wave equation Green's function}
@@ -84,7 +84,7 @@ We say that \(G\) is supported only on the future light cone.  At \(\Bx = 0\), o
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:600}
 G_{\pm} =
-\frac{\delta\left(t \pm \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx}}
+\frac{\delta\left(t \pm \frac{\Abs{\Bx}}{c}\right)}{4 \pi \Abs{\Bx}}.
 \end{equation}
 %
 There are also causal and non-causal variations that will not be of interest for this course.
@@ -95,7 +95,7 @@ This arms us now to solve any problem in the Lorentz gauge
 A^k(\Bx, t) = \inv{c} \int d^3 \Bx' dt'
 \frac{\delta\left(t - t' - \frac{\Abs{\Bx -\Bx'}}{c}\right)}{4 \pi \Abs{\Bx - \Bx'}}
 j^k(\Bx', t')
-+\text{An arbitrary collection of EM waves.}
++\text{An arbitrary collection of EM waves.}.
 \end{equation}
 %
 The additional EM waves are the possible contributions from the homogeneous equation.
@@ -113,7 +113,7 @@ Our potentials at time \(t\) and spatial position \(\Bx\) are completely specifi
 \makeexample{The Green's function, a charged particle moving on a worldline}{example:relativisticElectrodynamicsL18:1}{
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:150}
-(c t, \Bx_c(t))
+(c t, \Bx_c(t)).
 \end{equation}
 %
 (\(c\) for classical)
@@ -123,7 +123,7 @@ For this particle
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:170}
 \begin{aligned}
 \rho(\Bx, t) &= e \delta^3(\Bx - \Bx_c(t)) \\
-\Bj(\Bx, t) &= e \dot{\Bx}_c(t) \delta^3(\Bx - \Bx_c(t))
+\Bj(\Bx, t) &= e \dot{\Bx}_c(t) \delta^3(\Bx - \Bx_c(t)).
 \end{aligned}
 \end{equation}
 %
@@ -148,7 +148,7 @@ e \dot{\Bx}_c(t)
 \begin{bmatrix}
 e \\
 e \frac{\dot{\Bx}_c(t)}{c}
-\end{bmatrix}
+\end{bmatrix}.
 \end{aligned}
 \end{equation}
 %
@@ -157,7 +157,7 @@ PICTURE: light cones, and curved worldline.  Pick an arbitrary point \((\Bx_0, t
 For the arbitrary point \((\Bx_0, t_0)\) we see that this point and the retarded time \((\Bx_c(t_r), t_r)\) obey the relation
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:190}
-c (t_0 - t_r) = \Abs{\Bx_0 - \Bx_c(t_r)}
+c (t_0 - t_r) = \Abs{\Bx_0 - \Bx_c(t_r)}.
 \end{equation}
 %
 This retarded time is unique.  There is only one such intersection.
@@ -166,20 +166,20 @@ This retarded time is unique.  There is only one such intersection.
 Our job is to calculate
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:210}
-\int_{-\infty}^\infty \delta(f(x)) g(x) = \frac{g(x_\conj)}{\Abs{f'(x_\conj)}}
+\int_{-\infty}^\infty \delta(f(x)) g(x) = \frac{g(x_\conj)}{\Abs{f'(x_\conj)}}.
 \end{equation}
 %
 where \(f(x_\conj) = 0\).
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:230}
-f(t') = t - t' - \Abs{\Bx - \Bx_c(t')}/c
+f(t') = t - t' - \Abs{\Bx - \Bx_c(t')}/c.
 \end{equation}
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:980}
 \begin{aligned}
 \PD{t'}{f}
 &= -1 - \inv{c} \PD{t'}{} \sqrt{ (\Bx - \Bx_c(t')) \cdot (\Bx - \Bx_c(t')) } \\
-&= -1 + \inv{c} \frac{(\Bx - \Bx_c(t')) \cdot \Bv_c(t')}{\Abs{\Bx - \Bx_c(t')}}
+&= -1 + \inv{c} \frac{(\Bx - \Bx_c(t')) \cdot \Bv_c(t')}{\Abs{\Bx - \Bx_c(t')}}.
 \end{aligned}
 \end{equation}
 %
@@ -216,7 +216,7 @@ e
 \end{bmatrix}
 \inv{\Abs{
 \Abs{\Bx - \Bx_c(t_r)} - (\Bx - \Bx_c(t_r)) \cdot \Bv_c(t_r)/c
-} }
+} }.
 \end{aligned}
 \end{equation}
 %
@@ -235,7 +235,7 @@ e
 \frac{\Bv_c}{c}
 \end{bmatrix}
 \inv{
-\Abs{\Bx - \Bx_c} - (\Bx - \Bx_c(t_r)) \cdot \Bv_c(t_r)/c }
+\Abs{\Bx - \Bx_c} - (\Bx - \Bx_c(t_r)) \cdot \Bv_c(t_r)/c }.
 \end{equation}
 %
 FIXME: What provides the previous inequality required to get to this final point?
