@@ -314,15 +314,15 @@
 
 % https://tex.stackexchange.com/questions/95488/list-of-figures-and-page-numbering
 % https://tex.stackexchange.com/a/95616/15
-%\makeatletter
-%\newcommand{\emptypage}[1]{%
-%  \cleardoublepage
-%  \begingroup
-%  \let\ps@plain\ps@empty
-%  \pagestyle{empty}
-%  #1
-%  \cleardoublepage}
-%\makeatletter
+\makeatletter
+\newcommand{\emptypage}[1]{%
+  \cleardoublepage
+  \begingroup
+  \let\ps@plain\ps@empty
+  \pagestyle{empty}
+  #1
+  \cleardoublepage}
+\makeatletter
 
 % ****************************************************************************************************
 % 7. Last calls before the bar closes
