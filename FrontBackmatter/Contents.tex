@@ -13,7 +13,7 @@
 \setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
 \manualmark
 \markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
-\emptypage
+%\emptypage
 \tableofcontents
 %\thispagestyle{empty}
 \automark[section]{chapter}
@@ -25,9 +25,9 @@
 \clearpage
 
 \begingroup
-    %\let\clearpage\relax
-    %\let\cleardoublepage\relax
-    %\let\cleardoublepage\relax
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+    \let\cleardoublepage\relax
     %*******************************************************
     % List of Figures
     %*******************************************************
@@ -35,11 +35,11 @@
     \refstepcounter{dummy}
     %\addcontentsline{toc}{chapter}{\listfigurename}
     \pdfbookmark[1]{\listfigurename}{lof}
-    \emptypage\listoffigures
-    %\listoffigures
+    %\emptypage\listoffigures
+    \listoffigures
     %\thispagestyle{empty}
 
-    %\vspace*{8ex}
+    \vspace*{8ex}
 
 %    %*******************************************************
 %    % List of Tables
