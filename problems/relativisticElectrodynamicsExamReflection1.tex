@@ -98,7 +98,9 @@ Next we need
 \BR \cdot \Bv/c
 &=
 (z \Be_3 + \Be_1 (\rho e^{i \phi} - a e^{i \omega t_r} )) \cdot
-\left(a \frac{\omega}{c} \Be_2 e^{i \omega t_r} \right) \\
+\lr{
+   a \frac{\omega}{c} \Be_2 e^{i \omega t_r} 
+} \\
 &=
 a \frac{\omega }{c}
 \Real(
@@ -265,10 +267,10 @@ a k^2
 &+
 a k^2
 \Be_1
-\left(
--a (a - \rho \cos\phi_r) (1 - k R i)
-+ R(R - a k \rho \sin \phi_r)
-\right) e^{i k c t_r}.
+\lr{
+   -a (a - \rho \cos\phi_r) (1 - k R i)
+   + R(R - a k \rho \sin \phi_r)
+} e^{i k c t_r}.
 \end{aligned}
 \end{equation}
 %
@@ -284,10 +286,11 @@ The electric field pieces can now be collected.  Not expanding out the \(R^\conj
 \Be_1 \Bigl(1 - a \rho k^2 \cos\phi_r \Bigr) e^{i\phi} \\
 &+
 \frac{q}{(R^\conj)^3} a \Be_1 \times \\
-&\quad\left(
--\Bigl( 1 + a k^2 (a - \rho \cos\phi_r) \Bigr) (1 - k R i)(1 - a^2 k^2)
-+ k^2 R(R - a k \rho \sin \phi_r)
-\right) e^{i k c t_r}.
+&\quad
+\lr{
+   -\Bigl( 1 + a k^2 (a - \rho \cos\phi_r) \Bigr) (1 - k R i)(1 - a^2 k^2)
+   + k^2 R(R - a k \rho \sin \phi_r)
+} e^{i k c t_r}.
 \end{aligned}
 \end{equation}
 %
@@ -313,10 +316,10 @@ c t_r = c t - \sqrt{z^2 + a^2 }.
 \frac{q}{R^3} z \Be_3 \\
 &+
 \frac{q}{R^3} a \Be_1
-\left(
--( 1 - a^4 k^4 ) (1 - k R i)
-+ k^2 R^2
-\right) e^{i k c t_r}.
+\lr{
+   -( 1 - a^4 k^4 ) (1 - k R i)
+   + k^2 R^2
+} e^{i k c t_r}.
 \end{aligned}
 \end{equation}
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:500f}
@@ -401,15 +404,23 @@ q a  k \inv{\sqrt{z^2 + a^2}} \Be_3 \cross (\Be_2 \partial_z e^{i  k c t_r} ) \\
 &=
 -\Be_3 \cross (\Be_2 e^{i  k c t_r} ) q a  k \frac{z}{(\sqrt{z^2 + a^2})^3} \\
 &\quad +
-q a  k \inv{\sqrt{z^2 + a^2}} \Be_3 \cross \left( \Be_2 \Be_1 \Be_2 k c e^{i  k c t_r} \partial_z ( t - \sqrt{z^a + a^2}/c ) \right) \\
+q a  k \inv{\sqrt{z^2 + a^2}} \Be_3 \cross 
+\lr{
+   \Be_2 \Be_1 \Be_2 k c e^{i  k c t_r} \partial_z ( t - \sqrt{z^a + a^2}/c ) 
+}
+\\
 &=
 -\Be_3 \cross (\Be_2 e^{i  k c t_r} ) q a  k \frac{z}{(\sqrt{z^2 + a^2})^3}
 -
-q a  k^2 \frac{z}{z^2 + a^2} \Be_3 \cross \left( \Be_1 k e^{i  k c t_r} \right) \\
+q a  k^2 \frac{z}{z^2 + a^2} \Be_3 \cross 
+\lr{
+   \Be_1 k e^{i  k c t_r} 
+} \\
 &=
--\frac{q a k z \Be_3}{z^2 + a^2} \cross \left(
-\frac{ \Be_2 e^{i k c t_r} }{\sqrt{z^2 + a^2}} + k \Be_1 e^{i k c t_r}
-\right).
+-\frac{q a k z \Be_3}{z^2 + a^2} \cross 
+\lr{
+   \frac{ \Be_2 e^{i k c t_r} }{\sqrt{z^2 + a^2}} + k \Be_1 e^{i k c t_r}
+}.
 \end{aligned}
 \end{equation}
 %
@@ -450,7 +461,10 @@ q \Be_3 \frac{z}{(\sqrt{z^2 + a^2})^3}
 +
 \frac{q a k^2 \Be_1 e^{i \omega t_r} }{\sqrt{z^2 + a^2}} \\
 \BB
-&= \frac{q a k z}{ z^2 + a^2} \left( \frac{\Be_1}{\sqrt{z^2 + a^2}} - k \Be_2 \right) e^{i \omega t_r}.
+&= \frac{q a k z}{ z^2 + a^2} 
+\lr{
+   \frac{\Be_1}{\sqrt{z^2 + a^2}} - k \Be_2 
+} e^{i \omega t_r}.
 \end{aligned}
 \end{equation}
 %
@@ -469,7 +483,11 @@ However, if I do this check I get
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:290}
 \BB
 =
-\frac{q a z}{z^2 + a^2} \left( \inv{z^2 + a^2} + k^2 \right) \Be_2 e^{i \omega t_r}.
+\frac{q a z}{z^2 + a^2} 
+\lr{
+   \inv{z^2 + a^2} + k^2 
+}
+\Be_2 e^{i \omega t_r}.
 \end{equation}
 %
 %Did I get my electric field calculation wrong?  Tricky to get this all right.  With so much grunt work calculation involved, perhaps its time to give up and resort to something like Mathematica.
@@ -543,17 +561,18 @@ The dot product between \(\BR\) and \(\Bv_c\) is then
 a \thetadot &
 \hdot
 \end{bmatrix}
-\Real \left(
-\begin{bmatrix}
-e^{-i\theta}  & 0 \\
--i e^{-i\theta}  & 0 \\
-0 & 1
-\end{bmatrix}
-\begin{bmatrix}
-e^{i\phi} & -e^{i\theta} & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\right)
+\Real 
+\lr{
+   \begin{bmatrix}
+   e^{-i\theta}  & 0 \\
+   -i e^{-i\theta}  & 0 \\
+   0 & 1
+   \end{bmatrix}
+   \begin{bmatrix}
+   e^{i\phi} & -e^{i\theta} & 0 \\
+   0 & 0 & 1
+   \end{bmatrix}
+}
 \begin{bmatrix}
 \rho \\
 a \\
@@ -565,13 +584,14 @@ z - h
 a \thetadot &
 \hdot
 \end{bmatrix}
-\Real \left(
-\begin{bmatrix}
-e^{i(\phi - \theta)} & -1 & 0  \\
--i e^{i(\phi - \theta)} & i & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\right)
+\Real 
+\lr{
+   \begin{bmatrix}
+   e^{i(\phi - \theta)} & -1 & 0  \\
+   -i e^{i(\phi - \theta)} & i & 0 \\
+   0 & 0 & 1
+   \end{bmatrix}
+}
 \begin{bmatrix}
 \rho \\
 a \\
@@ -610,17 +630,18 @@ The other quantity that we want is \(\BR^2\), which is
 a &
 (z - h)
 \end{bmatrix}
-\Real \left(
-\begin{bmatrix}
-e^{-i\phi}  & 0 \\
--e^{-i\theta}  & 0 \\
-0 & 1
-\end{bmatrix}
-\begin{bmatrix}
-e^{i\phi} & -e^{i\theta} & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\right)
+\Real 
+\lr{
+   \begin{bmatrix}
+   e^{-i\phi}  & 0 \\
+   -e^{-i\theta}  & 0 \\
+   0 & 1
+   \end{bmatrix}
+   \begin{bmatrix}
+   e^{i\phi} & -e^{i\theta} & 0 \\
+   0 & 0 & 1
+   \end{bmatrix}
+}
 \begin{bmatrix}
 \rho \\
 a \\
@@ -678,11 +699,18 @@ Expanding out the cross products yields
 \begin{aligned}
 \BE
 &= e (1 - \Bbeta_c^2) \frac{\Rcap - \Bbeta_c}{R^2 (1 - \Rcap \cdot \Bbeta_c)^3} \\
-&\quad + e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Rcap - \Bbeta_c) \left(\Rcap \cdot \frac{\Ba_c}{c^2}\right) \\
+&\quad + e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Rcap - \Bbeta_c) 
+\lr{
+   \Rcap \cdot \frac{\Ba_c}{c^2}
+} \\
 &\quad - e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \\
 \BB
 &= e (1 - \Bbeta_c^2) \frac{\Bbeta_c \cross \Rcap}{R^2 (1 - \Rcap \cdot \Bbeta_c)^3} \\
-&\quad+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Bbeta_c \cross \Rcap) \left(\Rcap \cdot \frac{\Ba_c}{c^2} \right) \\
+&\quad+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Bbeta_c \cross \Rcap) 
+\lr{
+   \Rcap \cdot \frac{\Ba_c}{c^2} 
+}
+\\
 &\quad+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \cross \Rcap.
 \end{aligned}
 \end{equation}
@@ -693,18 +721,21 @@ While longer, it is nice to call out the symmetry between \(\BE\) and \(\BB\) ex
 \begin{aligned}
 F &=
 e \frac{1}{(1 - \Rcap \cdot \Bbeta_c)^3}
-\left(
-\left(
-\frac{1 - \Bbeta_c^2}{R^2} + \frac{\Rcap \cdot \Ba_c}{c R}
-\right)
-\left(
-\Rcap - \Bbeta_c + \Rcap \wedge (\Rcap - \Bbeta_c)
-\right) \\
-&\quad + \inv{R} \left(
-\frac{\Ba_c}{c^2}
-+ \frac{\Ba_c}{c^2} \wedge \Rcap
-\right)
-\right).
+\Biglr{
+   \lr{
+      \frac{1 - \Bbeta_c^2}{R^2} + \frac{\Rcap \cdot \Ba_c}{c R}
+   }
+   \lr{
+      \Rcap - \Bbeta_c + \Rcap \wedge (\Rcap - \Bbeta_c)
+   }
+   \\
+   &\quad + \inv{R} 
+   \lr{
+      \frac{\Ba_c}{c^2}
+      + \frac{\Ba_c}{c^2} \wedge \Rcap
+   }
+}
+.
 \end{aligned}
 \end{equation}
 %
@@ -713,7 +744,10 @@ I had guess a multivector of the form \(\Ba + \Ba \wedge \bcap\), can be tidied 
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:940}
 \Ba_c =
 \begin{bmatrix}
-\left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) e^{i\theta} \\
+\lr{
+   \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+}
+e^{i\theta} \\
 \ddot{h}
 \end{bmatrix}.
 \end{equation}
@@ -725,7 +759,10 @@ Dotted with \(\BR\) we have
 \Ba_c \cdot \BR
 &=
 \begin{bmatrix}
-\left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) e^{i\theta} \\
+\lr{
+   \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+}
+e^{i\theta} \\
 \ddot{h}
 \end{bmatrix}
 \cdot
@@ -734,9 +771,16 @@ Dotted with \(\BR\) we have
 h
 \end{bmatrix} \\
 &=
-h \ddot{h} + \Real\left(
-\left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) \left(\rho e^{i(\theta- \phi)} - a\right)
-\right) ,
+h \ddot{h} + \Real
+\lr{
+   \lr{
+      \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+   }
+   \lr{
+      \rho e^{i(\theta- \phi)} - a
+   }
+}
+,
 \end{aligned}
 \end{equation}
 %
@@ -787,8 +831,15 @@ h
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-i\left(\hdot ( \rho e^{i\phi} - a e^{i\theta} ) - h (\dot{a} + i a \dot{\theta}) e^{i\theta} \right) \\
-\Imag \left( ( \adot - i a \thetadot) (\rho e^{i(\phi - \theta)} - a) \right)
+i
+\lr{
+   \hdot ( \rho e^{i\phi} - a e^{i\theta} ) - h (\dot{a} + i a \dot{\theta}) e^{i\theta} 
+}
+\\
+\Imag 
+\lr{
+   ( \adot - i a \thetadot) (\rho e^{i(\phi - \theta)} - a) 
+}
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
@@ -811,7 +862,10 @@ The last thing required to write out the fields is
 \Ba_c \cross \BR
 &=
 \begin{bmatrix}
-\left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) e^{i\theta} \\
+\lr{
+   \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+}
+e^{i\theta} \\
 \ddot{h}
 \end{bmatrix}
 \cross
@@ -821,10 +875,18 @@ z - h
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-i \ddot{h} (\rho e^{i\phi} - a e^{i\theta} ) - i (z - h) \left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) e^{i\theta} \\
-\Imag \left(
-\left( \ddot{a} - a {\dot{\theta}}^2 - i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) ( \rho e^{i(\phi -\theta)} - a )
-\right)
+i \ddot{h} (\rho e^{i\phi} - a e^{i\theta} ) - i (z - h) 
+\lr{
+   \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+}
+e^{i\theta} \\
+\Imag 
+\lr{
+   \lr{
+      \ddot{a} - a {\dot{\theta}}^2 - i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+   }
+   ( \rho e^{i(\phi -\theta)} - a )
+}
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
@@ -836,8 +898,18 @@ So the acceleration cross product is
 =
 \begin{bmatrix}
 i \ddot{h} \rho e^{i\phi}
-- i \left( \ddot{h} a + (z - h) \left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) \right) e^{i\theta} \\
-\left( \ddot{a} - a {\dot{\theta}}^2 \right) \rho \sin(\phi - \theta)
+- i 
+\lr{
+   \ddot{h} a + (z - h)
+   \lr{
+      \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+   }
+}
+e^{i\theta} \\
+\lr{
+   \ddot{a} - a {\dot{\theta}}^2 
+}
+\rho \sin(\phi - \theta)
 -( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) (\rho \cos(\phi -\theta) - a)
 \end{bmatrix}.
 \end{equation}
@@ -848,18 +920,26 @@ Putting all the results together creates something that is too long to easily wr
 \begin{aligned}
 \BE
 &=
-\frac{e}{(R - \BR \cdot \Bbeta_c)^3}\left(
-\left(1 - \Bbeta_c^2 + \BR \cdot \frac{\Ba_c}{c^2}
-\right) (\BR - \Bbeta_c R)
-- R(R - \BR \cdot \Bbeta_c) \frac{\Ba_c}{c^2}
-\right) \\
+\frac{e}{(R - \BR \cdot \Bbeta_c)^3}
+\lr{
+   \lr{
+      1 - \Bbeta_c^2 + \BR \cdot \frac{\Ba_c}{c^2}
+   }
+   (\BR - \Bbeta_c R)
+   - R(R - \BR \cdot \Bbeta_c) \frac{\Ba_c}{c^2}
+}
+\\
 \BB
 &=
-\frac{e}{(R - \BR \cdot \Bbeta_c)^3}\left(
-\left(1 - \Bbeta_c^2 + \BR \cdot \frac{\Ba_c}{c^2}
-\right) (\Bbeta_c \cross \BR)
-- (R - \BR \cdot \Bbeta_c) \frac{\Ba_c}{c^2} \cross \BR
-\right) \\
+\frac{e}{(R - \BR \cdot \Bbeta_c)^3}
+\lr{
+   \lr{
+      1 - \Bbeta_c^2 + \BR \cdot \frac{\Ba_c}{c^2}
+   }
+   (\Bbeta_c \cross \BR)
+   - (R - \BR \cdot \Bbeta_c) \frac{\Ba_c}{c^2} \cross \BR
+}
+\\
 1 - \Bbeta_c^2 &= 1 - (\adot^2 + a^2 \thetadot^2 + \hdot^2)/c^2 \\
 R &= \sqrt{(\rho^2 + (a(t_r))^2 + (z-h(t_r))^2 - 2 a(t_r) \rho \cos(\phi - \theta(t_r))} = c( t - t_r) \\
 \BR - \Bbeta_c R &=
@@ -867,7 +947,11 @@ R &= \sqrt{(\rho^2 + (a(t_r))^2 + (z-h(t_r))^2 - 2 a(t_r) \rho \cos(\phi - \thet
 \rho e^{i\phi} - (a + (\adot + i a\thetadot) R/c) e^{i\theta} \\
 z - h - \hdot R/c
 \end{bmatrix} \\
-\Bbeta_c \cdot \BR &= \inv{c}\left( \hdot (z - h) -a \adot + \rho \adot \cos(\phi- \theta) + \rho a^2 \thetadot \sin(\phi - \theta) \right) \\
+\Bbeta_c \cdot \BR &= \inv{c}
+\lr{
+   \hdot (z - h) -a \adot + \rho \adot \cos(\phi- \theta) + \rho a^2 \thetadot \sin(\phi - \theta) 
+}
+\\
 \Bbeta_c \cross \BR
 &=
 \inv{c}
@@ -878,21 +962,37 @@ i( \hdot \rho e^{i\phi} - (h \adot + i h a \thetadot + a \hdot) e^{i\theta} ) \\
 \frac{\Ba_c}{c^2} &=
 \inv{c^2}
 \begin{bmatrix}
-\left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) e^{i\theta} \\
+\lr{
+   \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+}
+e^{i\theta} \\
 \ddot{h}
 \end{bmatrix} \\
 \frac{\Ba_c}{c^2} \cdot \BR &=
-\inv{c^2} \left(
-h \ddot{h} +
-( \ddot{a} - a {\dot{\theta}}^2 ) (\rho \cos(\phi - \theta) - a)
-+ (a \ddot{\theta} + 2 \dot{a} \dot{\theta}) \rho \sin(\phi - \theta) \right) \\
+\inv{c^2} 
+\lr{
+   h \ddot{h} +
+   ( \ddot{a} - a {\dot{\theta}}^2 ) (\rho \cos(\phi - \theta) - a)
+   + (a \ddot{\theta} + 2 \dot{a} \dot{\theta}) \rho \sin(\phi - \theta) 
+}
+\\
 \frac{\Ba_c}{c^2} \cross \BR
 &=
 \inv{c^2}
 \begin{bmatrix}
 i \ddot{h} \rho e^{i\phi}
-- i \left( \ddot{h} a + (z - h) \left( \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) \right) \right) e^{i\theta} \\
-\left( \ddot{a} - a {\dot{\theta}}^2 \right) \rho \sin(\phi - \theta)
+- i 
+\lr{
+   \ddot{h} a + (z - h) 
+   \lr{
+      \ddot{a} - a {\dot{\theta}}^2 + i ( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) 
+   }
+}
+e^{i\theta} \\
+\lr{
+   \ddot{a} - a {\dot{\theta}}^2 
+}
+\rho \sin(\phi - \theta)
 -( a\ddot{\theta} + 2 \dot{a} \dot{\theta} ) (\rho \cos(\phi -\theta) - a)
 \end{bmatrix}.
 \end{aligned}
