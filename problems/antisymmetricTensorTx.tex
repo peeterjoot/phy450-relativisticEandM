@@ -7,7 +7,7 @@
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/antisymmetricTensorTx.pdf}
 %\date{Jan 14, 2011}
 %
-\section{Motivation}
+\section{Motivation.}
 %
 I have an ancient copy of the course text \citep{landau1951classical} from the library right now (mine is on order still) for my PHY450H1S course (relativistic electrodynamics).  Given the transformation rule for a first rank tensor
 %
@@ -25,7 +25,7 @@ This is not motivated in any way.  Let us compare to transformation of a bivecto
 
 It is also worthwhile to note that there are some old fashioned notational quirks in this text (at least the old version that I have currently borrowed).  Specifically, they uses Latin indices four vectors with Greek indices for three vectors, completely opposite to what appears to be the current conventions.  They also do not use upper and lower indices to keep track of bookkeeping.  I will use the conventions I am used to for now.
 %
-\section{Notation and use of Geometric Algebra herein}
+\section{Notation and use of Geometric Algebra herein.}
 %
 I will use conventions from \citep{doran2003gap} using the Dirac basis, with a preference for index upper coordinates, and express a vector as
 %
@@ -52,7 +52,7 @@ The dot product between two bivectors \(A\), \(B\) will also be used, defined as
 = (a \cdot d) (b \cdot c) - (b \cdot d) ( a \cdot c).
 \end{equation}
 %
-\section{Transformation of the coordinates}
+\section{Transformation of the coordinates.}
 %
 Let us assume our transformation is linear, and we will denote its action on vectors as follows
 %
@@ -172,7 +172,7 @@ Except for the lowering index differences this verifies the rule \eqnref{eqn:ant
 
 It would be reasonable seeming to impose such a tensor transformation rule on any antisymmetric rank 2 tensor, and in the text this is also imposed as the rule for transformation of symmetric rank 2 tensors.  Do we have a simple example of a rank 2 symmetric tensor that can be expressed geometrically?  The only one that comes to mind off the top of my head is the electrodynamic stress tensor, which is not exactly simple to work with.
 %
-\section{Lorentz transformation of the metric tensors}
+\section{Lorentz transformation of the metric tensors.}
 %
 Following up on the previous thought, it is not hard to come up with an example of a symmetric tensor a whole lot simpler than the electrodynamic stress tensor.  The metric tensor is probably the simplest symmetric tensor, and we get that by considering the dot product of two vectors.  Taking the dot product of vectors \(a\) and \(b\) for example we have
 %
@@ -293,7 +293,7 @@ L(\gamma^\nu) \cdot \gamma_\mu,
 %
 If that were to be the case, then given the notation selected it would mean that \({L_\mu}^\nu = {L^\nu}_\mu\).  If that were true it would justify a notational simplification \({L_\mu}^\nu = {L^\nu}_\mu = L^\nu_\mu\).
 %
-\section{The inverse Lorentz transformation}
+\section{The inverse Lorentz transformation.}
 %
 To answer this question, let us consider a specific example, an x-axis boost of rapidity \(\alpha\).  For that our Lorentz transformation takes the following form
 %
@@ -382,7 +382,7 @@ This shows precisely how the two objects relate back to the original tensor \(L^
 
 Note that in the third edition they still (somewhat surprisingly to me) continue to latin indices for \(0,1,2,3\) and greek for \(1,2,3\) as in the original 1951 version.
 %
-\section{Duality in tensor form}
+\section{Duality in tensor form.}
 %
 Let us consider the subject of duality to antisymmetric forms.  Within a geometric algebra context our duality is provided by multiplication by the pseudoscalar for the space.
 
@@ -444,7 +444,7 @@ I x \sim e^{\sigma \pi \nu \mu} \gamma_\sigma \gamma_\sigma \gamma_\pi x_\nu.
 %
 The coordinates of this product are a multiple of \(\epsilon^{\sigma \pi \nu \mu } x_\mu\), which has the form specified in the text.
 %
-\section{Stokes Theorem}
+\section{Stokes Theorem.}
 %
 %In \citep{gabook:stokesNoTensor} I worked through the Geometric Algebra expression for Stokes Theorem.  For a \(k-1\) grade blade, the final result of that work was
 I once worked through the Geometric Algebra expression for Stokes Theorem.  For a \(k-1\) grade blade, the final result of that work was
@@ -565,7 +565,7 @@ The LHS of our k-form now evaluates to
 %
 \begin{equation}\label{eqn:antisymmetricTensorTx:790}
 \begin{aligned}
-(\gamma^\mu \wedge \partial_\mu F) \cdot d^k x
+&(\gamma^\mu \wedge \partial_\mu F) \cdot d^k x \\
 &=
 \inv{(k-1)!}\PD{x^{\mu_k}}{} F_{\mu_1 \mu_2 \cdots \mu_{k-1}} \\
 &{\delta^{\mu_{k-1}}}_{\nu_1}  {\delta^{ \mu_{k-2} }}_{\nu_2}  \cdots
@@ -615,7 +615,8 @@ x^{\mu_{k}}
 }
 da_1 da_2 \cdots da_k \\
 &=
-\inv{(k-1)!} \epsilon^{ r s \cdots t u } \int da_u \PD{a_{u}}{} F_{\nu_1 \nu_2 \cdots \nu_{k-1} }
+\inv{(k-1)!} \epsilon^{ r s \cdots t u } \\
+&\quad\int da_u \PD{a_{u}}{} F_{\nu_1 \nu_2 \cdots \nu_{k-1} }
 \Abs{\frac{\partial(
 x^{\nu_{k-1}},x^{\nu_{k-2}},\cdots,x^{\nu_1}
 )}{\partial(a_r, a_s, \cdots, a_t)}}

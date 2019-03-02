@@ -2,7 +2,7 @@
 % Copyright © 2012 Peeter Joot.  All Rights Reserved.
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
-\section{Action for the field}
+\section{Action for the field.}
 \index{action!field}
 
 However, \(\BE\) and \(\BB\) are created by charged particles and can ``move'' or ``propagate'' on their own.  EM field is its own dynamical system.  The variables are \(A^i(\Bx, t)\).  These are the ``\(q_a(t)\)''.
@@ -93,7 +93,7 @@ and principle 1, means we must have a four scalar.
 
 Without principle 3, we could have products of these, but we rule this out due to violation of non-linearity.
 %
-\makeexample{Lagrangian for the Harmonic oscillator}{example:relativisticElectrodynamicsL12b:1}{
+\makeexample{Lagrangian for the Harmonic oscillator.}{example:relativisticElectrodynamicsL12b:1}{
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL12b:270}
 \LL = \inv{2} m \dot{q}^2 - \inv{2} m \omega^2 q^2.
@@ -143,7 +143,7 @@ Written in full with the constants in the right places we have
 %
 To get the equation of motion for \(A^i(\Bx, t)\) we need to vary \(S_{\text{int}} + S_{\text{EM field}}\).
 %
-\section{Current density distribution}
+\section{Current density distribution.}
 \index{current density}
 
 Before we do the variation, we want to show that
@@ -159,13 +159,16 @@ S_{\text{int}}
 where
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL12b:390}
-j^i(x) =
+\begin{aligned}
+j^i(x) 
+&=
 \sum_A c e_A \int_{x(\tau)}
-ds u^i_A
-\delta(x^0 - x^0_A(\tau))
+ds u^i_A \times \\
+&\qquad \delta(x^0 - x^0_A(\tau))
 \delta(x^1 - x^1_A(\tau))
 \delta(x^2 - x^2_A(\tau))
 \delta(x^3 - x^3_A(\tau)).
+\end{aligned}
 \end{equation}
 %
 We substitute in the integral

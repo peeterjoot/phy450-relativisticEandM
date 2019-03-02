@@ -3,7 +3,7 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 %
-\makeproblem{Charged particle in a circle}{pr:relativisticElectrodynamicsExamReflection:1}{
+\makeproblem{Charged particle in a circle.}{pr:relativisticElectrodynamicsExamReflection:1}{
 %
 From the 2008 PHY453 exam, given a particle of charge \(q\) moving in a circle of radius \(a\) at constant angular frequency \(\omega\).
 %
@@ -283,8 +283,8 @@ The electric field pieces can now be collected.  Not expanding out the \(R^\conj
 \frac{q}{(R^\conj)^3} \rho
 \Be_1 \Bigl(1 - a \rho k^2 \cos\phi_r \Bigr) e^{i\phi} \\
 &+
-\frac{q}{(R^\conj)^3} a \Be_1
-\left(
+\frac{q}{(R^\conj)^3} a \Be_1 \times \\
+&\quad\left(
 -\Bigl( 1 + a k^2 (a - \rho \cos\phi_r) \Bigr) (1 - k R i)(1 - a^2 k^2)
 + k^2 R(R - a k \rho \sin \phi_r)
 \right) e^{i k c t_r}.
@@ -672,25 +672,26 @@ In the homework (and in the text \citep{landau1980classical} \S 63) we found for
 \end{aligned}
 \end{equation}
 %
-Expanding out the cross products this yields
+Expanding out the cross products yields
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:930}
 \begin{aligned}
 \BE
-&= e (1 - \Bbeta_c^2) \frac{\Rcap - \Bbeta_c}{R^2 (1 - \Rcap \cdot \Bbeta_c)^3}
-+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Rcap - \Bbeta_c) \left(\Rcap \cdot \frac{\Ba_c}{c^2}\right)
-- e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \\
+&= e (1 - \Bbeta_c^2) \frac{\Rcap - \Bbeta_c}{R^2 (1 - \Rcap \cdot \Bbeta_c)^3} \\
+&\quad + e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Rcap - \Bbeta_c) \left(\Rcap \cdot \frac{\Ba_c}{c^2}\right) \\
+&\quad - e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \\
 \BB
-&= e (1 - \Bbeta_c^2) \frac{\Bbeta_c \cross \Rcap}{R^2 (1 - \Rcap \cdot \Bbeta_c)^3}
-+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Bbeta_c \cross \Rcap) \left(\Rcap \cdot \frac{\Ba_c}{c^2} \right)
-+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \cross \Rcap.
+&= e (1 - \Bbeta_c^2) \frac{\Bbeta_c \cross \Rcap}{R^2 (1 - \Rcap \cdot \Bbeta_c)^3} \\
+&\quad+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^3} (\Bbeta_c \cross \Rcap) \left(\Rcap \cdot \frac{\Ba_c}{c^2} \right) \\
+&\quad+ e \frac{1}{R (1 - \Rcap \cdot \Bbeta_c)^2} \frac{\Ba_c}{c^2} \cross \Rcap.
 \end{aligned}
 \end{equation}
 %
 While longer, it is nice to call out the symmetry between \(\BE\) and \(\BB\) explicitly.  As a side note, how do these combine in the Geometric Algebra formalism where we have \(F = \BE + I\BB\)?  That gives us
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsExamReflection:935}
-F =
+\begin{aligned}
+F &=
 e \frac{1}{(1 - \Rcap \cdot \Bbeta_c)^3}
 \left(
 \left(
@@ -698,12 +699,13 @@ e \frac{1}{(1 - \Rcap \cdot \Bbeta_c)^3}
 \right)
 \left(
 \Rcap - \Bbeta_c + \Rcap \wedge (\Rcap - \Bbeta_c)
-\right)
-+ \inv{R} \left(
+\right) \\
+&\quad + \inv{R} \left(
 \frac{\Ba_c}{c^2}
 + \frac{\Ba_c}{c^2} \wedge \Rcap
 \right)
 \right).
+\end{aligned}
 \end{equation}
 %
 I had guess a multivector of the form \(\Ba + \Ba \wedge \bcap\), can be tidied up a bit more, but this will not be persued here.  Instead let us write out the fields corresponding to the potentials of \eqnref{eqn:relativisticElectrodynamicsExamReflection:910} explicitly.  We need to calculate \(\Ba_c\), \(\Bv_c \cross \BR\), \(\Ba_c \cross \BR\), and \(\Ba_c \cdot \BR\).  For the acceleration we get
@@ -998,6 +1000,4 @@ a k z (1 + i k R) e^{i k (c t - R)} \\
 \end{equation}
 %
 compared to the value of \(\BB\) that was directly calculated above.  With the sign swapped in the z-axis term of \(\BB(z)\) here I had guess I have got an algebraic error hiding somewhere?
-
 } % makeanswer
-

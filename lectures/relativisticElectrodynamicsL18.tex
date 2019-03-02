@@ -15,7 +15,7 @@ Covering chapter 8 material from the text \citep{landau1980classical}, and
 \popcite{RelEMpp136-146.pdf}{lecture notes RelEMpp136-146.pdf}.
 %: continued reminder of electrostatic Green's function (136); the retarded Green's function of the d'Alembert operator: derivation and properties (137-140); the solution of the d'Alembert equation with a source: retarded potentials (141-142); retarded time.
 %
-\section{Solving the forced wave equation}
+\section{Solving the forced wave equation.}
 \index{wave equation!forced}
 
 See the notes for a complex variables and Fourier transform method of deriving the Green's function.  In class, we will just pull it out of a magic hat.  We wish to solve
@@ -66,7 +66,7 @@ This is the retarded Green's function of the operator \(\square\), where
 \square G(\Bx, t) = \delta^3(\Bx) \delta(t).
 \end{equation}
 %
-\section{Elaborating on the wave equation Green's function}
+\section{Elaborating on the wave equation Green's function.}
 \index{Green's function}
 
 The Green's function \eqnref{eqn:relativisticElectrodynamicsL18:520} is a distribution that is non-zero only on the future lightcone.  Observe that for \(t < 0\) we have
@@ -94,9 +94,9 @@ This arms us now to solve any problem in the Lorentz gauge
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:620}
 A^k(\Bx, t) = \inv{c} \int d^3 \Bx' dt'
 \frac{\delta\left(t - t' - \frac{\Abs{\Bx -\Bx'}}{c}\right)}{4 \pi \Abs{\Bx - \Bx'}}
-j^k(\Bx', t')
-+\text{An arbitrary collection of EM waves.}.
+j^k(\Bx', t'),
 \end{equation}
+plus an arbitrary collection of EM waves.
 %
 The additional EM waves are the possible contributions from the homogeneous equation.
 
@@ -110,7 +110,7 @@ A^k(\Bx, t) = \inv{c} \int d^3 \Bx'
 Our potentials at time \(t\) and spatial position \(\Bx\) are completely specified in terms of the sums of the currents acting at the retarded time \(t - \Abs{\Bx - \Bx'}/c\).  The field can only depend on the charge and current distribution in the past.  Specifically, it can only depend on the charge and current distribution on the past light cone of the spacetime point at which we measure the field.
 
 %
-\makeexample{The Green's function, a charged particle moving on a worldline}{example:relativisticElectrodynamicsL18:1}{
+\makeexample{Green's function for charged particle on worldline.}{example:relativisticElectrodynamicsL18:1}{
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsL18:150}
 (c t, \Bx_c(t)).

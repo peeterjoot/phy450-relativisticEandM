@@ -4,7 +4,7 @@
 %
 
 %
-\makeproblem{Energy-momentum tensor and electromagnetic forces}{pr:relElectroDynProblemSet6:1}{
+\makeproblem{Energy-momentum tensor and electromagnetic forces.}{pr:relElectroDynProblemSet6:1}{
 %
 In class, it was argued that in the absence of charges and currents, the energy-momentum tensor (or the ``stress-energy'' tensor) of the electromagnetic field
 %
@@ -67,19 +67,18 @@ Give a physical interpretation of \eqnref{eqn:relativisticElectrodynamicsPS6P1:5
 \Bp_{\text{EM field in \(V\)}} +
 \Bp_{\text{charged particles in \(V\)}}
 \right)^\alpha \\
-&\qquad = \int_{\text{surface of body}} \left(
-(\text{surface force})^\alpha \text{on body due to shears and pressures}
-\right).
+&\quad = \int_{\text{surface of body}} \left(
+(\text{surface force})^\alpha,
+\right),
 \end{aligned}
 \end{equation}
+where the surface force acts on body due to shears and pressures.
 %
 (Note that here \(d^2 \sigma^\beta\) is an outward normal vector to the surface of the body, so the surface has a relative minus signs w.r.t the one from class, where an inward normal was used.)
 %
 \makesubproblem{Pressure and shear of linearly polarized EM wave}{pr:relElectroDynProblemSet6:1:e}
 %
 Imagine that a place linearly polarized electromagnetic wave is falling on a flat surface at an angle of incidence \(\alpha\), and is completely absorbed by the body.  Find the pressure and shear on a unit area of the surface using the Maxwell stress tensor.
-
-
 } % makeproblem
 %
 \makeanswer{pr:relElectroDynProblemSet6:1}{
@@ -279,8 +278,8 @@ Integrating \eqnref{eqn:relativisticElectrodynamicsPS6P1:41} over a closed volum
 &=
 \PD{t}{} \int_V d^3 \Bx \frac{S^\alpha}{c^2}
 +
-\int_{\partial V} d^2 \sigma (\Bn \cdot \Be_\beta) T^{\beta \alpha}
-+
+\int_{\partial V} d^2 \sigma (\Bn \cdot \Be_\beta) T^{\beta \alpha} \\
+&\qquad +
 \sum_b q_b \left( E^\alpha(\Bx_b) + \left( \frac{\Bv_b(t)}{c} \cross \BB(\Bx_b) \right)^\alpha \right).
 \end{aligned}
 \end{equation}

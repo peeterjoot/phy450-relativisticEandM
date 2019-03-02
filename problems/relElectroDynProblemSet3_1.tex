@@ -8,7 +8,7 @@
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/relElectroDynProblemSet3.pdf}
 %\date{Feb 15, 2011}
 %
-\makeproblem{Fun with \( \epsilon_{\alpha\beta\gamma}, \epsilon^{ijkl}, F_{ij} \), and the duality of Maxwell's equations in vacuum}{pr:relElectroDynProblemSet3:1}{
+\makeproblem{Fun with \( \epsilon_{\alpha\beta\gamma}, \epsilon^{ijkl}, F_{ij} \), and Maxwell duality.}{pr:relElectroDynProblemSet3:1}{
 %
 \makesubproblem{rank 3 spatial antisymmetric tensor identities}{pr:relElectroDynProblemSet3:1a}
 %
@@ -345,11 +345,11 @@ A^{1 i} A^{2 j} A^{3 k}
 \epsilon_{a b c} A^{a s} A^{b t} A^{c u}.
 }
 
-The \R{4} case follows exactly the same way, and we have
+The \R{4} case follows exactly the same way, where we have
 %
 \begin{equation}\label{eqn:relElectroDynProblemSet3:2220}
 \begin{aligned}
-(e^v \wedge e^u \wedge e^t \wedge e^s) \cdot ( a \wedge b \wedge c \wedge d)
+(e^v &\wedge e^u \wedge e^t \wedge e^s) \cdot ( a \wedge b \wedge c \wedge d) \\
 &=
 a^i b^j c^k d^l
 (e^v \wedge e^u \wedge e^t \wedge e^s) \cdot (e_i \wedge e_j \wedge e_k \wedge e_l) \\
@@ -699,11 +699,12 @@ If we expand this out we have our powers of \(\lambda\) coefficients are
 \Bigr) \\
 \lambda^2 &:
 \inv{24} \epsilon^{s t u v} \epsilon_{a b c d}
-\Bigl(
+\Biglr{
 {\delta^c}_u {\delta^d}_v {F^a}_s {F^b}_t
-+( {\delta^a}_s {F^b}_t + {\delta^b}_t {F^a}_s ) ( {\delta^c}_u {F^d}_v + {\delta^d}_v {F^c}_u )
++( {\delta^a}_s {F^b}_t + {\delta^b}_t {F^a}_s ) ( {\delta^c}_u {F^d}_v + {\delta^d}_v {F^c}_u ) \\
+&\quad
 + {\delta^a}_s {\delta^b}_t  {F^c}_u {F^d}_v
-\Bigr) \\
+} \\
 \lambda^3 &:
 \inv{24} \epsilon^{s t u v} \epsilon_{a b c d}
 \Bigl(
