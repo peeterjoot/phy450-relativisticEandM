@@ -13,16 +13,19 @@
 \setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
 \manualmark
 \markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
-%\emptypage
+\emptypage
 \tableofcontents
 \thispagestyle{empty}
 \automark[section]{chapter}
 \renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+
+\endgroup
+
 %%%*******************************************************
 %%% List of Figures and of the Tables
 %%%*******************************************************
-%%\clearpage
+%\clearpage
 %%
 %%\begingroup
 %%    \let\clearpage\relax

@@ -10,9 +10,19 @@
 %********************************************************************
 % Other Stuff in the Back
 %*******************************************************
-%\part{Index}
+%\part{Backmatter}
+
+\emptypage
+\manualmark
+\markboth{\spacedlowsmallcaps{Index}}{\spacedlowsmallcaps{Index}} % work-around to have small caps also
+%\phantomsection
+\refstepcounter{dummy}
+\addtocontents{toc}{\protect\vspace{\beforebibskip}} % to have the bib a bit from the rest in the toc
+\addcontentsline{toc}{chapter}{\tocEntry{Index}}
+\label{app:index}
 %\chapter{Index}
-\printindex
+   \printindex
+\endgroup
 
 %\part{Bibliography}
 
