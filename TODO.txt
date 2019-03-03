@@ -30,4 +30,6 @@
 
 - undef:
 
-LaTeX Warning: Hyper reference `path:phy450:RelEMp53.1.pdf' on page 103 undefined on input line 17.
+   LaTeX Warning: Hyper reference `path:phy450:RelEMp53.1.pdf' on page 103 undefined on input line 17.
+
+   removed reference -- but issue may have been that I needed to track something else in the generated poppitz.tex
