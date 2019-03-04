@@ -132,24 +132,27 @@ D = (V_x/c) c \delta t.
 \end{equation}
 and
 \begin{dmath}\label{eqn:relElectroDynProblemSet1:1520}
-\evalbar{J^\T F}{(x_A' + x_B')/2} 
-=
+\begin{aligned}
+&\evalbar{J^\T F}{(x_A' + x_B')/2}  \\
+&=
 \begin{bmatrix}
 \frac{s}{\sqrt{ h^2 + (s)^2 } } &
 \frac{-s}{\sqrt{ h^2 + (-s)^2 } } &
 \frac{s - D}{\sqrt{ h^2 + (s - D)^2 } } &
 \frac{-s - D}{\sqrt{ h^2 + (-s - D)^2 } } 
-\end{bmatrix} 
+\end{bmatrix}  \times \\
+&\,
 \begin{bmatrix}
 \sqrt{ h^2 + (s)^2 } - \Abs{c t - c t_A'} \\
 \sqrt{ h^2 + (-s)^2 } - \Abs{c t - c t_B'} \\
 \sqrt{ h^2 + (s - D)^2 } - \Abs{c t - c t_A' - c \delta t} \\
 \sqrt{ h^2 + (-s - D)^2 } - \Abs{c t - c t_B' - c \delta t} \\
-\end{bmatrix} 
-=
+\end{bmatrix}  \\
+&=
 \frac{s}{\sqrt{s^2 + D^2}} \left( \Abs{ ct - c t_B' } - \Abs{ c t - c t_A'} \right) -2 D 
 - \frac{(s - D)\Abs{c t - c t_A' - c \delta t} }{ \sqrt{ h^2 + (s - D)^2 } } 
 + \frac{(s + D)\Abs{c t - c t_B' - c \delta t} }{ \sqrt{ h^2 + (s + D)^2 } }.
+\end{aligned}
 \end{dmath}
 The final beastly ugly result, utilizing the helper variables of \eqnref{eqn:relativisticElectrodynamicsA1:392}, and \eqnref{eqn:relativisticElectrodynamicsA1:391}, we have for the deviation from the midpoint (after one iteration of this least squares Newton's method):
 \begin{equation}\label{eqn:relativisticElectrodynamicsA1:400}
