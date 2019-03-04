@@ -2,6 +2,8 @@ THISDIR := phy450-relativisticEandM
 THISBOOK := phy450
 THISBOOK_DEPS += poppitz.tex
 
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../classicthesis_mine/FrontBackmatter/Index.tex
+
 include make.revision
 include ../latex/make.bookvars
 
