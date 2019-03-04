@@ -1,0 +1,8 @@
+<ul>
+<li>switch to 6x9" format</li>
+<li>fix a whole bunch of too-wide equations, section-headings, ... that kdp finds objectionable.</li>
+<li>suppress page numbers for 1st page of preface, contents, index and bib.  This is a hack for my hack of classicthesis, because I don't have the 6x9 layout right, and the page numbers for that first page end up in an unprintable region that kdp doesn't allow.</li>
+<li>add periods to chapter, figure, section, problem captions.</li>
+<li>remove lots of blank lines before and after equations.  That cuts 10s of pages from the book length!</li>
+<li>move version numbers into separate file (make.revision)</li>
+</ul>
