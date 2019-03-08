@@ -2,15 +2,12 @@ THISDIR := phy450-relativisticEandM
 THISBOOK := phy450
 THISBOOK_DEPS += poppitz.tex
 
-MY_CLASSICTHESIS_FRONTBACK_FILES += ../classicthesis_mine/FrontBackmatter/Index.tex
+BIBLIOGRAPHY_PATH := classicthesis_mine
+HAVE_OWN_CONTENTS := 1
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/Index.tex
 
 include make.revision
 include ../latex/make.bookvars
-
-# Override my default:
-MY_CLASSICTHESIS_FRONTBACK_FILES := $(filter-out ../classicthesis_mine/FrontBackmatter/Contents.tex,$(MY_CLASSICTHESIS_FRONTBACK_FILES))
-MY_CLASSICTHESIS_FRONTBACK_FILES := $(filter-out ../classicthesis_mine/FrontBackmatter/Version.tex,$(MY_CLASSICTHESIS_FRONTBACK_FILES))
-MY_CLASSICTHESIS_FRONTBACK_FILES := $(filter-out ../classicthesis_mine/FrontBackmatter/Bibliography.tex,$(MY_CLASSICTHESIS_FRONTBACK_FILES))
 
 #ONCEFLAGS := -justonce
 
@@ -77,7 +74,4 @@ poppitz.tex : mkpref
 	./mkpref > $@
 
 clean ::
-	git checkout FrontBackmatter/Contents.tex
-	git checkout FrontBackmatter/Version.tex
-	git checkout FrontBackmatter/Bibliography.tex
 	git checkout $(THISBOOK).tex
