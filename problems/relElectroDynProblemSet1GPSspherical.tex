@@ -12,7 +12,17 @@ Here is the play I did the first time around.
 
 \paragraph{Discussion of the non-toy model}
 
-It is fairly easy to find interesting info about the mechanisms that real GPS works using.  NASA has a nice \href{http://www.nasm.si.edu/gps/work.html}{How does GPS work} page \citep{nasaGPS}, and How stuff works has a nice \href{http://electronics.howstuffworks.com/gadgets/travel/gps.htm}{How GPS Receivers Work} article \citep{howStuffWorksGPS}.  Reading these one finds that the GPS clocks are actually kept synchronized.  The typical GPS receiver obviously has a clock, since we have countdown timers for time until arrival, is that clock accurate enough compared to the satellite atomic clocks to be used for the GPS location algorithm?  What is done in fact is to use the local receiver time to seed the iterative algorithms, allowing the local time to be calculated eventually with an accuracy that actually approaches that of the satellite's atomic clocks.  Some of the sources of error, like reflection of the signals, delaying them, and interference by atmosphere are also discussed in these articles.  Also interesting is that there is a table lookup of the satellites position implemented in the GPS receivers.  This table lookup is used to seed the iterative algorithms, and can be used to reduce calculation error.
+It is fairly easy to find interesting info about the mechanisms that real GPS works using, for example
+%NASA has a nice
+%\href{https://web.archive.org/web/20121109015403/http://airandspace.si.edu/gps/work.html}{
+%``How does GPS work'' page
+\citep{nasaGPS},
+%, and How stuff works has a nice
+%\href{https://electronics.howstuffworks.com/gadgets/travel/gps.htm}{
+%   How GPS Receivers Work
+%article
+\citep{howStuffWorksGPS}.
+Reading these one finds that the GPS clocks are actually kept synchronized.  The typical GPS receiver obviously has a clock, since we have countdown timers for time until arrival, is that clock accurate enough compared to the satellite atomic clocks to be used for the GPS location algorithm?  What is done in fact is to use the local receiver time to seed the iterative algorithms, allowing the local time to be calculated eventually with an accuracy that actually approaches that of the satellite's atomic clocks.  Some of the sources of error, like reflection of the signals, delaying them, and interference by atmosphere are also discussed in these articles.  Also interesting is that there is a table lookup of the satellites position implemented in the GPS receivers.  This table lookup is used to seed the iterative algorithms, and can be used to reduce calculation error.
 
 Our basic GPS problem is to calculate the intersection of a number of ``spherical'' hypersurfaces.  This is made more interesting by the fact that this is both a non-linear and an over-specified problem.  Let us consider the geometric problem to get an idea of how to set up this problem.  Suppose that we have a set of \(k\) satellites, located at position \(\Bp_i, i \in [1,k]\), and we know that these are located with distance \(d_i\) from our position \(\Bx\).
 

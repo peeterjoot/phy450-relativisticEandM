@@ -1,3 +1,14 @@
+phy450.V0.1.10.pdf
+<ul>
+<li>update email address</li>
+<li>switch to backmatter2.tex</li>
+<li>fix hyphens in listing</li>
+<li>url fixes.</li>
+<li>thethe.py fixes.</li>
+<li>revision bump</li>
+</ul>
+
+phy450.V0.1.9.pdf
 <ul>
 <li>switch to 6x9" format</li>
 <li>fix a whole bunch of too-wide equations, section-headings, ... that kdp finds objectionable.</li>

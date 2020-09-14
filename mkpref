@@ -69,14 +69,14 @@ analogy with rotations and derivation of Lorentz transformations (27-32); Minkow
 print "
 The current path for Prof. Poppitz's handouts is
 
-\\href{http://www.physics.utoronto.ca/~poppitz/poppitz/PHY450.html}{http://www.physics.utoronto.ca/~poppitz/poppitz/PHY450.html}.
+\\href{https://www.physics.utoronto.ca/~poppitz/poppitz/PHY450.html}{https://www.physics.utoronto.ca/~poppitz/poppitz/PHY450.html}.
 
 These were a valuable resource when I took the course.  At the time of this writing (accessed Dec, 2014) the following files were available.  The descriptions are from the 2011 versions of the files and may no longer match exactly.
 
 \\begin{itemize}
 " ;
 
-my $path = "http://www.physics.utoronto.ca/~poppitz/poppitz/PHY450_files/" ;
+my $path = "https://www.physics.utoronto.ca/~poppitz/poppitz/PHY450_files/" ;
 
 foreach ( @pfiles )
 {

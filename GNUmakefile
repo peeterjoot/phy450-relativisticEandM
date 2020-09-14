@@ -23,6 +23,7 @@ SOURCE_DIRS += $(FIGURES)
 #GENERATED_SOURCES += julia.tex
 GENERATED_SOURCES += mathematica.tex
 GENERATED_SOURCES += poppitz.tex
+GENERATED_SOURCES += backmatter.tex
 
 EPS_FILES := $(wildcard $(FIGURES)/*.eps)
 PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
@@ -75,3 +76,7 @@ poppitz.tex : mkpref
 
 clean ::
 	git checkout $(THISBOOK).tex
+
+backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
+	rm -f $@
+	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
