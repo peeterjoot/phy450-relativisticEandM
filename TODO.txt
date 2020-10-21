@@ -1,16 +1,25 @@
 - 
+  These notes use a swapped latin/greek index convention everywhere!
 
-- remove review sections to simplify chapter layout.
+   For example, I'd "corrected":
 
-- this set of notes needs a very thorough walk through and cleanup.
+      \begin{equation}\label{eqn:relativisticElectrodynamicsL11:170}
+      F_{\alpha\beta} = - \epsilon_{\alpha\beta\gamma} B_\gamma.
+      \end{equation}
 
-- dead reference commented out:
+   but then reverted it, since that would have made it inconsistent with everything else.
+
+- Remove review sections to simplify chapter layout.
+
+- This set of notes needs a very thorough walk through and cleanup.
+
+- Dead reference commented out:
 
    gabook:stokesNoTensor
 
   I purged that chapter from gabook.  Is any of the stuff that references it valid?  
 
-- dead url:
+- Dead url:
 
 @webpage{ nasaGPS,
    author = "unknown",
@@ -22,13 +31,13 @@
 
 - Don't think I ever did any figures for this class.  Unfortunately too much work to retrofit them.
 
-- exersize env:
+- Exersize env:
   o   change part (.) references to hyperlinks.
   o   use makeoproblem to mark with original problem set numbers and parts.
 
-- incorporate my little arxiv paper content as an appendix.
+- Incorporate my little arxiv paper content as an appendix.
 
-- undef:
+- Undef:
 
    LaTeX Warning: Hyper reference `path:phy450:RelEMp53.1.pdf' on page 103 undefined on input line 17.
 
