@@ -1,0 +1,10 @@
+These are my personal lecture notes for the Spring 2011, University of Toronto, Relativistic Electrodynamics course (PHY450H1S).  
+<p>This class was taught by Prof. Erich Poppitz, with Simon Freedman handling tutorials (which were excellent lecture style lessons).
+<p>Official course description:``Special Relativity, four-vector calculus and relativistic notation, the relativistic Maxwell's Equations, electromagnetic waves in vacuum and conducting and non-conducting materials, electromagnetic radiation from point charges and systems of charges.''
+<p>The text for the course was Landau and Lifshifz's "The Classical Theory of Fields", of which we used the first half.
+<p>This book contains a few things:
+<ul>
+<li> My lecture notes, which followed the lectures, and my attempt to understand them.  As a special bonus, I've added many spelling mistakes and grammar issues.  I did not transcribe any of the material from Prof. Poppitz's notes that he left for us to read out of class.
+<li> Some notes from reading of the text.
+<li> Some assigned problems, at least the parts of them that I did not hand write.  I have corrected some the errors after receiving grading feedback, and where I have not done so I at least recorded some of the grading comments as a reference.  Not all the problems were graded, so I make no guarantees of correctness.
+</ul>

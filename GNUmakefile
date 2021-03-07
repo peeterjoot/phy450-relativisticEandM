@@ -11,6 +11,16 @@ include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
 
+# comment this out for online pdf version (uncomment for KDP)
+PRINT_VERSION := 1
+
+ifndef PRINT_VERSION
+PARAMS += --no-print
+endif
+ifdef PRINT_VERSION
+DISTEXTRA := kdp
+endif
+
 #SOURCE_DIRS += appendix
 SOURCE_DIRS += solutions
 SOURCE_DIRS += lectures
@@ -76,6 +86,9 @@ poppitz.tex : mkpref
 
 clean ::
 	git checkout $(THISBOOK).tex
+
+parameters.sty : ../latex/bin/mkparams
+	../latex/bin/mkparams $(PARAMS) > $@
 
 backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 	rm -f $@
