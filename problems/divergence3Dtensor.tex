@@ -310,32 +310,36 @@ da_1 da_2 \PDi{a_1}{x^\mu} \PDi{a_2}{x^\nu} \epsilon_{\mu\nu\gamma} \Be_\gamma.
 In terms of the outwards (area scaled) normals \(d\Bn_3, d\Bn_1, d\Bn_2\) on the \(a_{3+}, a_{1+}\) and \(a_{2+}\) surfaces respectively we can write
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:540}
-\int d^3 \Bx \partial_\beta T^{\beta \alpha} =
+\begin{aligned}
+\int &d^3 \Bx \partial_\beta T^{\beta \alpha} &=
 \int d\Bn_3 \cdot \Be_\beta \evalbar{T^{\beta}{\alpha}}{\Delta a_3}
-+\int d\Bn_1 \cdot \Be_\beta \evalbar{T^{\beta}{\alpha}}{\Delta a_1}
-+\int d\Bn_2 \cdot \Be_\beta \evalbar{T^{\beta}{\alpha}}{\Delta a_2}.
++\int d\Bn_1 \cdot \Be_\beta \evalbar{T^{\beta}{\alpha}}{\Delta a_1} \\
+&\quad+\int d\Bn_2 \cdot \Be_\beta \evalbar{T^{\beta}{\alpha}}{\Delta a_2}.
+\end{aligned}
 \end{equation}
 %
 This can be written more concisely in index form with
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:640}
 d^2 \sigma^\beta =
-\epsilon_{\mu\nu\beta} \left(
+\epsilon_{\mu\nu\beta} \lr{
 \PD{a_2}{x^\mu}
 \PD{a_3}{x^\nu} da_2 da_3
 +\PD{a_3}{x^\mu}
 \PD{a_1}{x^\nu} da_3 da_1
 +\PD{a_1}{x^\mu}
 \PD{a_2}{x^\nu} da_1 da_2
-\right),
+},
 \end{equation}
 %
 so that the divergence integral is just
 %
 \begin{equation}\label{eqn:relativisticElectrodynamicsPS6:560}
-\int d^3 \Bx =
-\int_{\text{over level surfaces \(a_{1+}\), \(a_{2+}\), \(a_{3+}\)}} d^2 \sigma^\beta T^{\beta \alpha}
--\int_{\text{over level surfaces \(a_{1-}\), \(a_{2-}\), \(a_{3-}\)}} d^2 \sigma^\beta T^{\beta \alpha}.
+\begin{aligned}
+\int &d^3 \Bx =
+\int_{\text{over level surfaces \(a_{1+}\), \(a_{2+}\), \(a_{3+}\)}} d^2 \sigma^\beta T^{\beta \alpha} \\
+&\quad -\int_{\text{over level surfaces \(a_{1-}\), \(a_{2-}\), \(a_{3-}\)}} d^2 \sigma^\beta T^{\beta \alpha}.
+\end{aligned}
 \end{equation}
 %
 In each case, for the \(a_{\alpha-}\) surfaces, our negated inwards normal form can be redefined so that we integrate over only the outwards normal directions, and we can use the oriented integral notation
